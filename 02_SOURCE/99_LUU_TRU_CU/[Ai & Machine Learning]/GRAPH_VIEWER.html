@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Graph Visualizer — codebase-memory-mcp</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Inter,Segoe UI,sans-serif;background:#f8f9fc;color:#111;padding:20px}
+h1{font-size:22px;margin-bottom:6px;display:flex;align-items:center;gap:8px}
+h1 small{font-size:13px;color:#6B7280;font-weight:400}
+.sub{color:#6B7280;font-size:13px;margin-bottom:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-bottom:24px}
+.card{border:1px solid #E5E7EB;border-radius:12px;background:#fff;padding:16px;box-shadow:0 4px 12px rgba(0,0,0,.04)}
+.card h2{font-size:14px;font-weight:700;color:#374151;margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em}
+.stat-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #F3F4F6;font-size:13px}
+.stat-row:last-child{border-bottom:0}
+.stat-val{font-weight:700;color:#1A73E8}
+.badge{display:inline-block;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:600}
+.badge-blue{background:#E8F0FE;color:#1A73E8}
+.badge-green{background:#E7F5EC;color:#188038}
+.badge-orange{background:#FEF3E8;color:#F29900}
+.badge-red{background:#FCE8E6;color:#C5221F}
+
+.graph-container{display:flex;gap:24px;margin-top:16px}
+.tree-panel{flex:1;min-width:0}
+.file-card{border:1px solid #E5E7EB;border-radius:12px;background:#fff;margin-bottom:12px;overflow:hidden}
+.file-header{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#F9FAFB;border-bottom:1px solid #E5E7EB;font-weight:700;font-size:14px;cursor:pointer;user-select:none}
+.file-header:hover{background:#F3F4F6}
+.file-icon{font-size:18px}
+.file-sections{padding:4px 0}
+.section-item{display:flex;align-items:center;gap:6px;padding:7px 16px 7px 36px;font-size:12.5px;color:#374151;border-bottom:1px solid #F9FAFB}
+.section-item:last-child{border-bottom:0}
+.section-item:hover{background:#F3F6FF}
+.node-dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:0 0 auto}
+.dot-section{background:#6C3DFF}
+.dot-file{background:#1A73E8}
+.dot-module{background:#188038}
+.dot-branch{background:#F29900}
+.dot-project{background:#C5221F}
+.node-label{font-size:10px;color:#6B7280;margin-left:auto;flex:0 0 auto}
+
+.graph-viz{border:1px solid #E5E7EB;border-radius:12px;background:#fff;padding:16px;flex:0 0 360px;max-height:600px;overflow:hidden}
+.graph-viz h3{font-size:13px;font-weight:700;margin-bottom:12px;color:#374151}
+.viz-svg{width:100%;height:320px;background:#F9FAFB;border-radius:8px;overflow:hidden}
+.viz-svg svg{width:100%;height:100%}
+.viz-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;font-size:11px}
+.legend-item{display:flex;align-items:center;gap:4px}
+</style>
+</head>
+<body>
+
+<h1>🔍 Graph Viewer <small>codebase-memory-mcp — 0.9.0</small></h1>
+<div class="sub">Project: <strong>G-My-Drive-DU-AN-WED-QUAN-LY-Ai-Machine-Learning</strong></div>
+
+<div class="grid">
+  <div class="card">
+    <h2>📊 Tổng quan</h2>
+    <div class="stat-row"><span>Tổng nodes</span><span class="stat-val">24</span></div>
+    <div class="stat-row"><span>Tổng edges</span><span class="stat-val">23</span></div>
+    <div class="stat-row"><span>Files indexed</span><span class="stat-val">2</span></div>
+    <div class="stat-row"><span>Ngôn ngữ</span><span class="stat-val">HTML</span></div>
+  </div>
+  <div class="card">
+    <h2>🏷️ Node types</h2>
+    <div class="stat-row"><span><span class="node-dot dot-section"></span> Section</span><span class="stat-val">18</span></div>
+    <div class="stat-row"><span><span class="node-dot dot-file"></span> File</span><span class="stat-val">2</span></div>
+    <div class="stat-row"><span><span class="node-dot dot-module"></span> Module</span><span class="stat-val">2</span></div>
+    <div class="stat-row"><span><span class="node-dot dot-project"></span> Project</span><span class="stat-val">1</span></div>
+    <div class="stat-row"><span><span class="node-dot dot-branch"></span> Branch</span><span class="stat-val">1</span></div>
+  </div>
+  <div class="card">
+    <h2>🔗 Edge types</h2>
+    <div class="stat-row"><span>DEFINES</span><span class="stat-val">20</span></div>
+    <div class="stat-row"><span>CONTAINS_FILE</span><span class="stat-val">2</span></div>
+    <div class="stat-row"><span>HAS_BRANCH</span><span class="stat-val">1</span></div>
+  </div>
+</div>
+
+<div class="graph-container">
+  <div class="tree-panel">
+    <div class="file-card">
+      <div class="file-header">
+        <span class="file-icon">📄</span>
+        giao-dien-desktop-don-gian_v23_quan.html
+        <span style="margin-left:auto;font-size:11px;color:#6B7280;font-weight:400">374 KB · 9.404 dòng</span>
+      </div>
+      <div class="file-sections">
+        <div class="section-item"><span class="node-dot dot-file"></span> File <span class="node-label">root</span></div>
+        <div class="section-item"><span class="node-dot dot-module"></span> Module (CSS + JS + HTML) <span class="node-label">L1-L9404</span></div>
+      </div>
+    </div>
+
+    <div class="file-card">
+      <div class="file-header">
+        <span class="file-icon">📋</span>
+        BAN_DO_BO_NHO.md
+        <span style="margin-left:auto;font-size:11px;color:#6B7280;font-weight:400">9.9 KB · 270 dòng</span>
+      </div>
+      <div class="file-sections">
+        <div class="section-item"><span class="node-dot dot-file"></span> File</div>
+        <div class="section-item"><span class="node-dot dot-module"></span> Module</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 1. TỔNG QUAN KIẾN TRÚC</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 2. CSS COMPONENTS CHÍNH</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 3. JS MODULES & FUNCTIONS (333)</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 4. HTML DOM TREE</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 5. DATA MODEL</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 6. EXTERNAL INTEGRATIONS</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 7. VERSION HISTORY</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> 8. KEY ARCHITECTURE DECISIONS</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> A. Render & Navigation</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> B. Sheet Engine</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> C. File Management & Drive</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> D. Report Engine</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> E. Formatting</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> F. Filter & Sort</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> G. Conditional Format</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> H. Data Persistence</div>
+        <div class="section-item"><span class="node-dot dot-section"></span> I. Google Identity & Auth</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="graph-viz">
+    <h3>🎯 Graph visualization</h3>
+    <div class="viz-svg">
+      <svg viewBox="0 0 340 300">
+        <!-- Edges -->
+        <line x1="170" y1="30" x2="60" y2="80" stroke="#D1D5DB" stroke-width="2"/>
+        <line x1="170" y1="30" x2="280" y2="80" stroke="#D1D5DB" stroke-width="2"/>
+        <line x1="60" y1="80" x2="60" y2="130" stroke="#E5E7EB" stroke-width="1.5"/>
+        <line x1="60" y1="80" x2="170" y2="130" stroke="#E5E7EB" stroke-width="1.5"/>
+        <line x1="280" y1="80" x2="280" y2="130" stroke="#E5E7EB" stroke-width="1.5"/>
+        <line x1="280" y1="80" x2="170" y2="230" stroke="#E5E7EB" stroke-width="1"/>
+        <line x1="60" y1="130" x2="170" y2="230" stroke="#E5E7EB" stroke-width="1"/>
+        <line x1="170" y1="130" x2="170" y2="230" stroke="#E5E7EB" stroke-width="1"/>
+
+        <!-- Nodes -->
+        <circle cx="170" cy="30" r="18" fill="#C5221F" opacity=".9"/>
+        <text x="170" y="35" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">P</text>
+        <text x="170" y="12" text-anchor="middle" fill="#C5221F" font-size="8" font-weight="600">Project</text>
+
+        <circle cx="60" cy="80" r="14" fill="#1A73E8" opacity=".9"/>
+        <text x="60" y="85" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">F</text>
+        <text x="60" y="65" text-anchor="middle" fill="#1A73E8" font-size="8" font-weight="600">HTML</text>
+
+        <circle cx="280" cy="80" r="14" fill="#1A73E8" opacity=".9"/>
+        <text x="280" y="85" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">F</text>
+        <text x="280" y="65" text-anchor="middle" fill="#1A73E8" font-size="8" font-weight="600">MD</text>
+
+        <circle cx="60" cy="130" r="12" fill="#188038" opacity=".9"/>
+        <text x="60" y="135" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">M</text>
+
+        <circle cx="170" cy="130" r="12" fill="#188038" opacity=".9"/>
+        <text x="170" y="135" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">M</text>
+
+        <circle cx="280" cy="130" r="12" fill="#6C3DFF" opacity=".9"/>
+        <text x="280" y="135" text-anchor="middle" fill="#fff" font-size="8" font-weight="700">S</text>
+
+        <circle cx="60" cy="180" r="10" fill="#6C3DFF" opacity=".7"/>
+        <circle cx="120" cy="180" r="10" fill="#6C3DFF" opacity=".7"/>
+        <circle cx="170" cy="180" r="10" fill="#6C3DFF" opacity=".7"/>
+        <circle cx="220" cy="180" r="10" fill="#6C3DFF" opacity=".7"/>
+        <circle cx="280" cy="180" r="10" fill="#6C3DFF" opacity=".7"/>
+
+        <circle cx="60" cy="230" r="8" fill="#6C3DFF" opacity=".5"/>
+        <circle cx="100" cy="230" r="8" fill="#6C3DFF" opacity=".5"/>
+        <circle cx="140" cy="230" r="8" fill="#6C3DFF" opacity=".5"/>
+        <circle cx="170" cy="230" r="8" fill="#F29900" opacity=".8"/>
+        <circle cx="200" cy="230" r="8" fill="#6C3DFF" opacity=".5"/>
+        <circle cx="240" cy="230" r="8" fill="#6C3DFF" opacity=".5"/>
+        <circle cx="280" cy="230" r="8" fill="#6C3DFF" opacity=".5"/>
+
+        <!-- Labels -->
+        <text x="140" y="265" text-anchor="middle" fill="#6B7280" font-size="8">P=Project F=File M=Module S=Section</text>
+        <text x="170" y="278" text-anchor="middle" fill="#F29900" font-size="8">● Branch</text>
+      </svg>
+    </div>
+    <div class="viz-legend">
+      <span class="legend-item"><span class="node-dot dot-project"></span> Project</span>
+      <span class="legend-item"><span class="node-dot dot-file"></span> File</span>
+      <span class="legend-item"><span class="node-dot dot-module"></span> Module</span>
+      <span class="legend-item"><span class="node-dot dot-section"></span> Section</span>
+      <span class="legend-item"><span class="node-dot dot-branch"></span> Branch</span>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

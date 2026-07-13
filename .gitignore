@@ -1,0 +1,40 @@
+﻿# Dependencies and build output
+node_modules/
+dist/
+build/
+.next/
+coverage/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Logs and runtime
+*.log
+*.pid
+__pycache__/
+*.py[cod]
+
+# Editors and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local temporary files
+*.tmp
+*.temp
+~$*
+
+# Google Drive document pointers
+*.gdoc
+*.gsheet
+*.gslides
+*.gdraw
+

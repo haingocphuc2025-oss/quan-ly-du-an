@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Graph View — Obsidian Style</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#1e1e2e;color:#cdd6f4;font-family:'Inter','Segoe UI',system-ui,sans-serif;overflow:hidden;height:100vh;width:100vw}
+#container{width:100vw;height:100vh;position:relative}
+svg{width:100%;height:100%;display:block}
+.lines{stroke:#45475a;stroke-width:1.5;stroke-opacity:0.3;fill:none}
+.lines.highlighted{stroke:#89b4fa;stroke-opacity:0.8;stroke-width:2.5}
+.node{cursor:grab;transition:transform 0.15s}
+.node:active{cursor:grabbing}
+.node circle{stroke:#1e1e2e;stroke-width:2.5;transition:r 0.2s,fill-opacity 0.2s}
+.node:hover circle{stroke:#cdd6f4;stroke-width:3}
+.node-label{font-size:11px;fill:#a6adc8;pointer-events:none;text-anchor:middle;dominant-baseline:central;transition:fill 0.2s,font-size 0.2s}
+.node:hover .node-label{fill:#cdd6f4;font-size:12px;font-weight:600}
+.node-label-bg{fill:#1e1e2e;fill-opacity:0.75;rx:4;ry:4;pointer-events:none}
+.node.focused circle{stroke:#f5c2e7;stroke-width:4;filter:drop-shadow(0 0 12px rgba(245,194,231,0.4))}
+
+#controls{position:fixed;top:20px;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:100;background:rgba(30,30,46,0.85);backdrop-filter:blur(12px);padding:8px 16px;border-radius:12px;border:1px solid #313244;box-shadow:0 8px 32px rgba(0,0,0,0.4)}
+#controls button{background:#313244;border:1px solid #45475a;color:#cdd6f4;padding:6px 14px;border-radius:8px;cursor:pointer;font-size:12px;font-weight:500;transition:all 0.15s}
+#controls button:hover{background:#45475a;border-color:#585b70}
+#controls button.active{background:#89b4fa;color:#1e1e2e;border-color:#89b4fa;font-weight:700}
+#controls .sep{width:1px;background:#313244;margin:0 4px}
+
+#info-panel{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:100;background:rgba(30,30,46,0.88);backdrop-filter:blur(16px);padding:12px 24px;border-radius:12px;border:1px solid #313244;box-shadow:0 4px 24px rgba(0,0,0,0.3);display:flex;align-items:center;gap:18px;font-size:13px;pointer-events:none;opacity:0;transition:opacity 0.3s}
+#info-panel.visible{opacity:1;pointer-events:auto}
+#info-panel .label{color:#6c7086;font-size:11px;text-transform:uppercase;letter-spacing:0.05em}
+#info-panel .val{color:#cdd6f4;font-weight:600}
+#info-panel .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px;vertical-align:middle}
+
+#tooltip{position:fixed;z-index:200;background:rgba(30,30,46,0.95);backdrop-filter:blur(16px);padding:10px 14px;border-radius:10px;border:1px solid #45475a;box-shadow:0 8px 32px rgba(0,0,0,0.5);font-size:12px;line-height:1.5;pointer-events:none;opacity:0;transition:opacity 0.15s;max-width:300px}
+#tooltip.show{opacity:1}
+#tooltip .tt-title{font-weight:700;font-size:13px;color:#cdd6f4;margin-bottom:3px}
+#tooltip .tt-label{color:#6c7086;font-size:11px}
+#tooltip .tt-detail{color:#a6adc8;font-size:11px;margin-top:2px}
+
+#legend{position:fixed;right:20px;top:50%;transform:translateY(-50%);z-index:50;background:rgba(30,30,46,0.8);backdrop-filter:blur(12px);padding:12px 14px;border-radius:10px;border:1px solid #313244;font-size:11px;line-height:2}
+.legend-item{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.legend-dot{width:10px;height:10px;border-radius:50%;flex:0 0 auto}
+.legend-count{color:#6c7086;margin-left:8px;font-size:10px}
+
+#title-bar{position:fixed;top:72px;left:50%;transform:translateX(-50%);z-index:50;text-align:center;pointer-events:none}
+#title-bar h1{font-size:14px;font-weight:600;color:#a6adc8}
+#title-bar .sub{font-size:11px;color:#585b70;margin-top:2px}
+</style>
+</head>
+<body>
+
+<div id="title-bar">
+  <h1>🔍 Knowledge Graph</h1>
+  <div class="sub">codebase-memory-mcp · G-My-Drive-DU-AN-WED-QUAN-LY-Ai-Machine-Learning</div>
+</div>
+
+<div id="controls">
+  <button data-filter="all" class="active">All</button>
+  <button data-filter="Project">Project</button>
+  <button data-filter="File">File</button>
+  <button data-filter="Module">Module</button>
+  <button data-filter="Section">Section</button>
+  <button data-filter="Branch">Branch</button>
+  <div class="sep"></div>
+  <button id="btn-lock">🔓 Lock</button>
+  <button id="btn-reset">⟲ Reset</button>
+  <button id="btn-screenshot">📷 PNG</button>
+</div>
+
+<div id="info-panel">
+  <span><span class="label">Nodes</span> <span class="val" id="stat-nodes">0</span></span>
+  <span><span class="label">Edges</span> <span class="val" id="stat-edges">0</span></span>
+  <span id="selected-info" style="display:none">· <span class="dot" id="sel-dot"></span><span class="val" id="sel-name"></span> <span class="label" id="sel-label"></span></span>
+</div>
+
+<div id="legend"></div>
+<div id="tooltip"></div>
+
+<div id="container">
+  <svg id="graph-svg"></svg>
+</div>
+
+<script>
+// ========== DATA ==========
+const rawNodes = [
+  {id:2,name:"working-tree",labels:["Branch"],label:"Branch",file_path:"{}",file_short:"",color:"#f9e2af"},
+  {id:3,name:"BAN_DO_BO_NHO.md",labels:["File"],label:"File",file_path:"BAN_DO_BO_NHO.md",file_short:"BAN_DO_BO_NHO.md",color:"#89b4fa"},
+  {id:4,name:"giao-dien-desktop-don-gian_v23_quan.html",labels:["File"],label:"File",file_path:"giao-dien-desktop-don-gian_v23_quan.html",file_short:"v23_quan.html",color:"#89b4fa"},
+  {id:5,name:"BAN_DO_BO_NHO.md",labels:["Module"],label:"Module",file_path:"BAN_DO_BO_NHO.md",color:"#a6e3a1"},
+  {id:24,name:"giao-dien-desktop-don-gian_v23_quan.html",labels:["Module"],label:"Module",file_path:"giao-dien-desktop-don-gian_v23_quan.html",color:"#a6e3a1"},
+  {id:1,name:"G-My-Drive-DU-AN-WED-QUAN-LY-Ai-Machine-Learning",labels:["Project"],label:"Project",file_path:"{}",color:"#f38ba8"},
+  {id:7,name:"1. TỔNG QUAN KIẾN TRÚC",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:8,name:"2. CSS COMPONENTS CHÍNH",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:9,name:"3. JS MODULES & FUNCTIONS (333)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:19,name:"4. HTML DOM TREE",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:20,name:"5. DATA MODEL",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:21,name:"6. EXTERNAL INTEGRATIONS",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:22,name:"7. VERSION HISTORY",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:23,name:"8. KEY ARCHITECTURE DECISIONS",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:10,name:"A. Render & Navigation (22 funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:11,name:"B. Sheet Engine (40+ funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:12,name:"C. File Mgmt & Drive (30+ funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:13,name:"D. Report Engine (20+ funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:14,name:"E. Formatting (15+ funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:15,name:"F. Filter & Sort (15+ funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:16,name:"G. Conditional Format (10+ funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:17,name:"H. Data Persistence (15+ funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:18,name:"I. Google Identity & Auth (5 funcs)",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"},
+  {id:6,name:"🗺️ BẢN ĐỒ BỘ NHỚ",labels:["Section"],label:"Section",file_path:"BAN_DO_BO_NHO.md",color:"#cba6f7"}
+];
+
+const rawEdges = [
+  {source:3,target:5,type:"DEFINES"},
+  {source:3,target:6,type:"DEFINES"},
+  {source:3,target:7,type:"DEFINES"},{source:3,target:8,type:"DEFINES"},{source:3,target:9,type:"DEFINES"},
+  {source:3,target:10,type:"DEFINES"},{source:3,target:11,type:"DEFINES"},{source:3,target:12,type:"DEFINES"},{source:3,target:13,type:"DEFINES"},
+  {source:3,target:14,type:"DEFINES"},{source:3,target:15,type:"DEFINES"},{source:3,target:16,type:"DEFINES"},{source:3,target:17,type:"DEFINES"},{source:3,target:18,type:"DEFINES"},
+  {source:3,target:19,type:"DEFINES"},{source:3,target:20,type:"DEFINES"},{source:3,target:21,type:"DEFINES"},{source:3,target:22,type:"DEFINES"},{source:3,target:23,type:"DEFINES"},
+  {source:1,target:2,type:"HAS_BRANCH"},
+  {source:4,target:24,type:"DEFINES"},
+  {source:2,target:3,type:"CONTAINS_FILE"},
+  {source:2,target:4,type:"CONTAINS_FILE"}
+];
+
+// ========== SETUP ==========
+const width = window.innerWidth;
+const height = window.innerHeight;
+const svg = d3.select('#graph-svg');
+const g = svg.append('g');
+
+// Zoom
+const zoom = d3.zoom().scaleExtent([0.15,3]).on('zoom',(e)=>g.attr('transform',e.transform));
+svg.call(zoom);
+
+// Build lookup
+const nodeMap = {};
+rawNodes.forEach(n => { nodeMap[n.id] = n; });
+
+// Node radii by type
+function nodeRadius(d) {
+  switch(d.label) {
+    case 'Project': return 22;
+    case 'Branch': return 18;
+    case 'File': return 16;
+    case 'Module': return 14;
+    case 'Section': return 11;
+    default: return 12;
+  }
+}
+
+function nodeLabel(d) {
+  switch(d.label) {
+    case 'Project': return 'P';
+    case 'Branch': return 'Br';
+    case 'File': return d.name.includes('giao') ? 'HTML' : 'MD';
+    case 'Module': return 'M';
+    case 'Section': return 'S';
+    default: return '?';
+  }
+}
+
+function displayName(d) {
+  if(d.label==='Project') return 'Web QLDA';
+  if(d.label==='Branch') return 'working-tree';
+  if(d.label==='File') return d.file_short || d.name;
+  if(d.label==='Module') return d.file_path;
+  return d.name;
+}
+
+function shortDisplay(d) {
+  const n = displayName(d);
+  return n.length > 30 ? n.slice(0,28)+'…' : n;
+}
+
+const edgePath = d3.line().curve(d3.curveBundle.beta(0.85));
+
+// ========== FORCE ==========
+const links = rawEdges.map(e => ({source:e.source,target:e.target,type:e.type}));
+const nodes = rawNodes.map(n => ({...n}));
+
+const simulation = d3.forceSimulation(nodes)
+  .force('link', d3.forceLink(links).id(d=>d.id).distance(d=>{
+    switch(d.type) {
+      case 'CONTAINS_FILE': return 180;
+      case 'HAS_BRANCH': return 160;
+      case 'DEFINES': return 120;
+      default: return 150;
+    }
+  }).strength(d=>{
+    switch(d.type) {
+      case 'CONTAINS_FILE': return 0.4;
+      case 'HAS_BRANCH': return 0.3;
+      case 'DEFINES': return 0.5;
+      default: return 0.3;
+    }
+  }))
+  .force('charge', d3.forceManyBody().strength(d=>{
+    switch(d.label) {
+      case 'Project': return -800;
+      case 'Branch': return -600;
+      case 'File': return -400;
+      case 'Module': return -300;
+      case 'Section': return -200;
+      default: return -250;
+    }
+  }).distanceMax(500))
+  .force('center', d3.forceCenter(width/2, height/2))
+  .force('collision', d3.forceCollide().radius(d=>nodeRadius(d)+8).strength(0.7))
+  .alphaDecay(0.02)
+  .velocityDecay(0.3);
+
+// ========== DRAW ==========
+function draw(filter) {
+  g.selectAll('*').remove();
+
+  const filteredNodeIds = filter==='all' ? new Set(nodes.map(n=>n.id))
+    : new Set(nodes.filter(n=>n.label===filter).map(n=>n.id));
+
+  const filteredLinks = links.filter(l => {
+    const sid = typeof l.source === 'object' ? l.source.id : l.source;
+    const tid = typeof l.target === 'object' ? l.target.id : l.target;
+    return filteredNodeIds.has(sid) && filteredNodeIds.has(tid);
+  });
+
+  const edgeGroup = g.append('g').attr('class','edge-group');
+
+  // Spline edges
+  const edgePaths = edgeGroup.selectAll('path')
+    .data(filteredLinks)
+    .enter().append('path')
+    .attr('class','lines')
+    .attr('stroke-dasharray', d => d.type==='DEFINES' ? null : '5,3')
+    .attr('stroke', d => {
+      switch(d.type) {
+        case 'CONTAINS_FILE': return '#a6e3a1';
+        case 'HAS_BRANCH': return '#f9e2af';
+        default: return '#45475a';
+      }
+    })
+    .attr('stroke-width', d => {
+      switch(d.type) {
+        case 'CONTAINS_FILE': return 2;
+        case 'HAS_BRANCH': return 2;
+        default: return 1.2;
+      }
+    })
+    .attr('fill','none');
+
+  const nodeGroup = g.append('g').attr('class','node-group');
+
+  const nodeG = nodeGroup.selectAll('.node')
+    .data(nodes.filter(n => filteredNodeIds.has(n.id)))
+    .enter().append('g')
+    .attr('class','node')
+    .attr('data-id', d=>d.id)
+    .call(d3.drag()
+      .on('start', (e,d) => {
+        if(!e.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      })
+      .on('drag', (e,d) => {
+        d.fx = e.x;
+        d.fy = e.y;
+      })
+      .on('end', (e,d) => {
+        if(!e.active) simulation.alphaTarget(0);
+        if(!d3.select('#btn-lock').classed('active')) {
+          d.fx = null;
+          d.fy = null;
+        }
+      }));
+
+  // Circle
+  nodeG.append('circle')
+    .attr('r', d=>nodeRadius(d))
+    .attr('fill', d=>d.color)
+    .attr('fill-opacity', d=>d.label==='Section'?0.75:0.9);
+
+  // Label abbreviation
+  nodeG.append('text')
+    .attr('class','node-label')
+    .attr('dy', 1)
+    .attr('font-size', d=>{
+      switch(d.label) {
+        case 'Project': return 11;
+        case 'Branch': return 8;
+        case 'File': return 8;
+        case 'Module': return 8;
+        default: return 7;
+      }
+    })
+    .attr('font-weight', d=>d.label==='Project'?800:600)
+    .text(d=>nodeLabel(d));
+
+  // Label bg for short text
+  const labelBg = g.append('g').attr('class','name-label-group');
+  const nameLabels = labelBg.selectAll('text')
+    .data(nodes.filter(n => filteredNodeIds.has(n.id)))
+    .enter().append('text')
+    .attr('class','node-label')
+    .attr('dy', d=>nodeRadius(d)+16)
+    .attr('font-size','10')
+    .text(d=>shortDisplay(d));
+
+  // Tooltip
+  nodeG.on('mouseenter', (e,d) => {
+    const tt = d3.select('#tooltip');
+    tt.html(`
+      <div class="tt-title"><span class="dot" style="background:${d.color};display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:middle"></span>${displayName(d)}</div>
+      <div class="tt-label">${d.label}${d.file_short ? ' · '+d.file_short : ''}</div>
+      ${d.label==='Section'?`<div class="tt-detail">📄 ${d.file_path}</div>`:''}
+      <div class="tt-detail">🆔 ${d.qualified_name||''}</div>
+    `);
+    tt.classed('show',true)
+      .style('left',(e.pageX+14)+'px')
+      .style('top',(e.pageY-10)+'px');
+  }).on('mousemove', (e) => {
+    d3.select('#tooltip')
+      .style('left',(e.pageX+14)+'px')
+      .style('top',(e.pageY-10)+'px');
+  }).on('mouseleave', () => {
+    d3.select('#tooltip').classed('show',false);
+  });
+
+  // Click select
+  nodeG.on('click', (e,d) => {
+    d3.selectAll('.node').classed('focused',false);
+    d3.select(e.currentTarget).classed('focused',true);
+    d3.select('#info-panel').classed('visible',true);
+    d3.select('#sel-dot').style('background',d.color);
+    d3.select('#sel-name').text(displayName(d));
+    d3.select('#sel-label').text(d.label);
+    d3.select('#selected-info').style('display','inline');
+  });
+
+  // Click background to deselect
+  svg.on('click', (e) => {
+    if(e.target === svg.node()) {
+      d3.selectAll('.node').classed('focused',false);
+      d3.select('#info-panel').classed('visible',false);
+    }
+  });
+
+  // Tick
+  simulation.on('tick', () => {
+    nodeG.attr('transform', d=>`translate(${d.x},${d.y})`);
+    nameLabels.attr('x', d=>d.x).attr('y', d=>d.y + nodeRadius(d) + 14);
+    edgePaths.attr('d', d => {
+      const s = typeof d.source === 'object' ? d.source : nodeMap[d.source];
+      const t = typeof d.target === 'object' ? d.target : nodeMap[d.target];
+      if(!s||!t) return '';
+      const dx = t.x - s.x;
+      const dy = t.y - s.y;
+      const cx = (s.x + t.x)/2;
+      const cy = (s.y + t.y)/2;
+      const len = Math.sqrt(dx*dx+dy*dy)||1;
+      const nx = -dy/len;
+      const ny = dx/len;
+      const bend = Math.min(30, len*0.12);
+      return `M${s.x},${s.y}Q${cx+nx*bend},${cy+ny*bend} ${t.x},${t.y}`;
+    });
+  });
+
+  // Update stats
+  d3.select('#stat-nodes').text(nodes.length);
+  d3.select('#stat-edges').text(links.length);
+}
+
+// ========== LEGEND ==========
+function buildLegend() {
+  const types = {};
+  nodes.forEach(n => {
+    if(!types[n.label]) types[n.label]={count:0,color:n.color};
+    types[n.label].count++;
+  });
+  const legend = d3.select('#legend');
+  const order = ['Project','Branch','File','Module','Section'];
+  order.forEach(t => {
+    if(types[t]) {
+      legend.append('div').attr('class','legend-item').html(`
+        <span class="legend-dot" style="background:${types[t].color}"></span>
+        ${t} <span class="legend-count">${types[t].count}</span>
+      `);
+    }
+  });
+}
+
+// ========== CONTROLS ==========
+let currentFilter = 'all';
+
+d3.selectAll('#controls button[data-filter]').on('click', function() {
+  d3.selectAll('#controls button[data-filter]').classed('active',false);
+  d3.select(this).classed('active',true);
+  currentFilter = this.dataset.filter;
+  draw(currentFilter);
+});
+
+d3.select('#btn-lock').on('click', function() {
+  d3.select(this).classed('active', !d3.select(this).classed('active'));
+  this.textContent = d3.select(this).classed('active') ? '🔒 Locked' : '🔓 Lock';
+  if(!d3.select(this).classed('active')) {
+    nodes.forEach(n => { n.fx = null; n.fy = null; });
+    simulation.alpha(0.3).restart();
+  }
+});
+
+d3.select('#btn-reset').on('click', () => {
+  nodes.forEach(n => { n.fx = null; n.fy = null; });
+  simulation.alpha(0.5).restart();
+  d3.selectAll('.node').classed('focused',false);
+  d3.select('#info-panel').classed('visible',false);
+  svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+});
+
+d3.select('#btn-screenshot').on('click', () => {
+  const s = new XMLSerializer().serializeToString(svg.node());
+  const c = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}">${s.slice(s.indexOf('>')+1, s.lastIndexOf('</svg>'))}</svg>`;
+  const img = new Image();
+  const blob = new Blob([c], {type:'image/svg+xml;charset=utf-8'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'knowledge-graph.png';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+// ========== INIT ==========
+buildLegend();
+draw('all');
+simulation.alpha(0.5).restart();
+</script>
+</body>
+</html>

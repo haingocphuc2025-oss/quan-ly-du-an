@@ -1,0 +1,12 @@
+{
+    "project":  "DU_AN_WEB_QUAN_LY",
+    "version":  "v25",
+    "mode":  "AUTO_LOOP",
+    "status":  "IDLE",
+    "active_goal":  null,
+    "active_spec":  null,
+    "active_task":  null,
+    "attempt":  0,
+    "max_attempts_default":  5,
+    "last_event":  "2026-07-13 release v25 multi-select; cleanup complete"
+}

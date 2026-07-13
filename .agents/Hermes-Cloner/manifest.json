@@ -1,0 +1,11 @@
+{
+  "name": "Hermes Website Cloner Framework",
+  "version": "1.0.0",
+  "entrypoints": [
+    "00_CONSTITUTION/HERMES_CONSTITUTION.md",
+    "01_ROUTER/ROUTER.md",
+    "03_SKILLS/SKILL_REGISTRY.md",
+    "06_PLUGINS/PLUGIN_REGISTRY.md"
+  ],
+  "main_workflow": "02_WORKFLOWS/WEBSITE_CLONER.md"
+}
