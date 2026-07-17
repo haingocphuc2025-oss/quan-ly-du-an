@@ -42,6 +42,9 @@ test('V31 bundle contains the complete multi-sheet import flow', () => {
     for (const functionName of [
         'showSheetSelector',
         'worksheetToRows',
+        'buildAutomaticMapping',
+        'buildImportedColumnDefinitions',
+        'applyImportedHeaderSchema',
         'showHeaderRowPicker',
         'showMappingDialog',
         'validateAndStore',
@@ -67,6 +70,11 @@ test('V31 bundle contains the complete multi-sheet import flow', () => {
     assert.match(importSource, /if \(!Number\.isInteger\(index\) \|\| index <= 1\) return true;/);
     assert.match(importSource, /allowedSheetColumns\.has\(sheetCol\)/);
     assert.match(importSource, /!isProtectedSheetColumn\(sheet, colIdx\)/);
+    assert.match(importSource, /mapping\[excelColIndex\] = excelColIndex \+ 2/);
+    assert.match(importSource, /cells\[0\]\[targetColIndex\] = label/);
+    assert.match(importSource, /label, type: 'text'/);
+    assert.match(importSource, /validateAndStore\(sheet, sheetIndex, sheetName, sheetData, mapping, sheetArrayIndex\)/);
+    assert.doesNotMatch(importSource, /showMappingDialog\(sheet, sheetIndex, sheetName, sheetData, sheetArrayIndex\);/);
     assert.match(importSource, /firstMappedImportable/);
     assert.match(importSource, /function\s+isNumberColumn\s*\(column\)/);
     assert.match(importSource, /'số văn bản'/);

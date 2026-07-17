@@ -128,6 +128,58 @@ const ImportExcel = (function() {
         return rows;
     }
 
+    function buildAutomaticMapping(headerCols) {
+        const mapping = {};
+        headerCols.forEach((_, excelColIndex) => {
+            mapping[excelColIndex] = excelColIndex + 2;
+        });
+        return mapping;
+    }
+
+    function buildImportedColumnDefinitions(headerCols) {
+        return headerCols.map((label, excelColIndex) => ({
+            index: excelColIndex + 2,
+            id: String(label ?? ''),
+            label: String(label ?? ''),
+            type: 'text',
+            importable: true
+        }));
+    }
+
+    function getCanonicalImportHeaders() {
+        const firstInfo = selectedSheets.map(index => sheetMappings[index]).find(Boolean);
+        const headers = firstInfo ? firstInfo.headerCols.slice() : [];
+        selectedSheets.forEach(index => {
+            const current = sheetMappings[index]?.headerCols || [];
+            for (let colIndex = headers.length; colIndex < current.length; colIndex += 1) {
+                headers[colIndex] = current[colIndex];
+            }
+        });
+        return headers.map(value => String(value ?? ''));
+    }
+
+    function applyImportedHeaderSchema(sheet, headerCols) {
+        const cells = typeof ensureSheetCells === 'function' ? ensureSheetCells(sheet) : sheet.cells;
+        const requiredLength = headerCols.length + 2;
+        cells.forEach(row => {
+            while (row.length < requiredLength) row.push('');
+        });
+
+        if (!sheet._columnConfigs || typeof sheet._columnConfigs !== 'object') sheet._columnConfigs = {};
+        if (!sheet._columnTypes || typeof sheet._columnTypes !== 'object') sheet._columnTypes = {};
+        if (!sheet._columnFormats || typeof sheet._columnFormats !== 'object') sheet._columnFormats = {};
+
+        headerCols.forEach((value, excelColIndex) => {
+            const targetColIndex = excelColIndex + 2;
+            const label = String(value ?? '');
+            const current = typeof getColumnConfig === 'function' ? getColumnConfig(targetColIndex, sheet) : {};
+            cells[0][targetColIndex] = label;
+            sheet._columnConfigs[targetColIndex] = { ...current, label, type: 'text' };
+            sheet._columnTypes[targetColIndex] = 'text';
+            delete sheet._columnFormats[targetColIndex];
+        });
+    }
+
     function logActivity(item, action, detail) {
         if (typeof addActivityLog === 'function') {
             addActivityLog(item, action, detail);
@@ -420,7 +472,7 @@ const ImportExcel = (function() {
             <div class="import-dialog-actions">
                 <button type="button" class="import-btn secondary" id="headerBack">← Quay lại chọn sheet</button>
                 <button type="button" class="import-btn secondary" id="headerCancel">Hủy</button>
-                <button type="button" class="import-btn primary" id="headerNext">Tiếp tục mapping →</button>
+                <button type="button" class="import-btn primary" id="headerNext">Tự động ánh xạ →</button>
             </div>
         `;
 
@@ -441,8 +493,11 @@ const ImportExcel = (function() {
 
         modal.querySelector('#headerCancel').addEventListener('click', () => closeModal(modal, overlay));
         modal.querySelector('#headerNext').addEventListener('click', () => {
+            const headerCols = (sheetData[selectedHeaderRow] || []).map(value => String(value ?? ''));
+            const mapping = buildAutomaticMapping(headerCols);
+            keyColumnIndex = null;
             closeModal(modal, overlay);
-            showMappingDialog(sheet, sheetIndex, sheetName, sheetData, sheetArrayIndex);
+            validateAndStore(sheet, sheetIndex, sheetName, sheetData, mapping, sheetArrayIndex);
         });
 
         overlay.addEventListener('click', (e) => {
@@ -573,7 +628,7 @@ const ImportExcel = (function() {
         const headerRow = selectedHeaderRow;
         const headerCols = sheetData[headerRow] || [];
         const dataRows = sheetData.slice(headerRow + 1).filter(row => row.some(cell => cell !== ''));
-        const importableColumns = getImportableColumns(sheet);
+        const importableColumns = buildImportedColumnDefinitions(headerCols);
 
         const errors = [];
         const validatedRows = [];
@@ -654,6 +709,7 @@ const ImportExcel = (function() {
             sheetName,
             mapping,
             headerRow,
+            headerCols: headerCols.map(value => String(value ?? '')),
             validatedRows,
             errors,
             keyColumn: keyCol
@@ -759,7 +815,7 @@ const ImportExcel = (function() {
             </div>` : ''}
 
             <div class="import-dialog-actions">
-                <button type="button" class="import-btn secondary" id="summaryBack">← Quay lại mapping</button>
+                <button type="button" class="import-btn secondary" id="summaryBack">← Quay lại chọn tiêu đề</button>
                 <button type="button" class="import-btn secondary" id="summaryCancel">Hủy</button>
                 <button type="button" class="import-btn primary" id="summaryExecute" ${totalValid === 0 ? 'disabled' : ''}>Execute Import</button>
             </div>
@@ -789,6 +845,7 @@ const ImportExcel = (function() {
     // EXECUTE IMPORT WITH PROGRESS
     // ============================================
     function executeAllImports(sheet) {
+        applyImportedHeaderSchema(sheet, getCanonicalImportHeaders());
         const progress = createProgressModal('Importing...', 'Preparing...');
         const results = { total: 0, success: 0, updated: 0, skipped: 0, errors: 0 };
         const allErrors = [];
