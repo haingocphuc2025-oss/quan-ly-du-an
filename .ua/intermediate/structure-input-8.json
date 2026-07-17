@@ -1,0 +1,142 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/ACCESSIBILITY.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/BUTTONS.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/CARDS.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/COLORS.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/DIALOGS.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/GRID.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/ICONS.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/INPUTS.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/LAYOUT.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/RESPONSIVE.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/SPACING.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/STATES.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/TABLES.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/TYPOGRAPHY.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/UI_RULES.md",
+                           "language":  "markdown",
+                           "sizeLines":  8,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/ACCESSIBILITY.md":  [
+
+                                                                                        ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/BUTTONS.md":  [
+
+                                                                                  ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/CARDS.md":  [
+
+                                                                                ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/COLORS.md":  [
+
+                                                                                 ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/DIALOGS.md":  [
+
+                                                                                  ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/GRID.md":  [
+
+                                                                               ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/ICONS.md":  [
+
+                                                                                ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/INPUTS.md":  [
+
+                                                                                 ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/LAYOUT.md":  [
+
+                                                                                 ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/RESPONSIVE.md":  [
+
+                                                                                     ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/SPACING.md":  [
+
+                                                                                  ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/STATES.md":  [
+
+                                                                                 ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/TABLES.md":  [
+
+                                                                                 ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/TYPOGRAPHY.md":  [
+
+                                                                                     ],
+                            ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/UI_RULES.md":  [
+
+                                                                                   ]
+                        }
+}

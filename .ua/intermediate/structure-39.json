@@ -1,0 +1,83 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "04_REPORTS/RELEASE/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "RELEASE REPORTS",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "04_REPORTS/RELEASE/RELEASE_v24.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 17,
+      "sections": [
+        {
+          "heading": "RELEASE v24",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Phạm vi",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quality gates",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "Rollback",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "04_REPORTS/RELEASE/RELEASE_v25.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 52,
+      "nonEmptyLines": 42,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

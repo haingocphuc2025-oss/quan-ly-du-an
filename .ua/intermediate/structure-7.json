@@ -1,0 +1,796 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 14,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/CHANGELOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 6,
+      "sections": [
+        {
+          "heading": "Changelog",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Unreleased",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Added",
+          "level": 3,
+          "line": 5
+        },
+        {
+          "heading": "Changed",
+          "level": 3,
+          "line": 7
+        },
+        {
+          "heading": "Fixed",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Known Issues",
+          "level": 3,
+          "line": 11
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/COMPARE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 14,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "UI Compare Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Route",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Viewport",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "State",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/COMPONENT_MAP.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 4,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Component Map",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/DESIGN_SYSTEM.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Design System",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Tokens",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Colors",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Spacing",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Radius",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Shadows",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Components",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Responsive",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Accessibility",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/PLAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Implementation Plan",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Routes",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Components",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Data Flow",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "API",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Testing Strategy",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Browser Comparison",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Risks",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Rollback",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/REGRESSION.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Regression Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Routes",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Navigation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Forms",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Tables",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Dialogs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Search / Filter",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Desktop / Tablet / Mobile",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Existing Features",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/RELEASE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "Release Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Version",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Quality Gates",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Known Differences",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Deployment",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Rollback",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Final Verdict",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/REQUIREMENT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Requirements",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Source",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Clone Mode",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Out of Scope",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Target Stack",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Required Viewports",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Backend",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Asset Permissions",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Open Questions",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/REVIEW.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "Review Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Task",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Scope Check",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Code Quality",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Security",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Accessibility",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Responsive",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Test Evidence",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Findings",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Product Specification",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Goal",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Out of Scope",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Pages",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "User Stories",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Functional Requirements",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Non-functional Requirements",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Known Differences",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/TASK.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "TASK-XX",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Goal",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Allowed Files",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Forbidden Files",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Dependencies",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Test Commands",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Browser Scenario",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Rollback Note",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/UI_SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "UI Specification",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Screen Overview",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Component Tree",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Layout",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Typography",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Colors",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Spacing",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "States",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Responsive",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Accessibility",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Uncertainties",
+          "level": 2,
+          "line": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/UX_SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "UX Specification",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "User Journeys",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Navigation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Interactions",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Validation",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Loading / Empty / Error",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Keyboard and Focus",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Mobile Behavior",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/VERIFY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "Verify Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}

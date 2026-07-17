@@ -1,0 +1,133 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/CHANGELOG.md",
+                           "language":  "markdown",
+                           "sizeLines":  11,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/COMPARE.md",
+                           "language":  "markdown",
+                           "sizeLines":  14,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/COMPONENT_MAP.md",
+                           "language":  "markdown",
+                           "sizeLines":  4,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/DESIGN_SYSTEM.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/PLAN.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/REGRESSION.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/RELEASE.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/REQUIREMENT.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/REVIEW.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/TASK.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/UI_SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/UX_SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/04_TEMPLATES/VERIFY.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/Hermes-Cloner/04_TEMPLATES/CHANGELOG.md":  [
+
+                                                                                ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/COMPARE.md":  [
+
+                                                                              ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/COMPONENT_MAP.md":  [
+
+                                                                                    ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/DESIGN_SYSTEM.md":  [
+
+                                                                                    ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/PLAN.md":  [
+
+                                                                           ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/REGRESSION.md":  [
+
+                                                                                 ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/RELEASE.md":  [
+
+                                                                              ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/REQUIREMENT.md":  [
+
+                                                                                  ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/REVIEW.md":  [
+
+                                                                             ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/SPEC.md":  [
+
+                                                                           ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/TASK.md":  [
+
+                                                                           ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/UI_SPEC.md":  [
+
+                                                                              ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/UX_SPEC.md":  [
+
+                                                                              ],
+                            ".agents/Hermes-Cloner/04_TEMPLATES/VERIFY.md":  [
+
+                                                                             ]
+                        }
+}

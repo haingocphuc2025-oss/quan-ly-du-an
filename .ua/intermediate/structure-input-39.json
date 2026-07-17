@@ -1,0 +1,34 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "04_REPORTS/RELEASE/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/RELEASE/RELEASE_v24.md",
+                           "language":  "markdown",
+                           "sizeLines":  25,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/RELEASE/RELEASE_v25.md",
+                           "language":  "markdown",
+                           "sizeLines":  52,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "04_REPORTS/RELEASE/README.md":  [
+
+                                                             ],
+                            "04_REPORTS/RELEASE/RELEASE_v24.md":  [
+
+                                                                  ],
+                            "04_REPORTS/RELEASE/RELEASE_v25.md":  [
+
+                                                                  ]
+                        }
+}

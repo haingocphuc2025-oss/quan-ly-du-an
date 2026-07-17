@@ -1,0 +1,219 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 7,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_selection_focus_bug_fix_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - selection-focus-bug-fix",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ghi chu",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_sheet_column_insert_delete_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Sheet column insert delete actions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_sheet_report_compact_spacing_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Sheet Report compact wrap spacing",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_toolbar_grid_smartsheet_style_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "VERIFY v25: Toolbar Grid Smartsheet Style",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Da thuc hien",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Kiem tra ky thuat",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_two_projects_repost_dashboard_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "VERIFY — v25 two projects + Repost/Dashboard",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PASS",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_workspace_navigator_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ghi chu",
+          "level": 2,
+          "line": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v26_browse_status_display_2026-07-15.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "VERIFY v26 - browse-status-display",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Kết quả",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Sửa lỗi baseline trong nghiệm thu",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Ngoại lệ môi trường",
+          "level": 2,
+          "line": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

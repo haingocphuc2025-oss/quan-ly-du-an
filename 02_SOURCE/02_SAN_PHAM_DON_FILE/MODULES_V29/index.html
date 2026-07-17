@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DU AN WEB QUAN LY</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F06445'/%3E%3Cpath d='M18 17h28v6H18zm0 12h28v6H18zm0 12h18v6H18z' fill='white'/%3E%3C/svg%3E">
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap"></noscript>
+ <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/file-menu.css">
+
+</head>
+<body>
+<div class="app" id="appContainer" style="display:flex;">
+<button class="workspace-nav-trigger" id="workspaceNavTrigger" type="button" title="Về danh sách dự án">‹ Dự án</button>
+
+<!-- RIGHT TOOLBAR (v24) -->
+<div class="right-toolbar" id="rightToolbar">
+  <button class="right-toolbar-btn" id="tbAttach" title="Đính kèm" onclick="openAttachmentPanelFromToolbar()">📎</button>
+  <button class="right-toolbar-btn" id="tbComment" title="Bình luận">💬</button>
+  <button class="right-toolbar-btn" id="tbActivity" title="Lịch sử">📋</button>
+  <button class="right-toolbar-btn" id="tbInfo" title="Thông tin">ℹ️</button>
+</div>
+
+<!-- Legacy ATTACH PANEL v24 removed: toolbar paperclip now opens the single #attachmentPanel drawer. -->
+
+<!-- Actions dropdown -->
+<div class="attach-dropdown" id="attachDropdown">
+  <button class="attach-dropdown-item" onclick="viewAttachment(currentAttachFileUrl)">👁 Mở file</button>
+  <button class="attach-dropdown-item" onclick="downloadAttachment(currentAttachFileUrl)">⬇ Tải xuống</button>
+  <button class="attach-dropdown-item" onclick="copyAttachLink(currentAttachFileUrl)">🔗 Sao chép link</button>
+  <div class="attach-dropdown-divider"></div>
+  <button class="attach-dropdown-item danger" onclick="deleteAttachFile(currentAttachFileId)">🗑 Xóa</button>
+</div>
+
+<div class="rail">
+ <div class="rail-nav-controls">
+ <button class="rail-toggle" id="railToggleBtn" type="button" title="Thu gọn/mở rộng thanh bên">☰</button>
+ <button class="rail-nav-btn" id="navBackBtn" type="button" title="Quay lại" disabled>←</button>
+ <button class="rail-nav-btn" id="navForwardBtn" type="button" title="Tiến tới" disabled>→</button>
+ </div>
+ <div class="window-dots"><span></span><span></span><span></span></div>
+ <div class="brand">
+ <div class="brand-mark">▦</div>
+ <div>
+ <div class="brand-name">Hồ sơ dự án</div>
+ <span class="brand-sub">Giao diện thao tác nhanh</span>
+ </div>
+ </div>
+ <div class="brand-version" title="Số phiên bản file — dùng để biết đang mở đúng bản mới nhất chưa">v29</div>
+ <button class="rail-nav-btn" id="appUserNameBtn" type="button" title="Đổi tên người thao tác">👤</button>
+ <div class="rail-item" data-rail="home"><span class="ic">⌂</span><span class="rail-label">Trang chủ</span></div>
+ <div class="rail-item" data-rail="search"><span class="ic">⌕</span><span class="rail-label">Tìm</span></div>
+ <div class="rail-item active" data-rail="projects"><span class="ic">▤</span><span class="rail-label">Dự án</span></div>
+ <div class="rail-item" data-rail="recents"><span class="ic">◔</span><span class="rail-label">Gần đây</span></div>
+ <div class="rail-item" id="favoritesRail" data-rail="favorites"><span class="ic">★</span><span class="rail-label">Yêu thích</span></div>
+ <div class="rail-spacer"></div>
+ <button class="rail-create create-project-btn" id="railCreateProjectBtn" type="button" title="Tạo dự án mới">＋</button>
+ </div>
+
+ <div class="main">
+ <div id="screen-list">
+ <div class="topbar">
+ <h1><span class="title-mark"></span><span class="title-text"><span class="eyebrow">Theo dõi hồ sơ, thư mục và chia sẻ</span>Dự án của tôi</span></h1>
+ <button class="sheet-nav-close" id="closeSheetNav" type="button" title="Tắt panel làm việc">×</button>
+ <div class="search"><span class="ic">⌕</span><input placeholder="Tìm dự án..."></div>
+ <div class="topbar-right">
+ <button class="btn btn-ghost top-actions-btn" type="button">Actions ▾</button>
+ <button class="btn btn-ghost btn-icon top-delete-btn" type="button" title="Xóa dự án">🗑</button>
+ <button class="btn btn-primary create-project-btn" id="createProjectBtn" type="button">＋ Tạo dự án mới</button>
+ </div>
+ </div>
+
+ <div class="toolbar">
+ <input type="checkbox">
+ <span class="count" id="rowCount">8 dự án</span>
+ </div>
+
+ <div class="workspace-browse-page" id="workspaceBrowsePage" hidden>
+  <aside class="workspace-browse-side">
+   <h3>Browse</h3>
+   <div class="workspace-browse-tree" id="workspaceBrowseTree">
+    <button type="button" class="active" data-browse-section="workspaces">▥ Workspaces</button>
+   </div>
+  </aside>
+  <section class="workspace-browse-main">
+   <div class="workspace-browse-head">
+    <div class="workspace-browse-title" id="workspaceBrowseTitle">Workspaces</div>
+    <div class="workspace-browse-actions"><button class="btn btn-ghost top-actions-btn" type="button">Actions ▾</button><button class="btn btn-primary create-project-btn" type="button">＋ Tạo</button></div>
+   </div>
+   <div class="workspace-browse-table-wrap">
+    <table class="workspace-browse-table">
+     <thead><tr><th>Name</th><th style="width:145px">Trạng thái chia sẻ</th><th style="width:140px">Người sở hữu</th><th style="width:150px">Last Update</th></tr></thead>
+     <tbody id="workspaceBrowseRows"></tbody>
+    </table>
+   </div>
+  </section>
+ </div>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th class="col-check"></th>
+ <th class="col-star"></th>
+ <th>Tên dự án</th>
+ <th>Trạng thái chia sẻ</th>
+ <th>Người tạo</th>
+ <th>Cập nhật lần cuối</th>
+ </tr>
+ </thead>
+ <tbody id="rows"></tbody>
+ </table>
+ <div class="project-blank-target" id="projectBlankTarget" title="Chuột phải để tạo mới"></div>
+ </div>
+ </div>
+
+ <div class="column-resizer" id="columnResizer" title="Kéo để đổi độ rộng cột"><span></span></div>
+
+ <div id="screen-detail" style="display:none;">
+ <div class="topbar">
+ <div>
+ <div class="back-link" id="backToList">‹ Quay lại Dự án của tôi</div>
+ <h1 id="detailTitle">—</h1>
+ </div>
+ <div class="topbar-right">
+ <button class="btn btn-ghost top-actions-btn" type="button">Actions ▾</button>
+ <button class="btn btn-ghost btn-icon top-delete-btn" type="button" title="Xóa dự án">🗑</button>
+ <button class="btn btn-ghost quick-grid-btn" type="button">＋ Tạo</button>
+ <button class="btn btn-primary">Chia sẻ</button>
+ </div>
+ </div>
+
+ <div class="detail-body">
+ <div class="folder-table">
+ <table>
+ <thead>
+ <tr>
+ <th class="col-check"></th>
+ <th class="col-star"></th>
+ <th>Tên</th>
+ </tr>
+ </thead>
+ <tbody id="folderRows"></tbody>
+ </table>
+ <div class="workspace-blank-target" id="workspaceBlankTarget" title="Chuột phải để tạo Sheet/Report/Folder"></div>
+ </div>
+ <div class="share-panel">
+ <h3>Chia sẻ với</h3>
+ <div id="shareList"></div>
+ </div>
+ </div>
+
+ <div class="grid-sheet-view" id="gridSheetView" style="display:none;">
+ <div class="grid-sheet-toolbar sheet-topbar">
+ <div class="sheet-menu-strip" aria-label="Grid menu">
+ <button class="sheet-back-btn browse-breadcrumb" id="backToWorkspace" type="button" data-browse-breadcrumb>‹ Browse</button>
+ <button class="sheet-menu-link" type="button">File</button>
+ <button class="sheet-menu-link" id="topAutomationBtn" type="button">Automation</button>
+ <button class="sheet-menu-link" id="topFormsBtn" type="button">Forms</button>
+ <button class="sheet-menu-link" id="topConnectionsBtn" type="button">Connections</button>
+ </div>
+ <div class="sheet-top-title">
+ <span class="grid-sheet-icon"><span class="sm-type-icon sheet" aria-hidden="true"></span></span>
+ <span id="activeSheetName">New Sheet</span>
+ </div>
+ <div class="sheet-top-actions" aria-label="Sheet top actions">
+ <button class="sheet-share-btn" id="ssShareBtn" type="button">Share</button>
+ <button class="sheet-ai-btn" id="ssAiBtn" type="button" title="AI">AI</button>
+ <button class="sheet-more-top-btn" id="ssTopMoreBtn" type="button" title="More">▾</button>
+ <button class="sheet-tool-btn" id="toggleSheetChrome" type="button" title="An/hien panel lam viec" aria-pressed="false">☰</button>
+ </div>
+ </div>
+ <div class="smartsheet-toolbar" id="smartsheetToolbar">
+ <button class="toolbar-btn save-project-toolbar-btn" id="saveProjectBtn" type="button" title="Save" aria-label="Save">□</button>
+ <button class="toolbar-btn" id="sheetPrintBtn" type="button" title="Print" aria-label="Print">▣</button>
+ <button class="toolbar-btn" id="sheetUndoBtn" type="button" title="Undo" aria-label="Undo" disabled>↶</button>
+ <button class="toolbar-btn" id="sheetRedoBtn" type="button" title="Redo" aria-label="Redo" disabled>↷</button>
+ <span class="toolbar-sep"></span>
+ <button class="ss-tool-btn" id="ssGridViewBtn" type="button" title="Grid view" aria-label="Grid view">Grid</button>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="ssFilterBtn" type="button">▽ Filter</button>
+ <div class="ss-popover" id="filterPopover" hidden>
+ <div class="ss-pop-chips" id="filterChips"></div>
+ <span class="ss-pop-empty" id="filterEmptyLabel">Chưa áp dụng bộ lọc nào</span>
+ <button class="ss-pop-addbtn" id="filterAddBtn" type="button">+ Thêm điều kiện lọc</button>
+ <div class="ss-pop-picker" id="filterPicker" hidden>
+ <input class="ss-pop-search" id="filterPickerSearch" placeholder="Tìm cột...">
+ <div class="ss-pop-list" id="filterPickerList"></div>
+ </div>
+ <div class="ss-pop-footer">
+ <button class="ss-pop-clear" id="filterClearBtn" type="button">Xoá tất cả</button>
+ <button class="ss-pop-save" id="filterSaveBtn" type="button" title="Lưu bộ lọc hiện tại">□ Lưu</button>
+ <button class="ss-pop-load" id="filterLoadBtn" type="button" title="Tải bộ lọc đã lưu">▤ Tải</button>
+ </div>
+ </div>
+ </div>
+ <span class="toolbar-sep"></span>
+ <button class="ss-tool-btn" id="ssIndentBtn" type="button" title="Thụt dòng vào">⇥</button>
+ <button class="ss-tool-btn" id="ssOutdentBtn" type="button" title="Thụt dòng ra">⇤</button>
+ <span class="toolbar-sep"></span>
+ <select class="toolbar-select" id="fontFamilyPicker" style="width:100px" title="Font chữ">
+ <option value="Inter">Inter</option><option value="Segoe UI">Segoe UI</option><option value="Arial">Arial</option><option value="Times New Roman">Times New Roman</option><option value="Calibri">Calibri</option><option value="Courier New">Courier New</option>
+ </select>
+ <select class="toolbar-select" id="fontSizePicker" style="width:56px" title="Cỡ chữ">
+ <option value="9">9</option><option value="10">10</option><option value="11" selected>11</option><option value="12">12</option><option value="14">14</option><option value="16">16</option><option value="18">18</option><option value="20">20</option><option value="24">24</option><option value="28">28</option><option value="36">36</option><option value="48">48</option>
+ </select>
+ <span class="toolbar-sep"></span>
+ <button class="ss-tool-btn ss-format-btn" id="ssBoldBtn" type="button" title="Bold">B</button>
+ <button class="ss-tool-btn ss-format-btn" id="ssItalicBtn" type="button" title="Italic">I</button>
+ <button class="ss-tool-btn ss-format-btn" id="ssUnderlineBtn" type="button" title="Underline">U</button>
+ <button class="ss-tool-btn ss-format-btn" id="ssStrikeBtn" type="button" title="Strike">S</button>
+ <span class="toolbar-sep"></span>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn ss-format-btn" id="ssFillColorBtn" type="button" title="Fill color">▤▾</button>
+ <div class="ss-popover ss-color-popover" id="fillColorPopover" hidden><div class="ss-pop-chips" id="fillColorSwatches"></div><button class="ss-pop-clear" id="fillColorResetBtn" type="button">Không màu</button></div>
+ </div>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn ss-format-btn" id="ssTextColorBtn" type="button" title="Text color">A▾</button>
+ <div class="ss-popover ss-color-popover" id="textColorPopover" hidden><div class="ss-pop-chips" id="textColorSwatches"></div><button class="ss-pop-clear" id="textColorResetBtn" type="button">Mặc định (đen)</button></div>
+ </div>
+ <span class="toolbar-sep"></span>
+ <button class="ss-tool-btn ss-format-btn" id="ssAlignLeftBtn" type="button" title="Align left">≡</button>
+ <button class="ss-tool-btn ss-format-btn" id="ssAlignCenterBtn" type="button" title="Align center">≣</button>
+ <button class="ss-tool-btn ss-format-btn" id="ssAlignRightBtn" type="button" title="Align right">≡</button>
+ <button class="ss-tool-btn" id="ssWrapBtn" type="button" title="Wrap">↩</button>
+ <button class="ss-tool-btn ss-format-btn" id="ssClearFormatBtn" type="button" title="Clear format">⌫</button>
+ <button class="ss-tool-btn ss-format-btn" id="ssFormatPainterBtn" type="button" title="Format painter">◱</button>
+ <span class="toolbar-sep"></span>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="ssColumnsBtn" type="button">▦ Table</button>
+ <div class="ss-popover" id="ssColumnsPopover" hidden><div class="ss-pop-list" id="ssColumnsList"></div></div>
+ </div>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="ssFormatBtn" type="button">◇ Highlight</button>
+ <div class="ss-popover" id="formatPopover" hidden>
+ <div class="ss-pop-chips" id="formatChips"></div><button class="ss-pop-addbtn" id="formatAddBtn" type="button">+ Thêm quy tắc</button><div class="ss-pop-picker" id="formatPicker" hidden></div><div class="ss-pop-footer"><button class="ss-pop-clear" id="formatClearBtn" type="button">Xoá tất cả</button></div>
+ </div>
+ </div>
+ <div class="ss-tool-wrap ss-more-wrap">
+ <button class="ss-tool-btn" id="ssMoreBtn" type="button" title="More">...</button>
+ <div class="ss-more-menu" id="ssMoreMenu" hidden>
+ <div class="ss-tool-wrap"><button class="ss-tool-btn" id="ssSortBtn" type="button">↕ Sort</button><div class="ss-popover" id="sortPopover" hidden><div class="ss-pop-chips" id="sortChips"></div><button class="ss-pop-addbtn" id="sortAddBtn" type="button">+ Thêm điều kiện sắp xếp</button><div class="ss-pop-picker" id="sortPicker" hidden><input class="ss-pop-search" id="sortPickerSearch" placeholder="Tìm cột..."><div class="ss-pop-list" id="sortPickerList"></div></div><div class="ss-pop-footer"><button class="ss-pop-clear" id="sortClearBtn" type="button">Xoá tất cả</button></div></div></div>
+ <button class="ss-tool-btn" id="ssGroupBtn" type="button">⊞ Group</button>
+ <button class="ss-tool-btn ss-add-row" id="ssAddRowBtn" type="button">＋ Add row</button>
+ <button class="ss-tool-btn" id="ssFormsBtn" type="button">▣ Forms</button>
+ <button class="ss-tool-btn" id="ssPublishBtn" type="button">↗ Publish</button>
+ <button class="ss-tool-btn" id="ssAutomationBtn" type="button">⚡ Automation</button>
+ <select class="ss-tool-btn" id="ssRowHeightSelect" title="Độ cao hàng mặc định"><option value="28">28px</option><option value="32" selected>32px</option><option value="40">40px</option><option value="48">48px</option><option value="60">60px</option></select>
+ <div class="ss-search"><span class="ic">⌕</span><input id="ssSearchInput" placeholder="Tìm trong bảng..."></div>
+ <button class="ss-tool-btn" id="ssMergeBtn" type="button">⊞ Merge</button>
+ <button class="ss-tool-btn" id="ssClearDataBtn" type="button">⌧ Clear data</button>
+ <button class="ss-tool-btn" id="ssRepostDateBtn" type="button">↻ Repost Date</button>
+ <button class="ss-tool-btn" id="ssCarryForwardBtn" type="button">↻ Carry Forward</button>
+ <button class="ss-tool-btn" id="ssDuplicateBtn" type="button">⧉ Duplicate</button>
+ <button class="ss-tool-btn" id="ssBulkEditBtn" type="button" style="display:none">✎ Bulk edit</button>
+ <button class="btn btn-ghost" id="exportExcelBtn" type="button">Export Excel</button>
+ <button class="btn btn-ghost" id="importCsvBtn" type="button">Import CSV</button>
+ <button class="btn btn-ghost" id="linkGoogleSheetBtn" type="button">Google Sheet</button>
+ <button class="btn btn-ghost" id="driveApiSignInBtn" type="button" hidden>Drive API</button>
+ </div>
+ </div>
+ </div>
+ <div class="formula-bar">
+   <span class="active-cell-ref" id="activeCellRef">A1</span>
+   <span class="formula-prefix">fx</span>
+   <input class="formula-input" id="formulaInput" autocomplete="off" spellcheck="false">
+ </div>
+ <div class="sheet-work-area">
+ <div class="google-sheet-stage" id="googleSheetStage">
+ <div class="google-sheet-setup" id="googleSheetSetup">
+ <div class="google-sheet-card">
+ <div class="gs-mark">▦</div>
+ <h2>Google Sheet thật</h2>
+ <p>Sheet này sẽ được tạo từ Google Sheets thật: công thức, filter, freeze, chia sẻ và Apps Script vẫn chạy trong Google.</p>
+ <div class="gs-link-row">
+ <input id="googleSheetUrlInput" placeholder="Dự phòng: dán link Google Sheet đã có">
+ <button class="gs-action primary" id="saveGoogleSheetUrl" type="button">Lưu link dự phòng</button>
+ </div>
+ <div class="gs-actions">
+ <button class="gs-action primary" id="createGoogleSheetLink" type="button">Tạo Google Sheet mới</button>
+ <button class="gs-action" id="openGoogleSheetLink" type="button">Mở Google Sheet</button>
+ </div>
+ <div class="gs-note" id="googleSheetCreateNote">Mỗi lần tạo Grid sẽ tạo Google Sheet mới và tự gắn mã Apps Script đính kèm hồ sơ.</div>
+ </div>
+ </div>
+ <iframe class="google-sheet-frame" id="googleSheetFrame" title="Google Sheet" style="display:none"></iframe>
+ </div>
+ <div class="sheet-grid-wrap" id="sheetGridWrap"></div>
+ <aside class="attachment-panel" id="attachmentPanel" aria-hidden="true">
+ <div class="attach-head">
+ <div class="attach-top">
+ <h2>Attachments</h2>
+ <button class="attach-icon-btn" type="button" title="Thông báo">☜</button>
+ <button class="attach-icon-btn" type="button" title="Trợ giúp">?</button>
+ <button class="attach-icon-btn attach-close" id="attachClose" type="button" aria-label="Đóng">×</button>
+ </div>
+ <div class="attach-tabs" role="tablist" aria-label="Attachment scope">
+ <button class="attach-tab active" type="button">Row</button>
+ <button class="attach-tab" type="button">Sheet</button>
+ <button class="attach-tab" type="button">All</button>
+ </div>
+ <div class="attach-row-banner" id="attachRowBanner">Chọn dòng trong cột A</div>
+ <span id="attachTitle" hidden></span>
+ <span id="attachSub" hidden></span>
+ </div>
+ <div class="attach-list" id="attachList"></div>
+ <div class="attach-footer">
+ <button class="attach-upload" id="attachUploadBtn" type="button">Attach Files</button>
+ <input type="file" id="attachInput" multiple style="display:none">
+ <p class="attach-hint">File sẽ lưu vào folder của sheet đang mở.</p>
+ </div>
+ </aside>
+ </div>
+ <div class="sheet-status" id="sheetStatus">Google Drive API làm lõi · Lưu dữ liệu trực tiếp lên Drive <span id="saveStatus" style="margin-left:12px;font-weight:500;"></span></div>
+ </div>
+
+ <div class="grid-sheet-view report-view" id="reportView" style="display:none;">
+ <div class="grid-sheet-toolbar">
+ <button class="sheet-back-btn browse-breadcrumb" id="backFromReport" type="button" data-browse-breadcrumb>‹ Browse</button>
+ <div class="grid-sheet-title">
+ <span class="grid-sheet-icon"><span class="sm-type-icon report" aria-hidden="true"></span></span>
+ <span id="activeReportName">New Report</span>
+ </div>
+ </div>
+ <div class="smartsheet-toolbar" id="reportToolbar">
+ <button class="toolbar-btn report-save-toolbar-btn" id="rptSaveBtn" type="button" title="Save report/project" aria-label="Save report/project">&#128190;</button>
+ <button class="toolbar-btn report-print-toolbar-btn" id="rptPrintBtn" type="button" title="Print report" aria-label="Print report">&#128424;</button>
+ <button class="toolbar-btn report-undo-toolbar-btn" id="rptUndoBtn" type="button" title="Undo" aria-label="Undo" disabled>&#8630;</button>
+ <button class="toolbar-btn report-redo-toolbar-btn" id="rptRedoBtn" type="button" title="Redo" aria-label="Redo" disabled>&#8631;</button>
+ <span class="toolbar-sep report-save-sep"></span>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="rptSourceBtn" type="button">🗂 Nguồn</button>
+ <div class="ss-popover" id="rptSourcePopover" hidden>
+ <div class="ss-pop-list" id="rptSourceList"></div>
+ <div class="ss-pop-footer report-source-footer">
+ <span class="ss-pop-empty">Chọn Sheet từ một hoặc nhiều dự án.</span>
+ <div class="ss-pop-actions">
+ <button class="ss-pop-action" id="rptSourceCancelBtn" type="button">Hủy</button>
+ <button class="ss-pop-action primary" id="rptSourceOkBtn" type="button">OK</button>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="rptColumnsBtn" type="button">▤ Cột</button>
+ <div class="ss-popover" id="rptColumnsPopover" hidden>
+ <div class="ss-pop-list" id="rptColumnsList"></div>
+ </div>
+ </div>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="rptFilterBtn" type="button">▽ Lọc</button>
+ <div class="ss-popover" id="rptFilterPopover" hidden>
+ <div class="ss-pop-chips" id="rptFilterChips"></div>
+ <span class="ss-pop-empty" id="rptFilterEmptyLabel">Chưa áp dụng bộ lọc nào</span>
+ <button class="ss-pop-addbtn" id="rptFilterAddBtn" type="button">+ Thêm điều kiện lọc</button>
+ <div class="ss-pop-picker" id="rptFilterPicker" hidden>
+ <input class="ss-pop-search" id="rptFilterPickerSearch" placeholder="Tìm cột...">
+ <div class="ss-pop-list" id="rptFilterPickerList"></div>
+ </div>
+ <div class="ss-pop-footer">
+ <button class="ss-pop-clear" id="rptFilterClearBtn" type="button">Xoá tất cả</button>
+ </div>
+ </div>
+ </div>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="rptGroupBtn" type="button">⊞ Nhóm</button>
+ <div class="ss-popover" id="rptGroupPopover" hidden>
+ <div class="ss-pop-chips" id="rptGroupChips"></div>
+ <button class="ss-pop-addbtn" id="rptGroupAddBtn" type="button">+ Chọn cột để nhóm</button>
+ <div class="ss-pop-picker" id="rptGroupPicker" hidden>
+ <input class="ss-pop-search" id="rptGroupPickerSearch" placeholder="Tìm cột...">
+ <div class="ss-pop-list" id="rptGroupPickerList"></div>
+ </div>
+ <div class="ss-pop-footer">
+ <button class="ss-pop-clear" id="rptGroupClearBtn" type="button">Bỏ nhóm</button>
+ </div>
+ </div>
+ </div>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="rptSummarizeBtn" type="button">Σ Tổng hợp</button>
+ <div class="ss-popover" id="rptSummarizePopover" hidden>
+ <div class="ss-pop-chips" id="rptSummarizeChips"></div>
+ <button class="ss-pop-addbtn" id="rptSummarizeAddBtn" type="button">+ Thêm cột tổng hợp</button>
+ <div class="ss-pop-picker" id="rptSummarizePicker" hidden>
+ <input class="ss-pop-search" id="rptSummarizePickerSearch" placeholder="Tìm cột...">
+ <div class="ss-pop-list" id="rptSummarizePickerList"></div>
+ </div>
+ <div class="ss-pop-footer">
+ <button class="ss-pop-clear" id="rptSummarizeClearBtn" type="button">Xoá tất cả</button>
+ </div>
+ </div>
+ </div>
+ <div class="ss-tool-wrap">
+ <button class="ss-tool-btn" id="rptSortBtn" type="button">↕ Sắp xếp</button>
+ <div class="ss-popover" id="rptSortPopover" hidden>
+ <div class="ss-pop-chips" id="rptSortChips"></div>
+ <button class="ss-pop-addbtn" id="rptSortAddBtn" type="button">+ Thêm điều kiện sắp xếp</button>
+ <div class="ss-pop-picker" id="rptSortPicker" hidden>
+ <input class="ss-pop-search" id="rptSortPickerSearch" placeholder="Tìm cột...">
+ <div class="ss-pop-list" id="rptSortPickerList"></div>
+ </div>
+ <div class="ss-pop-footer">
+ <button class="ss-pop-clear" id="rptSortClearBtn" type="button">Xoá tất cả</button>
+ </div>
+ </div>
+ </div>
+ <span class="toolbar-sep"></span>
+ <select class="ss-tool-btn" id="rptRowHeightSelect" title="Độ cao hàng Report">
+   <option value="24">24px</option>
+   <option value="26">26px</option>
+   <option value="28">28px</option>
+   <option value="30" selected>30px</option>
+   <option value="32">32px</option>
+   <option value="40">40px</option>
+   <option value="48">48px</option>
+   <option value="60">60px</option>
+ </select>
+ <span class="toolbar-sep"></span>
+ <div class="ss-search"><span class="ic">⌕</span><input id="rptSearchInput" placeholder="Tìm trong báo cáo..."></div>
+ </div>
+ <div class="sheet-work-area">
+ <div class="sheet-grid-wrap" id="reportGridWrap"></div>
+ </div>
+ <div class="sheet-status" id="reportStatus">Báo cáo chỉ đọc — sửa dữ liệu trực tiếp trên Sheet nguồn.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+<div class="dashboard-view" id="dashboardView">
+   <div class="dashboard-toolbar">
+     <button class="dash-back-btn browse-breadcrumb" id="dashBackBtn" type="button" data-browse-breadcrumb>‹ Browse</button>
+     <div class="dash-title-area"><h2 id="dashTitle">Dashboard</h2></div>
+     <button class="dash-tool-btn" id="dashRefreshBtn" type="button" title="Làm mới tất cả widget">⟳ Làm mới</button>
+     <button class="dash-tool-btn" id="dashAddWidgetBtn" type="button" title="Thêm widget">＋ Thêm</button>
+     <button class="dash-tool-btn" id="dashEditBtn" type="button" title="Bật/tắt chỉnh sửa Dashboard">✎ Chỉnh sửa</button>
+   </div>
+  <div class="dashboard-grid" id="dashboardGrid"></div>
+</div>
+
+<div class="workspace-navigator-backdrop" id="workspaceNavigator" hidden>
+ <div class="workspace-navigator-panel" role="dialog" aria-modal="true" aria-label="Danh sách workspace">
+  <aside class="workspace-navigator-side">
+   <h3>Browse</h3>
+   <div class="workspace-nav-tree" id="workspaceNavTree">
+    <button type="button" class="active" data-nav-section="workspaces">▥ Workspaces</button>
+   </div>
+  </aside>
+  <section class="workspace-navigator-main">
+   <div class="workspace-navigator-head">
+    <div class="workspace-navigator-title" id="workspaceNavigatorTitle">Workspaces</div>
+    <button class="workspace-navigator-close" id="workspaceNavigatorClose" type="button" aria-label="Đóng">×</button>
+   </div>
+   <div class="workspace-navigator-table-wrap">
+    <table class="workspace-navigator-table">
+     <thead><tr><th>Name</th><th style="width:145px">Trạng thái chia sẻ</th><th style="width:140px">Người sở hữu</th><th style="width:150px">Last Update</th></tr></thead>
+     <tbody id="workspaceNavigatorRows"></tbody>
+    </table>
+   </div>
+  </section>
+ </div>
+</div>
+
+<div class="favorites-popover" id="favoritesPopover">
+ <p class="favorites-title" id="favoritesTitle">Yêu thích (0)</p>
+ <div class="favorites-search"><span class="ic">⌕</span><input id="favoritesSearch" placeholder="Tìm theo tên"></div>
+ <div class="favorite-list" id="favoriteList"></div>
+</div>
+
+<div class="ctx-menu" id="ctxMenu">
+ <div class="ctx-title" id="ctxTitle">Workspace</div>
+ <div class="ctx-submenu-wrap">
+  <button class="ctx-item" type="button"><span class="ic">＋</span>Create<span class="ctx-caret">›</span></button>
+  <div class="ctx-submenu">
+   <button class="ctx-item" type="button" data-action="create-grid"><span class="ic">▦</span>Grid</button>
+   <button class="ctx-item" type="button" data-action="create-task"><span class="ic">☷</span>Task List</button>
+   <button class="ctx-item" type="button" data-action="create-project"><span class="ic">⌘</span>Project</button>
+   <button class="ctx-item" type="button" data-action="create-cards"><span class="ic">▦</span>Cards</button>
+   <div class="ctx-divider"></div>
+   <button class="ctx-item" type="button" data-action="browse-templates"><span class="ic">▤</span>Browse Templates</button>
+   <button class="ctx-item" type="button" data-action="import-excel"><span class="ic">X</span>Import Excel</button>
+   <button class="ctx-item" type="button" data-action="import-project"><span class="ic">P</span>Import Project</button>
+   <button class="ctx-item" type="button" data-action="import-gsheets"><span class="ic">G</span>Import Google Sheets</button>
+   <button class="ctx-item" type="button" data-action="import-trello"><span class="ic">T</span>Import Trello</button>
+   <div class="ctx-divider"></div>
+   <button class="ctx-item" type="button" data-action="create-report"><span class="ic">▤</span>Report</button>
+   <button class="ctx-item" type="button" data-action="create-dashboard"><span class="ic">◫</span>Dashboard/Portal</button>
+   <button class="ctx-item" type="button" data-action="create-folder"><span class="ic">▰</span>Folder</button>
+   <button class="ctx-item" type="button" data-action="create-workspace"><span class="ic">▰</span>Workspace</button>
+  </div>
+ </div>
+ <div class="ctx-divider"></div>
+ <button class="ctx-item" type="button" data-action="open-tab"><span class="ic">↗</span>Open in New Tab</button>
+ <button class="ctx-item" type="button" data-action="share"><span class="ic">S</span>Share...</button>
+ <button class="ctx-item" type="button" data-action="remove-sharing"><span class="ic">−</span>Remove Me from Sharing...</button>
+ <button class="ctx-item" type="button" data-action="save-new"><span class="ic">N</span>Save as New...</button>
+ <button class="ctx-item" type="button" data-action="workspace-colors"><span class="ic">◈</span>Workspace Colors &amp; Logo...</button>
+ <div class="ctx-divider"></div>
+ <button class="ctx-item" type="button" data-action="backup"><span class="ic">B</span>Request Backup...</button>
+ <button class="ctx-item" type="button" data-action="schedule-backup"><span class="ic">◷</span>Schedule Recurring Backup...</button>
+ <div class="ctx-divider"></div>
+ <button class="ctx-item" type="button" data-action="export-excel"><span class="ic">X</span>Export to Excel</button>
+ <button class="ctx-item" type="button" data-action="export-pdf"><span class="ic">PDF</span>Export to PDF</button>
+ <button class="ctx-item" type="button" data-action="export-sheets"><span class="ic">G</span>Export to Google Sheets</button>
+ <button class="ctx-item" type="button" data-action="sharing-report"><span class="ic">CSV</span>Download Workspace Sharing Report (csv)</button>
+ <div class="ctx-divider"></div>
+ <button class="ctx-item" type="button" data-action="properties"><span class="ic">i</span>Properties...</button>
+</div>
+<div class="layout-menu" id="layoutMenu">
+ <button class="layout-item" type="button" data-layout-action="create-grid"><span class="ic"><span class="sm-type-icon sheet menu" aria-hidden="true"></span></span>Grid</button>
+ <button class="layout-item" type="button" data-layout-action="create-task"><span class="ic"><span class="sm-type-icon sheet menu" aria-hidden="true"></span></span>Task List</button>
+ <button class="layout-item" type="button" data-layout-action="create-project"><span class="ic"><span class="sm-type-icon sheet menu" aria-hidden="true"></span></span>Project</button>
+ <button class="layout-item" type="button" data-layout-action="create-cards"><span class="ic"><span class="sm-type-icon sheet menu" aria-hidden="true"></span></span>Cards</button>
+ <div class="layout-divider"></div>
+ <button class="layout-item" type="button" data-layout-action="browse-templates"><span class="ic">▤</span>Browse Templates</button>
+ <div class="layout-divider"></div>
+ <button class="layout-item" type="button" data-layout-action="import-excel"><span class="ic">X</span>Import Microsoft Excel...</button>
+ <button class="layout-item" type="button" data-layout-action="import-project"><span class="ic">P</span>Import Microsoft Project...</button>
+ <button class="layout-item" type="button" data-layout-action="import-gsheets"><span class="ic">G</span>Import from Google Sheets...</button>
+ <button class="layout-item" type="button" data-layout-action="import-trello"><span class="ic">T</span>Import from Atlassian Trello...</button>
+ <div class="layout-divider"></div>
+ <button class="layout-item" type="button" data-layout-action="create-report"><span class="ic"><span class="sm-type-icon report menu" aria-hidden="true"></span></span>Report</button>
+ <button class="layout-item" type="button" data-layout-action="create-dashboard"><span class="ic"><span class="sm-type-icon sheet menu" aria-hidden="true"></span></span>Dashboard/Portal</button>
+ <div class="layout-divider"></div>
+ <button class="layout-item" type="button" data-layout-action="create-folder"><span class="ic"><span class="sm-type-icon folder yellow menu" aria-hidden="true"></span></span>Folder</button>
+ <button class="layout-item" type="button" data-layout-action="create-workspace"><span class="ic"><span class="sm-type-icon folder yellow menu" aria-hidden="true"></span></span>Workspace</button>
+</div>
+<div class="sheet-modal" id="sheetNameModal" aria-hidden="true">
+ <div class="sheet-dialog" role="dialog" aria-modal="true" aria-labelledby="sheetModalTitle">
+ <div class="sheet-dialog-head">
+ <button class="sheet-close" type="button" id="sheetNameClose" aria-label="Đóng">×</button>
+ </div>
+ <label class="sheet-label" id="sheetModalTitle" for="sheetNameInput">Name Your Sheet:</label>
+ <input class="sheet-input" id="sheetNameInput" value="New Sheet">
+ <div class="sheet-actions">
+ <button class="sheet-btn cancel" type="button" id="sheetNameCancel">Cancel</button>
+ <button class="sheet-btn ok" type="button" id="sheetNameOk">OK</button>
+ </div>
+ </div>
+
+<div class="sheet-modal" id="importCsvModal" aria-hidden="true">
+ <div class="sheet-dialog" role="dialog" aria-modal="true" aria-labelledby="importModalTitle">
+ <div class="sheet-dialog-head">
+ <button class="sheet-close" type="button" id="importCsvClose" aria-label="Đóng">×</button>
+ </div>
+ <label class="sheet-label" id="importModalTitle" for="importCsvFile"><strong>⬆ Import CSV vào bảng hiện tại</strong></label>
+ <div style="margin:8px 0">
+ <input type="file" id="importCsvFile" accept=".csv,.txt" style="width:100%">
+ </div>
+ <div style="margin:8px 0">
+ <label><input type="radio" name="importMode" value="append" checked> Nối thêm cuối bảng</label><br>
+ <label><input type="radio" name="importMode" value="replace"> Thay toàn bộ dữ liệu</label><br>
+ <label><input type="radio" name="importMode" value="merge"> Gộp theo cột khoá</label><br>
+ </div>
+ <div id="importMergeCol" style="display:none;margin:8px 0">
+ <label>Cột khoá: <select id="importKeyCol"></select></label>
+ </div>
+ <div id="importPreviewWrap" style="max-height:200px;overflow:auto;border:1px solid #ddd;margin:8px 0;display:none;font-size:12px">
+ <table id="importPreview" style="border-collapse:collapse;width:100%">
+ <thead id="importPreviewHead"></thead>
+ <tbody id="importPreviewBody"></tbody>
+ </table>
+ </div>
+ <div id="importMapping" style="margin:8px 0;display:none;font-size:12px">
+ <p><strong>Map cột:</strong> khớp tên cột CSV → cột đích</p>
+ <div id="importMapRows"></div>
+ </div>
+ <div class="sheet-actions">
+ <button class="sheet-btn cancel" type="button" id="importCsvCancel">Huỷ</button>
+ <button class="sheet-btn ok" type="button" id="importCsvImport" disabled>Import</button>
+ </div>
+ </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+
+<script src="js/state.js"></script>
+<script src="js/menu-position.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/toolbar.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/report.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/repost.js"></script>
+<script src="js/workspace-navigator.js"></script>
+<script src="js/file-menu.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

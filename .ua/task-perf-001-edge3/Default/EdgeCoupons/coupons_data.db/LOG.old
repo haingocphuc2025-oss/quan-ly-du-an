@@ -1,0 +1,5 @@
+2026/07/17-06:24:53.317 5ba0 Creating DB G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\EdgeCoupons/coupons_data.db since it was missing.
+2026/07/17-06:24:53.928 5ba0 Reusing MANIFEST G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/07/17-06:24:58.612 7f0 Level-0 table #5: started
+2026/07/17-06:24:58.692 7f0 Level-0 table #5: 683052 bytes OK
+2026/07/17-06:24:58.722 7f0 Delete type=0 #3

@@ -1,0 +1,441 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/BAN_GIAO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 185,
+      "nonEmptyLines": 141,
+      "sections": [
+        {
+          "heading": "📋 BIÊN BAN BÀN GIAO — TƯ VẤN THIẾT KẾ → BAN QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Contact Column + Người phụ trách",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "2. Forms",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "3. Publish Report",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "4. Automation",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "5. Column Types",
+          "level": 2,
+          "line": 59
+        },
+        {
+          "heading": "6. Conditional Formatting",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "📋 TÓM TẮT",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "📁 Trạng thái file hiện tại",
+          "level": 2,
+          "line": 96
+        },
+        {
+          "heading": "9. Keyboard Shortcuts",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "10. Auto-Save On Exit",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "8. Copy/Cut/Paste Multiple Cells/Rows (giống Excel)",
+          "level": 2,
+          "line": 146
+        },
+        {
+          "heading": "9. Default Row Height & Text Wrap (Mặc định độ cao hàng + Tự động xuống dòng)",
+          "level": 2,
+          "line": 159
+        },
+        {
+          "heading": "10. Clear Sheet All Data (Nút delete quyền lực xóa mọi dữ liệu + reset date)",
+          "level": 2,
+          "line": 172
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/CONG_VIEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 135,
+      "nonEmptyLines": 105,
+      "sections": [
+        {
+          "heading": "📋 CÔNG VIỆC — TƯ VẤN THIẾT KẾ (AI Research)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🔴 VIỆC ĐANG LÀM",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "✅ ĐÃ HOÀN THÀNH (Thiết kế Consultant SOP)",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "📋 QUY TRÌNH LÀM VIỆC (BẮT BUỘC)",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "🎯 THÀNH QUẢ BÀN GIAO (5 MỤC BẮT BUỘC)",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "📁 CẤU TRÚC FILE (THEO SOP v1.4)",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "📝 LƯU Ý",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "📤 BÀN GIAO CHO BAN QLDA",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "📋 KIỂU CỦA CÔNG VIỆC",
+          "level": 2,
+          "line": 125
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/DEVELOPER.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 490,
+      "nonEmptyLines": 395,
+      "sections": [
+        {
+          "heading": "DEVELOPER.md — Ghi chú nghiên cứu & Artifact (Tư vấn thiết kế)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. AUTO-SAVE ON EXIT — Research Notes (07/07/2026)",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "1.1 Baseline Analysis (v18_baseline.html)",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "1.2 Current Save Flow",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "1.3 Problem: Data Loss on Exit",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "1.4 Solution Design",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "1.5 Code Refactor Needed",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "1.6 Backend Compatibility",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "1.7 Payload Size Estimate",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "1.8 Test Plan (from SPEC)",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "2. COLUMN TYPE SELECTOR — Smartsheet UI Reference (07/07/2026)",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "2.1 UI Display (Column Settings Modal)",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "2.2 Mapping Smartsheet → Tên chuẩn trong dự án",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "2.3 Frontend Implementation",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "2.4 Backend Storage",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "2.5 Reference file",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "2.6 Column Header Dropdown Menu (Compact)",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "2.7 ColumnSettingsDialog — Component Tree",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "2.8 Implementation Hint",
+          "level": 3,
+          "line": 288
+        },
+        {
+          "heading": "2.9 State Management",
+          "level": 3,
+          "line": 303
+        },
+        {
+          "heading": "2.10 Flow",
+          "level": 3,
+          "line": 322
+        },
+        {
+          "heading": "3. KEYBOARD SHORTCUTS — Research Notes (07/07/2026)",
+          "level": 2,
+          "line": 333
+        },
+        {
+          "heading": "3.1 Baseline Analysis",
+          "level": 3,
+          "line": 337
+        },
+        {
+          "heading": "3.2 Shortcuts Designed in SPEC (34 total)",
+          "level": 3,
+          "line": 351
+        },
+        {
+          "heading": "3.3 Architecture",
+          "level": 3,
+          "line": 365
+        },
+        {
+          "heading": "3.4 Key Functions Reused",
+          "level": 3,
+          "line": 378
+        },
+        {
+          "heading": "3.5 Dependencies",
+          "level": 3,
+          "line": 390
+        },
+        {
+          "heading": "4. COPY/CUT/PASTE — Research Notes (07/07/2026)",
+          "level": 2,
+          "line": 397
+        },
+        {
+          "heading": "4.1 Baseline Analysis",
+          "level": 3,
+          "line": 401
+        },
+        {
+          "heading": "4.2 Core Features",
+          "level": 3,
+          "line": 405
+        },
+        {
+          "heading": "4.3 Architecture",
+          "level": 3,
+          "line": 416
+        },
+        {
+          "heading": "4.4 Key Dependencies",
+          "level": 3,
+          "line": 438
+        },
+        {
+          "heading": "4.5 Test Cases (10 cases)",
+          "level": 3,
+          "line": 448
+        },
+        {
+          "heading": "5. LINKS & REFERENCES",
+          "level": 2,
+          "line": 465
+        },
+        {
+          "heading": "6. NEXT RESEARCH CANDIDATES (Queue)",
+          "level": 2,
+          "line": 479
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 35
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SOP_TUAN_THU_TU_VAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 194,
+      "nonEmptyLines": 148,
+      "sections": [
+        {
+          "heading": "⚠️ SOP TUÂN THỦ — TƯ VẤN THIẾT KẾ (AI Research)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. KIẾN TRÚC BẮT BUỘC",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. FORMAT SPEC BẮT BUỘC",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "2.1 Vị trí file",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "2.2 Header bắt buộc",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "2.3 Cấu trúc 6 section bắt buộc",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "3. QUY TRÌNH BẮT BUỘC",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "4. BIÊN BẢN — 5 MỤC BẮT BUỘC",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "5. LỖI PHỔ BIẾN",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "6. CHECKLIST TRƯỚC KHI BÁO BAN QLDA",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "7. PHIẾU TRẢ LẠI",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "Mẫu",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "❌ TRẢ LẠI: Report Configuration (07/07/2026) — v1.3 CẬP NHẬT YÊU CẦU",
+          "level": 3,
+          "line": 119
+        },
+        {
+          "heading": "❌ TRẢ LẠI: Clear Sheet All Data (07/07/2026)",
+          "level": 3,
+          "line": 165
+        },
+        {
+          "heading": "❌ TRẢ LẠI: Delete Key + Repost Date (07/07/2026)",
+          "level": 3,
+          "line": 176
+        },
+        {
+          "heading": "⏳ CHỜ BIÊN BẢN: Clear Data & Repost Date (07/07/2026)",
+          "level": 3,
+          "line": 188
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    }
+  ]
+}

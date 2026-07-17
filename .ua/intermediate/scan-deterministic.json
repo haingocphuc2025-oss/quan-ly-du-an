@@ -1,0 +1,3257 @@
+{
+  "scriptCompleted": true,
+  "files": [
+    {
+      "path": ".agents/AUTO_LOOP.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/CODEBASE_MEMORY.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/CONTROLLER_STATE.json",
+      "language": "json",
+      "sizeLines": 11,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/CODING_RULES.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/DESIGN_RULES.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/DOCUMENTATION_RULES.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/HERMES_CONSTITUTION.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/REVIEW_RULES.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/SECURITY_RULES.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/PLUGIN_SELECTOR.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/ROUTER.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/SKILL_SELECTOR.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/WORKFLOW_SELECTOR.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/02_WORKFLOWS/FEATURE_CLONER.md",
+      "language": "markdown",
+      "sizeLines": 7,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/02_WORKFLOWS/UPDATE_EXISTING_PROJECT.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/02_WORKFLOWS/WEBSITE_CLONER.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/architecture.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/build.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/capture-ui.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/clarify.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/commit.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/compare-ui.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/component-map.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/context.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/document.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/dom-analysis.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/extract-design-system.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/fix.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/plan.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/regression.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/release.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/review.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/SKILL_REGISTRY.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/spec.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/tasks.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/ui-spec.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/ux-analysis.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/verify.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/website-research.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/CHANGELOG.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/COMPARE.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/COMPONENT_MAP.md",
+      "language": "markdown",
+      "sizeLines": 4,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/DESIGN_SYSTEM.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/PLAN.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/REGRESSION.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/RELEASE.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/REQUIREMENT.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/REVIEW.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/SPEC.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/TASK.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/UI_SPEC.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/UX_SPEC.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/04_TEMPLATES/VERIFY.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/ACCESSIBILITY.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/BUTTONS.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/CARDS.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/COLORS.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/DIALOGS.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/GRID.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/ICONS.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/INPUTS.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/LAYOUT.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/RESPONSIVE.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/SPACING.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/STATES.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/TABLES.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/TYPOGRAPHY.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/05_DESIGN_SYSTEM/UI_RULES.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Agent Skills/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Browser Harness/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Context7/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Filesystem MCP/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Git MCP/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Memory MCP/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Obscura/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/OmniParser/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/PLUGIN_REGISTRY.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Sequential Thinking MCP/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Spec Kit/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Superpowers/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/07_PROMPTS/browser.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/07_PROMPTS/claude.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/07_PROMPTS/codex.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/07_PROMPTS/planner.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/07_PROMPTS/review.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/CONTEXT.md",
+      "language": "markdown",
+      "sizeLines": 53,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/PLAN.md",
+      "language": "markdown",
+      "sizeLines": 72,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/REGRESSION.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/RELEASE.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/REVIEW.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/TASKS.md",
+      "language": "markdown",
+      "sizeLines": 136,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/UI_COMPARE.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/VERIFY.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/docs/BEST_PRACTICES.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/docs/INSTALL.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/docs/PLUGIN_GUIDE.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/docs/QUICK_START.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/manifest.json",
+      "language": "json",
+      "sizeLines": 10,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".agents/Hermes-Cloner/README.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/RULES.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".agents/WORKFLOW.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": ".gitmodules",
+      "language": "unknown",
+      "sizeLines": 3,
+      "fileCategory": "code"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-14T23-53-14-456Z.yml",
+      "language": "yaml",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T00-00-00-295Z.yml",
+      "language": "yaml",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T00-06-50-525Z.yml",
+      "language": "yaml",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T00-31-12-674Z.yml",
+      "language": "yaml",
+      "sizeLines": 62,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-24-34-711Z.yml",
+      "language": "yaml",
+      "sizeLines": 84,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-30-50-725Z.yml",
+      "language": "yaml",
+      "sizeLines": 120,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-32-15-259Z.yml",
+      "language": "yaml",
+      "sizeLines": 1171,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-33-07-312Z.yml",
+      "language": "yaml",
+      "sizeLines": 120,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-33-50-037Z.yml",
+      "language": "yaml",
+      "sizeLines": 122,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-34-10-605Z.yml",
+      "language": "yaml",
+      "sizeLines": 139,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-34-27-844Z.yml",
+      "language": "yaml",
+      "sizeLines": 1171,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-59-12-201Z.yml",
+      "language": "yaml",
+      "sizeLines": 120,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".playwright-mcp/page-2026-07-15T03-59-22-956Z.yml",
+      "language": "yaml",
+      "sizeLines": 120,
+      "fileCategory": "config"
+    },
+    {
+      "path": ".ua/.understandignore",
+      "language": "unknown",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "00_TONG_HOP/LICH_SU_PHIEN_BAN.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "00_TONG_HOP/README_FIRST.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "00_TONG_HOP/TRANG_THAI_HIEN_TAI.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "sizeLines": 346,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/auto-save-on-exit/SPEC_009_auto-save-on-exit.md",
+      "language": "markdown",
+      "sizeLines": 304,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/automation/SPEC_005_automation.md",
+      "language": "markdown",
+      "sizeLines": 122,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/browse-status-display/SPEC.md",
+      "language": "markdown",
+      "sizeLines": 120,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+      "language": "markdown",
+      "sizeLines": 214,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/COLUMN_UNHIDE_SPEC.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_khongdau.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_mojibake.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-types-extended/SPEC_column-types-extended.md",
+      "language": "markdown",
+      "sizeLines": 927,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-types/SPEC_006_column-types.md",
+      "language": "markdown",
+      "sizeLines": 572,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/conditional-formatting/SPEC_007_conditional-formatting.md",
+      "language": "markdown",
+      "sizeLines": 113,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/contact-column/SPEC_008_contact-column.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/copy-cut-paste/SPEC_010_copy-cut-paste.md",
+      "language": "markdown",
+      "sizeLines": 169,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/README.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/spec.md",
+      "language": "markdown",
+      "sizeLines": 146,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/dashboard-view-leaks-into-report/spec.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/default-row-height-wrap/SPEC_012_default-row-height-wrap.md",
+      "language": "markdown",
+      "sizeLines": 241,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/drive-api-backend/SPEC_003_drive-api-backend.md",
+      "language": "markdown",
+      "sizeLines": 277,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/file-attachment/SPEC_002_file-attachment.md",
+      "language": "markdown",
+      "sizeLines": 340,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/forms/SPEC_004_forms.md",
+      "language": "markdown",
+      "sizeLines": 101,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/grid-row-columns-fix/SPEC.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/helper-preserve-ui-state-on-old-tab-save/spec.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md",
+      "language": "markdown",
+      "sizeLines": 396,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/modular-split-v26/SPEC.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/multi-select-column/spec.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/nghiem-thu-v25-fixes/spec.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/persist-column-widths-in-project-save/spec.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/publish-report/SPEC_001_publish-report.md",
+      "language": "markdown",
+      "sizeLines": 101,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-apply-stored-column-widths/spec.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-delete-multi-selection/spec.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-hide-source-status-columns/spec.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-multi-cell-selection/spec.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-skip-empty-source-rows/spec.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-summary-compact-ui/spec.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-view/README.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-view/spec.md",
+      "language": "markdown",
+      "sizeLines": 82,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-wrap-cells/spec.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "sizeLines": 579,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/repost-cell-context-column-menu/spec.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/screen-state-behavior/SPEC.md",
+      "language": "markdown",
+      "sizeLines": 135,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX (1).md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX.md",
+      "language": "markdown",
+      "sizeLines": 48,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/sheet-column-insert-delete-actions/spec.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/sheet-report-compact-wrap-spacing/spec.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/toolbar-grid-smartsheet-style/TOOLBAR_SPEC.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/two-projects-repost-dashboard/spec.md",
+      "language": "markdown",
+      "sizeLines": 29,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "sizeLines": 293,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR (1).md",
+      "language": "markdown",
+      "sizeLines": 91,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/DANH_MUC_SPEC.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/NEW/screen-state-behavior/SPEC.md",
+      "language": "markdown",
+      "sizeLines": 136,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "01_SPEC/README.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/01_CODE_HIEN_TAI/CODE_CHINH.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/Đường điện chiếu sáng — Xã Liên Sơn/04_THANH_TOAN_QUYET_TOAN/TT-01 - Hồ sơ thanh toán khối lượng hoàn thành đợt 1/Gia_HD_phanchia_chuanTT.xlsx",
+      "language": "xlsx",
+      "sizeLines": 65,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/Đường điện chiếu sáng — Xã Liên Sơn/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh mục hồ sơ toàn dự án/HOPDON_2_da_bo_sung_1 (2).docx",
+      "language": "docx",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/Đường điện chiếu sáng — Xã Liên Sơn/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh mục hồ sơ toàn dự án/HOPDON_2_da_bo_sung_1 (3).docx",
+      "language": "docx",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/Đường điện chiếu sáng — Xã Liên Sơn/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh mục hồ sơ toàn dự án/HOPDON_2_da_bo_sung_1.docx",
+      "language": "docx",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/Đường điện chiếu sáng — Xã Liên Sơn/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh mục hồ sơ toàn dự án/PhuLuc_PhanChia_GiaTri_LienDanh_Goi14.docx",
+      "language": "docx",
+      "sizeLines": 142,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/HOPDON_2_da_bo_sung.docx",
+      "language": "docx",
+      "sizeLines": 209,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/HOPDON_NEW.docx",
+      "language": "docx",
+      "sizeLines": 485,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_PROJECT_DATA/qlda_project_backup.json",
+      "language": "json",
+      "sizeLines": 20190,
+      "fileCategory": "config"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/appsscript.json",
+      "language": "json",
+      "sizeLines": 15,
+      "fileCategory": "config"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/Code.gs",
+      "language": "gs",
+      "sizeLines": 269,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/Index.html",
+      "language": "html",
+      "sizeLines": 12025,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/appsscript.json",
+      "language": "json",
+      "sizeLines": 14,
+      "fileCategory": "config"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/baoCaoCaNhan.gs",
+      "language": "gs",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/Code.gs",
+      "language": "gs",
+      "sizeLines": 480,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v25_quan.html",
+      "language": "html",
+      "sizeLines": 11713,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v26_quan.html",
+      "language": "html",
+      "sizeLines": 12025,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/local_file_helper.py",
+      "language": "python",
+      "sizeLines": 185,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V25_LOCALHOST.bat",
+      "language": "batch",
+      "sizeLines": 21,
+      "fileCategory": "script"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V26_LOCALHOST.bat",
+      "language": "batch",
+      "sizeLines": 22,
+      "fileCategory": "script"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/find_statements.js",
+      "language": "javascript",
+      "sizeLines": 41,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/FRONTEND/giao-dien-desktop-don-gian_v17_baseline.html",
+      "language": "html",
+      "sizeLines": 5205,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/FRONTEND/giao-dien-desktop-don-gian_v18_baseline.html",
+      "language": "html",
+      "sizeLines": 5580,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/build.py",
+      "language": "python",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/css/main.css",
+      "language": "css",
+      "sizeLines": 2516,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/giao-dien-desktop-don-gian_v26_quan.html",
+      "language": "html",
+      "sizeLines": 12025,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/index.html",
+      "language": "html",
+      "sizeLines": 600,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/api.js",
+      "language": "javascript",
+      "sizeLines": 803,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/dashboard.js",
+      "language": "javascript",
+      "sizeLines": 496,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/grid.js",
+      "language": "javascript",
+      "sizeLines": 3751,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/main.js",
+      "language": "javascript",
+      "sizeLines": 338,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/report.js",
+      "language": "javascript",
+      "sizeLines": 871,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/repost.js",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/state.js",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/storage.js",
+      "language": "javascript",
+      "sizeLines": 344,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/toolbar.js",
+      "language": "javascript",
+      "sizeLines": 389,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/workspace-navigator.js",
+      "language": "javascript",
+      "sizeLines": 1723,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/manifest.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/app-startup-order.test.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/browse-status-display.test.js",
+      "language": "javascript",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/browse-status-navigation.test.js",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/grid-dom-binding-order.test.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/module-initialization-order.test.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/project-folder-initialization-order.test.js",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/screen-state-behavior.test.js",
+      "language": "javascript",
+      "sizeLines": 34,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/toolbar-color-initialization-order.test.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/package.json",
+      "language": "json",
+      "sizeLines": 5,
+      "fileCategory": "config"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/split_v25_to_modules.py",
+      "language": "python",
+      "sizeLines": 442,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v17_staging.html",
+      "language": "html",
+      "sizeLines": 5580,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v18_quan.html",
+      "language": "html",
+      "sizeLines": 5580,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v19_quan.html",
+      "language": "html",
+      "sizeLines": 6468,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v20_quan.html",
+      "language": "html",
+      "sizeLines": 6539,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v21_quan.html",
+      "language": "html",
+      "sizeLines": 6630,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v22_quan.html",
+      "language": "html",
+      "sizeLines": 6758,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v24_quan.html",
+      "language": "html",
+      "sizeLines": 10613,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v25_quan.html",
+      "language": "html",
+      "sizeLines": 11713,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v26_quan.html",
+      "language": "html",
+      "sizeLines": 12025,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V23_LOCALHOST.bat",
+      "language": "batch",
+      "sizeLines": 9,
+      "fileCategory": "script"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V25_LOCALHOST.bat",
+      "language": "batch",
+      "sizeLines": 9,
+      "fileCategory": "script"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V26_LOCALHOST.bat",
+      "language": "batch",
+      "sizeLines": 10,
+      "fileCategory": "script"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/run.bat",
+      "language": "batch",
+      "sizeLines": 10,
+      "fileCategory": "script"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/serve.py",
+      "language": "python",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v18_baseline.html",
+      "language": "html",
+      "sizeLines": 5580,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v19_baseline.html",
+      "language": "html",
+      "sizeLines": 6468,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v20_baseline.html",
+      "language": "html",
+      "sizeLines": 6539,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v21_baseline.html",
+      "language": "html",
+      "sizeLines": 6630,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v22_baseline.html",
+      "language": "html",
+      "sizeLines": 9403,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v23_baseline.html",
+      "language": "html",
+      "sizeLines": 10563,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v24_baseline.html",
+      "language": "html",
+      "sizeLines": 10613,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v25_baseline.html",
+      "language": "html",
+      "sizeLines": 11713,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/build.py",
+      "language": "python",
+      "sizeLines": 38,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/css/main.css",
+      "language": "css",
+      "sizeLines": 2516,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/giao-dien-desktop-don-gian_v26_quan.html",
+      "language": "html",
+      "sizeLines": 12025,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/index.html",
+      "language": "html",
+      "sizeLines": 600,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/api.js",
+      "language": "javascript",
+      "sizeLines": 803,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/dashboard.js",
+      "language": "javascript",
+      "sizeLines": 496,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/grid.js",
+      "language": "javascript",
+      "sizeLines": 3751,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/main.js",
+      "language": "javascript",
+      "sizeLines": 338,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/report.js",
+      "language": "javascript",
+      "sizeLines": 871,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/repost.js",
+      "language": "javascript",
+      "sizeLines": 99,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/state.js",
+      "language": "javascript",
+      "sizeLines": 72,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/storage.js",
+      "language": "javascript",
+      "sizeLines": 344,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/toolbar.js",
+      "language": "javascript",
+      "sizeLines": 389,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/workspace-navigator.js",
+      "language": "javascript",
+      "sizeLines": 1723,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/manifest.json",
+      "language": "json",
+      "sizeLines": 18,
+      "fileCategory": "config"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/app-startup-order.test.js",
+      "language": "javascript",
+      "sizeLines": 15,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/browse-status-display.test.js",
+      "language": "javascript",
+      "sizeLines": 90,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/browse-status-navigation.test.js",
+      "language": "javascript",
+      "sizeLines": 43,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/grid-dom-binding-order.test.js",
+      "language": "javascript",
+      "sizeLines": 26,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/module-initialization-order.test.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/project-folder-initialization-order.test.js",
+      "language": "javascript",
+      "sizeLines": 22,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/toolbar-color-initialization-order.test.js",
+      "language": "javascript",
+      "sizeLines": 19,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline.html",
+      "language": "html",
+      "sizeLines": 12025,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_final-verification.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_screen-state-behavior.md",
+      "language": "markdown",
+      "sizeLines": 54,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/DA_TRIEN_KHAI/BAN_GIAO_repost-carry-forward.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/MAU_BAN_GIAO.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/modular-split-v26/BAN_GIAO_v26.md",
+      "language": "markdown",
+      "sizeLines": 69,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/BAN_DO_BO_NHO.md",
+      "language": "markdown",
+      "sizeLines": 270,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/giao-dien-desktop-don-gian_v23_quan.html",
+      "language": "html",
+      "sizeLines": 9403,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_DEEP.html",
+      "language": "html",
+      "sizeLines": 136,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_FULL.html",
+      "language": "html",
+      "sizeLines": 152,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_OBSIDIAN.html",
+      "language": "html",
+      "sizeLines": 437,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_VIEWER.html",
+      "language": "html",
+      "sizeLines": 189,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_CHU_DAU_TU/00_README.md",
+      "language": "markdown",
+      "sizeLines": 6,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_CHU_DAU_TU/01_QUYET_DINH.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_CHU_DAU_TU/02_YEU_CAU.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_DOC_TRUOC.md",
+      "language": "markdown",
+      "sizeLines": 32,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_TONG_HOP_NOI_DUNG_DU_AN.md",
+      "language": "markdown",
+      "sizeLines": 116,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/00_README.md",
+      "language": "markdown",
+      "sizeLines": 27,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/01_VAI_TRO_BAN_QLDA.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/02_QUY_TRINH_DUYET_SPEC.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/03_TRANG_THAI_HIEN_TAI.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/04_SO_GIAO_VIEC.md",
+      "language": "markdown",
+      "sizeLines": 45,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/05_SO_NGHIEM_THU.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/06_BAO_CAO_NGAY.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/07_THIET_KE_TONG_HOP.md",
+      "language": "markdown",
+      "sizeLines": 784,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/08_KE_HOACH_LICH_SU.md",
+      "language": "markdown",
+      "sizeLines": 233,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/09_DINH_CHINH_DUONG_DAN.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/10_HUONG_DAN_OAUTH_CLIENT_ID.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/HUONG_DAN_OAUTH_CLIENT_ID.pptx",
+      "language": "pptx",
+      "sizeLines": 459,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/00_README.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon_row.md",
+      "language": "markdown",
+      "sizeLines": 160,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon.md",
+      "language": "markdown",
+      "sizeLines": 216,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "sizeLines": 343,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+      "language": "markdown",
+      "sizeLines": 211,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/SPEC_REJECTED_clear-sheet-all-data.md",
+      "language": "markdown",
+      "sizeLines": 323,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/SPEC_REJECTED_delete-key-repost-date.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md",
+      "language": "markdown",
+      "sizeLines": 274,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/report-configuration/SPEC_REWRITE_REQUIRED_report-configuration.md",
+      "language": "markdown",
+      "sizeLines": 559,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/BAN_GIAO.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "sizeLines": 576,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/SPEC_010_column-types-moi_1.md",
+      "language": "markdown",
+      "sizeLines": 924,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "sizeLines": 290,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "sizeLines": 343,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/BAN_GIAO.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "sizeLines": 576,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/SPEC_column-header-context-menu.md",
+      "language": "markdown",
+      "sizeLines": 46,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "sizeLines": 290,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/00_README.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "sizeLines": 343,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/auto-save-on-exit/SPEC_009_auto-save-on-exit.md",
+      "language": "markdown",
+      "sizeLines": 301,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/automation/SPEC_005_automation.md",
+      "language": "markdown",
+      "sizeLines": 119,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+      "language": "markdown",
+      "sizeLines": 211,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/column-types/SPEC_006_column-types.md",
+      "language": "markdown",
+      "sizeLines": 569,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/conditional-formatting/SPEC_007_conditional-formatting.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/contact-column/SPEC_008_contact-column.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/copy-cut-paste/SPEC_010_copy-cut-paste.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/default-row-height-wrap/SPEC_012_default-row-height-wrap.md",
+      "language": "markdown",
+      "sizeLines": 238,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md",
+      "language": "markdown",
+      "sizeLines": 274,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/file-attachment/SPEC_002_file-attachment.md",
+      "language": "markdown",
+      "sizeLines": 337,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/forms/SPEC_004_forms.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md",
+      "language": "markdown",
+      "sizeLines": 393,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/publish-report/SPEC_001_publish-report.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/BAN_GIAO.md",
+      "language": "markdown",
+      "sizeLines": 12,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "sizeLines": 576,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "sizeLines": 290,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_QUY_TRINH_BAN_GIAO.md",
+      "language": "markdown",
+      "sizeLines": 528,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/02_DEVELOPER_NOTES.md",
+      "language": "markdown",
+      "sizeLines": 274,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/03_CURRENT_STATUS.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/00_README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/01_VAI_TRO_GIAM_SAT.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/03_CURRENT_STATUS.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/04_BIEN_BAN_NGHIEM_THU_TONG_HOP.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/05_BIEN_BAN_NGHIEM_THU_v19.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/06_BIEN_BAN_NGHIEM_THU_v20.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/07_BIEN_BAN_NGHIEM_THU_v21.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/08_BIEN_BAN_NGHIEM_THU_v24.md",
+      "language": "markdown",
+      "sizeLines": 96,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v23.md",
+      "language": "markdown",
+      "sizeLines": 53,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_MD_NAMING_MAP.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/00_README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/03_CURRENT_STATUS.md",
+      "language": "markdown",
+      "sizeLines": 8,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/04_RELEASE_NOTE.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/05_DEPLOY_LOG.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/00_README_LICH_SU_TRUOC_CHUAN_HOA_2026-07-08.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/01_BAN_QLDA_00_README_LICH_SU_TRUOC_CHUAN_HOA_2026-07-08.md",
+      "language": "markdown",
+      "sizeLines": 204,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/app-feature-research.skill",
+      "language": "skill",
+      "sizeLines": 10,
+      "fileCategory": "code"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/BACKUP_COLUMNTYPES_v16.html",
+      "language": "html",
+      "sizeLines": 4697,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/DIEU_PHOI.md",
+      "language": "markdown",
+      "sizeLines": 100,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/GIAO_NHAN_NHA_THAU.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/GIAO_NHAN_TU_VAN.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/huong-dan-ket-noi-telegram.md",
+      "language": "markdown",
+      "sizeLines": 133,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/QUYET_DINH.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/YEU_CAU.md",
+      "language": "markdown",
+      "sizeLines": 28,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/BAO_CAO_NGAY.md",
+      "language": "markdown",
+      "sizeLines": 35,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/CLAUDE_NHIEM_VU.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/DESIGN_MAIN.md",
+      "language": "markdown",
+      "sizeLines": 784,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/DINH_CHINH_DUONG_DAN.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/HUONG_DAN_OAUTH_CLIENT_ID.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/HUONG_DAN.md",
+      "language": "markdown",
+      "sizeLines": 204,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/PLANNING.md",
+      "language": "markdown",
+      "sizeLines": 233,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SO_GIAO_VIEC.md",
+      "language": "markdown",
+      "sizeLines": 55,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SO_NGHIEM_THU.md",
+      "language": "markdown",
+      "sizeLines": 36,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SOP_DUYET_SPEC.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/spec.md",
+      "language": "markdown",
+      "sizeLines": 211,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/spec.md",
+      "language": "markdown",
+      "sizeLines": 323,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/dashboard-configuration/SPEC_Dashboard_Configuration_v1.md",
+      "language": "markdown",
+      "sizeLines": 143,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/spec.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/drive-api-backend/spec.md",
+      "language": "markdown",
+      "sizeLines": 274,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/report-configuration/SPEC_Report_Configuration_v1.md",
+      "language": "markdown",
+      "sizeLines": 559,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/BAN_GIAO.md",
+      "language": "markdown",
+      "sizeLines": 185,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/CONG_VIEC.md",
+      "language": "markdown",
+      "sizeLines": 134,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/DEVELOPER.md",
+      "language": "markdown",
+      "sizeLines": 489,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SOP_TUAN_THU_TU_VAN.md",
+      "language": "markdown",
+      "sizeLines": 194,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/auto-save-on-exit/spec.md",
+      "language": "markdown",
+      "sizeLines": 301,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/automation/spec.md",
+      "language": "markdown",
+      "sizeLines": 119,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/clear-data-repost-date/spec.md",
+      "language": "markdown",
+      "sizeLines": 211,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/column-types/spec.md",
+      "language": "markdown",
+      "sizeLines": 181,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/conditional-formatting/spec.md",
+      "language": "markdown",
+      "sizeLines": 110,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/contact-column/spec.md",
+      "language": "markdown",
+      "sizeLines": 105,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/copy-cut-paste/spec.md",
+      "language": "markdown",
+      "sizeLines": 166,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/default-row-height-wrap/spec.md",
+      "language": "markdown",
+      "sizeLines": 238,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/drive-api-backend/spec.md",
+      "language": "markdown",
+      "sizeLines": 274,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/file-attachment/spec.md",
+      "language": "markdown",
+      "sizeLines": 337,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/forms/spec.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/keyboard-shortcuts/spec.md",
+      "language": "markdown",
+      "sizeLines": 393,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SPEC_QL_DA_DUYET/publish-report/spec.md",
+      "language": "markdown",
+      "sizeLines": 98,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/BAN_GIAO.md",
+      "language": "markdown",
+      "sizeLines": 75,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF_v22.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CONG_VIEC.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SO_NGHIEM_THU.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SOP_NHA_THAU.md",
+      "language": "markdown",
+      "sizeLines": 248,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/STAGING/README.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v19.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v20.md",
+      "language": "markdown",
+      "sizeLines": 49,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v21.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU.md",
+      "language": "markdown",
+      "sizeLines": 63,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/CONG_VIEC.md",
+      "language": "markdown",
+      "sizeLines": 87,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/05_TRIEN_KHAI/DEPLOY_LOG.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/05_TRIEN_KHAI/RELEASE_NOTE.md",
+      "language": "markdown",
+      "sizeLines": 94,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/DIEU_PHOI.md",
+      "language": "markdown",
+      "sizeLines": 100,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_NHA_THAU.md",
+      "language": "markdown",
+      "sizeLines": 58,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_TU_VAN.md",
+      "language": "markdown",
+      "sizeLines": 42,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/huong-dan-ket-noi-telegram.md",
+      "language": "markdown",
+      "sizeLines": 133,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Phuc_to_do_list_CU.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Quan_to_do_list_CU.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/SMARTSHEET/KE_HOACH_NGHIEN_CUU_SMARTSHEET.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/SPEC_DA_DUYET/automation/spec.md",
+      "language": "markdown",
+      "sizeLines": 130,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/SPEC_DA_DUYET/column-types/spec.md",
+      "language": "markdown",
+      "sizeLines": 144,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/SPEC_DA_DUYET/conditional-formatting/spec.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/SPEC_DA_DUYET/contact-column/spec.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/SPEC_DA_DUYET/forms/spec.md",
+      "language": "markdown",
+      "sizeLines": 114,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/SPEC_DA_DUYET/publish-report/spec.md",
+      "language": "markdown",
+      "sizeLines": 113,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/DEVELOPER.md",
+      "language": "markdown",
+      "sizeLines": 274,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/PROJECT_OPERATION_CENTER (1).md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/PROJECT_OPERATION_CENTER.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/QUY_TRINH_BAN_GIAO_SAN_PHAM.md",
+      "language": "markdown",
+      "sizeLines": 528,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_STANDARDIZE_LOG_20260708_090910.txt",
+      "language": "txt",
+      "sizeLines": 73,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/Phuc_to_do_list_CU.md",
+      "language": "markdown",
+      "sizeLines": 57,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/PROJECT_OPERATION_CENTER_DUPLICATE_2026-07-08.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/Quan_to_do_list_CU.md",
+      "language": "markdown",
+      "sizeLines": 67,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/README_CLEANUP_LOG_20260708_091036.txt",
+      "language": "txt",
+      "sizeLines": 4,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SMARTSHEET/KE_HOACH_NGHIEN_CUU_SMARTSHEET.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/automation/SPEC_005_automation.md",
+      "language": "markdown",
+      "sizeLines": 130,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/column-types/SPEC_006_column-types.md",
+      "language": "markdown",
+      "sizeLines": 569,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/conditional-formatting/SPEC_007_conditional-formatting.md",
+      "language": "markdown",
+      "sizeLines": 141,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/contact-column/SPEC_008_contact-column.md",
+      "language": "markdown",
+      "sizeLines": 97,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/forms/SPEC_004_forms.md",
+      "language": "markdown",
+      "sizeLines": 114,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/publish-report/SPEC_001_publish-report.md",
+      "language": "markdown",
+      "sizeLines": 113,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/GOI_GIAO_VIEC_CU/PROMPT_CODEX_COLUMN_TYPES.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/00_DOC_TRUOC.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/01_VAI_TRO_NHA_THAU.md",
+      "language": "markdown",
+      "sizeLines": 37,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/02_QUY_TRINH_THI_CONG.md",
+      "language": "markdown",
+      "sizeLines": 248,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/03_TRANG_THAI_HIEN_TAI.md",
+      "language": "markdown",
+      "sizeLines": 41,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/04_BAN_GIAO_CODE.md",
+      "language": "markdown",
+      "sizeLines": 158,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/05_CODE_DIFF.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/06_CODE_DIFF_v21.md",
+      "language": "markdown",
+      "sizeLines": 81,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/07_CODE_DIFF_v22.md",
+      "language": "markdown",
+      "sizeLines": 86,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/07_CODE_DIFF_v23.md",
+      "language": "markdown",
+      "sizeLines": 103,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/08_SO_NGHIEM_THU.md",
+      "language": "markdown",
+      "sizeLines": 43,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/09_CODE_DIFF_v23.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/10_DRIVE_API_DIRECT_UPLOAD.md",
+      "language": "markdown",
+      "sizeLines": 59,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ADR-001_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/AGENTS_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/CONG_VIEC.md",
+      "language": "markdown",
+      "sizeLines": 62,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/DANH_MUC_SPEC_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/QUY_TRINH_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 64,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ROOT_README_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ROOT_README_TRUOC_CHUAN_HOA.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/SPEC_README_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 30,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/SPEC_README_TRUOC_CHUAN_HOA.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/STAGING_README_CU.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/THI_CONG_README_TRUOC_CHUAN_HOA.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/TRANG_THAI_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/clear-sheet-all-data/SPEC_REJECTED_clear-sheet-all-data.md",
+      "language": "markdown",
+      "sizeLines": 323,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/delete-key-repost-date/SPEC_REJECTED_delete-key-repost-date.md",
+      "language": "markdown",
+      "sizeLines": 108,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/report-configuration/SPEC_REWRITE_REQUIRED_report-configuration.md",
+      "language": "markdown",
+      "sizeLines": 559,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/STAGING_TEN_SAI/giao-dien-desktop-don-gian_v23_quan_NOI_DUNG_V25.html",
+      "language": "html",
+      "sizeLines": 10621,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "02_SOURCE/ADR-002-HAI-TRANG-THAI-SPEC.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/QUY_TRINH.md",
+      "language": "markdown",
+      "sizeLines": 40,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/README.md",
+      "language": "markdown",
+      "sizeLines": 10,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "02_SOURCE/TRANG_THAI.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DOING/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_browse-status-display.md",
+      "language": "markdown",
+      "sizeLines": 13,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_column-header-context-menu.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_column-unhide.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_dashboard-view-leaks-into-report.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_grid-row-columns-fix.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_helper-preserve-ui-state-on-old-tab-save.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_nghiem-thu-v25-fixes.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_persist-column-widths-in-project-save.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_RELEASE_v24_v25.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-apply-stored-column-widths.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-delete-multi-selection.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-hide-source-status-columns.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-multi-cell-selection.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-skip-empty-source-rows.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-summary-compact-ui.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-wrap-cells.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_repost-cell-context-column-menu.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_selection-focus-bug-fix.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_sheet-column-insert-delete-actions.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_sheet-report-compact-wrap-spacing.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_toolbar-grid-smartsheet-style.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_two-projects-repost-dashboard.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_v26-module-initialization-order.md",
+      "language": "markdown",
+      "sizeLines": 9,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_workspace-navigator.md",
+      "language": "markdown",
+      "sizeLines": 19,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/FIX/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/TASK_TEMPLATE.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "03_TASKS/TODO/README.md",
+      "language": "markdown",
+      "sizeLines": 5,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/2026-07-14_release_v26.md",
+      "language": "markdown",
+      "sizeLines": 38,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/2026-07-14_workspace_browse_tree_fix.md",
+      "language": "markdown",
+      "sizeLines": 47,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/CODE_MAP_V25.md",
+      "language": "markdown",
+      "sizeLines": 157,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/KNOWN_ISSUES.md",
+      "language": "markdown",
+      "sizeLines": 11,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/REGRESSION/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/RELEASE/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/RELEASE/RELEASE_v24.md",
+      "language": "markdown",
+      "sizeLines": 25,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/RELEASE/RELEASE_v25.md",
+      "language": "markdown",
+      "sizeLines": 52,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/REVIEW/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/REVIEW/REVIEW_v23_20260713.md",
+      "language": "markdown",
+      "sizeLines": 258,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/UI_COMPARE/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/README.md",
+      "language": "markdown",
+      "sizeLines": 3,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_COLUMN_TYPES_v24.md",
+      "language": "markdown",
+      "sizeLines": 23,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_DASHBOARD_CARRY_STAGING_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_SPEC_NEW_v23_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 26,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_column_header_context_menu_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_column_unhide_2026-07-14.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_dashboard_view_leak_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_grid_row_columns_fix_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_header_left_right_click_separation_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 14,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_helper_preserve_ui_state_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_nghiem_thu_fixes_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 20,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_persist_column_widths_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_apply_stored_column_widths_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_delete_multi_selection_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_hide_source_status_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_multi_cell_selection_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_skip_empty_rows_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_summary_compact_ui_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_wrap_cells_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_repost_cell_context_menu_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_selection_focus_bug_fix_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_sheet_column_insert_delete_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 16,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_sheet_report_compact_spacing_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 15,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_toolbar_grid_smartsheet_style_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 18,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_two_projects_repost_dashboard_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 17,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_workspace_navigator_2026-07-13.md",
+      "language": "markdown",
+      "sizeLines": 21,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v26_browse_status_display_2026-07-15.md",
+      "language": "markdown",
+      "sizeLines": 22,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "05_BIEU DO/architecture-diagram.html",
+      "language": "html",
+      "sizeLines": 446,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "05_BIEU DO/codebase-graph.html",
+      "language": "html",
+      "sizeLines": 580,
+      "fileCategory": "markup"
+    },
+    {
+      "path": "AGENTS.md",
+      "language": "markdown",
+      "sizeLines": 33,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "README.md",
+      "language": "markdown",
+      "sizeLines": 24,
+      "fileCategory": "docs"
+    },
+    {
+      "path": "work/v25_inline.js",
+      "language": "javascript",
+      "sizeLines": 8619,
+      "fileCategory": "code"
+    },
+    {
+      "path": "work/v26_inline.js",
+      "language": "javascript",
+      "sizeLines": 8705,
+      "fileCategory": "code"
+    }
+  ],
+  "totalFiles": 537,
+  "filteredByIgnore": 0,
+  "estimatedComplexity": "very-large",
+  "stats": {
+    "filesScanned": 537,
+    "byCategory": {
+      "docs": 415,
+      "config": 21,
+      "code": 57,
+      "markup": 38,
+      "script": 6
+    },
+    "byLanguage": {
+      "markdown": 413,
+      "json": 8,
+      "unknown": 2,
+      "yaml": 13,
+      "xlsx": 1,
+      "docx": 6,
+      "gs": 3,
+      "html": 36,
+      "python": 5,
+      "batch": 6,
+      "javascript": 38,
+      "css": 2,
+      "pptx": 1,
+      "skill": 1,
+      "txt": 2
+    }
+  }
+}

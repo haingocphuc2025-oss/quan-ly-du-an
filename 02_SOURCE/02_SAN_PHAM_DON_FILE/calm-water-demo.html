@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Water UI Demo - Quản Lý Dự Án</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           CALM WATER DESIGN SYSTEM
+           ============================================ */
+        :root {
+            /* Colors - Clean as water */
+            --surface-primary: #FFFFFF;
+            --surface-secondary: #FAFAFA;
+            --surface-tertiary: #F5F5F5;
+            --border: #E5E5E5;
+            --border-subtle: #F0F0F0;
+            
+            --text-primary: #1A1A1A;
+            --text-secondary: #6B6B6B;
+            --text-tertiary: #9CA3AF;
+            
+            --accent: #0066FF;
+            --accent-hover: #0052CC;
+            --accent-light: #E6F0FF;
+            
+            --success: #059669;
+            --success-light: #ECFDF5;
+            --warning: #D97706;
+            --warning-light: #FFFBEB;
+            --danger: #DC2626;
+            --danger-light: #FEF2F2;
+            
+            /* Priority badges */
+            --priority-high: #DC2626;
+            --priority-medium: #F59E0B;
+            --priority-low: #10B981;
+            
+            /* Spacing */
+            --space-1: 4px;
+            --space-2: 8px;
+            --space-3: 12px;
+            --space-4: 16px;
+            --space-5: 20px;
+            --space-6: 24px;
+            --space-8: 32px;
+            
+            /* Typography */
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-size-xs: 11px;
+            --font-size-sm: 12px;
+            --font-size-base: 14px;
+            --font-size-lg: 16px;
+            --font-size-xl: 18px;
+            --font-size-2xl: 24px;
+            --font-size-3xl: 32px;
+            
+            /* Radius */
+            --radius-sm: 6px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            
+            /* Shadows */
+            --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+            --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+            
+            /* Transitions */
+            --transition-fast: 100ms ease;
+            --transition-normal: 200ms ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-family);
+            font-size: var(--font-size-base);
+            color: var(--text-primary);
+            background: var(--surface-secondary);
+            line-height: 1.5;
+        }
+        
+        /* ============================================
+           LAYOUT
+           ============================================ */
+        .app {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Sidebar */
+        .sidebar {
+            width: 240px;
+            background: var(--surface-primary);
+            border-right: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            flex-shrink: 0;
+        }
+        
+        .sidebar-header {
+            padding: var(--space-5);
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+        }
+        
+        .logo-icon {
+            width: 28px;
+            height: 28px;
+            background: linear-gradient(135deg, var(--accent) 0%, #00D4FF 100%);
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: var(--font-size-sm);
+        }
+        
+        .logo-text {
+            font-weight: 600;
+            font-size: var(--font-size-base);
+            color: var(--text-primary);
+        }
+        
+        .sidebar-nav {
+            flex: 1;
+            padding: var(--space-4);
+            overflow-y: auto;
+        }
+        
+        .nav-section {
+            margin-bottom: var(--space-6);
+        }
+        
+        .nav-section-title {
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            color: var(--text-tertiary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: var(--space-2);
+            padding: 0 var(--space-2);
+        }
+        
+        .nav-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-3);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius-md);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-size: var(--font-size-sm);
+        }
+        
+        .nav-item:hover {
+            background: var(--surface-tertiary);
+            color: var(--text-primary);
+        }
+        
+        .nav-item.active {
+            background: var(--accent-light);
+            color: var(--accent);
+            font-weight: 500;
+        }
+        
+        .nav-item-icon {
+            width: 16px;
+            height: 16px;
+            opacity: 0.7;
+        }
+        
+        .nav-item.active .nav-item-icon {
+            opacity: 1;
+        }
+        
+        .nav-item-count {
+            margin-left: auto;
+            font-size: var(--font-size-xs);
+            color: var(--text-tertiary);
+            background: var(--surface-tertiary);
+            padding: 2px 6px;
+            border-radius: 10px;
+        }
+        
+        .nav-item.active .nav-item-count {
+            background: var(--accent);
+            color: white;
+        }
+        
+        /* Project tree */
+        .project-tree {
+            padding-left: var(--space-4);
+        }
+        
+        .project-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-3);
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-size: var(--font-size-sm);
+        }
+        
+        .project-item:hover {
+            background: var(--surface-tertiary);
+        }
+        
+        .project-item.active {
+            background: var(--surface-tertiary);
+            font-weight: 500;
+        }
+        
+        .project-status {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        
+        .project-status.active { background: var(--success); }
+        .project-status.pending { background: var(--warning); }
+        .project-status.draft { background: var(--text-tertiary); }
+        
+        /* Main content */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        
+        /* Topbar */
+        .topbar {
+            height: 56px;
+            background: var(--surface-primary);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            padding: 0 var(--space-5);
+            gap: var(--space-4);
+            flex-shrink: 0;
+        }
+        
+        .topbar-title {
+            font-size: var(--font-size-lg);
+            font-weight: 600;
+        }
+        
+        .search-box {
+            flex: 1;
+            max-width: 320px;
+            position: relative;
+        }
+        
+        .search-input {
+            width: 100%;
+            height: 36px;
+            padding: 0 var(--space-3) 0 36px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            background: var(--surface-secondary);
+            transition: all var(--transition-fast);
+        }
+        
+        .search-input:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: var(--surface-primary);
+            box-shadow: 0 0 0 3px var(--accent-light);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-tertiary);
+            width: 16px;
+            height: 16px;
+        }
+        
+        .topbar-actions {
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+            margin-left: auto;
+        }
+        
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--space-2);
+            padding: var(--space-2) var(--space-4);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            border: none;
+            font-family: inherit;
+        }
+        
+        .btn-primary {
+            background: var(--accent);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: var(--accent-hover);
+        }
+        
+        .btn-secondary {
+            background: var(--surface-tertiary);
+            color: var(--text-primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--border);
+        }
+        
+        .btn-ghost {
+            background: transparent;
+            color: var(--text-secondary);
+            padding: var(--space-2);
+        }
+        
+        .btn-ghost:hover {
+            background: var(--surface-tertiary);
+            color: var(--text-primary);
+        }
+        
+        .btn-icon {
+            width: 36px;
+            height: 36px;
+            padding: 0;
+        }
+        
+        .btn svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        /* Avatar */
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+        }
+        
+        /* Sheet area */
+        .sheet {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            background: var(--surface-primary);
+            margin: var(--space-4);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .sheet-toolbar {
+            padding: var(--space-3) var(--space-4);
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            gap: var(--space-2);
+        }
+        
+        .toolbar-divider {
+            width: 1px;
+            height: 20px;
+            background: var(--border);
+            margin: 0 var(--space-2);
+        }
+        
+        .toolbar-group {
+            display: flex;
+            align-items: center;
+            gap: var(--space-1);
+        }
+        
+        .toolbar-btn {
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: var(--radius-sm);
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            border: none;
+            background: transparent;
+        }
+        
+        .toolbar-btn:hover {
+            background: var(--surface-tertiary);
+            color: var(--text-primary);
+        }
+        
+        .toolbar-btn.active {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+        
+        .toolbar-btn svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        /* Sheet grid */
+        .sheet-grid {
+            flex: 1;
+            overflow: auto;
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .data-table th {
+            text-align: left;
+            padding: var(--space-3) var(--space-4);
+            font-size: var(--font-size-xs);
+            font-weight: 600;
+            color: var(--text-secondary);
+            background: var(--surface-secondary);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+        
+        .data-table td {
+            padding: var(--space-3) var(--space-4);
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: var(--font-size-sm);
+            vertical-align: middle;
+        }
+        
+        .data-table tr:hover td {
+            background: var(--surface-secondary);
+        }
+        
+        .data-table .cell-checkbox {
+            width: 40px;
+        }
+        
+        .data-table .cell-stt {
+            width: 50px;
+            color: var(--text-tertiary);
+            font-size: var(--font-size-xs);
+        }
+        
+        .data-table .cell-name {
+            min-width: 200px;
+            font-weight: 500;
+        }
+        
+        .data-table .cell-progress {
+            width: 150px;
+        }
+        
+        .data-table .cell-date {
+            width: 100px;
+            color: var(--text-secondary);
+        }
+        
+        .data-table .cell-priority {
+            width: 80px;
+        }
+        
+        /* Progress bar */
+        .progress-bar {
+            height: 6px;
+            background: var(--surface-tertiary);
+            border-radius: 3px;
+            overflow: hidden;
+            width: 100px;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 3px;
+            transition: width var(--transition-normal);
+        }
+        
+        .progress-fill.high { background: var(--success); }
+        .progress-fill.medium { background: var(--warning); }
+        .progress-fill.low { background: var(--text-tertiary); }
+        
+        /* Priority badge */
+        .priority-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-1);
+            padding: var(--space-1) var(--space-2);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+        }
+        
+        .priority-badge.high {
+            background: var(--danger-light);
+            color: var(--danger);
+        }
+        
+        .priority-badge.medium {
+            background: var(--warning-light);
+            color: var(--warning);
+        }
+        
+        .priority-badge.low {
+            background: var(--success-light);
+            color: var(--success);
+        }
+        
+        .priority-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        
+        .priority-badge.high .priority-dot { background: var(--danger); }
+        .priority-badge.medium .priority-dot { background: var(--warning); }
+        .priority-badge.low .priority-dot { background: var(--success); }
+        
+        /* Status badge */
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: var(--space-1) var(--space-2);
+            border-radius: var(--radius-sm);
+            font-size: var(--font-size-xs);
+            font-weight: 500;
+        }
+        
+        .status-badge.completed {
+            background: var(--success-light);
+            color: var(--success);
+        }
+        
+        .status-badge.in-progress {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+        
+        .status-badge.pending {
+            background: var(--warning-light);
+            color: var(--warning);
+        }
+        
+        /* Sheet footer */
+        .sheet-footer {
+            padding: var(--space-3) var(--space-4);
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: var(--font-size-xs);
+            color: var(--text-tertiary);
+        }
+        
+        /* Color palette display */
+        .color-palette {
+            display: flex;
+            gap: var(--space-3);
+            padding: var(--space-4);
+            background: var(--surface-secondary);
+            border-radius: var(--radius-md);
+            margin: var(--space-4);
+        }
+        
+        .color-swatch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: var(--space-2);
+        }
+        
+        .swatch {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .swatch-label {
+            font-size: var(--font-size-xs);
+            color: var(--text-secondary);
+            text-align: center;
+        }
+        
+        /* Demo header */
+        .demo-header {
+            background: var(--surface-primary);
+            padding: var(--space-4);
+            border-bottom: 1px solid var(--border);
+            margin-bottom: var(--space-4);
+        }
+        
+        .demo-title {
+            font-size: var(--font-size-xl);
+            font-weight: 600;
+            margin-bottom: var(--space-2);
+        }
+        
+        .demo-subtitle {
+            font-size: var(--font-size-sm);
+            color: var(--text-secondary);
+        }
+        
+        /* Checkbox */
+        .checkbox {
+            width: 16px;
+            height: 16px;
+            border: 1.5px solid var(--border);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .checkbox:hover {
+            border-color: var(--accent);
+        }
+        
+        .checkbox.checked {
+            background: var(--accent);
+            border-color: var(--accent);
+        }
+        
+        .checkbox.checked svg {
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 64px;
+            }
+            
+            .logo-text, .nav-item span, .nav-item-count, .nav-section-title {
+                display: none;
+            }
+            
+            .sidebar-header {
+                padding: var(--space-3);
+                display: flex;
+                justify-content: center;
+            }
+            
+            .nav-item {
+                justify-content: center;
+                padding: var(--space-3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">💧</div>
+                    <span class="logo-text">QLDA</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <div class="nav-section-title">Điều hướng</div>
+                    <div class="nav-item active">
+                        <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        <span>Tổng quan</span>
+                    </div>
+                    <div class="nav-item">
+                        <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                            <line x1="16" y1="13" x2="8" y2="13"></line>
+                            <line x1="16" y1="17" x2="8" y2="17"></line>
+                            <polyline points="10 9 9 9 8 9"></polyline>
+                        </svg>
+                        <span>Báo cáo</span>
+                    </div>
+                    <div class="nav-item">
+                        <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                        <span>Dashboard</span>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Dự án của tôi</div>
+                    <div class="project-tree">
+                        <div class="project-item active">
+                            <span class="project-status active"></span>
+                            <span>QLDA Cầu Bến Thủy</span>
+                        </div>
+                        <div class="project-item">
+                            <span class="project-status pending"></span>
+                            <span>QLDA Nhà văn hóa TT</span>
+                        </div>
+                        <div class="project-item">
+                            <span class="project-status draft"></span>
+                            <span>QLDA Thủy lợi Hòa Bình</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">Thao tác</div>
+                    <div class="nav-item">
+                        <svg class="nav-item-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                        </svg>
+                        <span>Tạo dự án mới</span>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+        
+        <!-- Main content -->
+        <main class="main">
+            <!-- Topbar -->
+            <header class="topbar">
+                <h1 class="topbar-title">QLDA Cầu Bến Thủy</h1>
+                
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input type="text" class="search-input" placeholder="Tìm kiếm công việc...">
+                </div>
+                
+                <div class="topbar-actions">
+                    <button class="btn btn-ghost btn-icon" title="Thông báo">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-icon" title="Cài đặt">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </button>
+                    <div class="avatar">NV</div>
+                </div>
+            </header>
+            
+            <!-- Sheet -->
+            <div class="sheet">
+                <!-- Toolbar -->
+                <div class="sheet-toolbar">
+                    <div class="toolbar-group">
+                        <button class="toolbar-btn" title="Hoàn tác">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="1 4 1 10 7 10"></polyline>
+                                <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                            </svg>
+                        </button>
+                        <button class="toolbar-btn" title="Làm lại">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="23 4 23 10 17 10"></polyline>
+                                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="toolbar-divider"></div>
+                    
+                    <div class="toolbar-group">
+                        <button class="btn btn-primary" style="height: 32px; font-size: 13px;">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                            Thêm dòng
+                        </button>
+                    </div>
+                    
+                    <div class="toolbar-divider"></div>
+                    
+                    <div class="toolbar-group">
+                        <button class="toolbar-btn" title="Định dạng">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                                <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                                <path d="M2 2l7.586 7.586"></path>
+                                <circle cx="11" cy="11" r="2"></circle>
+                            </svg>
+                        </button>
+                        <button class="toolbar-btn" title="Font">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="4 7 4 4 20 4 20 7"></polyline>
+                                <line x1="9" y1="20" x2="15" y2="20"></line>
+                                <line x1="12" y1="4" x2="12" y2="20"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="toolbar-divider"></div>
+                    
+                    <div class="toolbar-group">
+                        <button class="toolbar-btn" title="Lọc">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                            </svg>
+                        </button>
+                        <button class="toolbar-btn" title="Nhóm">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div class="toolbar-divider"></div>
+                    
+                    <div class="toolbar-group">
+                        <button class="toolbar-btn" title="Tạo form">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="12" y1="18" x2="12" y2="12"></line>
+                                <line x1="9" y1="15" x2="15" y2="15"></line>
+                            </svg>
+                        </button>
+                        <button class="toolbar-btn" title="Đính kèm">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                    <div style="flex: 1;"></div>
+                    
+                    <button class="btn btn-secondary" style="height: 32px; font-size: 13px;">
+                        Xuất báo cáo
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 14px; height: 14px;">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Grid -->
+                <div class="sheet-grid">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th class="cell-checkbox"></th>
+                                <th class="cell-stt">#</th>
+                                <th>Tên công việc</th>
+                                <th class="cell-progress">Tiến độ</th>
+                                <th>Trạng thái</th>
+                                <th class="cell-date">Hạn hoàn thành</th>
+                                <th class="cell-priority">Ưu tiên</th>
+                                <th>Người phụ trách</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="cell-checkbox"><div class="checkbox"></div></td>
+                                <td class="cell-stt">1</td>
+                                <td class="cell-name">Hoàn tất hồ sơ thiết kế kỹ thuật</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill high" style="width: 100%;"></div>
+                                    </div>
+                                </td>
+                                <td><span class="status-badge completed">Hoàn thành</span></td>
+                                <td class="cell-date">15/07/2026</td>
+                                <td class="cell-priority">
+                                    <span class="priority-badge low">
+                                        <span class="priority-dot"></span>
+                                        Thấp
+                                    </span>
+                                </td>
+                                <td>Nguyễn Văn A</td>
+                            </tr>
+                            <tr>
+                                <td class="cell-checkbox"><div class="checkbox"></div></td>
+                                <td class="cell-stt">2</td>
+                                <td class="cell-name">Xin phép xây dựng</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill high" style="width: 85%;"></div>
+                                    </div>
+                                </td>
+                                <td><span class="status-badge in-progress">Đang thực hiện</span></td>
+                                <td class="cell-date">20/07/2026</td>
+                                <td class="cell-priority">
+                                    <span class="priority-badge high">
+                                        <span class="priority-dot"></span>
+                                        Cao
+                                    </span>
+                                </td>
+                                <td>Trần Thị B</td>
+                            </tr>
+                            <tr>
+                                <td class="cell-checkbox"><div class="checkbox"></div></td>
+                                <td class="cell-stt">3</td>
+                                <td class="cell-name">Đấu thầu thiết bị</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill medium" style="width: 45%;"></div>
+                                    </div>
+                                </td>
+                                <td><span class="status-badge in-progress">Đang thực hiện</span></td>
+                                <td class="cell-date">25/07/2026</td>
+                                <td class="cell-priority">
+                                    <span class="priority-badge medium">
+                                        <span class="priority-dot"></span>
+                                        Trung bình
+                                    </span>
+                                </td>
+                                <td>Lê Văn C</td>
+                            </tr>
+                            <tr>
+                                <td class="cell-checkbox"><div class="checkbox"></div></td>
+                                <td class="cell-stt">4</td>
+                                <td class="cell-name">Thi công phần móng</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill medium" style="width: 30%;"></div>
+                                    </div>
+                                </td>
+                                <td><span class="status-badge pending">Chờ xử lý</span></td>
+                                <td class="cell-date">15/08/2026</td>
+                                <td class="cell-priority">
+                                    <span class="priority-badge high">
+                                        <span class="priority-dot"></span>
+                                        Cao
+                                    </span>
+                                </td>
+                                <td>Phạm Văn D</td>
+                            </tr>
+                            <tr>
+                                <td class="cell-checkbox"><div class="checkbox"></div></td>
+                                <td class="cell-stt">5</td>
+                                <td class="cell-name">Lắp đặt kết cấu thép</td>
+                                <td>
+                                    <div class="progress-bar">
+                                        <div class="progress-fill low" style="width: 0%;"></div>
+                                    </div>
+                                </td>
+                                <td><span class="status-badge pending">Chờ xử lý</span></td>
+                                <td class="cell-date">01/10/2026</td>
+                                <td class="cell-priority">
+                                    <span class="priority-badge medium">
+                                        <span class="priority-dot"></span>
+                                        Trung bình
+                                    </span>
+                                </td>
+                                <td>Hoàng Văn E</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Footer -->
+                <div class="sheet-footer">
+                    <span>5 công việc</span>
+                    <span>Đã chọn: 0</span>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        // Checkbox interaction
+        document.querySelectorAll('.checkbox').forEach(checkbox => {
+            checkbox.addEventListener('click', function() {
+                this.classList.toggle('checked');
+                if (this.classList.contains('checked')) {
+                    this.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+                } else {
+                    this.innerHTML = '';
+                }
+            });
+        });
+        
+        // Row click to select
+        document.querySelectorAll('.data-table tbody tr').forEach(row => {
+            row.addEventListener('click', function(e) {
+                if (e.target.closest('.checkbox')) return;
+                const checkbox = this.querySelector('.checkbox');
+                checkbox.click();
+            });
+        });
+    </script>
+</body>
+</html>

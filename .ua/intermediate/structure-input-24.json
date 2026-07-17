@@ -1,0 +1,43 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/00_README.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/03_CURRENT_STATUS.md",
+                           "language":  "markdown",
+                           "sizeLines":  8,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/04_RELEASE_NOTE.md",
+                           "language":  "markdown",
+                           "sizeLines":  94,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/05_DEPLOY_LOG.md",
+                           "language":  "markdown",
+                           "sizeLines":  97,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/00_README.md":  [
+
+                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/03_CURRENT_STATUS.md":  [
+
+                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/04_RELEASE_NOTE.md":  [
+
+                                                                                         ],
+                            "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/05_DEPLOY_LOG.md":  [
+
+                                                                                       ]
+                        }
+}

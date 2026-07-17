@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Design Styles Comparison - QLDA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           GLOBAL
+           ============================================ */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            line-height: 1.5;
+        }
+        
+        .header {
+            padding: 40px;
+            text-align: center;
+            border-bottom: 1px solid #222;
+        }
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .header p {
+            color: #888;
+            font-size: 14px;
+        }
+        
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 24px;
+            padding: 24px;
+        }
+        
+        .style-card {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .style-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        
+        .style-label {
+            padding: 16px 20px;
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* ============================================
+           STYLE 1: GLASSMORPHISM
+           ============================================ */
+        .glassmorphism {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 500px;
+            position: relative;
+        }
+        .glassmorphism::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+            animation: float 20s infinite linear;
+        }
+        @keyframes float {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .glassmorphism .style-label {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(20px);
+            color: #fff;
+        }
+        .glassmorphism-content {
+            padding: 24px;
+            position: relative;
+            z-index: 1;
+        }
+        .glass-panel {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .glass-sidebar {
+            width: 60px;
+            height: 200px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            float: left;
+            margin-right: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 0;
+            gap: 8px;
+        }
+        .glass-nav-dot {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+        }
+        .glass-nav-dot.active {
+            background: rgba(255,255,255,0.3);
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+        }
+        .glass-content-area {
+            overflow: hidden;
+        }
+        .glass-header {
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+        .glass-row {
+            height: 48px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(20px);
+            border-radius: 10px;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 12px;
+        }
+        .glass-row-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+        }
+        .glass-row-line {
+            height: 8px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 4px;
+            flex: 1;
+        }
+        .glass-progress {
+            width: 80px;
+            height: 6px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .glass-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00f2fe, #4facfe);
+            border-radius: 3px;
+        }
+        .glass-btn {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255,255,255,0.25);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: 500;
+            font-size: 13px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* ============================================
+           STYLE 2: NEUMORPHISM
+           ============================================ */
+        .neumorphism {
+            background: #e0e5ec;
+            min-height: 500px;
+            padding: 24px;
+        }
+        .neumorphism .style-label {
+            background: #e0e5ec;
+            color: #5a6a7a;
+            box-shadow: inset 2px 2px 5px #b8bcc2, inset -2px -2px 5px #ffffff;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .neu-container {
+            display: flex;
+            gap: 16px;
+        }
+        .neu-sidebar {
+            width: 56px;
+            background: #e0e5ec;
+            border-radius: 16px;
+            padding: 12px 8px;
+            box-shadow: 6px 6px 12px #b8bcc2, -6px -6px 12px #ffffff;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .neu-nav-btn {
+            width: 40px;
+            height: 40px;
+            background: #e0e5ec;
+            border-radius: 12px;
+            box-shadow: 4px 4px 8px #b8bcc2, -4px -4px 8px #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+        .neu-nav-btn.active {
+            box-shadow: inset 4px 4px 8px #b8bcc2, inset -4px -4px 8px #ffffff;
+        }
+        .neu-main {
+            flex: 1;
+        }
+        .neu-header {
+            height: 48px;
+            background: #e0e5ec;
+            border-radius: 12px;
+            box-shadow: 4px 4px 8px #b8bcc2, -4px -4px 8px #ffffff;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+        }
+        .neu-header-text {
+            width: 150px;
+            height: 12px;
+            background: linear-gradient(135deg, #a0aec0, #718096);
+            border-radius: 6px;
+        }
+        .neu-search {
+            width: 120px;
+            height: 32px;
+            background: #e0e5ec;
+            border-radius: 8px;
+            box-shadow: inset 3px 3px 6px #b8bcc2, inset -3px -3px 6px #ffffff;
+            margin-left: auto;
+        }
+        .neu-table {
+            background: #e0e5ec;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 6px 6px 12px #b8bcc2, -6px -6px 12px #ffffff;
+        }
+        .neu-row {
+            height: 52px;
+            background: #e0e5ec;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 16px;
+            box-shadow: 3px 3px 6px #b8bcc2, -3px -3px 6px #ffffff;
+        }
+        .neu-cell {
+            height: 10px;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #c8d0da, #a0aec0);
+        }
+        .neu-progress {
+            width: 100px;
+            height: 8px;
+            background: #e0e5ec;
+            border-radius: 4px;
+            box-shadow: inset 2px 2px 4px #b8bcc2, inset -2px -2px 4px #ffffff;
+            overflow: hidden;
+        }
+        .neu-progress-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 4px;
+        }
+        .neu-badge {
+            width: 70px;
+            height: 24px;
+            background: #e0e5ec;
+            border-radius: 6px;
+            box-shadow: 2px 2px 4px #b8bcc2, -2px -2px 4px #ffffff;
+        }
+        .neu-btn {
+            padding: 12px 24px;
+            background: #e0e5ec;
+            border: none;
+            border-radius: 10px;
+            color: #5a6a7a;
+            font-weight: 600;
+            font-size: 13px;
+            box-shadow: 4px 4px 8px #b8bcc2, -4px -4px 8px #ffffff;
+            cursor: pointer;
+        }
+        
+        /* ============================================
+           STYLE 3: MINIMAL DARK
+           ============================================ */
+        .minimal-dark {
+            background: #0d0d0d;
+            min-height: 500px;
+            color: #e0e0e0;
+        }
+        .minimal-dark .style-label {
+            background: #0d0d0d;
+            color: #00ff88;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        .dark-container {
+            padding: 20px;
+        }
+        .dark-sidebar {
+            width: 48px;
+            background: #141414;
+            border-radius: 10px;
+            float: left;
+            margin-right: 16px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .dark-nav-icon {
+            width: 32px;
+            height: 32px;
+            background: #1a1a1a;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dark-nav-icon.active {
+            background: linear-gradient(135deg, #00ff88 0%, #00b894 100%);
+            box-shadow: 0 0 20px rgba(0,255,136,0.3);
+        }
+        .dark-nav-icon svg {
+            width: 14px;
+            height: 14px;
+            stroke: #666;
+        }
+        .dark-nav-icon.active svg {
+            stroke: #0d0d0d;
+        }
+        .dark-main {
+            overflow: hidden;
+        }
+        .dark-header {
+            height: 44px;
+            background: #141414;
+            border-radius: 8px;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+        }
+        .dark-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .dark-search {
+            width: 100px;
+            height: 28px;
+            background: #1a1a1a;
+            border-radius: 6px;
+            margin-left: auto;
+        }
+        .dark-table {
+            background: #141414;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .dark-row {
+            height: 54px;
+            border-bottom: 1px solid #1a1a1a;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 16px;
+            transition: background 0.2s;
+        }
+        .dark-row:hover {
+            background: #1a1a1a;
+        }
+        .dark-cell-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+        }
+        .dark-cell-line {
+            height: 8px;
+            background: #2a2a2a;
+            border-radius: 4px;
+        }
+        .dark-progress {
+            width: 90px;
+            height: 4px;
+            background: #1a1a1a;
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        .dark-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff88, #00b894);
+            border-radius: 2px;
+        }
+        .dark-badge {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .dark-badge-success {
+            background: rgba(0,255,136,0.15);
+            color: #00ff88;
+        }
+        .dark-badge-warning {
+            background: rgba(255,200,0,0.15);
+            color: #ffc800;
+        }
+        .dark-btn {
+            background: transparent;
+            border: 1px solid #00ff88;
+            color: #00ff88;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .dark-btn:hover {
+            background: #00ff88;
+            color: #0d0d0d;
+        }
+        
+        /* ============================================
+           STYLE 4: ENTERPRISE PRO (Material 3)
+           ============================================ */
+        .enterprise {
+            background: #fafafa;
+            min-height: 500px;
+        }
+        .enterprise .style-label {
+            background: #fafafa;
+            color: #1a73e8;
+            border-bottom: 1px solid #eee;
+        }
+        .enterprise-container {
+            padding: 20px;
+        }
+        .enterprise-appbar {
+            height: 56px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            margin-bottom: 16px;
+        }
+        .enterprise-logo {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #1a73e8, #4285f4);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .enterprise-title {
+            margin-left: 12px;
+            font-weight: 600;
+            color: #202124;
+            font-size: 16px;
+        }
+        .enterprise-search {
+            width: 180px;
+            height: 40px;
+            background: #f1f3f4;
+            border-radius: 20px;
+            margin-left: auto;
+        }
+        .enterprise-content {
+            display: flex;
+            gap: 16px;
+        }
+        .enterprise-nav {
+            width: 64px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            padding: 12px 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .enterprise-nav-item {
+            width: 48px;
+            height: 48px;
+            background: transparent;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .enterprise-nav-item.active {
+            background: #e8f0fe;
+        }
+        .enterprise-nav-item.active svg {
+            stroke: #1a73e8;
+        }
+        .enterprise-nav-item svg {
+            width: 20px;
+            height: 20px;
+            stroke: #5f6368;
+        }
+        .enterprise-card {
+            flex: 1;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .enterprise-card-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .enterprise-card-title {
+            font-weight: 600;
+            color: #202124;
+            font-size: 15px;
+        }
+        .enterprise-chip {
+            padding: 6px 12px;
+            background: #f1f3f4;
+            border-radius: 8px;
+            font-size: 12px;
+            color: #5f6368;
+        }
+        .enterprise-table {
+            padding: 0;
+        }
+        .enterprise-row {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 16px;
+            border-bottom: 1px solid #f1f3f4;
+        }
+        .enterprise-row:hover {
+            background: #fafafa;
+        }
+        .enterprise-cell {
+            height: 10px;
+            background: #e8eaed;
+            border-radius: 5px;
+        }
+        .enterprise-progress {
+            width: 100px;
+            height: 6px;
+            background: #e8eaed;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .enterprise-progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #1a73e8, #4285f4);
+            border-radius: 3px;
+        }
+        .enterprise-status {
+            padding: 6px 12px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        .enterprise-status-success {
+            background: #e6f4ea;
+            color: #137333;
+        }
+        .enterprise-status-warning {
+            background: #fef7e0;
+            color: #b06000;
+        }
+        .enterprise-btn {
+            background: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            font-weight: 500;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        
+        /* ============================================
+           STYLE 5: BRUTALIST
+           ============================================ */
+        .brutalist {
+            background: #fff;
+            min-height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+        .brutalist .style-label {
+            background: #000;
+            color: #fff;
+            border-right: 4px solid #ff3300;
+        }
+        .brutalist-container {
+            padding: 0;
+        }
+        .brutalist-nav {
+            width: 100%;
+            background: #000;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .brutalist-logo {
+            background: #ff3300;
+            color: white;
+            padding: 8px 16px;
+            font-weight: 700;
+            font-size: 18px;
+            border: 3px solid #000;
+        }
+        .brutalist-nav-item {
+            color: #000;
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+            padding: 8px 0;
+            border-bottom: 3px solid transparent;
+        }
+        .brutalist-nav-item.active {
+            border-bottom-color: #ff3300;
+        }
+        .brutalist-content {
+            padding: 24px;
+        }
+        .brutalist-table {
+            border: 3px solid #000;
+        }
+        .brutalist-row {
+            display: flex;
+            align-items: stretch;
+            border-bottom: 3px solid #000;
+        }
+        .brutalist-row:last-child {
+            border-bottom: none;
+        }
+        .brutalist-row:hover {
+            background: #ffff00;
+        }
+        .brutalist-cell {
+            padding: 16px 20px;
+            border-right: 3px solid #000;
+            display: flex;
+            align-items: center;
+        }
+        .brutalist-cell:last-child {
+            border-right: none;
+        }
+        .brutalist-cell-indicator {
+            width: 16px;
+            height: 16px;
+            background: #ff3300;
+            border: 2px solid #000;
+        }
+        .brutalist-cell-text {
+            font-weight: 700;
+            font-size: 14px;
+            color: #000;
+        }
+        .brutalist-progress {
+            width: 100px;
+            height: 12px;
+            background: #e0e0e0;
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+        .brutalist-progress-fill {
+            height: 100%;
+            background: #000;
+        }
+        .brutalist-badge {
+            background: #000;
+            color: #fff;
+            padding: 6px 12px;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        .brutalist-badge.warning {
+            background: #ff3300;
+        }
+        .brutalist-btn {
+            background: #000;
+            color: #fff;
+            padding: 12px 24px;
+            border: 3px solid #000;
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+        .brutalist-btn:hover {
+            background: #ff3300;
+            border-color: #ff3300;
+        }
+        .brutalist-decoration {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: #ffff00;
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+        
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            padding: 40px;
+            text-align: center;
+            border-top: 1px solid #222;
+            color: #666;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>5 DESIGN STYLES COMPARISON</h1>
+        <p>Project Management Dashboard - QLDA</p>
+    </header>
+    
+    <div class="comparison-grid">
+        <!-- STYLE 1: GLASSMORPHISM -->
+        <div class="style-card">
+            <div class="style-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a10 10 0 0 1 0 20"></path>
+                </svg>
+                GLASSMORPHISM
+            </div>
+            <div class="glassmorphism">
+                <div class="glassmorphism-content">
+                    <div class="glass-panel">
+                        <div class="glass-sidebar">
+                            <div class="glass-nav-dot active"></div>
+                            <div class="glass-nav-dot"></div>
+                            <div class="glass-nav-dot"></div>
+                            <div class="glass-nav-dot"></div>
+                        </div>
+                        <div class="glass-content-area">
+                            <div class="glass-header"></div>
+                            <div class="glass-row">
+                                <div class="glass-row-dot"></div>
+                                <div class="glass-row-line" style="width: 200px;"></div>
+                                <div class="glass-progress">
+                                    <div class="glass-progress-fill" style="width: 75%;"></div>
+                                </div>
+                                <div class="glass-btn">+</div>
+                            </div>
+                            <div class="glass-row">
+                                <div class="glass-row-dot" style="background: #ffd700;"></div>
+                                <div class="glass-row-line" style="width: 150px;"></div>
+                                <div class="glass-progress">
+                                    <div class="glass-progress-fill" style="width: 45%;"></div>
+                                </div>
+                                <div class="glass-btn">+</div>
+                            </div>
+                            <div class="glass-row">
+                                <div class="glass-row-dot" style="background: #ff6b6b;"></div>
+                                <div class="glass-row-line" style="width: 180px;"></div>
+                                <div class="glass-progress">
+                                    <div class="glass-progress-fill" style="width: 20%;"></div>
+                                </div>
+                                <div class="glass-btn">+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STYLE 2: NEUMORPHISM -->
+        <div class="style-card">
+            <div class="style-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                </svg>
+                NEUMORPHISM
+            </div>
+            <div class="neumorphism">
+                <div class="neu-container">
+                    <div class="neu-sidebar">
+                        <div class="neu-nav-btn active">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#667eea" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </div>
+                        <div class="neu-nav-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                            </svg>
+                        </div>
+                        <div class="neu-nav-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a0aec0" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="neu-main">
+                        <div class="neu-header">
+                            <div class="neu-header-text"></div>
+                            <div class="neu-search"></div>
+                        </div>
+                        <div class="neu-table">
+                            <div class="neu-row">
+                                <div class="neu-cell" style="width: 200px;"></div>
+                                <div class="neu-progress"><div class="neu-progress-fill" style="width: 100%;"></div></div>
+                                <div class="neu-badge"></div>
+                            </div>
+                            <div class="neu-row">
+                                <div class="neu-cell" style="width: 180px;"></div>
+                                <div class="neu-progress"><div class="neu-progress-fill" style="width: 65%;"></div></div>
+                                <div class="neu-badge"></div>
+                            </div>
+                            <div class="neu-row">
+                                <div class="neu-cell" style="width: 160px;"></div>
+                                <div class="neu-progress"><div class="neu-progress-fill" style="width: 30%;"></div></div>
+                                <div class="neu-badge"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STYLE 3: MINIMAL DARK -->
+        <div class="style-card">
+            <div class="style-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                MINIMAL DARK
+            </div>
+            <div class="minimal-dark">
+                <div class="dark-container">
+                    <div class="dark-sidebar">
+                        <div class="dark-nav-icon active">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                        </div>
+                        <div class="dark-nav-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            </svg>
+                        </div>
+                        <div class="dark-nav-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="dark-main">
+                        <div class="dark-header">
+                            <span class="dark-title">Projects</span>
+                            <div class="dark-search"></div>
+                        </div>
+                        <div class="dark-table">
+                            <div class="dark-row">
+                                <div class="dark-cell-dot" style="background: #00ff88;"></div>
+                                <div class="dark-cell-line" style="width: 180px;"></div>
+                                <div class="dark-progress"><div class="dark-progress-fill" style="width: 90%;"></div></div>
+                                <span class="dark-badge dark-badge-success">Done</span>
+                            </div>
+                            <div class="dark-row">
+                                <div class="dark-cell-dot" style="background: #ffc800;"></div>
+                                <div class="dark-cell-line" style="width: 160px;"></div>
+                                <div class="dark-progress"><div class="dark-progress-fill" style="width: 55%;"></div></div>
+                                <span class="dark-badge dark-badge-warning">In Progress</span>
+                            </div>
+                            <div class="dark-row">
+                                <div class="dark-cell-dot" style="background: #666;"></div>
+                                <div class="dark-cell-line" style="width: 140px;"></div>
+                                <div class="dark-progress"><div class="dark-progress-fill" style="width: 10%;"></div></div>
+                                <span class="dark-badge dark-badge-warning">In Progress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STYLE 4: ENTERPRISE PRO (Material 3) -->
+        <div class="style-card">
+            <div class="style-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="3" y1="9" x2="21" y2="9"></line>
+                    <line x1="9" y1="21" x2="9" y2="9"></line>
+                </svg>
+                ENTERPRISE PRO
+            </div>
+            <div class="enterprise">
+                <div class="enterprise-container">
+                    <div class="enterprise-appbar">
+                        <div class="enterprise-logo">💧</div>
+                        <span class="enterprise-title">QLDA Dashboard</span>
+                        <div class="enterprise-search"></div>
+                    </div>
+                    <div class="enterprise-content">
+                        <div class="enterprise-nav">
+                            <div class="enterprise-nav-item active">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                            </div>
+                            <div class="enterprise-nav-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                </svg>
+                            </div>
+                            <div class="enterprise-nav-item">
+                                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="enterprise-card">
+                            <div class="enterprise-card-header">
+                                <span class="enterprise-card-title">Task List</span>
+                                <span class="enterprise-chip">5 items</span>
+                            </div>
+                            <div class="enterprise-table">
+                                <div class="enterprise-row">
+                                    <div class="enterprise-cell" style="width: 180px;"></div>
+                                    <div class="enterprise-progress"><div class="enterprise-progress-fill" style="width: 100%;"></div></div>
+                                    <span class="enterprise-status enterprise-status-success">Completed</span>
+                                </div>
+                                <div class="enterprise-row">
+                                    <div class="enterprise-cell" style="width: 160px;"></div>
+                                    <div class="enterprise-progress"><div class="enterprise-progress-fill" style="width: 70%;"></div></div>
+                                    <span class="enterprise-status enterprise-status-warning">In Progress</span>
+                                </div>
+                                <div class="enterprise-row">
+                                    <div class="enterprise-cell" style="width: 140px;"></div>
+                                    <div class="enterprise-progress"><div class="enterprise-progress-fill" style="width: 25%;"></div></div>
+                                    <span class="enterprise-status enterprise-status-warning">In Progress</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STYLE 5: BRUTALIST -->
+        <div class="style-card">
+            <div class="style-label">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                BRUTALIST
+            </div>
+            <div class="brutalist">
+                <div class="brutalist-container">
+                    <nav class="brutalist-nav">
+                        <div class="brutalist-logo">QLDA</div>
+                        <span class="brutalist-nav-item active">PROJECTS</span>
+                        <span class="brutalist-nav-item">TASKS</span>
+                        <span class="brutalist-nav-item">REPORTS</span>
+                    </nav>
+                    <div class="brutalist-content">
+                        <div class="brutalist-table">
+                            <div class="brutalist-row">
+                                <div class="brutalist-cell" style="width: 40px; justify-content: center;">
+                                    <div class="brutalist-cell-indicator"></div>
+                                </div>
+                                <div class="brutalist-cell" style="flex: 1;">
+                                    <span class="brutalist-cell-text">Thiết kế kỹ thuật</span>
+                                </div>
+                                <div class="brutalist-cell" style="width: 120px;">
+                                    <div class="brutalist-progress"><div class="brutalist-progress-fill" style="width: 100%;"></div></div>
+                                </div>
+                                <div class="brutalist-cell" style="width: 100px;">
+                                    <span class="brutalist-badge">DONE</span>
+                                </div>
+                                <div class="brutalist-cell" style="width: 80px;">
+                                    <button class="brutalist-btn" style="padding: 6px 12px; font-size: 10px;">→</button>
+                                </div>
+                            </div>
+                            <div class="brutalist-row">
+                                <div class="brutalist-cell" style="width: 40px; justify-content: center;">
+                                    <div class="brutalist-cell-indicator" style="background: #ffd700;"></div>
+                                </div>
+                                <div class="brutalist-cell" style="flex: 1;">
+                                    <span class="brutalist-cell-text">Xin phép xây dựng</span>
+                                </div>
+                                <div class="brutalist-cell" style="width: 120px;">
+                                    <div class="brutalist-progress"><div class="brutalist-progress-fill" style="width: 65%;"></div></div>
+                                </div>
+                                <div class="brutalist-cell" style="width: 100px;">
+                                    <span class="brutalist-badge warning">ACTIVE</span>
+                                </div>
+                                <div class="brutalist-cell" style="width: 80px;">
+                                    <button class="brutalist-btn" style="padding: 6px 12px; font-size: 10px;">→</button>
+                                </div>
+                            </div>
+                            <div class="brutalist-row">
+                                <div class="brutalist-cell" style="width: 40px; justify-content: center;">
+                                    <div class="brutalist-cell-indicator" style="background: #ff3300;"></div>
+                                </div>
+                                <div class="brutalist-cell" style="flex: 1;">
+                                    <span class="brutalist-cell-text">Đấu thầu thiết bị</span>
+                                </div>
+                                <div class="brutalist-cell" style="width: 120px;">
+                                    <div class="brutalist-progress"><div class="brutalist-progress-fill" style="width: 30%;"></div></div>
+                                </div>
+                                <div class="brutalist-cell" style="width: 100px;">
+                                    <span class="brutalist-badge warning">ACTIVE</span>
+                                </div>
+                                <div class="brutalist-cell" style="width: 80px;">
+                                    <button class="brutalist-btn" style="padding: 6px 12px; font-size: 10px;">→</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brutalist-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>QLDA Project Management System - Design Styles Comparison</p>
+    </footer>
+</body>
+</html>

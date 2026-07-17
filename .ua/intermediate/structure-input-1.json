@@ -1,0 +1,52 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/AUTO_LOOP.md",
+                           "language":  "markdown",
+                           "sizeLines":  24,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/CODEBASE_MEMORY.md",
+                           "language":  "markdown",
+                           "sizeLines":  18,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/CONTROLLER_STATE.json",
+                           "language":  "json",
+                           "sizeLines":  11,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  ".agents/RULES.md",
+                           "language":  "markdown",
+                           "sizeLines":  14,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/WORKFLOW.md",
+                           "language":  "markdown",
+                           "sizeLines":  18,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/AUTO_LOOP.md":  [
+
+                                                     ],
+                            ".agents/CODEBASE_MEMORY.md":  [
+
+                                                           ],
+                            ".agents/CONTROLLER_STATE.json":  [
+
+                                                              ],
+                            ".agents/RULES.md":  [
+
+                                                 ],
+                            ".agents/WORKFLOW.md":  [
+
+                                                    ]
+                        }
+}

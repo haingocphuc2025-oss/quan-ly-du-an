@@ -1,0 +1,857 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 10,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/BAO_CAO_NGAY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "BÁO CÁO NGÀY — Việc đã giao & Nghiệm thu (Claude ghi, mới nhất trên cùng)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "📅 07/07/2026",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Việc đã làm trong phiên",
+          "level": 3,
+          "line": 11
+        },
+        {
+          "heading": "Tình trạng dự án cuối phiên",
+          "level": 3,
+          "line": 28
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/CLAUDE_NHIEM_VU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "Chức năng — Nhiệm vụ của Claude (Cowork) — AI điều phối dự án QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Vai trò",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "2. Nhiệm vụ thường xuyên",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "3. Được quyết KHÔNG cần hỏi Quân",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "4. PHẢI chuyển Quân — không quyết thay",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "5. Nhịp làm việc mỗi phiên",
+          "level": 2,
+          "line": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/DESIGN_MAIN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 784,
+      "nonEmptyLines": 656,
+      "sections": [
+        {
+          "heading": "📋 DESIGN MAIN — DU AN WED QUAN LY",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🎯 MỤC LỤC",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "1. 🎯 MỤC TIÊU HỆ THỐNG",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "2. 🔍 TỔNG QUAN SMARTSHEET PLATFORM",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "2.1 SmartSheet là gì?",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "2.2 Kiến trúc giao diện SmartSheet",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "2.3 Core Platform Features tham khảo",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "2.4 Design System tham khảo (SmartSheet)",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "3. 🏗️ KIẾN TRÚC HỆ THỐNG",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "3.1 High-level Architecture",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "3.2 Data Flow",
+          "level": 3,
+          "line": 147
+        },
+        {
+          "heading": "3.3 Authentication Flow",
+          "level": 3,
+          "line": 155
+        },
+        {
+          "heading": "4. 🎨 THIẾT KẾ UI/UX & LAYOUT",
+          "level": 2,
+          "line": 168
+        },
+        {
+          "heading": "4.1 Tổng thể Layout Desktop",
+          "level": 3,
+          "line": 170
+        },
+        {
+          "heading": "4.2 Responsive Breakpoints",
+          "level": 3,
+          "line": 193
+        },
+        {
+          "heading": "4.3 Design Tokens",
+          "level": 3,
+          "line": 201
+        },
+        {
+          "heading": "4.4 Keyboard Shortcuts",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "5. 🔧 6 CORE FEATURE SPECIFICATIONS",
+          "level": 2,
+          "line": 233
+        },
+        {
+          "heading": "5.1 Forms — Modal tạo/sửa hàng",
+          "level": 3,
+          "line": 235
+        },
+        {
+          "heading": "5.2 Publish Report Builder",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "5.3 Automation MVP",
+          "level": 3,
+          "line": 308
+        },
+        {
+          "heading": "5.4 Column Types Config Modal",
+          "level": 3,
+          "line": 343
+        },
+        {
+          "heading": "5.5 Conditional Formatting Builder",
+          "level": 3,
+          "line": 384
+        },
+        {
+          "heading": "5.6 Contact Column Widget",
+          "level": 3,
+          "line": 423
+        },
+        {
+          "heading": "6. 📡 API DESIGN (APPS SCRIPT)",
+          "level": 2,
+          "line": 454
+        },
+        {
+          "heading": "6.1 REST-like API Pattern",
+          "level": 3,
+          "line": 456
+        },
+        {
+          "heading": "6.2 Service Endpoints",
+          "level": 3,
+          "line": 486
+        },
+        {
+          "heading": "FormsService",
+          "level": 4,
+          "line": 488
+        },
+        {
+          "heading": "ReportService",
+          "level": 4,
+          "line": 495
+        },
+        {
+          "heading": "AutomationService",
+          "level": 4,
+          "line": 502
+        },
+        {
+          "heading": "ColumnService",
+          "level": 4,
+          "line": 509
+        },
+        {
+          "heading": "CFService",
+          "level": 4,
+          "line": 516
+        },
+        {
+          "heading": "ContactService",
+          "level": 4,
+          "line": 523
+        },
+        {
+          "heading": "7. 🔐 OAUTH & SECURITY DESIGN",
+          "level": 2,
+          "line": 532
+        },
+        {
+          "heading": "7.1 OAuth Flow (Apps Script)",
+          "level": 3,
+          "line": 534
+        },
+        {
+          "heading": "7.2 Security Measures",
+          "level": 3,
+          "line": 559
+        },
+        {
+          "heading": "8. 🛠 TECH STACK & CONSTRAINTS",
+          "level": 2,
+          "line": 572
+        },
+        {
+          "heading": "8.1 Frontend",
+          "level": 3,
+          "line": 574
+        },
+        {
+          "heading": "8.2 Backend",
+          "level": 3,
+          "line": 592
+        },
+        {
+          "heading": "8.3 Data Storage",
+          "level": 3,
+          "line": 608
+        },
+        {
+          "heading": "9. 📊 TEST COVERAGE DESIGN",
+          "level": 2,
+          "line": 619
+        },
+        {
+          "heading": "9.1 Test Cases per Feature",
+          "level": 3,
+          "line": 621
+        },
+        {
+          "heading": "Forms",
+          "level": 4,
+          "line": 623
+        },
+        {
+          "heading": "Report Builder",
+          "level": 4,
+          "line": 632
+        },
+        {
+          "heading": "Automation",
+          "level": 4,
+          "line": 642
+        },
+        {
+          "heading": "Column Types",
+          "level": 4,
+          "line": 651
+        },
+        {
+          "heading": "Conditional Formatting",
+          "level": 4,
+          "line": 661
+        },
+        {
+          "heading": "Contact Column",
+          "level": 4,
+          "line": 670
+        },
+        {
+          "heading": "9.2 Regression Test Checklist",
+          "level": 3,
+          "line": 680
+        },
+        {
+          "heading": "10. 📁 CẤU TRÚC THƯ MỤC",
+          "level": 2,
+          "line": 692
+        },
+        {
+          "heading": "11. ⚠️ NOTES & CAVEATS",
+          "level": 2,
+          "line": 733
+        },
+        {
+          "heading": "12. 🚀 DELIVERY INSTRUCTIONS",
+          "level": 2,
+          "line": 744
+        },
+        {
+          "heading": "📌 CHECKLIST THIẾT KẾ",
+          "level": 2,
+          "line": 757
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 53
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/DINH_CHINH_DUONG_DAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 67,
+      "nonEmptyLines": 49,
+      "sections": [
+        {
+          "heading": "📌 ĐÍNH CHÍNH ĐƯỜNG DẪN — BASELINE & STAGING",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "❌ Đường dẫn SAI (trong các tài liệu cũ)",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "✅ Đường dẫn ĐÚNG (thực tế trên Drive)",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "📂 Cấu trúc file thực tế",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "⚠️ Lưu ý quan trọng",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "📋 Tài liệu cần cập nhật đường dẫn (khi có thời gian)",
+          "level": 2,
+          "line": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/HUONG_DAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 205,
+      "nonEmptyLines": 167,
+      "sections": [
+        {
+          "heading": "HƯỚNG DẪN DỰ ÁN — DU AN WED QUAN LY (AI Software Factory v1.0)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "📂 CẤU TRÚC THƯ MỤC (6 vai trò + 1 kho dữ liệu)",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "🔄 LUỒNG CHUẨN (Standard Flow)",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "📋 QUY TRÌNH NGHIỆM THU (BẮT BUỘC)",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Bước 1 — Nhà thầu nộp \"Biên bản bàn giao\" (`03_NHA_THAU_THI_CONG/BAN_GIAO.md`)",
+          "level": 3,
+          "line": 60
+        },
+        {
+          "heading": "Bước 2 — Giám sát nghiệm thu độc lập (Claude + Playwright)",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "Bước 3 — Sau nghiệm thu (TỰ ĐỘNG)",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "⚙️ QUY TẮC CỨNG (NON-NEGOTIABLE)",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "🏗️ KIẾN TRÚC KỸ THUẬT",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "Frontend",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "Backend (Apps Script)",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "Data Storage",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "📁 VỊ TRÍ FILE QUAN TRỌNG",
+          "level": 2,
+          "line": 119
+        },
+        {
+          "heading": "🎯 TRẠNG THÁI HIỆN TẠI (07/07/2026)",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "🛠️ CÔNG CỤ TEST",
+          "level": 2,
+          "line": 170
+        },
+        {
+          "heading": "📝 GHI NHỚ KHI LÀM VIỆC",
+          "level": 2,
+          "line": 179
+        },
+        {
+          "heading": "🔗 LIÊN KẾT NHANH",
+          "level": 2,
+          "line": 190
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/HUONG_DAN_OAUTH_CLIENT_ID.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 81,
+      "nonEmptyLines": 50,
+      "sections": [
+        {
+          "heading": "HƯỚNG DẪN TẠO OAUTH CLIENT ID — Google Cloud Console",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Bước 1 — Chọn hoặc tạo Project",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Bước 2 — Bật Google Drive API",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Bước 3 — Cấu hình OAuth Consent Screen",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Bước 4 — Tạo Credentials",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Bước 5 — Cấu hình",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "Bước 6 — Copy Client ID ← QUAN TRỌNG",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "Bước 7 — Paste vào code",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "Lưu ý",
+          "level": 2,
+          "line": 76
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/PLANNING.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 233,
+      "nonEmptyLines": 175,
+      "sections": [
+        {
+          "heading": "Planning — Kế hoạch nghiên cứu & tính năng App QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Đã triển khai xong (không đề xuất lại) — chi tiết ở `NHAT_KY_LAM_VIEC.md`",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "2. Các mảng ưu tiên — trạng thái nghiên cứu",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "3. Phương pháp nghiên cứu (skill `app-feature-research`)",
+          "level": 2,
+          "line": 35
+        },
+        {
+          "heading": "4. Checklist còn mở — Sheet (CẬP NHẬT 07/07/2026 — đã đối chiếu code thật)",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Bổ sung 04/07/2026 — tính năng Quân chấm điểm (Value/Effort/Quarter) + CẬP NHẬT 07/07/2026 theo code thật",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "5. Checklist còn mở — Reports",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "6-7. Kiểm chứng thật + đề xuất làm trước",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "8. Quy tắc cứng xuyên suốt",
+          "level": 2,
+          "line": 87
+        },
+        {
+          "heading": "9. Ý tưởng: app tự bắn email báo hoàn tất (Apps Script)",
+          "level": 2,
+          "line": 93
+        },
+        {
+          "heading": "10. Công cụ & khung đánh giá bổ sung",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "11. Import Excel/CSV (CODE XONG v17, ĐÃ NGHIỆM THU ✅)",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "12. Checklist còn mở — Forms (nghiên cứu xong 04/07/2026)",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "13. Checklist còn mở — Automation / Notification (nghiên cứu xong 04/07/2026)",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "14. Checklist còn mở — Conditional Formatting + Saved Filter (nghiên cứu xong 04/07/2026 — ứng viên Q1)",
+          "level": 2,
+          "line": 150
+        },
+        {
+          "heading": "15. Formulas / Cell linking — KHUYẾN NGHỊ LÀM RẤT GỌN",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "16. Checklist còn mở — tính năng mới tìm từ NotebookLM \"So tay Smartsheet\" (04/07/2026)",
+          "level": 2,
+          "line": 174
+        },
+        {
+          "heading": "Sources chính (04/07/2026)",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "=== NHẬT KÝ PHIÊN 07/07/2026 ===",
+          "level": 2,
+          "line": 205
+        },
+        {
+          "heading": "Việc đã làm trong phiên",
+          "level": 3,
+          "line": 207
+        },
+        {
+          "heading": "Tình trạng cuối phiên",
+          "level": 3,
+          "line": 217
+        },
+        {
+          "heading": "Hàng đợi chờ giao (trong DIEU_PHOI.md)",
+          "level": 3,
+          "line": 230
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SOP_DUYET_SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 134,
+      "nonEmptyLines": 101,
+      "sections": [
+        {
+          "heading": "SOP — BAN QLDA: DUYỆT SPEC",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC ĐÍCH",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. PHÂN CÔNG TRÁCH NHIỆM",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "3. LUỒNG CHUẨN (3 BƯỚC BẮT BUỘC)",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "4. CHI TIẾT TỪNG BƯỚC",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Bước 1 — KIỂM TRA ĐIỀU KIỆN (thiếu 1 = trả lại ngay)",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "Bước 2 — CHECKLIST NỘI DUNG",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Bước 3 — XỬ LÝ FILE SAU KHI DUYỆT (trách nhiệm Ban QLDA)",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "5. QUY TẮC CỨNG",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "6. XỬ LÝ TRƯỜNG HỢP ĐẶC BIỆT",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "7. LIÊN KẾT",
+          "level": 2,
+          "line": 125
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SO_GIAO_VIEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 55,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "📋 SỔ GIAO VIỆC — BAN QLDA (Claude quản lý)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Giao việc cho TƯ VẤN THIẾT KẾ (AI Research)",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Giao việc cho NHÀ THẦU THI CÔNG (Codex/AI Code)",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "📝 GHI CHÚ",
+          "level": 2,
+          "line": 50
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SO_NGHIEM_THU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "📋 SỔ NGHIỆM THU — BAN QLDA (Claude quản lý)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Sổ nghiệm thu tổng hợp",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Lịch sử đã nghiệm thu",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Tiêu chí nghiệm thu",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Nhà thầu phụ (Phuc — nghiên cứu)",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "Nhà thầu chính (Quan — code)",
+          "level": 3,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+- generic [ref=f4e2]:
+  - button "‹ Dự án" [ref=f4e3] [cursor=pointer]
+  - generic [ref=f4e4]:
+    - button "📎" [ref=f4e5] [cursor=pointer]
+    - button "💬" [ref=f4e6] [cursor=pointer]
+    - button "📋" [ref=f4e7] [cursor=pointer]
+    - button "ℹ️" [ref=f4e8] [cursor=pointer]
+  - generic [ref=f4e9]:
+    - generic [ref=f4e10]:
+      - button "☰" [ref=f4e11] [cursor=pointer]
+      - button "←" [disabled] [ref=f4e12]
+      - button "→" [disabled] [ref=f4e13]
+    - generic [ref=f4e18]:
+      - generic [ref=f4e19]: ▦
+      - generic [ref=f4e20]: Hồ sơ dự án
+    - generic "Số phiên bản file — dùng để biết đang mở đúng bản mới nhất chưa" [ref=f4e22]: v25
+    - button "👤" [ref=f4e23] [cursor=pointer]
+    - generic [ref=f4e24] [cursor=pointer]:
+      - generic [ref=f4e25]: ⌂
+      - generic [ref=f4e26]: Trang chủ
+    - generic [ref=f4e27] [cursor=pointer]:
+      - generic [ref=f4e28]: ⌕
+      - generic [ref=f4e29]: Tìm
+    - generic [ref=f4e30] [cursor=pointer]:
+      - generic [ref=f4e31]: ▤
+      - generic [ref=f4e32]: Dự án
+    - generic [ref=f4e33] [cursor=pointer]:
+      - generic [ref=f4e34]: ◔
+      - generic [ref=f4e35]: Gần đây
+    - generic [ref=f4e36] [cursor=pointer]:
+      - generic [ref=f4e37]: ★
+      - generic [ref=f4e38]: Yêu thích
+    - button "＋ Tạo dự án" [ref=f4e39] [cursor=pointer]
+  - generic [ref=f4e40]:
+    - generic [ref=f4e41]:
+      - generic [ref=f4e42]:
+        - heading "Theo dõi hồ sơ, thư mục và chia sẻ Dự án của tôi" [level=1] [ref=f4e43]:
+          - generic [ref=f4e45]:
+            - generic [ref=f4e46]: Theo dõi hồ sơ, thư mục và chia sẻ
+            - text: Dự án của tôi
+        - generic [ref=f4e47]:
+          - generic [ref=f4e48]: ⌕
+          - textbox "Tìm dự án..." [ref=f4e49]
+        - generic [ref=f4e50]:
+          - button "Actions ▾" [ref=f4e51] [cursor=pointer]
+          - button "🗑" [ref=f4e52] [cursor=pointer]
+          - button "＋ Tạo dự án mới" [ref=f4e53] [cursor=pointer]
+      - generic [ref=f4e54]:
+        - checkbox [ref=f4e55]
+        - generic [ref=f4e56]: 8 dự án
+      - generic [ref=f4e57]:
+        - table [ref=f4e58]:
+          - rowgroup [ref=f4e59]:
+            - row [ref=f4e60]:
+              - columnheader [ref=f4e61]
+              - columnheader [ref=f4e62] [cursor=pointer]
+              - columnheader "Tên dự án" [ref=f4e63]
+              - columnheader "Trạng thái chia sẻ" [ref=f4e64]
+              - columnheader "Người tạo" [ref=f4e65]
+              - columnheader "Cập nhật lần cuối" [ref=f4e66]
+          - rowgroup
+        - generic "Chuột phải để tạo mới" [ref=f4e67]
+    - text: ⋮

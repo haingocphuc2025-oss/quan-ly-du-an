@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/00_README.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/attachment-panel-ui/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  343,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/auto-save-on-exit/SPEC_009_auto-save-on-exit.md",
+                           "language":  "markdown",
+                           "sizeLines":  301,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/automation/SPEC_005_automation.md",
+                           "language":  "markdown",
+                           "sizeLines":  119,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+                           "language":  "markdown",
+                           "sizeLines":  211,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/column-types/SPEC_006_column-types.md",
+                           "language":  "markdown",
+                           "sizeLines":  569,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/conditional-formatting/SPEC_007_conditional-formatting.md",
+                           "language":  "markdown",
+                           "sizeLines":  110,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/contact-column/SPEC_008_contact-column.md",
+                           "language":  "markdown",
+                           "sizeLines":  105,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/copy-cut-paste/SPEC_010_copy-cut-paste.md",
+                           "language":  "markdown",
+                           "sizeLines":  166,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/default-row-height-wrap/SPEC_012_default-row-height-wrap.md",
+                           "language":  "markdown",
+                           "sizeLines":  238,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md",
+                           "language":  "markdown",
+                           "sizeLines":  274,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/file-attachment/SPEC_002_file-attachment.md",
+                           "language":  "markdown",
+                           "sizeLines":  337,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/forms/SPEC_004_forms.md",
+                           "language":  "markdown",
+                           "sizeLines":  98,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md",
+                           "language":  "markdown",
+                           "sizeLines":  393,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/publish-report/SPEC_001_publish-report.md",
+                           "language":  "markdown",
+                           "sizeLines":  98,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/BAN_GIAO.md",
+                           "language":  "markdown",
+                           "sizeLines":  12,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  576,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/workspace-context-menu/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  290,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/app-feature-research.skill",
+                           "language":  "skill",
+                           "sizeLines":  10,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/QUYET_DINH.md",
+                           "language":  "markdown",
+                           "sizeLines":  26,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/YEU_CAU.md",
+                           "language":  "markdown",
+                           "sizeLines":  28,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  211,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  323,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/dashboard-configuration/SPEC_Dashboard_Configuration_v1.md",
+                           "language":  "markdown",
+                           "sizeLines":  143,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  108,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/00_README.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/attachment-panel-ui/spec.md":  [
+
+                                                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/auto-save-on-exit/SPEC_009_auto-save-on-exit.md":  [
+
+                                                                                                                                     ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/automation/SPEC_005_automation.md":  [
+
+                                                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md":  [
+
+                                                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/column-types/SPEC_006_column-types.md":  [
+
+                                                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/conditional-formatting/SPEC_007_conditional-formatting.md":  [
+
+                                                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/contact-column/SPEC_008_contact-column.md":  [
+
+                                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/copy-cut-paste/SPEC_010_copy-cut-paste.md":  [
+
+                                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/default-row-height-wrap/SPEC_012_default-row-height-wrap.md":  [
+
+                                                                                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md":  [
+
+                                                                                                                                     ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/file-attachment/SPEC_002_file-attachment.md":  [
+
+                                                                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/forms/SPEC_004_forms.md":  [
+
+                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md":  [
+
+                                                                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/publish-report/SPEC_001_publish-report.md":  [
+
+                                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/BAN_GIAO.md":  [
+
+                                                                                                                      ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/spec.md":  [
+
+                                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/workspace-context-menu/spec.md":  [
+
+                                                                                                                    ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/app-feature-research.skill":  [
+
+                                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/QUYET_DINH.md":  [
+
+                                                                                                                                                     ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/YEU_CAU.md":  [
+
+                                                                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/spec.md":  [
+
+                                                                                                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/spec.md":  [
+
+                                                                                                                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/dashboard-configuration/SPEC_Dashboard_Configuration_v1.md":  [
+
+                                                                                                                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/spec.md":  [
+
+                                                                                                                                                                                   ]
+                        }
+}

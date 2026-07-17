@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/column-types/SPEC_006_column-types.md",
+                           "language":  "markdown",
+                           "sizeLines":  572,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/conditional-formatting/SPEC_007_conditional-formatting.md",
+                           "language":  "markdown",
+                           "sizeLines":  113,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/contact-column/SPEC_008_contact-column.md",
+                           "language":  "markdown",
+                           "sizeLines":  108,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/copy-cut-paste/SPEC_010_copy-cut-paste.md",
+                           "language":  "markdown",
+                           "sizeLines":  169,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  146,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/dashboard-view-leaks-into-report/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/default-row-height-wrap/SPEC_012_default-row-height-wrap.md",
+                           "language":  "markdown",
+                           "sizeLines":  241,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/drive-api-backend/SPEC_003_drive-api-backend.md",
+                           "language":  "markdown",
+                           "sizeLines":  277,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/file-attachment/SPEC_002_file-attachment.md",
+                           "language":  "markdown",
+                           "sizeLines":  340,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/forms/SPEC_004_forms.md",
+                           "language":  "markdown",
+                           "sizeLines":  101,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/grid-row-columns-fix/SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  25,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/helper-preserve-ui-state-on-old-tab-save/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  22,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md",
+                           "language":  "markdown",
+                           "sizeLines":  396,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/modular-split-v26/SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  69,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/multi-select-column/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  35,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/nghiem-thu-v25-fixes/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  27,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/persist-column-widths-in-project-save/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/publish-report/SPEC_001_publish-report.md",
+                           "language":  "markdown",
+                           "sizeLines":  101,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-apply-stored-column-widths/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-delete-multi-selection/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  25,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-hide-source-status-columns/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  26,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-multi-cell-selection/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  25,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-skip-empty-source-rows/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  28,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-summary-compact-ui/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  25,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "01_SPEC/DA_TRIEN_KHAI/column-types/SPEC_006_column-types.md":  [
+
+                                                                                            ],
+                            "01_SPEC/DA_TRIEN_KHAI/conditional-formatting/SPEC_007_conditional-formatting.md":  [
+
+                                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/contact-column/SPEC_008_contact-column.md":  [
+
+                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/copy-cut-paste/SPEC_010_copy-cut-paste.md":  [
+
+                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/README.md":  [
+
+                                                                                        ],
+                            "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/spec.md":  [
+
+                                                                                      ],
+                            "01_SPEC/DA_TRIEN_KHAI/dashboard-view-leaks-into-report/spec.md":  [
+
+                                                                                               ],
+                            "01_SPEC/DA_TRIEN_KHAI/default-row-height-wrap/SPEC_012_default-row-height-wrap.md":  [
+
+                                                                                                                  ],
+                            "01_SPEC/DA_TRIEN_KHAI/drive-api-backend/SPEC_003_drive-api-backend.md":  [
+
+                                                                                                      ],
+                            "01_SPEC/DA_TRIEN_KHAI/file-attachment/SPEC_002_file-attachment.md":  [
+
+                                                                                                  ],
+                            "01_SPEC/DA_TRIEN_KHAI/forms/SPEC_004_forms.md":  [
+
+                                                                              ],
+                            "01_SPEC/DA_TRIEN_KHAI/grid-row-columns-fix/SPEC.md":  [
+
+                                                                                   ],
+                            "01_SPEC/DA_TRIEN_KHAI/helper-preserve-ui-state-on-old-tab-save/spec.md":  [
+
+                                                                                                       ],
+                            "01_SPEC/DA_TRIEN_KHAI/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md":  [
+
+                                                                                                        ],
+                            "01_SPEC/DA_TRIEN_KHAI/modular-split-v26/SPEC.md":  [
+
+                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/multi-select-column/spec.md":  [
+
+                                                                                  ],
+                            "01_SPEC/DA_TRIEN_KHAI/nghiem-thu-v25-fixes/spec.md":  [
+
+                                                                                   ],
+                            "01_SPEC/DA_TRIEN_KHAI/persist-column-widths-in-project-save/spec.md":  [
+
+                                                                                                    ],
+                            "01_SPEC/DA_TRIEN_KHAI/publish-report/SPEC_001_publish-report.md":  [
+
+                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-apply-stored-column-widths/spec.md":  [
+
+                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-delete-multi-selection/spec.md":  [
+
+                                                                                            ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-hide-source-status-columns/spec.md":  [
+
+                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-multi-cell-selection/spec.md":  [
+
+                                                                                          ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-skip-empty-source-rows/spec.md":  [
+
+                                                                                            ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-summary-compact-ui/spec.md":  [
+
+                                                                                        ]
+                        }
+}

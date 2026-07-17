@@ -1,0 +1,570 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 8,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/CONTEXT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 53,
+      "nonEmptyLines": 41,
+      "sections": [
+        {
+          "heading": "CONTEXT — DU AN WEB QUAN LY",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Dự án",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "2. Tính năng đã có trong BANDIAO",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "3. Tính năng CHƯA có (cần xây mới)",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "4. Target spec",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "5. Ràng buộc",
+          "level": 2,
+          "line": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/PLAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 72,
+      "nonEmptyLines": 57,
+      "sections": [
+        {
+          "heading": "Implementation Plan — Dashboard Configuration",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Components",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Data Flow",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "API",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Testing Strategy",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "Risks",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "Rollback",
+          "level": 2,
+          "line": 70
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/REGRESSION.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Regression Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Routes",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Navigation",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Forms",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Tables",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Dialogs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Search / Filter",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Desktop / Tablet / Mobile",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Existing Features",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/RELEASE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "Release Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Version",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Scope",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Quality Gates",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Known Differences",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Deployment",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Rollback",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Final Verdict",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/REVIEW.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "Review Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Task",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Scope Check",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Code Quality",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Architecture",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Security",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Accessibility",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Responsive",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Test Evidence",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Findings",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/TASKS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 136,
+      "nonEmptyLines": 92,
+      "sections": [
+        {
+          "heading": "Tasks — Dashboard Configuration D1",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "TASK-D1-1: Theme CSS + Dashboard container HTML + openDashboard() JS",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 10
+        },
+        {
+          "heading": "Allowed Files",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "Forbidden Files",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "Rollback Note",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "TASK-D1-2: Dashboard grid 12 cột + Widget card base",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "TASK-D1-3: TITLE widget renderer",
+          "level": 2,
+          "line": 50
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "TASK-D1-4: METRIC widget (động, aggregate từ nguồn)",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "TASK-D1-5: SHORTCUT widget",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "TASK-D1-6: REPORT widget (embedded table)",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 103
+        },
+        {
+          "heading": "TASK-D1-7: Dashboard toolbar + Làm mới",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "TASK-D1-8: Kiểm tra + hoàn thiện D1",
+          "level": 2,
+          "line": 124
+        },
+        {
+          "heading": "Goal",
+          "level": 3,
+          "line": 126
+        },
+        {
+          "heading": "Dependencies",
+          "level": 3,
+          "line": 129
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 3,
+          "line": 132
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 36
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/UI_COMPARE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 14,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "UI Compare Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Route",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Viewport",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "State",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Summary",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/08_REPORTS/VERIFY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "Verify Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Verdict",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}

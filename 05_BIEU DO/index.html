@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>QLDA MODULES_V26 - Architecture Dashboard</title>
+<style>
+:root { --bg:#0f172a; --card:#1e293b; --border:#334155; --text:#f1f5f9; --muted:#94a3b8; --accent:#f97316; --accent2:#22d3ee; --ok:#22c55e; --warn:#facc15; }
+* { box-sizing:border-box; margin:0; padding:0; font-family:'Segoe UI',system-ui,sans-serif; }
+body { background:var(--bg); color:var(--text); min-height:100vh; padding:24px; }
+.header { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; padding-bottom:16px; border-bottom:1px solid var(--border); }
+.header h1 { font-size:1.5rem; font-weight:700; color:var(--accent); }
+.header .badge { background:var(--card); border:1px solid var(--border); padding:8px 16px; border-radius:8px; font-size:.85rem; color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; margin-bottom:24px; }
+.card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; transition:transform .15s, box-shadow .15s; }
+.card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,.3); }
+.card h3 { font-size:1rem; font-weight:600; color:var(--accent2); margin-bottom:12px; display:flex; align-items:center; gap:8px; }
+.card .stat { font-size:2rem; font-weight:800; color:var(--text); line-height:1; }
+.card .label { font-size:.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; }
+.section { background:var(--card); border:1px solid var(--border); border-radius:12px; margin-bottom:16px; overflow:hidden; }
+.section-header { background:rgba(255,255,255,.03); padding:14px 20px; border-bottom:1px solid var(--border); font-weight:600; display:flex; align-items:center; justify-content:space-between; cursor:pointer; user-select:none; }
+.section-header:hover { background:rgba(255,255,255,.05); }
+.section-header .icon { transition:transform .2s; }
+.section.open .section-header .icon { transform:rotate(90deg); }
+.section-content { padding:20px; display:none; }
+.section.open .section-content { display:block; animation:fadeIn .2s ease; }
+@keyframes fadeIn { from {opacity:0; transform:translateY(-4px);} to {opacity:1; transform:translateY(0);} }
+.table-wrap { overflow-x:auto; }
+table { width:100%; border-collapse:collapse; font-size:.85rem; }
+th, td { padding:10px 12px; text-align:left; border-bottom:1px solid var(--border); }
+th { color:var(--muted); font-weight:600; font-size:.7rem; text-transform:uppercase; letter-spacing:.05em; background:rgba(255,255,255,.02); }
+tr:hover td { background:rgba(255,255,255,.03); }
+.badge-tag { display:inline-block; padding:2px 8px; border-radius:999px; font-size:.65rem; font-weight:600; }
+.badge-core { background:rgba(34,211,238,.15); color:var(--accent2); }
+.badge-internal { background:rgba(249,115,22,.15); color:var(--accent); }
+.badge-entry { background:rgba(34,197,94,.15); color:var(--ok); }
+.badge-hot { background:rgba(250,204,21,.15); color:var(--warn); }
+.footer { text-align:center; padding:20px; color:var(--muted); font-size:.8rem; }
+.btn { display:inline-block; margin:4px; padding:8px 16px; background:var(--accent); color:#fff; border:none; border-radius:6px; cursor:pointer; font-weight:600; text-decoration:none; transition:background .15s; }
+.btn:hover { background:#ea580c; }
+.btn-secondary { background:var(--accent2); }
+.btn-secondary:hover { background:#06b6d4; }
+</style>
+</head>
+<body>
+<div class="header">
+<h1>📊 QLDA MODULES_V26 - Architecture Dashboard</h1>
+<div class="badge">909 nodes · 2,721 edges · JS/HTML/CSS/Python</div>
+</div>
+
+<div class="grid">
+<div class="card"><h3>📦 Tổng quan</h3><div class="stat">909</div><div class="label">Tổng Nodes</div></div>
+<div class="card"><h3>🔗 Mối quan hệ</h3><div class="stat">2,721</div><div class="label">Tổng Edges</div></div>
+<div class="card"><h3>🔥 Hotspot chính</h3><div class="stat">getActiveSheet</div><div class="label">Fan-in: 58 (grid.js)</div></div>
+<div class="card"><h3>📂 Module lớn nhất</h3><div class="stat">grid</div><div class="label">185 nodes</div></div>
+<div class="card"><h3>🏗️ Layer Core</h3><div class="stat">5</div><div class="label">api, main, storage, toolbar, ws-nav</div></div>
+<div class="card"><h3>🧪 Test Coverage</h3><div class="stat">12</div><div class="label">Test files</div></div>
+</div>
+
+<section class="section">
+<div class="section-header" onclick="this.parentElement.classList.toggle('open')"><span>🏗️ Kiến trúc Layer</span><span class="icon">▶</span></div>
+<div class="section-content">
+<div class="table-wrap"><table><thead><tr><th>Module</th><th>Nodes</th><th>Layer</th><th>Loại</th><th>Fan-in</th><th>Fan-out</th></tr></thead><tbody>
+<tr><td>api</td><td>56</td><td><span class="badge-tag badge-core">core</span></td><td>API Layer</td><td>46</td><td>12</td></tr>
+<tr><td>main</td><td>23</td><td><span class="badge-tag badge-core">core</span></td><td>Utilities</td><td>43</td><td>0</td></tr>
+<tr><td>storage</td><td>29</td><td><span class="badge-tag badge-core">core</span></td><td>Data Persistence</td><td>19</td><td>0</td></tr>
+<tr><td>toolbar</td><td>30</td><td><span class="badge-tag badge-core">core</span></td><td>UI Controls</td><td>17</td><td>0</td></tr>
+<tr><td>workspace-navigator</td><td>87</td><td><span class="badge-tag badge-core">core</span></td><td>Navigation</td><td>7</td><td>0</td></tr>
+<tr><td>grid</td><td>185</td><td><span class="badge-tag badge-internal">internal</span></td><td>Grid Engine</td><td>36</td><td>107</td></tr>
+<tr><td>dashboard</td><td>19</td><td><span class="badge-tag badge-entry">entry</span></td><td>Dashboard</td><td>0</td><td>9</td></tr>
+<tr><td>report</td><td>37</td><td><span class="badge-tag badge-entry">entry</span></td><td>Reporting</td><td>0</td><td>13</td></tr>
+<tr><td>repost</td><td>5</td><td><span class="badge-tag badge-entry">entry</span></td><td>Repost</td><td>0</td><td>11</td></tr>
+<tr><td>browse-status-display</td><td>9</td><td><span class="badge-tag badge-internal">internal</span></td><td>UI State</td><td>0</td><td>0</td></tr>
+<tr><td>browse-status-navigation</td><td>5</td><td><span class="badge-tag badge-internal">internal</span></td><td>UI State</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header" onclick="this.parentElement.classList.toggle('open')"><span>🔥 Top 15 Hotspots (Fan-in cao nhất)</span><span class="icon">▶</span></div>
+<div class="section-content">
+<div class="table-wrap"><table><thead><tr><th>Function</th><th>Module</th><th>Fan-in</th><th>Mô tả</th></tr></thead><tbody>
+<tr><td>getActiveSheet</td><td>grid</td><td><span class="badge-tag badge-hot">58</span></td><td>Lấy sheet đang active</td></tr>
+<tr><td>ensureSheetCells</td><td>grid</td><td><span class="badge-tag badge-hot">49</span></td><td>Đảm bảo cells tồn tại</td></tr>
+<tr><td>renderGridSheet</td><td>grid</td><td><span class="badge-tag badge-hot">48</span></td><td>Render toàn bộ grid</td></tr>
+<tr><td>scheduleSheetDataSave</td><td>api</td><td><span class="badge-tag badge-hot">40</span></td><td>Lập lịch lưu data sheet</td></tr>
+<tr><td>escapeHtml</td><td>main</td><td><span class="badge-tag badge-hot">37</span></td><td>Escape HTML an toàn</td></tr>
+<tr><td>columnName</td><td>grid</td><td><span class="badge-tag badge-hot">21</span></td><td>Tên cột từ index</td></tr>
+<tr><td>saveCurrentProjectStateSilently</td><td>storage</td><td><span class="badge-tag badge-hot">20</span></td><td>Lưu state im lặng</td></tr>
+<tr><td>render</td><td>grid</td><td><span class="badge-tag badge-hot">18</span></td><td>Render grid chính</td></tr>
+<tr><td>saveProjectLocalBackup</td><td>storage</td><td><span class="badge-tag badge-hot">17</span></td><td>Backup local dự án</td></tr>
+<tr><td>getColumnConfig</td><td>grid</td><td><span class="badge-tag badge-hot">16</span></td><td>Config cột</td></tr>
+<tr><td>openSheet</td><td>grid</td><td><span class="badge-tag badge-hot">15</span></td><td>Mở sheet</td></tr>
+<tr><td>openReport</td><td>grid</td><td><span class="badge-tag badge-hot">14</span></td><td>Mở báo cáo</td></tr>
+<tr><td>openRailProjectList</td><td>grid</td><td><span class="badge-tag badge-hot">13</span></td><td>Mở danh sách dự án rail</td></tr>
+<tr><td>handleWorkspaceItemMenuAction</td><td>grid</td><td><span class="badge-tag badge-hot">12</span></td><td>Xử lý menu workspace</td></tr>
+<tr><td>renderDashboard</td><td>dashboard</td><td><span class="badge-tag badge-hot">11</span></td><td>Render dashboard</td></tr>
+</tbody></table></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header" onclick="this.parentElement.classList.toggle('open')"><span>🔄 Call Flow Cross-Module</span><span class="icon">▶</span></div>
+<div class="section-content">
+<div class="table-wrap"><table><thead><tr><th>Từ Module</th><th>Đến Module</th><th>Số Calls</th><th>Loại</th></tr></thead><tbody>
+<tr><td>grid</td><td>api</td><td>46</td><td><span class="badge-tag badge-internal">internal→core</span></td></tr>
+<tr><td>grid</td><td>main</td><td>25</td><td><span class="badge-tag badge-internal">internal→core</span></td></tr>
+<tr><td>grid</td><td>storage</td><td>19</td><td><span class="badge-tag badge-internal">internal→core</span></td></tr>
+<tr><td>grid</td><td>toolbar</td><td>17</td><td><span class="badge-tag badge-internal">internal→core</span></td></tr>
+<tr><td>report</td><td>grid</td><td>13</td><td><span class="badge-tag badge-entry">entry→internal</span></td></tr>
+<tr><td>api</td><td>grid</td><td>12</td><td><span class="badge-tag badge-core">core→internal</span></td></tr>
+<tr><td>repost</td><td>grid</td><td>11</td><td><span class="badge-tag badge-entry">entry→internal</span></td></tr>
+<tr><td>dashboard</td><td>main</td><td>9</td><td><span class="badge-tag badge-entry">entry→core</span></td></tr>
+<tr><td>report</td><td>main</td><td>9</td><td><span class="badge-tag badge-entry">entry→core</span></td></tr>
+<tr><td>report</td><td>workspace-navigator</td><td>7</td><td><span class="badge-tag badge-entry">entry→core</span></td></tr>
+</tbody></table></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header" onclick="this.parentElement.classList.toggle('open')"><span>📁 Cấu trúc File</span><span class="icon">▶</span></div>
+<div class="section-content">
+<pre style="font-family:monospace; font-size:.8rem; line-height:1.6; white-space:pre-wrap;">MODULES_V26/
+├── build.py                          ← Entry point (main())
+├── css/
+│   └── main.css
+├── js/
+│   ├── api.js              (56 nodes)  ← Core API Layer
+│   ├── dashboard.js        (19 nodes)  ← Entry
+│   ├── grid.js             (185 nodes) ← HOTSPOT #1
+│   ├── main.js             (23 nodes)  ← Core Utilities
+│   ├── report.js           (37 nodes)  ← Entry
+│   ├── repost.js           (5 nodes)   ← Entry
+│   ├── state.js            (3 nodes)
+│   ├── storage.js          (29 nodes)  ← Core Persistence
+│   ├── toolbar.js          (30 nodes)  ← Core UI
+│   └── workspace-navigator.js (87)  ← Core Navigation
+├── giao-dien-desktop-don-gian_v26_quan.html
+├── index.html
+├── manifest.json
+└── tests/ (12 files)</pre>
+</div>
+</section>
+
+<section class="section">
+<div class="section-header" onclick="this.parentElement.classList.toggle('open')"><span>🌐 Thao tác nhanh</span><span class="icon">▶</span></div>
+<div class="section-content" style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+<a class="btn" href="http://localhost:9749" target="_blank">🚀 Mở Graph UI (3D)</a>
+<a class="btn btn-secondary" href="MODULES_V26_arch.json" target="_blank">📄 Xem Arch JSON</a>
+<a class="btn btn-secondary" href="MODULES_V26_functions.json" target="_blank">⚙️ Xem Functions JSON</a>
+<a class="btn btn-secondary" href="MODULES_V26_schema.json" target="_blank">🗂️ Xem Schema JSON</a>
+</div>
+</section>
+
+<div class="footer">
+Được tạo bởi <strong>codebase-memory-mcp</strong> • Project: <code>C-Users-admin-MODULES_V26</code> • 909 nodes / 2,721 edges
+</div>
+</body>
+</html>

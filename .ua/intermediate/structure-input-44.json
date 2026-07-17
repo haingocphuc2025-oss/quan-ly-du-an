@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-view/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-view/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  82,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/report-wrap-cells/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  22,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/repost-carry-forward/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  579,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/repost-cell-context-column-menu/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  26,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/screen-state-behavior/SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  135,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX (1).md",
+                           "language":  "markdown",
+                           "sizeLines":  63,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX.md",
+                           "language":  "markdown",
+                           "sizeLines":  48,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/sheet-column-insert-delete-actions/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/sheet-report-compact-wrap-spacing/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/toolbar-grid-smartsheet-style/TOOLBAR_SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  57,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/two-projects-repost-dashboard/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  29,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/workspace-context-menu/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  293,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR (1).md",
+                           "language":  "markdown",
+                           "sizeLines":  91,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR.md",
+                           "language":  "markdown",
+                           "sizeLines":  58,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DANH_MUC_SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  59,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/NEW/screen-state-behavior/SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  136,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  22,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/01_CODE_HIEN_TAI/CODE_CHINH.md",
+                           "language":  "markdown",
+                           "sizeLines":  43,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/04_THANH_TOAN_QUYET_TOAN/TT-01 - Há»“ sÆ¡ thanh toÃ¡n khá»‘i lÆ°á»£ng hoÃ n thÃ nh Ä‘á»£t 1/Gia_HD_phanchia_chuanTT.xlsx",
+                           "language":  "xlsx",
+                           "sizeLines":  65,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1 (2).docx",
+                           "language":  "docx",
+                           "sizeLines":  209,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1 (3).docx",
+                           "language":  "docx",
+                           "sizeLines":  209,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1.docx",
+                           "language":  "docx",
+                           "sizeLines":  209,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/PhuLuc_PhanChia_GiaTri_LienDanh_Goi14.docx",
+                           "language":  "docx",
+                           "sizeLines":  142,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/HOPDON_2_da_bo_sung.docx",
+                           "language":  "docx",
+                           "sizeLines":  209,
+                           "fileCategory":  "code"
+                       }
+                   ],
+    "batchImportData":  {
+                            "01_SPEC/DA_TRIEN_KHAI/report-view/README.md":  [
+
+                                                                            ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-view/spec.md":  [
+
+                                                                          ],
+                            "01_SPEC/DA_TRIEN_KHAI/report-wrap-cells/spec.md":  [
+
+                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/repost-carry-forward/spec.md":  [
+
+                                                                                   ],
+                            "01_SPEC/DA_TRIEN_KHAI/repost-cell-context-column-menu/spec.md":  [
+
+                                                                                              ],
+                            "01_SPEC/DA_TRIEN_KHAI/screen-state-behavior/SPEC.md":  [
+
+                                                                                    ],
+                            "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX (1).md":  [
+
+                                                                                                             ],
+                            "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX.md":  [
+
+                                                                                                         ],
+                            "01_SPEC/DA_TRIEN_KHAI/sheet-column-insert-delete-actions/spec.md":  [
+
+                                                                                                 ],
+                            "01_SPEC/DA_TRIEN_KHAI/sheet-report-compact-wrap-spacing/spec.md":  [
+
+                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/toolbar-grid-smartsheet-style/TOOLBAR_SPEC.md":  [
+
+                                                                                                    ],
+                            "01_SPEC/DA_TRIEN_KHAI/two-projects-repost-dashboard/spec.md":  [
+
+                                                                                            ],
+                            "01_SPEC/DA_TRIEN_KHAI/workspace-context-menu/spec.md":  [
+
+                                                                                     ],
+                            "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR (1).md":  [
+
+                                                                                                     ],
+                            "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR.md":  [
+
+                                                                                                 ],
+                            "01_SPEC/DANH_MUC_SPEC.md":  [
+
+                                                         ],
+                            "01_SPEC/NEW/screen-state-behavior/SPEC.md":  [
+
+                                                                          ],
+                            "01_SPEC/README.md":  [
+
+                                                  ],
+                            "02_SOURCE/01_CODE_HIEN_TAI/CODE_CHINH.md":  [
+
+                                                                         ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/04_THANH_TOAN_QUYET_TOAN/TT-01 - Há»“ sÆ¡ thanh toÃ¡n khá»‘i lÆ°á»£ng hoÃ n thÃ nh Ä‘á»£t 1/Gia_HD_phanchia_chuanTT.xlsx":  [
+
+                                                                                                                                                                                                                                                              ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1 (2).docx":  [
+
+                                                                                                                                                                                                                                     ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1 (3).docx":  [
+
+                                                                                                                                                                                                                                     ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1.docx":  [
+
+                                                                                                                                                                                                                                 ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/PhuLuc_PhanChia_GiaTri_LienDanh_Goi14.docx":  [
+
+                                                                                                                                                                                                                                                 ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/HOPDON_2_da_bo_sung.docx":  [
+
+                                                                                                           ]
+                        }
+}

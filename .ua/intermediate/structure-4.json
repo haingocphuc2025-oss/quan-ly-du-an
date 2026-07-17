@@ -1,0 +1,100 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/Hermes-Cloner/02_WORKFLOWS/FEATURE_CLONER.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 7,
+      "nonEmptyLines": 4,
+      "sections": [
+        {
+          "heading": "Feature / Component Cloner",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/02_WORKFLOWS/UPDATE_EXISTING_PROJECT.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Update Existing Project",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/02_WORKFLOWS/WEBSITE_CLONER.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 35,
+      "sections": [
+        {
+          "heading": "Website Cloner Workflow",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Modes",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Phase A — Discovery",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Phase B — Definition",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Phase C — Delivery",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "Phase D — Closeout",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "Exit criteria",
+          "level": 2,
+          "line": 41
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    }
+  ]
+}

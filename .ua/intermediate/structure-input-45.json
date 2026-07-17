@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/HOPDON_NEW.docx",
+                           "language":  "docx",
+                           "sizeLines":  485,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/_PROJECT_DATA/qlda_project_backup.json",
+                           "language":  "json",
+                           "sizeLines":  20190,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/appsscript.json",
+                           "language":  "json",
+                           "sizeLines":  15,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/Code.gs",
+                           "language":  "gs",
+                           "sizeLines":  269,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/Index.html",
+                           "language":  "html",
+                           "sizeLines":  12025,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/appsscript.json",
+                           "language":  "json",
+                           "sizeLines":  14,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/baoCaoCaNhan.gs",
+                           "language":  "gs",
+                           "sizeLines":  41,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/Code.gs",
+                           "language":  "gs",
+                           "sizeLines":  480,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/local_file_helper.py",
+                           "language":  "python",
+                           "sizeLines":  185,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/find_statements.js",
+                           "language":  "javascript",
+                           "sizeLines":  41,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/FRONTEND/giao-dien-desktop-don-gian_v17_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  5205,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/FRONTEND/giao-dien-desktop-don-gian_v18_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  5580,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/build.py",
+                           "language":  "python",
+                           "sizeLines":  38,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/css/main.css",
+                           "language":  "css",
+                           "sizeLines":  2516,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/api.js",
+                           "language":  "javascript",
+                           "sizeLines":  803,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/dashboard.js",
+                           "language":  "javascript",
+                           "sizeLines":  496,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/grid.js",
+                           "language":  "javascript",
+                           "sizeLines":  3751,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/main.js",
+                           "language":  "javascript",
+                           "sizeLines":  338,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/report.js",
+                           "language":  "javascript",
+                           "sizeLines":  871,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/repost.js",
+                           "language":  "javascript",
+                           "sizeLines":  99,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/state.js",
+                           "language":  "javascript",
+                           "sizeLines":  72,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/storage.js",
+                           "language":  "javascript",
+                           "sizeLines":  344,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/toolbar.js",
+                           "language":  "javascript",
+                           "sizeLines":  389,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/workspace-navigator.js",
+                           "language":  "javascript",
+                           "sizeLines":  1723,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/app-startup-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  15,
+                           "fileCategory":  "code"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/HOPDON_NEW.docx":  [
+
+                                                                                                  ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/_PROJECT_DATA/qlda_project_backup.json":  [
+
+                                                                                                      ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/appsscript.json":  [
+
+                                                                                           ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/Code.gs":  [
+
+                                                                                   ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/apps-script/Index.html":  [
+
+                                                                                      ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/appsscript.json":  [
+
+                                                                                       ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/baoCaoCaNhan.gs":  [
+
+                                                                                       ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/Code.gs":  [
+
+                                                                               ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/local_file_helper.py":  [
+
+                                                                                            ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/find_statements.js":  [
+
+                                                                                  ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/FRONTEND/giao-dien-desktop-don-gian_v17_baseline.html":  [
+
+                                                                                                                     ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/FRONTEND/giao-dien-desktop-don-gian_v18_baseline.html":  [
+
+                                                                                                                     ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/build.py":  [
+
+                                                                                    ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/css/main.css":  [
+
+                                                                                        ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/api.js":  [
+
+                                                                                     ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/dashboard.js":  [
+
+                                                                                           ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/grid.js":  [
+
+                                                                                      ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/main.js":  [
+
+                                                                                      ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/report.js":  [
+
+                                                                                        ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/repost.js":  [
+
+                                                                                        ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/state.js":  [
+
+                                                                                       ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/storage.js":  [
+
+                                                                                         ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/toolbar.js":  [
+
+                                                                                         ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/js/workspace-navigator.js":  [
+
+                                                                                                     ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/app-startup-order.test.js":  [
+
+                                                                                                           ]
+                        }
+}

@@ -1,0 +1,79 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/CONTEXT.md",
+                           "language":  "markdown",
+                           "sizeLines":  53,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/PLAN.md",
+                           "language":  "markdown",
+                           "sizeLines":  72,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/REGRESSION.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/RELEASE.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/REVIEW.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/TASKS.md",
+                           "language":  "markdown",
+                           "sizeLines":  136,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/UI_COMPARE.md",
+                           "language":  "markdown",
+                           "sizeLines":  14,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/08_REPORTS/VERIFY.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/Hermes-Cloner/08_REPORTS/CONTEXT.md":  [
+
+                                                                            ],
+                            ".agents/Hermes-Cloner/08_REPORTS/PLAN.md":  [
+
+                                                                         ],
+                            ".agents/Hermes-Cloner/08_REPORTS/REGRESSION.md":  [
+
+                                                                               ],
+                            ".agents/Hermes-Cloner/08_REPORTS/RELEASE.md":  [
+
+                                                                            ],
+                            ".agents/Hermes-Cloner/08_REPORTS/REVIEW.md":  [
+
+                                                                           ],
+                            ".agents/Hermes-Cloner/08_REPORTS/TASKS.md":  [
+
+                                                                          ],
+                            ".agents/Hermes-Cloner/08_REPORTS/UI_COMPARE.md":  [
+
+                                                                               ],
+                            ".agents/Hermes-Cloner/08_REPORTS/VERIFY.md":  [
+
+                                                                           ]
+                        }
+}

@@ -1,0 +1,186 @@
+{
+   "checksum": "89ee4822dbe0a33359943c286b8d6c88",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13342335743303995",
+            "date_last_used": "13424747205476211",
+            "guid": "ddcc0113-53de-49d5-948c-5ed265f34c0a",
+            "id": "7",
+            "name": "YouTube",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://youtube.com/",
+            "visit_count": 7
+         }, {
+            "date_added": "13342335743304589",
+            "date_last_used": "0",
+            "guid": "a87d3a8d-7ac1-492e-b7f6-14b1116cf458",
+            "id": "8",
+            "name": "Maps",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://maps.google.com/",
+            "visit_count": 0
+         }, {
+            "date_added": "13342335743302957",
+            "date_last_used": "0",
+            "guid": "edfb43fc-6d78-4d23-b3dd-1ccc90c7cbb3",
+            "id": "9",
+            "name": "Gmail",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://accounts.google.com/b/0/AddMailService",
+            "visit_count": 0
+         }, {
+            "date_added": "13051953757897700",
+            "date_last_used": "13387629435806176",
+            "guid": "425ca4b9-6f17-4982-a617-64daec2ecdf2",
+            "id": "10",
+            "name": "Home.vn",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://home.vn/pf",
+            "visit_count": 1
+         }, {
+            "date_added": "13199737399890637",
+            "date_last_used": "0",
+            "guid": "bc3c5e90-d876-4214-bb39-c9c51a29bf8a",
+            "id": "11",
+            "name": "0 Thông báo",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.facebook.com/#",
+            "visit_count": 0
+         }, {
+            "date_added": "13238655867560621",
+            "date_last_used": "0",
+            "guid": "490f3cec-e35f-48a4-a7ac-1de814ee11d8",
+            "id": "12",
+            "name": "download - Tìm với Google",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.google.com/search?q=download&oq=doload&aqs=chrome.1.69i57j0l7.6140j0j4&sourceid=chrome&ie=UTF-8",
+            "visit_count": 0
+         }, {
+            "date_added": "13331103646543999",
+            "date_last_used": "13395765361596142",
+            "guid": "69ccc909-be04-42b9-878e-f2a9086103da",
+            "id": "13",
+            "name": "Google",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://www.google.com.vn/",
+            "visit_count": 2
+         }, {
+            "date_added": "13331103840184292",
+            "date_last_used": "0",
+            "guid": "78630d47-8a27-4ef9-b7e4-99cb7ada838a",
+            "id": "14",
+            "name": "MP 7001",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://192.168.1.215/web/guest/en/websys/webArch/mainFrame.cgi",
+            "visit_count": 0
+         }, {
+            "date_added": "13331104846510631",
+            "date_last_used": "0",
+            "guid": "8f270dbe-3cbb-4c6c-8e29-95531bc07867",
+            "id": "15",
+            "name": "MP 6002",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://192.168.1.199/web/guest/en/websys/webArch/mainFrame.cgi",
+            "visit_count": 0
+         }, {
+            "date_added": "13342335592364907",
+            "date_last_used": "0",
+            "guid": "acfe77ee-985f-44aa-8146-eef09279faeb",
+            "id": "16",
+            "name": "Home.vn",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://home.vn/wf",
+            "visit_count": 0
+         }, {
+            "date_added": "13359284835350524",
+            "date_last_used": "0",
+            "guid": "ba142b3a-e437-4df7-857e-669a5b4ba4fb",
+            "id": "17",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "New tab",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "edge://newtab/",
+            "visit_count": 0
+         }, {
+            "date_added": "13422032725610682",
+            "date_last_used": "0",
+            "guid": "3d9de1b2-c932-47f1-a8e5-b7f6d477cbd0",
+            "id": "18",
+            "name": "Máy Bay BetaFPV Air65 II Brushless Whoop Quadcopter – Mood FPV Việt Nam",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "https://moodfpv.com/san-pham/may-bay-betafpv-air65-ii-brushless-whoop-quadcopter/",
+            "visit_count": 1
+         } ],
+         "date_added": "13428717981817046",
+         "date_last_used": "0",
+         "date_modified": "13422032725610682",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13428717981817046",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13428717981817046",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "workspaces_v2": {
+         "children": [  ],
+         "date_added": "13428717981817046",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "75aa6670-344f-549d-b742-660f029506ab",
+         "id": "5",
+         "name": "Workspaces",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCNdLPG2fAQAAKg4QABgBIAAoBzAAOABAABIAKhhZQ3VLREJCY3V0cUJNZEx0R1ZaenNnPT1IA6AGDBKOAQgFEokBChx3UkJyWkwrNlBBOWF2S2dqTlA3SlhETGNmdnM9EiRlYzJlNGNkMC0yMGNjLTUzZGYtYTdhMS1mZDRhN2JkNTJlMjYYACAAKAAw8rCh6aEzOKmzoemhM0Cps6HpoTNKHG5teDY1c1FEdnhJOFRnRWV2K0ErbnR0b1NuND1aAGUAAAAAwj4CYAASjgEIAhKJAQocWWNTVG9udkVTUHdxQ3M0TDJjclZodjY4TDk4PRIkMTQ2NTQ4MDktMWEyYi01YjRlLTlkOWMtNmU0OGU3N2UxMDE5GAAgACgAMLrh86i+Ljit0MXCgDBArdDFwoAwShxvUFZraHdCUmJWNjVLQ1dSMitJT05IV29PdTg9WgBlAAAAAMI+AmAAEq4BCBISqQEKHFJKRkxmOGNCLzdlbGZ1a29OTDJyU1MzdmVObz0SJDNkOWRlMWIyLWM5MzItNDdmMS1hOGU1LWI3ZjZkNDc3Y2JkMBgAIAAoADD/i5/23TM46o6f9t0zQOqOn/bdM0ocdmFpaER4MFNwWTlMWlJlVHZIY1VkZlZyeldFPVogIh7/sDA4WDJ1VTNFMGh1SnprU01VN3U4Z0JBMnN2bz1l3vKxw8I+AmAFEq0BCBESqAEKHGZ6dGVkL0dWZS9Yem9hSStDamxVbzNRUWNXOD0SJGJhMTQyYjNhLWU0MzctNGRmNy04NTdlLTY2OWE1YjRiYTRmYhgAIAAoADCThObf8TM47q3SlfQxQO6t0pX0MUocTC9mWmQ2TTIrOUJ0dWxQeDZuR3NqWUJSbXJvPVofIh3/YXFGWU1XN3dYd1JSdVVMeUpoT05qbFIwT2E0PWVU1WA+wj4CYAUSrQEIEBKoAQoccG9uMlR3eHU1cFNFdy9ZdDJUS0FJZlgvQ2Q4PRIkYWNmZTc3ZWUtOTg1Zi00NGFhLTgxNDYtZWVmMDkyNzlmYWViGAAgACgAMMXPkIntMTiO05CJ7TFAjtOQie0xShxDdkJqL3JJcjFPS1paRXlJemVBSVZSczBPRnM9Wh8iHf44d3gyVFFjUEhZdGVSd0NiM1VxOTJYeWQ5MFk9ZQAAAADCPgJgBRKtAQgOEqgBChxKWjVpbnJjN0VrVDNwVThFKzFxb0EzangvOTA9EiQ3ODYzMGQ0Ny04YTI3LTRlZjktYjdlNC05OWNiN2FkYTgzOGEYACAAKAAw+/nDs+QxOML9w7PkMUDC/cOz5DFKHG9tVnoxTWxTdyszTFBsVGttZFg0OFNXczRNbz1aHyId+zVnU3gzaGVJL3U5MU9HeWxkT2hVZ3lPNHAwOD1lAAAAAMI+AmAFEq0BCAsSqAEKHFhpNXRlaHJLSGZSbmR1ZWNnMzRGOUJFN0tQWT0SJGJjM2M1ZTkwLWQ4NzYtNDIxNC1iYjM5LWM5YzUxYTI5YmY4YRgAIAAoADD9+cOz5DE4/v3Ds+QxQP79w7PkMUocRHhmNytzb3J3RW4xQkd4MHEvNzlmUjRicDJNPVofIh3eS1B4RDYrU2hCRXBzMXk0Nm9GSGtlT25zQ01NPWUAAAAAwj4CYAUSrQEIDxKoAQocamxWZ29WalBrbnltbDdqK3hURXo1SXFLQy9ZPRIkOGYyNzBkYmUtM2NiYi00YzZjLThlMjktOTU1MzFiYzA3ODY3GAAgACgAMID6w7PkMTjV/sOz5DFA1f7Ds+QxShwyRkpIc1gyaDg5TWpwdTFTcUVDZVd0ODJOWmM9Wh8iHf1DMEtFcTNTNzNINHNOR1NiTWZmNkZmZnlzeDA9ZQAAAADCPgJgBRKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQwOTMzMGJjZi04MWQ2LTViNTQtYjc1NC0wNzliZjc4NzVjMzAYACAAKAAwvuHzqL4uOMrRxcKAMEDK0cXCgDBKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAASrQEIChKoAQoccURUZzF0RVJVMmphMGsyMUVyMU4wNms5N3JzPRIkNDI1Y2E0YjktNmYxNy00OTgyLWE2MTctNjRkYWVjMmVjZGYyGAAgACgAMMbuveHdMjje/cOz5DFA3v3Ds+QxShxERmFOamlyV2hFbmJTN0FmYTVESHFieGl5d1E9Wh8iHbxFNzRZaTF3VjArcm9BaEdFazgrcDg5Ykl4Smc9ZV+prVvCPgJgBRKtAQgMEqgBChxKWTdzTFA3QVAzeldtb2RRWmpFdEpnTDdyZUk9EiQ0OTBmM2NlYy1lMzVmLTQ4YTQtYTdhYy0xZGU4MTRlZTExZDgYACAAKAAwsaqh9Y4zOIf9w7PkMUCH/cOz5DFKHEs3VHhFZnFNRDdVVjUvVWgxME5zT3VWM2xXND1aHyId71NYM0JmZG14OTEyM3JaejFzNElXb21Fa25Sbz1l2mneXcI+AmAFEqwBCAkSpwEKHGpXQjRSL1FoUkZzUGlkSVEzS245OVJvRWVqbz0SJGVkZmI0M2ZjLTZkNzgtNGQyMy1iM2RkLTFjY2M5MGM3Y2JiMxgAIAAoADCJt5q60DI4uf7Ds+QxQLn+w7PkMUocbURVZFRxdm9YUDYxeXczdVMrcVI4dG1EZlI4PVoeIhx4OGE5RlVYV2RiVUprK01uVHZzVExwS2VxOWc9ZULtCz7CPgJgBRKtAQgNEqgBChwrbVdyVVhqMlBXc24rbDBhUDY5RzZaYXFkSFk9EiQ2OWNjYzkwOS1iZTA0LTQyYjktODc4ZS1mMmE5MDg2MTAzZGEYACAAKAAwr5y6tK8zOKT9w7PkMUCk/cOz5DFKHHp4cmNvckEwSnlzTFFkdmNQdDlYQTEyOThqRT1aHyId93BOM3ZwYVdmYWlDVzdTTTRZWktHajhuakNJYz1lYumyScI+AmAFEqwBCAcSpwEKHEVCdXJJMzkwd2tLVlpYeUxNUzg5eC9kOWhtOD0SJGRkY2MwMTEzLTUzZGUtNDlkNS05NDhjLTVlZDI2NWYzNGMwYRgAIAAoADCZ382E6DM4mv7Ds+QxQJr+w7PkMUocSCt5elVyeWxnaWVmbEI4cUJqSVl4YjZNMFdRPVoeIhw3ZkVtcGJ0NkEvMURPSEJteEtEWWNaMUJUS1k9ZVBCw9LCPgJgBRKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQwOWMyYzMyZC1jMTE4LTUzOWMtODA5Yi1kYTM0ODYzZTE1OWQYACAAKAAwueHzqL4uOP7PxcKAMED+z8XCgDBKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrAEICBKnAQocbXVPTjJKdllRazBIc05EbzJHT09SRnNNaEpVPRIkYTg3ZDNhOGQtN2FjMS00OTJlLWI3ZjYtMTRiMTExNmNmNDU4GAAgACgAMIi3mrrQMjjr/MOz5DFA6/zDs+QxShxJT0VIKzR2eGNRNzNqdkl4RncvcFlXd2NZWjg9Wh4iHGF2VVlYY05jMWdDSytEcHV5cHd6WDZPZzc3Zz1lnpCbgsI+AmAFMAA4AA==",
+   "version": 1
+}

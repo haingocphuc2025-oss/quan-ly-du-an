@@ -1,0 +1,34 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  343,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon.md",
+                           "language":  "markdown",
+                           "sizeLines":  216,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon_row.md",
+                           "language":  "markdown",
+                           "sizeLines":  160,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec.md":  [
+
+                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon.md":  [
+
+                                                                                                                    ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon_row.md":  [
+
+                                                                                                                        ]
+                        }
+}

@@ -1,0 +1,106 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/PLUGIN_SELECTOR.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "Plugin Selector",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/ROUTER.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "Router",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Nhận diện yêu cầu",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Trình tự tối thiểu",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Quy tắc",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/SKILL_SELECTOR.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "Skill Selector",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/01_ROUTER/WORKFLOW_SELECTOR.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "Workflow Selector",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    }
+  ]
+}

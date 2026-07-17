@@ -1,0 +1,275 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 343,
+      "nonEmptyLines": 292,
+      "sections": [
+        {
+          "heading": "SPEC: Attachment Panel UI v2",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "2.1 Right Toolbar (thanh icon dọc bên phải)",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "2.2 Attachment Panel — cố định bên phải, đè lên layout",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "2.3 Layout Panel",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "2.4 File Item — nút xem / xóa / actions",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "2.5 Actions dropdown menu",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "2.6 Tab Row / Sheet / All",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "3. UPLOAD — NHIỀU FILE, KHÔNG GIỚI HẠN",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "3.1 Input cho phép multiple",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "3.2 Upload queue — nhiều file song song",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "3.3 Upload không giới hạn (google.script.run + DriveApp)",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "3.4 Upload progress UI",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "4. APPS SCRIPT (Code.gs) — uploadAttachment",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 317
+        },
+        {
+          "heading": "6. BÀN GIAO",
+          "level": 2,
+          "line": 334
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 216,
+      "nonEmptyLines": 179,
+      "sections": [
+        {
+          "heading": "SPEC PHU: Icon Sheet / Folder / Report — Microsoft 365 Style",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MUC TIEU",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. THIET KE ICON",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Sheet Icon — xanh la Excel #107C41",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Folder Icon — vang #FFB900",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "2.3 Report Icon — cam #D83B01",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "3. CAC KICH CO SU DUNG",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "4. CAI DAT VAO CODE",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "4.1 Ham tra ve SVG theo loai",
+          "level": 3,
+          "line": 124
+        },
+        {
+          "heading": "4.2 Su dung trong render sidebar",
+          "level": 3,
+          "line": 169
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "6. BAN GIAO",
+          "level": 2,
+          "line": 210
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/attachment-panel-ui/spec_icon_row.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 160,
+      "nonEmptyLines": 127,
+      "sections": [
+        {
+          "heading": "SPEC PHU: Icon Sidebar + Row Height Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. VAN DE HIEN TAI",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "1.1 Icon sidebar chua phan biet",
+          "level": 3,
+          "line": 12
+        },
+        {
+          "heading": "1.2 Report row cao qua",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "2. FIX ICON SIDEBAR",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "2.1 Xac dinh loai item",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "2.2 CSS can them",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "2.3 Ket qua mong doi",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "3. FIX ROW HEIGHT REPORT",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "3.1 Van de",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "3.2 CSS fix",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "3.3 Ket qua mong doi",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "3.4 Dong bo voi Sheet row height",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "4. TEST CASES",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "5. BAN GIAO",
+          "level": 2,
+          "line": 154
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    }
+  ]
+}

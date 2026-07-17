@@ -1,0 +1,1126 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Agent Skills/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Agent Skills",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Browser Harness/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Browser Harness",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Context7/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Context7",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Filesystem MCP/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Filesystem MCP",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Git MCP/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Git MCP",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Memory MCP/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Memory MCP",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Obscura/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Obscura",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/OmniParser/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "OmniParser",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/PLUGIN_REGISTRY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "Plugin Registry",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Browser Harness",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Fallback",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Sequential Thinking MCP/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Sequential Thinking MCP",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Spec Kit/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Spec Kit",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/06_PLUGINS/Superpowers/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "Superpowers",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/manifest.json",
+      "language": "json",
+      "fileCategory": "config",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "name",
+          "level": 1,
+          "line": 2
+        },
+        {
+          "heading": "version",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "entrypoints",
+          "level": 1,
+          "line": 4
+        },
+        {
+          "heading": "main_workflow",
+          "level": 1,
+          "line": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 28,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "Hermes Website Cloner Framework v1.0",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Luồng chính",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Khởi động",
+          "level": 2,
+          "line": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": ".gitmodules",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 3,
+      "nonEmptyLines": 3,
+      "metrics": {}
+    },
+    {
+      "path": ".ua/.understandignore",
+      "language": "unknown",
+      "fileCategory": "code",
+      "totalLines": 65,
+      "nonEmptyLines": 61,
+      "metrics": {}
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 346,
+      "nonEmptyLines": 294,
+      "sections": [
+        {
+          "heading": "SPEC: Attachment Panel UI v2",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "2.1 Right Toolbar (thanh icon dọc bên phải)",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "2.2 Attachment Panel — cố định bên phải, đè lên layout",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "2.3 Layout Panel",
+          "level": 3,
+          "line": 100
+        },
+        {
+          "heading": "2.4 File Item — nút xem / xóa / actions",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "2.5 Actions dropdown menu",
+          "level": 3,
+          "line": 170
+        },
+        {
+          "heading": "2.6 Tab Row / Sheet / All",
+          "level": 3,
+          "line": 182
+        },
+        {
+          "heading": "3. UPLOAD — NHIỀU FILE, KHÔNG GIỚI HẠN",
+          "level": 2,
+          "line": 200
+        },
+        {
+          "heading": "3.1 Input cho phép multiple",
+          "level": 3,
+          "line": 202
+        },
+        {
+          "heading": "3.2 Upload queue — nhiều file song song",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "3.3 Upload không giới hạn (google.script.run + DriveApp)",
+          "level": 3,
+          "line": 233
+        },
+        {
+          "heading": "3.4 Upload progress UI",
+          "level": 3,
+          "line": 270
+        },
+        {
+          "heading": "4. APPS SCRIPT (Code.gs) — uploadAttachment",
+          "level": 2,
+          "line": 281
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 320
+        },
+        {
+          "heading": "6. BÀN GIAO",
+          "level": 2,
+          "line": 337
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/auto-save-on-exit/SPEC_009_auto-save-on-exit.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 305,
+      "nonEmptyLines": 246,
+      "sections": [
+        {
+          "heading": "SPEC: Auto-Save On Exit (Tự động lưu khi thoát trang)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. Tóm tắt thay đổi (Summary)",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "1. Bối cảnh & Vấn đề (Context & Problem)",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "1.1 Cơ chế save hiện tại (Baseline v18)",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "1.2 Các scenario mất data thực tế",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "2. Yêu cầu chức năng (Functional Requirements)",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "3. Yêu cầu phi chức năng (Non-Functional Requirements)",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "4. Kiến trúc & Thiết kế (Design)",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "4.1 Sơ đồ luồng dữ liệu (Data Flow)",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "4.2 Thêm Auto-Save On Exit Layer",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "4.3 Refactor Code Structure (Minimal Diff)",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "5. Kịch bản test (Test Scenarios)",
+          "level": 2,
+          "line": 225
+        },
+        {
+          "heading": "6. Rủi ro & Mitigation (Risks & Mitigations)",
+          "level": 2,
+          "line": 242
+        },
+        {
+          "heading": "7. Checklist triển khai (Implementation Checklist)",
+          "level": 2,
+          "line": 255
+        },
+        {
+          "heading": "8. Phụ lục: File & Dòng code tham chiếu (baseline v18)",
+          "level": 2,
+          "line": 272
+        },
+        {
+          "heading": "9. Lưu ý triển khai (Dev Notes)",
+          "level": 2,
+          "line": 292
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/automation/SPEC_005_automation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 122,
+      "nonEmptyLines": 96,
+      "sections": [
+        {
+          "heading": "SPEC: Automation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Workflow Engine",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Cấu trúc workflow",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "3.1 Storage",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 106
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 118
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/browse-status-display/SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 120,
+      "nonEmptyLines": 94,
+      "sections": [
+        {
+          "heading": "SPEC: browse-status-display — Hiển thị trạng thái kiểu Smartsheet Browse + điều hướng quay lại nhất quán + chuẩn hoá menu Actions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Bối cảnh khảo sát (đã click-through trực tiếp trên app.smartsheet.com)",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "1.1 Trang Browse gốc (danh sách Workspaces)",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "1.2 Khi mở 1 Workspace (chưa vào sheet)",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "1.3 Khi mở 1 Sheet cụ thể (điều hướng quan trọng nhất)",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "1.4 Trang Home (khác Browse)",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "1.5 Menu \"Actions\" (chọn dòng bằng checkbox → bấm Actions, hoặc chuột phải chỉ tick chọn chứ KHÔNG tự bật context menu)",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "1.6 Đối chiếu với app hiện tại (v26)",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "2. Mục tiêu",
+          "level": 2,
+          "line": 65
+        },
+        {
+          "heading": "3. Phạm vi — CHỈ làm",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "4. KHÔNG làm (ngoài phạm vi)",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "5. Luật thi công",
+          "level": 2,
+          "line": 90
+        },
+        {
+          "heading": "6. Acceptance Criteria",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "7.1 Ghi nhận thêm (KHÔNG thuộc phạm vi spec này — để cân nhắc spec sau)",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "8. Bàn giao",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "9. Ghi chú thi công (15/07/2026)",
+          "level": 2,
+          "line": 116
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 215,
+      "nonEmptyLines": 164,
+      "sections": [
+        {
+          "heading": "SPEC: Clear Data & Repost Date (2 nút đơn giản)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "2.1 Nút trên Toolbar",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "2.2 Clear Data (🗑)",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "2.3 Repost Date (🔄)",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "3. LUỒNG NGƯỜI DÙNG",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Flow 1: Clear Data",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Flow 2: Repost Date",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "4. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "4.1 Hàm mới",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "4.2 Logic Repost Date (backend)",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 119
+        },
+        {
+          "heading": "6. CODE MẪU (Frontend)",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "6.1 Toolbar buttons (thêm vào HTML)",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "6.2 JS Handlers",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "7. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 199
+        },
+        {
+          "heading": "8. ƯU TIÊN",
+          "level": 2,
+          "line": 208
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/COLUMN_UNHIDE_SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 23,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "Yeu cau",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "UI tham khao",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Acceptance criteria",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_khongdau.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "SPEC: Column Header Context Menu (Menu ngu canh cot)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1. Nhom Chen/Xoa cot",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. Nhom Dat ten / Mo ta",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "3. Nhom Du lieu",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "4. Nhom Khoa / An",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "5. Cau hinh cot",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Dieu chinh pham vi theo yeu cau nguoi dung",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Ghi chu",
+          "level": 2,
+          "line": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_mojibake.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "SPEC: Column Header Context Menu (Menu ngữ cảnh cột)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Phạm vi",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1. Nhóm Chèn/Xóa cột",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. Nhóm Đặt tên / Mô tả",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "3. Nhóm Dữ liệu",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "4. Nhóm Khóa / Ẩn",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "5. Cấu hình cột",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Loại trừ khỏi phạm vi (theo rule đã chốt)",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Ghi chú",
+          "level": 2,
+          "line": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-types-extended/SPEC_column-types-extended.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 927,
+      "nonEmptyLines": 815,
+      "sections": [
+        {
+          "heading": "SPEC: Bổ sung Column Types mới + Cấu hình Contact list/Checkbox/Symbols (Duration, Auto Number, System columns)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. Tóm tắt thay đổi (Summary)",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "1. Bối cảnh & Vấn đề (Context & Problem)",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "1.1 Danh sách type hiện tại (Baseline v23)",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "1.2 So sánh với reference (Smartsheet)",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "1.3 Vì sao \"Latest Comment\" bị hoãn",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "1.4b Contact list — đã có nhưng thiếu màn cấu hình (screenshot 2)",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "1.4c Checkbox & Symbols — đã có nhưng thiếu màn cấu hình (screenshot 4, 5)",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "1.4 Vấn đề kỹ thuật cốt lõi: chưa có \"định danh người dùng\"",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "2. Yêu cầu chức năng (Functional Requirements)",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "3. Yêu cầu phi chức năng (Non-Functional Requirements)",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "4. Thay đổi Data Model",
+          "level": 2,
+          "line": 136
+        },
+        {
+          "heading": "5. Câu hỏi mở cho Quan (cần xác nhận trước khi build)",
+          "level": 2,
+          "line": 198
+        },
+        {
+          "heading": "6. Phụ lục kỹ thuật — Code hiện tại & Code đề xuất",
+          "level": 2,
+          "line": 207
+        },
+        {
+          "heading": "6.1 Code hiện tại (nguyên văn từ v23 baseline)",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "6.2 Code đề xuất (Target — viết mới / thay thế)",
+          "level": 3,
+          "line": 438
+        },
+        {
+          "heading": "6.2.1 FR-00 — Định danh người dùng nhẹ (thêm mới, đặt gần đầu file, sau khai báo các biến global khác)",
+          "level": 4,
+          "line": 440
+        },
+        {
+          "heading": "6.2.2 FR-03/04/05/06 — Stamp created/modified vào rowMeta",
+          "level": 4,
+          "line": 470
+        },
+        {
+          "heading": "6.2.3 FR-02 — Auto Number: tính giá trị khi tạo row",
+          "level": 4,
+          "line": 536
+        },
+        {
+          "heading": "6.2.4 FR-01 — Duration: Formatters + popover nhập ngày/giờ",
+          "level": 4,
+          "line": 562
+        },
+        {
+          "heading": "6.2.5 FR-09 — Formatters + icon cho các type còn lại",
+          "level": 4,
+          "line": 614
+        },
+        {
+          "heading": "6.2.6 FR-13 — Checkbox: style + restrict",
+          "level": 4,
+          "line": 653
+        },
+        {
+          "heading": "6.2.7 Cập nhật click dispatcher — thêm nhánh `duration`",
+          "level": 4,
+          "line": 680
+        },
+        {
+          "heading": "6.2.8 FR-07/10/11/12/13/14 — `openColumnTypePicker()` bản đầy đủ thay thế",
+          "level": 4,
+          "line": 691
+        },
+        {
+          "heading": "6.2.9 FR-11/FR-12 — Contact list: knownContacts riêng cột + enforce restrict",
+          "level": 4,
+          "line": 869
+        },
+        {
+          "heading": "6.3 Checklist kiểm tra trước khi nộp CODE_DIFF",
+          "level": 3,
+          "line": 911
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    }
+  ]
+}

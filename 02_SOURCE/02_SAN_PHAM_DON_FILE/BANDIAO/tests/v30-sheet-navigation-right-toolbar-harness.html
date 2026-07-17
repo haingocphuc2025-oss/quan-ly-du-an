@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>V30 UI regression running</title>
+  <style>
+    html,body,iframe{width:100%;height:100%;margin:0;border:0}
+    #result{position:fixed;left:50%;bottom:16px;z-index:99999;transform:translateX(-50%);padding:8px 14px;border-radius:6px;background:#166534;color:#fff;font:600 13px Arial}
+    html[data-test-status="fail"] #result{background:#b91c1c}
+  </style>
+</head>
+<body>
+  <iframe id="app" src="../../STAGING/giao-dien-desktop-don-gian_v30_quan.html"></iframe>
+  <div id="result">Đang kiểm tra…</div>
+  <script>
+    const frame = document.getElementById('app');
+    const result = document.getElementById('result');
+    const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+    frame.addEventListener('load', async () => {
+      await wait(800);
+      const win = frame.contentWindow;
+      const doc = frame.contentDocument;
+      const target = Array.from(doc.querySelectorAll('#workspaceBrowseTree button[data-browse-folder-i]'))
+        .find(button => button.textContent.includes('Hợp đồng - pháp lý'));
+      if (!target) return finish(false, ['target-sheet']);
+
+      const projectIndex = target.dataset.browseProjectI;
+      const folderIndex = target.dataset.browseFolderI;
+      target.click();
+      await wait(500);
+
+      const active = doc.querySelector(`#workspaceBrowseTree button[data-browse-project-i="${projectIndex}"][data-browse-folder-i="${folderIndex}"]`);
+      const rail = doc.getElementById('rightToolbar');
+      const railStyle = win.getComputedStyle(rail);
+      const railBox = rail.getBoundingClientRect();
+      doc.getElementById('tbAttach').click();
+      await wait(400);
+
+      const checks = {
+        railVisible: railStyle.display !== 'none' && railBox.width > 0,
+        railFixed: railStyle.position === 'fixed',
+        railVertical: railStyle.flexDirection === 'column',
+        railAtRight: Math.abs(railBox.right - win.innerWidth) <= 1,
+        activeSheet: active?.classList.contains('active') === true,
+        sheetVisible: win.getComputedStyle(doc.getElementById('gridSheetView')).display !== 'none',
+        attachmentOpen: doc.getElementById('attachmentPanel').getAttribute('aria-hidden') === 'false',
+        attachmentVisible: win.getComputedStyle(doc.getElementById('attachmentPanel')).display !== 'none'
+      };
+      finish(Object.values(checks).every(Boolean), checks);
+    });
+
+    function finish(pass, checks) {
+      document.documentElement.dataset.testStatus = pass ? 'pass' : 'fail';
+      document.documentElement.dataset.testChecks = JSON.stringify(checks);
+      document.title = pass ? 'V30 UI regression PASS' : 'V30 UI regression FAIL';
+      result.textContent = pass ? 'PASS · Rail phải · Sheet active · Attachment' : `FAIL · ${JSON.stringify(checks)}`;
+    }
+  </script>
+</body>
+</html>

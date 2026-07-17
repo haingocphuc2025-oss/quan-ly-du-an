@@ -1,0 +1,128 @@
+[26956:29320:0717/062514.920:ERROR:components\edge_ess\vbs_encoder.cc:100] LoadEnclaveImageW failed, error code 577
+[26956:29320:0717/062514.970:WARNING:chrome\browser\extensions\activity_log\activity_log_policy.cc:71] Scheduling init
+[26956:25768:0717/062514.984:WARNING:base\files\edge_storage_reserve.cc:84] NtQueryInformationFile (querying reserve) failed. NTSTATUS: -1073741811
+[26956:29320:0717/062514.992:WARNING:chrome\browser\extensions\activity_log\activity_log_policy.cc:71] Scheduling init
+[26956:28516:0717/062515.050:ERROR:content\browser\network_sandbox.cc:393] Failed to grant sandbox access to cache directory G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\Cache\Cache_Data: The parameter is incorrect. (0x57)
+[26956:23268:0717/062515.088:ERROR:content\browser\network_sandbox.cc:501] Failed to grant sandbox access to network context data directory G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\Safe Browsing Network: The parameter is incorrect. (0x57)
+[26956:28516:0717/062515.093:ERROR:content\browser\network_sandbox.cc:318] Failed to grant sandbox access to SharedDictionary directory G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\Shared Dictionary: The parameter is incorrect. (0x57)
+[26956:28516:0717/062515.248:ERROR:content\browser\network_sandbox.cc:501] Failed to grant sandbox access to network context data directory G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\Network: The parameter is incorrect. (0x57)
+[26956:7160:0717/062515.288:WARNING:base\files\edge_storage_reserve.cc:84] NtQueryInformationFile (querying reserve) failed. NTSTATUS: -1073741811
+[26956:29320:0717/062515.327:WARNING:chrome\browser\extensions\external_registry_loader_win.cc:283] Error observing HKLM: 5
+[26956:29320:0717/062515.406:ERROR:content\browser\network_service_instance_impl.cc:358] Encountered error while migrating network context data or granting sandbox access for G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\Safe Browsing Network. Result: 6: The operation completed successfully. (0x0)
+[26956:29320:0717/062515.429:ERROR:content\browser\network_service_instance_impl.cc:358] Encountered error while migrating network context data or granting sandbox access for G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\Network. Result: 6: The operation completed successfully. (0x0)
+[26956:24888:0717/062515.669:WARNING:components\sync\base\data_type.cc:1589] Unknown field number 40781
+[26956:24888:0717/062515.719:WARNING:components\sync\base\data_type.cc:1589] Unknown field number 1171441
+[26956:24888:0717/062515.745:WARNING:components\sync\base\data_type.cc:1589] Unknown field number 40781
+[26956:29320:0717/062516.197:ERROR:chrome\browser\task_manager\providers\fallback_task_provider.cc:126] Every renderer should have at least one task provided by a primary task provider. If a "Renderer" fallback task is shown, it is a bug. If you have repro steps, please file a new bug and tag it as a dependency of crbug.com/40528867.
+[26956:2520:0717/062516.515:INFO:components\edge_auth\oneauth\oneauth_config.cc:182] EventName: TransactionMicrosoftEdgeWin32
+[26956:2520:0717/062516.537:INFO:components\edge_auth\oneauth\oneauth_config.cc:183] SessionId: 80b03608-775f-4ce7-9930-32c128a76d68
+[26956:2520:0717/062516.563:INFO:components\edge_auth\oneauth\oneauth_config.cc:184] RecommendedTelemetryRegion: GLOBAL
+[26956:2520:0717/062516.586:INFO:components\edge_auth\oneauth\oneauth_config.cc:186] IsInstrumentationError: 0
+[26956:2520:0717/062516.587:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: SamplingRate, value: 0.25
+[26956:2520:0717/062516.588:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: appaudience, value: production
+[26956:2520:0717/062516.589:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_version, value: 9.3.3
+[26956:2520:0717/062516.589:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_hrd_authority, value: https://login.microsoftonline.com/consumers
+[26956:2520:0717/062516.593:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: eventtype, value: authentication
+[26956:2520:0717/062516.594:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: sessionid, value: 80b03608-775f-4ce7-9930-32c128a76d68
+[26956:2520:0717/062516.594:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: deviceprofiletelemetryid, value: 3663527250462afc22561e10060a7cbea73b8b14584182ddbbeff7d15ebbc447
+[26956:2520:0717/062516.596:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_GenericAccountCount, value: 0
+[26956:2520:0717/062516.606:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: authoutcome, value: succeeded
+[26956:2520:0717/062516.645:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_AppId, value: com.microsoft.Edge
+[26956:2520:0717/062516.655:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_ActiveFlights, value: {"1005":1,"1012":1,"1018":1,"1040":1,"1041":1,"1048":1,"1053":1,"31":1,"42":1,"44":1}
+[26956:2520:0717/062516.658:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_AadAccountCount, value: 1
+[26956:2520:0717/062516.661:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: sovereignty, value: Global
+[26956:2520:0717/062516.663:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_ExecutionFlow, value: {"de":0,"ef":[{"t":"9zkae","tid":1,"ts":0,"l":2},{"t":"4p5fv","tid":1,"ts":0,"l":2},{"t":"5k14z","tid":1,"ts":0,"l":2},{"t":"4s7uc","tid":1,"ts":0,"l":2},{"t":"4sufd","tid":1,"ts":0,"s":4,"l":2},{"t":"4swgg","tid":1,"ts":0,"s":5,"l":2},{"t":"4swgf","tid":1,"ts":0,"s":1,"l":2},{"t":"4swgi","tid":6,"ts":0,"s":5,"l":2},{"t":"8b2yn","tid":6,"ts":0,"l":2},{"t":"8dqkx","tid":6,"ts":0,"l":2},{"t":"4q2di","tid":6,"ts":0,"l":2},{"t":"4qnng","tid":6,"ts":0,"l":2,"a":2,"ie":0},{"t":"4qnnf","tid":6,"ts":1,"l":2,"a":2,"ie":1},{"t":"8dqit","tid":6,"ts":1,"l":2},{"t":"8b2ht","tid":6,"ts":1,"l":2},{"t":"4qnno","tid":6,"ts":1,"l":2,"a":2,"ie":0},{"t":"4qnnn","tid":6,"ts":17,"l":2,"a":2,"ie":1},{"t":"6xuag","tid":6,"ts":17,"l":2},{"t":"4c10b","tid":6,"ts":17,"l":2},{"t":"4c10a","tid":6,"ts":17,"l":2},{"t":"6qhvn","tid":6,"ts":17,"l":2},{"t":"5nhsm","tid":6,"ts":17,"l":2},{"t":"53u9y","tid":6,"ts":17,"l":0,"a":2,"ie":0},{"t":"53u93","tid":6,"ts":17,"l":0,"a":2,"ie":1},{"t":"6b224","tid":6,"ts":18,"l":2},{"t":"53vap","tid":6,"ts":18,"l":0,"a":2,"ie":0},{"t":"53vas","tid":6,"ts":18,"l":0,"a":2,"ie":1},{"t":"9zkad","tid":6,"ts":18,"l":2}],"t":[{"a":0,"t":1},{"a":2,"t":17,"c":4}]}
+[26956:2520:0717/062516.664:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: tenantid, value: 9188040d-6c67-4c5b-b112-36a304b66dad
+[26956:2520:0717/062516.665:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: appver, value: 150.0.4078.65
+[26956:7160:0717/062516.666:WARNING:base\files\edge_storage_reserve.cc:84] NtQueryInformationFile (querying reserve) failed. NTSTATUS: -1073741811
+[26956:2520:0717/062516.666:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_api, value: acquirecredentialsilently
+[26956:2520:0717/062516.678:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: correlationid, value: d32e59a3-e885-4ab6-a1aa-1bb7131c17d6
+[26956:2520:0717/062516.678:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: appname, value: MicrosoftEdge
+[26956:2520:0717/062516.679:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_MsaAccountCount, value: 1
+[26956:2520:0717/062516.681:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: telemetry_region, value: GLOBAL
+[26956:2520:0717/062516.682:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: identityservice, value: MSA
+[26956:2520:0717/062516.683:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: uploadid, value: f583dbf3-e904-4e50-a4bf-9e0bc44ac86a
+[26956:2520:0717/062516.688:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: actiontype, value: oneauthtransaction
+[26956:2520:0717/062516.696:INFO:components\edge_auth\oneauth\oneauth_config.cc:205] Integer type data key: platform, value: 0
+[26956:2520:0717/062516.699:INFO:components\edge_auth\oneauth\oneauth_config.cc:205] Integer type data key: count, value: 1
+[26956:2520:0717/062516.700:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: duration_min, value: 18
+[26956:2520:0717/062516.703:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: duration_max, value: 18
+[26956:2520:0717/062516.704:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: endtime, value: 1784244316515
+[26956:2520:0717/062516.705:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: duration_sum, value: 18
+[26956:2520:0717/062516.705:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: starttime, value: 1784244316497
+[26956:2520:0717/062516.706:INFO:components\edge_auth\oneauth\oneauth_config.cc:223] Bool type data key: FullDataClient, value: 1
+[26956:2520:0717/062516.707:INFO:components\edge_auth\oneauth\oneauth_config.cc:223] Bool type data key: issilent, value: 1
+[26956:2520:0717/062516.708:INFO:components\edge_auth\oneauth\oneauth_config.cc:182] EventName: ActionMicrosoftEdgeWin32
+[26956:2520:0717/062516.709:INFO:components\edge_auth\oneauth\oneauth_config.cc:183] SessionId: 80b03608-775f-4ce7-9930-32c128a76d68
+[26956:2520:0717/062516.717:INFO:components\edge_auth\oneauth\oneauth_config.cc:184] RecommendedTelemetryRegion: GLOBAL
+[26956:2520:0717/062516.722:INFO:components\edge_auth\oneauth\oneauth_config.cc:186] IsInstrumentationError: 0
+[26956:2520:0717/062516.729:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: appver, value: 150.0.4078.65
+[26956:2520:0717/062516.736:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: appname, value: MicrosoftEdge
+[26956:2520:0717/062516.737:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: tenantid, value: 9188040d-6c67-4c5b-b112-36a304b66dad
+[26956:2520:0717/062516.738:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: identityservice, value: MSA
+[26956:2520:0717/062516.740:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_version, value: 9.3.3
+[26956:2520:0717/062516.744:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: appaudience, value: production
+[26956:2520:0717/062516.745:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_read_token, value: ID|AT
+[26956:2520:0717/062516.748:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_ExecutionFlow, value: {"de":0,"ef":[{"t":"9zkae","tid":1,"ts":0,"l":2},{"t":"4p5fv","tid":1,"ts":0,"l":2},{"t":"5k14z","tid":1,"ts":0,"l":2},{"t":"4s7uc","tid":1,"ts":0,"l":2},{"t":"4sufd","tid":1,"ts":0,"s":4,"l":2},{"t":"4swgg","tid":1,"ts":0,"s":5,"l":2},{"t":"4swgf","tid":1,"ts":0,"s":1,"l":2},{"t":"4swgi","tid":6,"ts":0,"s":5,"l":2},{"t":"8b2yn","tid":6,"ts":0,"l":2},{"t":"8dqkx","tid":6,"ts":0,"l":2},{"t":"4q2di","tid":6,"ts":0,"l":2},{"t":"4qnng","tid":6,"ts":0,"l":2,"a":2,"ie":0},{"t":"4qnnf","tid":6,"ts":1,"l":2,"a":2,"ie":1},{"t":"8dqit","tid":6,"ts":1,"l":2},{"t":"8b2ht","tid":6,"ts":1,"l":2},{"t":"4qnno","tid":6,"ts":1,"l":2,"a":2,"ie":0},{"t":"4qnnn","tid":6,"ts":17,"l":2,"a":2,"ie":1},{"t":"6xuag","tid":6,"ts":17,"l":2},{"t":"4c10b","tid":6,"ts":17,"l":2},{"t":"4c10a","tid":6,"ts":17,"l":2},{"t":"6qhvn","tid":6,"ts":17,"l":2},{"t":"5nhsm","tid":6,"ts":17,"l":2},{"t":"53u9y","tid":6,"ts":17,"l":0,"a":2,"ie":0},{"t":"53u93","tid":6,"ts":17,"l":0,"a":2,"ie":1},{"t":"6b224","tid":6,"ts":18,"l":2},{"t":"53vap","tid":6,"ts":18,"l":0,"a":2,"ie":0},{"t":"53vas","tid":6,"ts":18,"l":0,"a":2,"ie":1},{"t":"9zkad","tid":6,"ts":18,"l":2}],"t":[{"a":0,"t":1},{"a":2,"t":17,"c":4}]}
+[26956:2520:0717/062516.752:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_start_time, value: 2026-07-16T23:25:16.000Z
+[26956:2520:0717/062516.756:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_msal_version, value: 9.3.3
+[26956:2520:0717/062516.760:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_authority_type, value: MSA
+[26956:2520:0717/062516.762:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_auth_flow, value: AT
+[26956:2520:0717/062516.763:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_is_successful, value: true
+[26956:2520:0717/062516.783:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: promptreasoncorrelationid, value: 
+[26956:2520:0717/062516.784:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_was_request_throttled, value: false
+[26956:2520:0717/062516.785:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_original_authority, value: https://login.microsoftonline.com/consumers
+[26956:2520:0717/062516.786:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_additional_query_parameters_count, value: 1
+[26956:2520:0717/062516.786:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: sessionid, value: 80b03608-775f-4ce7-9930-32c128a76d68
+[26956:2520:0717/062516.787:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_normalized_realm, value: 9188040d-6c67-4c5b-b112-36a304b66dad
+[26956:2520:0717/062516.788:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: eventtype, value: authentication
+[26956:2520:0717/062516.788:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_storage_read, value: DAC|DID|DAT
+[26956:2520:0717/062516.789:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_broker_app_used, value: false
+[26956:2520:0717/062516.801:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_authorization_type, value: WindowsIntegratedAuth
+[26956:2520:0717/062516.803:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_access_token_expiry_time, value: 2026-07-17T04:19:53.000Z
+[26956:2520:0717/062516.804:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: deviceprofiletelemetryid, value: 3663527250462afc22561e10060a7cbea73b8b14584182ddbbeff7d15ebbc447
+[26956:2520:0717/062516.804:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_request_duration, value: 16
+[26956:2520:0717/062516.804:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: authoutcome, value: succeeded
+[26956:2520:0717/062516.805:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: SamplingRate, value: 0.25
+[26956:2520:0717/062516.806:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: errordescription, value: 
+[26956:2520:0717/062516.806:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_api_name, value: AcquireTokenSilently
+[26956:2520:0717/062516.806:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: error, value: 
+[26956:2520:0717/062516.808:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_correlation_id, value: d32e59a3-e885-4ab6-a1aa-1bb7131c17d6
+[26956:2520:0717/062516.810:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: uploadid, value: 3f4acff9-f795-4dc6-8121-7dc4fa748115
+[26956:2520:0717/062516.811:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_transactionuploadid, value: f583dbf3-e904-4e50-a4bf-9e0bc44ac86a
+[26956:2520:0717/062516.812:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_client_id, value: 82864fa0-ed49-4711-8395-a0e6003dca1f
+[26956:2520:0717/062516.813:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: correlationid, value: d32e59a3-e885-4ab6-a1aa-1bb7131c17d6
+[26956:2520:0717/062516.814:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: actiontype, value: msal
+[26956:2520:0717/062516.814:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: errorsource, value: none
+[26956:2520:0717/062516.815:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: MSAL_stop_time, value: 2026-07-16T23:25:16.000Z
+[26956:2520:0717/062516.815:INFO:components\edge_auth\oneauth\oneauth_config.cc:196] String type data key: oneauth_api, value: acquirecredentialsilently
+[26956:2520:0717/062516.816:INFO:components\edge_auth\oneauth\oneauth_config.cc:205] Integer type data key: platform, value: 0
+[26956:2520:0717/062516.816:INFO:components\edge_auth\oneauth\oneauth_config.cc:205] Integer type data key: count, value: 1
+[26956:2520:0717/062516.817:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: duration_min, value: 18
+[26956:2520:0717/062516.819:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: duration_max, value: 18
+[26956:2520:0717/062516.819:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: endtime, value: 1784244316515
+[26956:2520:0717/062516.819:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: duration_sum, value: 18
+[26956:2520:0717/062516.822:INFO:components\edge_auth\oneauth\oneauth_config.cc:214] Integer64 type data key: starttime, value: 1784244316497
+[26956:2520:0717/062516.822:INFO:components\edge_auth\oneauth\oneauth_config.cc:223] Bool type data key: FullDataClient, value: 1
+[26956:29320:0717/062516.937:INFO:CONSOLE:3888] "[QLDA PERF] UI Ready (cold): 29.9 ms", source: file:///G:/My%20Drive/03_DU_AN_PHAN_MEM/DU%20AN%20WED%20QUAN%20LY/02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v30_quan.html (3888)
+[26956:29320:0717/062516.948:INFO:CONSOLE:14555] "[QLDA PERF] Baseline: [object Object]", source: file:///G:/My%20Drive/03_DU_AN_PHAN_MEM/DU%20AN%20WED%20QUAN%20LY/02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v30_quan.html (14555)
+[26956:29320:0717/062516.981:INFO:CONSOLE:14559] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js.", source: file:///G:/My%20Drive/03_DU_AN_PHAN_MEM/DU%20AN%20WED%20QUAN%20LY/02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v30_quan.html (14559)
+[26956:29320:0717/062516.984:INFO:CONSOLE:14559] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js.", source: file:///G:/My%20Drive/03_DU_AN_PHAN_MEM/DU%20AN%20WED%20QUAN%20LY/02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v30_quan.html (14559)
+[26956:29320:0717/062516.985:INFO:CONSOLE:14559] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js.", source: file:///G:/My%20Drive/03_DU_AN_PHAN_MEM/DU%20AN%20WED%20QUAN%20LY/02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v30_quan.html (14559)
+[26956:29320:0717/062516.986:INFO:CONSOLE:14559] "Tracking Prevention blocked access to storage for https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js.", source: file:///G:/My%20Drive/03_DU_AN_PHAN_MEM/DU%20AN%20WED%20QUAN%20LY/02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v30_quan.html (14559)
+[26956:23120:0717/062517.064:ERROR:components\signin\public\webdata\token_service_table.cc:216] Failed to load tokens (invalid SQL statement).
+[26956:29320:0717/062517.068:WARNING:components\signin\internal\identity_manager\account_fetcher_service.cc:231] Edge does not support fetching account capabilities
+[26956:29320:0717/062517.084:WARNING:components\signin\internal\identity_manager\account_fetcher_service.cc:192] Should not execute: Tests depending on this function may fail
+[26956:7160:0717/062517.792:WARNING:base\files\edge_storage_reserve.cc:84] NtQueryInformationFile (querying reserve) failed. NTSTATUS: -1073741811
+[26956:7160:0717/062517.896:WARNING:base\files\edge_storage_reserve.cc:84] NtQueryInformationFile (querying reserve) failed. NTSTATUS: -1073741811
+[26956:7160:0717/062517.958:WARNING:base\files\edge_storage_reserve.cc:84] NtQueryInformationFile (querying reserve) failed. NTSTATUS: -1073741811
+[26956:22532:0717/062518.058:ERROR:components\edge_e_drop\core\browser\sqlite\edge_e_drop_database.cc:676] DatabaseErrorCallback:sql::Database is not opened. raze success: 1
+[26956:22532:0717/062518.089:ERROR:components\edge_e_drop\core\browser\sqlite\edge_e_drop_database.cc:682] Sqlite operation error callback with error code: 1
+[26956:29320:0717/062518.092:ERROR:components\edge_e_drop\core\browser\e_drop_service.cc:1259] [EDrop] Sqlite Database is corrupted
+[26956:22532:0717/062518.125:ERROR:components\edge_e_drop\core\browser\sqlite\edge_e_drop_database.cc:684] Sqlite operation error callback with error message: sql::Database is not opened.
+[26956:22532:0717/062518.397:ERROR:components\edge_e_drop\core\browser\sqlite\edge_e_drop_database.cc:676] DatabaseErrorCallback:sql::Database is not opened. raze success: 1
+[26956:22532:0717/062518.397:ERROR:components\edge_e_drop\core\browser\sqlite\edge_e_drop_database.cc:682] Sqlite operation error callback with error code: 1
+[26956:29320:0717/062518.397:ERROR:components\edge_e_drop\core\browser\e_drop_service.cc:1259] [EDrop] Sqlite Database is corrupted
+[26956:22532:0717/062518.398:ERROR:components\edge_e_drop\core\browser\sqlite\edge_e_drop_database.cc:684] Sqlite operation error callback with error message: sql::Database is not opened.
+[26956:23120:0717/062519.079:WARNING:components\sync\engine\syncer_proto_util.cc:669] Error posting from syncer: Response Code (bogus on error): -1 Content-Length (bogus on error): -1 X-AFS-Tracking:  Server Status: CONNECTION_UNAVAILABLE
+[26956:23120:0717/062519.085:ERROR:components\sync\engine\get_updates_processor.cc:424] PostClientToServerMessage() failed during GetUpdates with error Network error (ERR_ABORTED)

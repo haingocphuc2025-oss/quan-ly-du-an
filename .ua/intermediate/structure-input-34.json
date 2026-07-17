@@ -1,0 +1,61 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/BAN_DO_BO_NHO.md",
+                           "language":  "markdown",
+                           "sizeLines":  270,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_DEEP.html",
+                           "language":  "html",
+                           "sizeLines":  136,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_FULL.html",
+                           "language":  "html",
+                           "sizeLines":  152,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_OBSIDIAN.html",
+                           "language":  "html",
+                           "sizeLines":  437,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_VIEWER.html",
+                           "language":  "html",
+                           "sizeLines":  189,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/giao-dien-desktop-don-gian_v23_quan.html",
+                           "language":  "html",
+                           "sizeLines":  9403,
+                           "fileCategory":  "markup"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/BAN_DO_BO_NHO.md":  [
+
+                                                                                                      ],
+                            "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_DEEP.html":  [
+
+                                                                                                     ],
+                            "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_FULL.html":  [
+
+                                                                                                     ],
+                            "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_OBSIDIAN.html":  [
+
+                                                                                                         ],
+                            "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/GRAPH_VIEWER.html":  [
+
+                                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/[Ai \u0026 Machine Learning]/giao-dien-desktop-don-gian_v23_quan.html":  [
+
+                                                                                                                              ]
+                        }
+}

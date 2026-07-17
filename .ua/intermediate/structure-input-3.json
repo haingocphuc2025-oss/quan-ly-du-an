@@ -1,0 +1,43 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/Hermes-Cloner/01_ROUTER/PLUGIN_SELECTOR.md",
+                           "language":  "markdown",
+                           "sizeLines":  11,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/01_ROUTER/ROUTER.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/01_ROUTER/SKILL_SELECTOR.md",
+                           "language":  "markdown",
+                           "sizeLines":  12,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/01_ROUTER/WORKFLOW_SELECTOR.md",
+                           "language":  "markdown",
+                           "sizeLines":  11,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/Hermes-Cloner/01_ROUTER/PLUGIN_SELECTOR.md":  [
+
+                                                                                   ],
+                            ".agents/Hermes-Cloner/01_ROUTER/ROUTER.md":  [
+
+                                                                          ],
+                            ".agents/Hermes-Cloner/01_ROUTER/SKILL_SELECTOR.md":  [
+
+                                                                                  ],
+                            ".agents/Hermes-Cloner/01_ROUTER/WORKFLOW_SELECTOR.md":  [
+
+                                                                                     ]
+                        }
+}

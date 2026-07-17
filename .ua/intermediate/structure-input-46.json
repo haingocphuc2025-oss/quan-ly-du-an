@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/browse-status-display.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  90,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/browse-status-navigation.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  43,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/grid-dom-binding-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  26,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/module-initialization-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  19,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/project-folder-initialization-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  22,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/screen-state-behavior.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  34,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/toolbar-color-initialization-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  19,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/package.json",
+                           "language":  "json",
+                           "sizeLines":  5,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/split_v25_to_modules.py",
+                           "language":  "python",
+                           "sizeLines":  442,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/serve.py",
+                           "language":  "python",
+                           "sizeLines":  22,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/build.py",
+                           "language":  "python",
+                           "sizeLines":  38,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/css/main.css",
+                           "language":  "css",
+                           "sizeLines":  2516,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/api.js",
+                           "language":  "javascript",
+                           "sizeLines":  803,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/dashboard.js",
+                           "language":  "javascript",
+                           "sizeLines":  496,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/grid.js",
+                           "language":  "javascript",
+                           "sizeLines":  3751,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/main.js",
+                           "language":  "javascript",
+                           "sizeLines":  338,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/report.js",
+                           "language":  "javascript",
+                           "sizeLines":  871,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/repost.js",
+                           "language":  "javascript",
+                           "sizeLines":  99,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/state.js",
+                           "language":  "javascript",
+                           "sizeLines":  72,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/storage.js",
+                           "language":  "javascript",
+                           "sizeLines":  344,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/toolbar.js",
+                           "language":  "javascript",
+                           "sizeLines":  389,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/workspace-navigator.js",
+                           "language":  "javascript",
+                           "sizeLines":  1723,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/app-startup-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  15,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/browse-status-display.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  90,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/browse-status-navigation.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  43,
+                           "fileCategory":  "code"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/browse-status-display.test.js":  [
+
+                                                                                                               ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/browse-status-navigation.test.js":  [
+
+                                                                                                                  ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/grid-dom-binding-order.test.js":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/module-initialization-order.test.js":  [
+
+                                                                                                                     ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/project-folder-initialization-order.test.js":  [
+
+                                                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/screen-state-behavior.test.js":  [
+
+                                                                                                               ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/MODULES_V26/tests/toolbar-color-initialization-order.test.js":  [
+
+                                                                                                                            ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/package.json":  [
+
+                                                                            ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/split_v25_to_modules.py":  [
+
+                                                                                       ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/serve.py":  [
+
+                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/build.py":  [
+
+                                                                                                      ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/css/main.css":  [
+
+                                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/api.js":  [
+
+                                                                                                       ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/dashboard.js":  [
+
+                                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/grid.js":  [
+
+                                                                                                        ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/main.js":  [
+
+                                                                                                        ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/report.js":  [
+
+                                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/repost.js":  [
+
+                                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/state.js":  [
+
+                                                                                                         ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/storage.js":  [
+
+                                                                                                           ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/toolbar.js":  [
+
+                                                                                                           ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/js/workspace-navigator.js":  [
+
+                                                                                                                       ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/app-startup-order.test.js":  [
+
+                                                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/browse-status-display.test.js":  [
+
+                                                                                                                                 ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/browse-status-navigation.test.js":  [
+
+                                                                                                                                    ]
+                        }
+}

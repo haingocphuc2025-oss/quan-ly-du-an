@@ -1,0 +1,6 @@
+2026/07/17-06:25:18.285 5a9c Reusing MANIFEST G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/07/17-06:25:18.328 5a9c Recovering log #4
+2026/07/17-06:25:18.344 5a9c Reusing old log G:\My Drive\03_DU_AN_PHAN_MEM\DU AN WED QUAN LY\.ua\task-perf-001-edge3\Default\EdgeCoupons/coupons_data.db/000004.log 
+2026/07/17-06:25:19.957 5a50 Level-0 table #8: started
+2026/07/17-06:25:20.120 5a50 Level-0 table #8: 683212 bytes OK
+2026/07/17-06:25:20.165 5a50 Delete type=0 #4

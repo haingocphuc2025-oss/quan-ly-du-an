@@ -1,0 +1,115 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/00_README_LICH_SU_TRUOC_CHUAN_HOA_2026-07-08.md",
+                           "language":  "markdown",
+                           "sizeLines":  25,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/01_BAN_QLDA_00_README_LICH_SU_TRUOC_CHUAN_HOA_2026-07-08.md",
+                           "language":  "markdown",
+                           "sizeLines":  204,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/BACKUP_COLUMNTYPES_v16.html",
+                           "language":  "html",
+                           "sizeLines":  4697,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/DIEU_PHOI.md",
+                           "language":  "markdown",
+                           "sizeLines":  100,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/GIAO_NHAN_NHA_THAU.md",
+                           "language":  "markdown",
+                           "sizeLines":  58,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/GIAO_NHAN_TU_VAN.md",
+                           "language":  "markdown",
+                           "sizeLines":  42,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_STANDARDIZE_LOG_20260708_090910.txt",
+                           "language":  "txt",
+                           "sizeLines":  73,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/PROJECT_OPERATION_CENTER_DUPLICATE_2026-07-08.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/Phuc_to_do_list_CU.md",
+                           "language":  "markdown",
+                           "sizeLines":  57,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/Quan_to_do_list_CU.md",
+                           "language":  "markdown",
+                           "sizeLines":  67,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/README_CLEANUP_LOG_20260708_091036.txt",
+                           "language":  "txt",
+                           "sizeLines":  4,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/huong-dan-ket-noi-telegram.md",
+                           "language":  "markdown",
+                           "sizeLines":  133,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/00_README_LICH_SU_TRUOC_CHUAN_HOA_2026-07-08.md":  [
+
+                                                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/01_BAN_QLDA_00_README_LICH_SU_TRUOC_CHUAN_HOA_2026-07-08.md":  [
+
+                                                                                                                                        ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/BACKUP_COLUMNTYPES_v16.html":  [
+
+                                                                                                        ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/DIEU_PHOI.md":  [
+
+                                                                                         ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/GIAO_NHAN_NHA_THAU.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/GIAO_NHAN_TU_VAN.md":  [
+
+                                                                                                ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_STANDARDIZE_LOG_20260708_090910.txt":  [
+
+                                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/PROJECT_OPERATION_CENTER_DUPLICATE_2026-07-08.md":  [
+
+                                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/Phuc_to_do_list_CU.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/Quan_to_do_list_CU.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/README_CLEANUP_LOG_20260708_091036.txt":  [
+
+                                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/huong-dan-ket-noi-telegram.md":  [
+
+                                                                                                          ]
+                        }
+}

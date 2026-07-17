@@ -1,0 +1,187 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/00_DOC_TRUOC.md",
+                           "language":  "markdown",
+                           "sizeLines":  11,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/01_VAI_TRO_NHA_THAU.md",
+                           "language":  "markdown",
+                           "sizeLines":  37,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/02_QUY_TRINH_THI_CONG.md",
+                           "language":  "markdown",
+                           "sizeLines":  248,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/03_TRANG_THAI_HIEN_TAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  41,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/04_BAN_GIAO_CODE.md",
+                           "language":  "markdown",
+                           "sizeLines":  158,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/05_CODE_DIFF.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/06_CODE_DIFF_v21.md",
+                           "language":  "markdown",
+                           "sizeLines":  81,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/07_CODE_DIFF_v22.md",
+                           "language":  "markdown",
+                           "sizeLines":  86,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/07_CODE_DIFF_v23.md",
+                           "language":  "markdown",
+                           "sizeLines":  103,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/08_SO_NGHIEM_THU.md",
+                           "language":  "markdown",
+                           "sizeLines":  43,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/09_CODE_DIFF_v23.md",
+                           "language":  "markdown",
+                           "sizeLines":  64,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/10_DRIVE_API_DIRECT_UPLOAD.md",
+                           "language":  "markdown",
+                           "sizeLines":  59,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ADR-001_TRUOC_2_TRANG_THAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  22,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/AGENTS_TRUOC_2_TRANG_THAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  10,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/CONG_VIEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  62,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/DANH_MUC_SPEC_TRUOC_2_TRANG_THAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  40,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/QUY_TRINH_TRUOC_2_TRANG_THAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  64,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ROOT_README_TRUOC_2_TRANG_THAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  26,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ROOT_README_TRUOC_CHUAN_HOA.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/SPEC_README_TRUOC_2_TRANG_THAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  30,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/00_DOC_TRUOC.md":  [
+
+                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/01_VAI_TRO_NHA_THAU.md":  [
+
+                                                                                                     ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/02_QUY_TRINH_THI_CONG.md":  [
+
+                                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/03_TRANG_THAI_HIEN_TAI.md":  [
+
+                                                                                                        ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/04_BAN_GIAO_CODE.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/05_CODE_DIFF.md":  [
+
+                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/06_CODE_DIFF_v21.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/07_CODE_DIFF_v22.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/07_CODE_DIFF_v23.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/08_SO_NGHIEM_THU.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/09_CODE_DIFF_v23.md":  [
+
+                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/10_DRIVE_API_DIRECT_UPLOAD.md":  [
+
+                                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ADR-001_TRUOC_2_TRANG_THAI.md":  [
+
+                                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/AGENTS_TRUOC_2_TRANG_THAI.md":  [
+
+                                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/CONG_VIEC.md":  [
+
+                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/DANH_MUC_SPEC_TRUOC_2_TRANG_THAI.md":  [
+
+                                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/QUY_TRINH_TRUOC_2_TRANG_THAI.md":  [
+
+                                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ROOT_README_TRUOC_2_TRANG_THAI.md":  [
+
+                                                                                                                ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/ROOT_README_TRUOC_CHUAN_HOA.md":  [
+
+                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/SPEC_README_TRUOC_2_TRANG_THAI.md":  [
+
+                                                                                                                ]
+                        }
+}

@@ -1,0 +1,61 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/BAN_GIAO.md",
+                           "language":  "markdown",
+                           "sizeLines":  75,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF.md",
+                           "language":  "markdown",
+                           "sizeLines":  81,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF_v22.md",
+                           "language":  "markdown",
+                           "sizeLines":  86,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CONG_VIEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  37,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SOP_NHA_THAU.md",
+                           "language":  "markdown",
+                           "sizeLines":  248,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SO_NGHIEM_THU.md",
+                           "language":  "markdown",
+                           "sizeLines":  43,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/BAN_GIAO.md":  [
+
+                                                                                                                                                          ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF.md":  [
+
+                                                                                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF_v22.md":  [
+
+                                                                                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CONG_VIEC.md":  [
+
+                                                                                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SOP_NHA_THAU.md":  [
+
+                                                                                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SO_NGHIEM_THU.md":  [
+
+                                                                                                                                                               ]
+                        }
+}

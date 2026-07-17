@@ -1,0 +1,61 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/DIEU_PHOI.md",
+                           "language":  "markdown",
+                           "sizeLines":  100,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_NHA_THAU.md",
+                           "language":  "markdown",
+                           "sizeLines":  58,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_TU_VAN.md",
+                           "language":  "markdown",
+                           "sizeLines":  42,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Phuc_to_do_list_CU.md",
+                           "language":  "markdown",
+                           "sizeLines":  57,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Quan_to_do_list_CU.md",
+                           "language":  "markdown",
+                           "sizeLines":  67,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/huong-dan-ket-noi-telegram.md",
+                           "language":  "markdown",
+                           "sizeLines":  133,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/DIEU_PHOI.md":  [
+
+                                                                                                                                                          ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_NHA_THAU.md":  [
+
+                                                                                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_TU_VAN.md":  [
+
+                                                                                                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Phuc_to_do_list_CU.md":  [
+
+                                                                                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Quan_to_do_list_CU.md":  [
+
+                                                                                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/huong-dan-ket-noi-telegram.md":  [
+
+                                                                                                                                                                           ]
+                        }
+}

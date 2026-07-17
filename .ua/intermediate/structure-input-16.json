@@ -1,0 +1,124 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V23_LOCALHOST.bat",
+                           "language":  "batch",
+                           "sizeLines":  9,
+                           "fileCategory":  "script"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V25_LOCALHOST.bat",
+                           "language":  "batch",
+                           "sizeLines":  9,
+                           "fileCategory":  "script"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V26_LOCALHOST.bat",
+                           "language":  "batch",
+                           "sizeLines":  10,
+                           "fileCategory":  "script"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v17_staging.html",
+                           "language":  "html",
+                           "sizeLines":  5580,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v18_quan.html",
+                           "language":  "html",
+                           "sizeLines":  5580,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v19_quan.html",
+                           "language":  "html",
+                           "sizeLines":  6468,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v20_quan.html",
+                           "language":  "html",
+                           "sizeLines":  6539,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v21_quan.html",
+                           "language":  "html",
+                           "sizeLines":  6630,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v22_quan.html",
+                           "language":  "html",
+                           "sizeLines":  6758,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v24_quan.html",
+                           "language":  "html",
+                           "sizeLines":  10613,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v25_quan.html",
+                           "language":  "html",
+                           "sizeLines":  11713,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v26_quan.html",
+                           "language":  "html",
+                           "sizeLines":  12025,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/run.bat",
+                           "language":  "batch",
+                           "sizeLines":  10,
+                           "fileCategory":  "script"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V23_LOCALHOST.bat":  [
+
+                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V25_LOCALHOST.bat":  [
+
+                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/RUN_V26_LOCALHOST.bat":  [
+
+                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v17_staging.html":  [
+
+                                                                                                                   ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v18_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v19_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v20_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v21_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v22_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v24_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v25_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/giao-dien-desktop-don-gian_v26_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/STAGING/run.bat":  [
+
+                                                                               ]
+                        }
+}

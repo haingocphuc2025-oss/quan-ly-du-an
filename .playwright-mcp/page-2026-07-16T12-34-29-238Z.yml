@@ -1,0 +1,59 @@
+- generic [active] [ref=e1]:
+  - heading "Directory listing for /" [level=1] [ref=e2]
+  - separator [ref=e3]
+  - list [ref=e4]:
+    - listitem [ref=e5]:
+      - link "giao-dien-desktop-don-gian_v17_staging.html" [ref=e6] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v17_staging.html
+    - listitem [ref=e7]:
+      - link "giao-dien-desktop-don-gian_v18_quan.html" [ref=e8] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v18_quan.html
+    - listitem [ref=e9]:
+      - link "giao-dien-desktop-don-gian_v19_quan.html" [ref=e10] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v19_quan.html
+    - listitem [ref=e11]:
+      - link "giao-dien-desktop-don-gian_v20_quan.html" [ref=e12] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v20_quan.html
+    - listitem [ref=e13]:
+      - link "giao-dien-desktop-don-gian_v21_quan.html" [ref=e14] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v21_quan.html
+    - listitem [ref=e15]:
+      - link "giao-dien-desktop-don-gian_v22_quan.html" [ref=e16] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v22_quan.html
+    - listitem [ref=e17]:
+      - link "giao-dien-desktop-don-gian_v24_quan.html" [ref=e18] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v24_quan.html
+    - listitem [ref=e19]:
+      - link "giao-dien-desktop-don-gian_v25_quan.html" [ref=e20] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v25_quan.html
+    - listitem [ref=e21]:
+      - link "giao-dien-desktop-don-gian_v26_quan.html" [ref=e22] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v26_quan.html
+    - listitem [ref=e23]:
+      - link "giao-dien-desktop-don-gian_v27_quan.html" [ref=e24] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v27_quan.html
+    - listitem [ref=e25]:
+      - link "giao-dien-desktop-don-gian_v28_quan.html" [ref=e26] [cursor=pointer]:
+        - /url: giao-dien-desktop-don-gian_v28_quan.html
+    - listitem [ref=e27]:
+      - link "run.bat" [ref=e28] [cursor=pointer]:
+        - /url: run.bat
+    - listitem [ref=e29]:
+      - link "RUN_V23_LOCALHOST.bat" [ref=e30] [cursor=pointer]:
+        - /url: RUN_V23_LOCALHOST.bat
+    - listitem [ref=e31]:
+      - link "RUN_V25_LOCALHOST.bat" [ref=e32] [cursor=pointer]:
+        - /url: RUN_V25_LOCALHOST.bat
+    - listitem [ref=e33]:
+      - link "RUN_V26_LOCALHOST.bat" [ref=e34] [cursor=pointer]:
+        - /url: RUN_V26_LOCALHOST.bat
+    - listitem [ref=e35]:
+      - link "RUN_V27_LOCALHOST.bat" [ref=e36] [cursor=pointer]:
+        - /url: RUN_V27_LOCALHOST.bat
+    - listitem [ref=e37]:
+      - link "RUN_V28_LOCALHOST.bat" [ref=e38] [cursor=pointer]:
+        - /url: RUN_V28_LOCALHOST.bat
+    - listitem [ref=e39]:
+      - link "serve.py" [ref=e40] [cursor=pointer]:
+        - /url: serve.py
+  - separator [ref=e41]

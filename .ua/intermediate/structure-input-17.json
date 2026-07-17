@@ -1,0 +1,88 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v18_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  5580,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v19_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  6468,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v20_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  6539,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v21_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  6630,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v22_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  9403,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v23_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  10563,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v24_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  10613,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v25_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  11713,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline.html",
+                           "language":  "html",
+                           "sizeLines":  12025,
+                           "fileCategory":  "markup"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v18_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v19_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v20_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v21_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v22_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v23_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v24_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v25_baseline.html":  [
+
+                                                                                          ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline.html":  [
+
+                                                                                          ]
+                        }
+}

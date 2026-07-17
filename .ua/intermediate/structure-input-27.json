@@ -1,0 +1,43 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/BAN_GIAO.md",
+                           "language":  "markdown",
+                           "sizeLines":  185,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/CONG_VIEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  134,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/DEVELOPER.md",
+                           "language":  "markdown",
+                           "sizeLines":  489,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SOP_TUAN_THU_TU_VAN.md",
+                           "language":  "markdown",
+                           "sizeLines":  194,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/BAN_GIAO.md":  [
+
+                                                                                                                                                        ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/CONG_VIEC.md":  [
+
+                                                                                                                                                         ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/DEVELOPER.md":  [
+
+                                                                                                                                                         ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/02_TU_VAN_THIET_KE/SOP_TUAN_THU_TU_VAN.md":  [
+
+                                                                                                                                                                   ]
+                        }
+}

@@ -1,0 +1,138 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/CODING_RULES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 10,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "Coding Rules",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/DESIGN_RULES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "Design Rules",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/DOCUMENTATION_RULES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "Documentation Rules",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/HERMES_CONSTITUTION.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 14,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "Hermes Constitution",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Luật bất biến",
+          "level": 2,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/REVIEW_RULES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 9,
+      "sections": [
+        {
+          "heading": "Review Rules",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/00_CONSTITUTION/SECURITY_RULES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 8,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "Security Rules",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SMARTSHEET/KE_HOACH_NGHIEN_CUU_SMARTSHEET.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/automation/SPEC_005_automation.md",
+                           "language":  "markdown",
+                           "sizeLines":  130,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/column-types/SPEC_006_column-types.md",
+                           "language":  "markdown",
+                           "sizeLines":  569,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/conditional-formatting/SPEC_007_conditional-formatting.md",
+                           "language":  "markdown",
+                           "sizeLines":  141,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/contact-column/SPEC_008_contact-column.md",
+                           "language":  "markdown",
+                           "sizeLines":  97,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/forms/SPEC_004_forms.md",
+                           "language":  "markdown",
+                           "sizeLines":  114,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/publish-report/SPEC_001_publish-report.md",
+                           "language":  "markdown",
+                           "sizeLines":  113,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/GOI_GIAO_VIEC_CU/PROMPT_CODEX_COLUMN_TYPES.md",
+                           "language":  "markdown",
+                           "sizeLines":  52,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/clear-sheet-all-data/SPEC_REJECTED_clear-sheet-all-data.md",
+                           "language":  "markdown",
+                           "sizeLines":  323,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/delete-key-repost-date/SPEC_REJECTED_delete-key-repost-date.md",
+                           "language":  "markdown",
+                           "sizeLines":  108,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/report-configuration/SPEC_REWRITE_REQUIRED_report-configuration.md",
+                           "language":  "markdown",
+                           "sizeLines":  559,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/STAGING_TEN_SAI/giao-dien-desktop-don-gian_v23_quan_NOI_DUNG_V25.html",
+                           "language":  "html",
+                           "sizeLines":  10621,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "03_TASKS/DOING/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "03_TASKS/FIX/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "03_TASKS/TASK_TEMPLATE.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "03_TASKS/TODO/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/REGRESSION/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/REVIEW/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/REVIEW/REVIEW_v23_20260713.md",
+                           "language":  "markdown",
+                           "sizeLines":  258,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/UI_COMPARE/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "05_BIEU DO/architecture-diagram.html",
+                           "language":  "html",
+                           "sizeLines":  446,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "05_BIEU DO/codebase-graph.html",
+                           "language":  "html",
+                           "sizeLines":  580,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "AGENTS.md",
+                           "language":  "markdown",
+                           "sizeLines":  33,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "README.md",
+                           "language":  "markdown",
+                           "sizeLines":  24,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "work/v25_inline.js",
+                           "language":  "javascript",
+                           "sizeLines":  8619,
+                           "fileCategory":  "code"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SMARTSHEET/KE_HOACH_NGHIEN_CUU_SMARTSHEET.md":  [
+
+                                                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/automation/SPEC_005_automation.md":  [
+
+                                                                                                                    ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/column-types/SPEC_006_column-types.md":  [
+
+                                                                                                                        ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/conditional-formatting/SPEC_007_conditional-formatting.md":  [
+
+                                                                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/contact-column/SPEC_008_contact-column.md":  [
+
+                                                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/forms/SPEC_004_forms.md":  [
+
+                                                                                                          ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/SPEC_DA_DUYET/publish-report/SPEC_001_publish-report.md":  [
+
+                                                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/GOI_GIAO_VIEC_CU/PROMPT_CODEX_COLUMN_TYPES.md":  [
+
+                                                                                                      ],
+                            "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/clear-sheet-all-data/SPEC_REJECTED_clear-sheet-all-data.md":  [
+
+                                                                                                                                      ],
+                            "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/delete-key-repost-date/SPEC_REJECTED_delete-key-repost-date.md":  [
+
+                                                                                                                                          ],
+                            "02_SOURCE/99_LUU_TRU_CU/SPEC_KHONG_SU_DUNG/report-configuration/SPEC_REWRITE_REQUIRED_report-configuration.md":  [
+
+                                                                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/STAGING_TEN_SAI/giao-dien-desktop-don-gian_v23_quan_NOI_DUNG_V25.html":  [
+
+                                                                                                                              ],
+                            "03_TASKS/DOING/README.md":  [
+
+                                                         ],
+                            "03_TASKS/FIX/README.md":  [
+
+                                                       ],
+                            "03_TASKS/TASK_TEMPLATE.md":  [
+
+                                                          ],
+                            "03_TASKS/TODO/README.md":  [
+
+                                                        ],
+                            "04_REPORTS/REGRESSION/README.md":  [
+
+                                                                ],
+                            "04_REPORTS/REVIEW/README.md":  [
+
+                                                            ],
+                            "04_REPORTS/REVIEW/REVIEW_v23_20260713.md":  [
+
+                                                                         ],
+                            "04_REPORTS/UI_COMPARE/README.md":  [
+
+                                                                ],
+                            "05_BIEU DO/architecture-diagram.html":  [
+
+                                                                     ],
+                            "05_BIEU DO/codebase-graph.html":  [
+
+                                                               ],
+                            "AGENTS.md":  [
+
+                                          ],
+                            "README.md":  [
+
+                                          ],
+                            "work/v25_inline.js":  [
+
+                                                   ]
+                        }
+}

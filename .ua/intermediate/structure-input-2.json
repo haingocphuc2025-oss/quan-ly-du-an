@@ -1,0 +1,61 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/Hermes-Cloner/00_CONSTITUTION/CODING_RULES.md",
+                           "language":  "markdown",
+                           "sizeLines":  10,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/00_CONSTITUTION/DESIGN_RULES.md",
+                           "language":  "markdown",
+                           "sizeLines":  8,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/00_CONSTITUTION/DOCUMENTATION_RULES.md",
+                           "language":  "markdown",
+                           "sizeLines":  12,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/00_CONSTITUTION/HERMES_CONSTITUTION.md",
+                           "language":  "markdown",
+                           "sizeLines":  14,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/00_CONSTITUTION/REVIEW_RULES.md",
+                           "language":  "markdown",
+                           "sizeLines":  11,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/00_CONSTITUTION/SECURITY_RULES.md",
+                           "language":  "markdown",
+                           "sizeLines":  8,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/Hermes-Cloner/00_CONSTITUTION/CODING_RULES.md":  [
+
+                                                                                      ],
+                            ".agents/Hermes-Cloner/00_CONSTITUTION/DESIGN_RULES.md":  [
+
+                                                                                      ],
+                            ".agents/Hermes-Cloner/00_CONSTITUTION/DOCUMENTATION_RULES.md":  [
+
+                                                                                             ],
+                            ".agents/Hermes-Cloner/00_CONSTITUTION/HERMES_CONSTITUTION.md":  [
+
+                                                                                             ],
+                            ".agents/Hermes-Cloner/00_CONSTITUTION/REVIEW_RULES.md":  [
+
+                                                                                      ],
+                            ".agents/Hermes-Cloner/00_CONSTITUTION/SECURITY_RULES.md":  [
+
+                                                                                        ]
+                        }
+}

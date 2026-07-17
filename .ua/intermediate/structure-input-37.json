@@ -1,0 +1,52 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "03_TASKS/DONE/TASK_sheet-report-compact-wrap-spacing.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "03_TASKS/DONE/TASK_toolbar-grid-smartsheet-style.md",
+                           "language":  "markdown",
+                           "sizeLines":  20,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "03_TASKS/DONE/TASK_two-projects-repost-dashboard.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "03_TASKS/DONE/TASK_v26-module-initialization-order.md",
+                           "language":  "markdown",
+                           "sizeLines":  9,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "03_TASKS/DONE/TASK_workspace-navigator.md",
+                           "language":  "markdown",
+                           "sizeLines":  19,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "03_TASKS/DONE/TASK_sheet-report-compact-wrap-spacing.md":  [
+
+                                                                                        ],
+                            "03_TASKS/DONE/TASK_toolbar-grid-smartsheet-style.md":  [
+
+                                                                                    ],
+                            "03_TASKS/DONE/TASK_two-projects-repost-dashboard.md":  [
+
+                                                                                    ],
+                            "03_TASKS/DONE/TASK_v26-module-initialization-order.md":  [
+
+                                                                                      ],
+                            "03_TASKS/DONE/TASK_workspace-navigator.md":  [
+
+                                                                          ]
+                        }
+}

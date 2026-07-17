@@ -1,0 +1,353 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/DIEU_PHOI.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 100,
+      "nonEmptyLines": 82,
+      "sections": [
+        {
+          "heading": "🏗️ BẢNG ĐIỀU PHỐI DỰ ÁN — App QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🚩 CỜ NHÂN SỰ",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "📂 CẤU TRÚC THƯ MỤC",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "📋 VIỆC ĐANG GIAO",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Nhà thầu chính — Quan (🔴 Đang code)",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Nhà thầu phụ — Phuc (🟢 Rảnh)",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "🏗️ QUY TRÌNH LÀM VIỆC (kiểu xây dựng)",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "🔑 HƯỚNG DẪN NHANH CHO QUÂN (chủ đầu tư)",
+          "level": 2,
+          "line": 93
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_NHA_THAU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 58,
+      "nonEmptyLines": 43,
+      "sections": [
+        {
+          "heading": "🏗️ NHÀ THẦU CHÍNH — CODE (Quan đại gia)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "⚠️ QUY TẮC LÀM VIỆC",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "🟢 VIỆC ĐÃ GIAO & BÀN GIAO (07/07/2026)",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "📤 BÀN GIAO (Quan điền sau khi code xong + test xong — 1 lần duy nhất)",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Biên bản bàn giao — 07/07/2026",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "File staging nộp",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "🔄 NGHIỆM THU (Claude điền)",
+          "level": 2,
+          "line": 54
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/GIAO_NHAN_TU_VAN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 42,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "👷 NHÀ THẦU PHỤ — NGHIÊN CỨU (Phuc)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "⚠️ QUY TẮC LÀM VIỆC",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "🔴 VIỆC ĐÃ GIAO",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "📤 BÀN GIAO (Phuc điền sau khi nghiên cứu xong)",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "Biên bản bàn giao — Nghiên cứu",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "🔄 NGHIỆM THU (Claude điền)",
+          "level": 2,
+          "line": 38
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Phuc_to_do_list_CU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 57,
+      "nonEmptyLines": 40,
+      "sections": [
+        {
+          "heading": "PHUC — Danh sách việc NGHIÊN CỨU",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🔄 QUY TRÌNH LÀM VIỆC",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Việc đang giao",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Hướng dẫn nghiên cứu",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Định dạng Biên bản nghiên cứu (điền vào mục \"Biên bản nộp\" bên dưới)",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Công cụ",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "Biên bản nộp",
+          "level": 2,
+          "line": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/Quan_to_do_list_CU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 67,
+      "nonEmptyLines": 45,
+      "sections": [
+        {
+          "heading": "QUAN ĐẠI GIA — Danh sách việc CODE",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🔄 NHIỆM VỤ (GIAO 1 LẦN — 07/07/2026)",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "LỆNH TỪ QUÂN: \"Đẩy hết cho Quan, bảo nó tự kiểm tra và bàn giao 1 lần\"",
+          "level": 3,
+          "line": 9
+        },
+        {
+          "heading": "Việc đang giao",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "⏳ Đang chờ — KHÔNG giao kèm (1 mục)",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "⚠️ YÊU CẦU KHI CODE",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "NỘP SẢN PHẨM",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "Biên bản bàn giao",
+          "level": 2,
+          "line": 57
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/99_THU_VIEN/ARCHIVE/huong-dan-ket-noi-telegram.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 133,
+      "nonEmptyLines": 92,
+      "sections": [
+        {
+          "heading": "Hướng dẫn kết nối Telegram với Hermes Agent (Phuc)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Điều kiện tiên quyết",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "2. Các bước kết nối",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Bước 1: Bật Telegram Bridge trong config",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Bước 2: Chạy Hermes với Telegram",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Bước 3: Lấy mã ghép nối (Pairing Code)",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "Bước 4: Approve mã ghép nối",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "Bước 5: Xác nhận kết nối",
+          "level": 3,
+          "line": 64
+        },
+        {
+          "heading": "3. Cấu hình nâng cao",
+          "level": 2,
+          "line": 72
+        },
+        {
+          "heading": "Username tùy chỉnh (tên hiển thị)",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "Chat ID (nhắn tin cố định)",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "Tắt ghép nối (không cần pairing code)",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "4. Xử lý sự cố thường gặp",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "5. Thông tin Telegram của Quân",
+          "level": 2,
+          "line": 123
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    }
+  ]
+}

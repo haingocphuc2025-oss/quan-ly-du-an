@@ -1,0 +1,1767 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/grid-dom-binding-order.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 26,
+      "nonEmptyLines": 23,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/module-initialization-order.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/project-folder-initialization-order.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 22,
+      "nonEmptyLines": 19,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/toolbar-color-initialization-order.test.js",
+      "language": "javascript",
+      "fileCategory": "code",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0
+      }
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_final-verification.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 24,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "BÀN GIAO CUỐI - browse-status-display",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Phạm vi hoàn tất",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Nghiệm thu",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_screen-state-behavior.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 54,
+      "nonEmptyLines": 42,
+      "sections": [
+        {
+          "heading": "BAN GIAO — browse-status-display + screen-state-behavior",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Thong tin",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Pham vi da lam",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "File va ham thay doi",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Ket qua kiem tra",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Ton tai va viec de lai sau",
+          "level": 2,
+          "line": 45
+        },
+        {
+          "heading": "Ket luan",
+          "level": 2,
+          "line": 51
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/DA_TRIEN_KHAI/BAN_GIAO_repost-carry-forward.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "📋 BIÊN BẢN BÀN GIAO — Tư vấn thiết kế → Ban QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "11. Repost with Carry-Forward",
+          "level": 2,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/MAU_BAN_GIAO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 45,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "BAN GIAO vNN",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Thong tin",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Pham vi da lam",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "File va ham thay doi",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Ket qua kiem tra",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Hoi quy",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Ton tai va van hanh",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Ket luan",
+          "level": 2,
+          "line": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "02_SOURCE/03_BAN_GIAO/modular-split-v26/BAN_GIAO_v26.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 69,
+      "nonEmptyLines": 55,
+      "sections": [
+        {
+          "heading": "BAN GIAO v26 — modular-split-v26",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Thong tin",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Pham vi da lam",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "File va ham thay doi",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "Ket qua kiem tra",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Hoi quy",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "Ton tai va van hanh",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "Ket luan",
+          "level": 2,
+          "line": 66
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/HUONG_DAN_OAUTH_CLIENT_ID.pptx",
+      "language": "pptx",
+      "fileCategory": "code",
+      "totalLines": 460,
+      "nonEmptyLines": 454,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/00_README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "SPEC MOI DUYET / CHO XU LY",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 212,
+      "nonEmptyLines": 162,
+      "sections": [
+        {
+          "heading": "SPEC: Clear Data & Repost Date (2 nút đơn giản)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "2.1 Nút trên Toolbar",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "2.2 Clear Data (🗑)",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "2.3 Repost Date (🔄)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "3. LUỒNG NGƯỜI DÙNG",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Flow 1: Clear Data",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Flow 2: Repost Date",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "4. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "4.1 Hàm mới",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "4.2 Logic Repost Date (backend)",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "6. CODE MẪU (Frontend)",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "6.1 Toolbar buttons (thêm vào HTML)",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "6.2 JS Handlers",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "7. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "8. ƯU TIÊN",
+          "level": 2,
+          "line": 205
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/SPEC_REJECTED_clear-sheet-all-data.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 324,
+      "nonEmptyLines": 256,
+      "sections": [
+        {
+          "heading": "SPEC: Clear Sheet — Xóa toàn bộ dữ liệu sheet (kèm reset ngày tháng)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Tính năng chính",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Chi tiết các chế độ Clear",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "2.3 Luồng người dùng (User Flow)",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "3.3 Xử lý đặc biệt — \"Repost date\"",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "4.1 Nút Clear Sheet trên Toolbar",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "4.2 Modal Xác Nhận (3 bước)",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "4.3 Toast + Animation",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "6. GIAO DIỆN (CODE MẪU)",
+          "level": 2,
+          "line": 177
+        },
+        {
+          "heading": "6.1 Modal HTML (thêm vào `<div id=\"app\">`)",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "6.2 JS Handler",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "7. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 281
+        },
+        {
+          "heading": "8. PHỤ THUỘC & RÀNG BUỘC",
+          "level": 2,
+          "line": 290
+        },
+        {
+          "heading": "9. ƯU TIÊN VÀ DỰ KIẾN",
+          "level": 2,
+          "line": 302
+        },
+        {
+          "heading": "10. LƯU Ý ĐẶC BIỆT — \"Repost cả date\"",
+          "level": 2,
+          "line": 313
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/SPEC_REJECTED_delete-key-repost-date.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 109,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "SPEC: Delete Key + Repost Date (Xóa dữ liệu + Reset ngày)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. TÍNH NĂNG CHÍNH",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "3. GIẢI PHÁP",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "3.1 Delete Key — Đã có, chỉ verify",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "3.2 Clear Data — Nút toolbar",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "3.3 Repost Date — Nút toolbar",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "4. TEST CASES",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "5. CODE MẪU (thêm vào JS)",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "6. BÀN GIAO NHÀ THẦU",
+          "level": 2,
+          "line": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 274,
+      "nonEmptyLines": 222,
+      "sections": [
+        {
+          "heading": "SPEC: Drive API Backend (Nền tảng lưu trữ)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "2.1 Kiến trúc mới",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "2.2 Cấu trúc file trên Drive",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "2.3 Cấu trúc JSON mỗi dự án",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "2.4 Auth flow",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "3. API & BACKEND (Drive REST API)",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "3.1 Khởi tạo Google Sign-In",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "3.2 Tìm hoặc tạo thư mục gốc",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "3.3 Save data (create hoặc update)",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "3.4 Load data",
+          "level": 3,
+          "line": 169
+        },
+        {
+          "heading": "3.5 List projects",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "3.6 Helper chung",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "4. GIAO DIỆN",
+          "level": 2,
+          "line": 218
+        },
+        {
+          "heading": "4.1 Màn hình chưa đăng nhập",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "4.2 Trạng thái save (UI feedback)",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 251
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 266
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/report-configuration/SPEC_REWRITE_REQUIRED_report-configuration.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 560,
+      "nonEmptyLines": 481,
+      "sections": [
+        {
+          "heading": "SPEC: Report Configuration (Grouping, Summary, Filter Across Sheets)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. PHẠM VI (SCOPE)",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "3. DATA MODEL",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "3.1 ReportDefinition (Root Entity)",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "3.2 SourceSheetRef",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "3.3 ColumnConfig",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "3.4 FilterConfig (Cross-Sheet)",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "3.5 GroupingConfig",
+          "level": 3,
+          "line": 113
+        },
+        {
+          "heading": "3.6 SummaryConfig",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "3.7 SortConfig",
+          "level": 3,
+          "line": 164
+        },
+        {
+          "heading": "4. UI/UX SPECIFICATION",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "4.1 Report Builder Layout (Single Page / Modal)",
+          "level": 3,
+          "line": 177
+        },
+        {
+          "heading": "4.2 Source Sheets Tab",
+          "level": 3,
+          "line": 204
+        },
+        {
+          "heading": "4.3 Columns Tab",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "4.4 Filter Tab (Cross-Sheet)",
+          "level": 3,
+          "line": 216
+        },
+        {
+          "heading": "4.5 Grouping Tab",
+          "level": 3,
+          "line": 238
+        },
+        {
+          "heading": "4.6 Summary Tab",
+          "level": 3,
+          "line": 255
+        },
+        {
+          "heading": "4.7 Grid Preview (Live Data)",
+          "level": 3,
+          "line": 279
+        },
+        {
+          "heading": "5. API SPECIFICATION",
+          "level": 2,
+          "line": 288
+        },
+        {
+          "heading": "5.1 Report CRUD",
+          "level": 3,
+          "line": 290
+        },
+        {
+          "heading": "5.2 Report Data Execution",
+          "level": 3,
+          "line": 300
+        },
+        {
+          "heading": "5.3 Source Sheets",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "5.4 Export/Import",
+          "level": 3,
+          "line": 353
+        },
+        {
+          "heading": "6. BUSINESS LOGIC & VALIDATION",
+          "level": 2,
+          "line": 361
+        },
+        {
+          "heading": "6.1 Cross-Sheet Filter Logic",
+          "level": 3,
+          "line": 363
+        },
+        {
+          "heading": "6.2 Grouping Algorithm",
+          "level": 3,
+          "line": 369
+        },
+        {
+          "heading": "6.3 Summary Computation",
+          "level": 3,
+          "line": 390
+        },
+        {
+          "heading": "6.4 Validation Rules",
+          "level": 3,
+          "line": 395
+        },
+        {
+          "heading": "7. PERFORMANCE REQUIREMENTS",
+          "level": 2,
+          "line": 407
+        },
+        {
+          "heading": "Optimization Strategies",
+          "level": 3,
+          "line": 419
+        },
+        {
+          "heading": "8. SECURITY & PERMISSIONS",
+          "level": 2,
+          "line": 428
+        },
+        {
+          "heading": "9. TEST CASES (ACCEPTANCE CRITERIA)",
+          "level": 2,
+          "line": 444
+        },
+        {
+          "heading": "TC-01: Cross-Sheet Filter",
+          "level": 3,
+          "line": 446
+        },
+        {
+          "heading": "TC-02: Multi-Level Grouping",
+          "level": 3,
+          "line": 451
+        },
+        {
+          "heading": "TC-03: Group Summary Row",
+          "level": 3,
+          "line": 456
+        },
+        {
+          "heading": "TC-04: Report Summary Row",
+          "level": 3,
+          "line": 461
+        },
+        {
+          "heading": "TC-05: Column Mapping Across Sheets",
+          "level": 3,
+          "line": 466
+        },
+        {
+          "heading": "TC-06: Date Filter Presets",
+          "level": 3,
+          "line": 471
+        },
+        {
+          "heading": "TC-07: Collapse/Expand Persistence",
+          "level": 3,
+          "line": 475
+        },
+        {
+          "heading": "TC-08: Large Dataset Performance",
+          "level": 3,
+          "line": 479
+        },
+        {
+          "heading": "10. HANDOFF CHECKLIST (CHO NHÀ THẦU)",
+          "level": 2,
+          "line": 486
+        },
+        {
+          "heading": "11. FILE STRUCTURE (ĐỀ XUẤT)",
+          "level": 2,
+          "line": 503
+        },
+        {
+          "heading": "12. THAM CHIẾU SMARTSHEET (ĐÃ RESEARCH)",
+          "level": 2,
+          "line": 543
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 44
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/BAN_GIAO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "📋 BIÊN BẢN BÀN GIAO — Tư vấn thiết kế → Ban QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "11. Repost with Carry-Forward",
+          "level": 2,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 576,
+      "nonEmptyLines": 477,
+      "sections": [
+        {
+          "heading": "SPEC: Repost with Carry-Forward",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "2.1 Column Classification",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "2.2 User Flow",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "2.3 So sánh với các nút hiện có",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "2.4 Cấu hình nâng cao (Advanced Config)",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "2.5 Data Model",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "2.6 Logic xóa theo type",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "3.1 Hàm mới",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "3.2 Logic backend",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "3.3 Hàm hỗ trợ cho frontend",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "4. GIAO DIỆN",
+          "level": 2,
+          "line": 280
+        },
+        {
+          "heading": "4.1 Toolbar",
+          "level": 3,
+          "line": 282
+        },
+        {
+          "heading": "4.2 CSS",
+          "level": 3,
+          "line": 318
+        },
+        {
+          "heading": "4.3 JS Handlers",
+          "level": 3,
+          "line": 367
+        },
+        {
+          "heading": "4.4 Summary Preview (tùy chọn)",
+          "level": 3,
+          "line": 464
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 506
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 533
+        },
+        {
+          "heading": "6.1 Phụ thuộc",
+          "level": 3,
+          "line": 535
+        },
+        {
+          "heading": "6.2 File cần sửa",
+          "level": 3,
+          "line": 546
+        },
+        {
+          "heading": "6.3 Checklist cho nhà thầu",
+          "level": 3,
+          "line": 558
+        },
+        {
+          "heading": "6.4 Cam kết",
+          "level": 3,
+          "line": 571
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/SPEC_010_column-types-moi_1.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 924,
+      "nonEmptyLines": 813,
+      "sections": [
+        {
+          "heading": "SPEC: Bổ sung Column Types mới + Cấu hình Contact list/Checkbox/Symbols (Duration, Auto Number, System columns)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. Tóm tắt thay đổi (Summary)",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "1. Bối cảnh & Vấn đề (Context & Problem)",
+          "level": 2,
+          "line": 24
+        },
+        {
+          "heading": "1.1 Danh sách type hiện tại (Baseline v23)",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "1.2 So sánh với reference (Smartsheet)",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "1.3 Vì sao \"Latest Comment\" bị hoãn",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "1.4b Contact list — đã có nhưng thiếu màn cấu hình (screenshot 2)",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "1.4c Checkbox & Symbols — đã có nhưng thiếu màn cấu hình (screenshot 4, 5)",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "1.4 Vấn đề kỹ thuật cốt lõi: chưa có \"định danh người dùng\"",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "2. Yêu cầu chức năng (Functional Requirements)",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "3. Yêu cầu phi chức năng (Non-Functional Requirements)",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "4. Thay đổi Data Model",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "5. Câu hỏi mở cho Quan (cần xác nhận trước khi build)",
+          "level": 2,
+          "line": 195
+        },
+        {
+          "heading": "6. Phụ lục kỹ thuật — Code hiện tại & Code đề xuất",
+          "level": 2,
+          "line": 204
+        },
+        {
+          "heading": "6.1 Code hiện tại (nguyên văn từ v23 baseline)",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "6.2 Code đề xuất (Target — viết mới / thay thế)",
+          "level": 3,
+          "line": 435
+        },
+        {
+          "heading": "6.2.1 FR-00 — Định danh người dùng nhẹ (thêm mới, đặt gần đầu file, sau khai báo các biến global khác)",
+          "level": 4,
+          "line": 437
+        },
+        {
+          "heading": "6.2.2 FR-03/04/05/06 — Stamp created/modified vào rowMeta",
+          "level": 4,
+          "line": 467
+        },
+        {
+          "heading": "6.2.3 FR-02 — Auto Number: tính giá trị khi tạo row",
+          "level": 4,
+          "line": 533
+        },
+        {
+          "heading": "6.2.4 FR-01 — Duration: Formatters + popover nhập ngày/giờ",
+          "level": 4,
+          "line": 559
+        },
+        {
+          "heading": "6.2.5 FR-09 — Formatters + icon cho các type còn lại",
+          "level": 4,
+          "line": 611
+        },
+        {
+          "heading": "6.2.6 FR-13 — Checkbox: style + restrict",
+          "level": 4,
+          "line": 650
+        },
+        {
+          "heading": "6.2.7 Cập nhật click dispatcher — thêm nhánh `duration`",
+          "level": 4,
+          "line": 677
+        },
+        {
+          "heading": "6.2.8 FR-07/10/11/12/13/14 — `openColumnTypePicker()` bản đầy đủ thay thế",
+          "level": 4,
+          "line": 688
+        },
+        {
+          "heading": "6.2.9 FR-11/FR-12 — Contact list: knownContacts riêng cột + enforce restrict",
+          "level": 4,
+          "line": 866
+        },
+        {
+          "heading": "6.3 Checklist kiểm tra trước khi nộp CODE_DIFF",
+          "level": 3,
+          "line": 908
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 26
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 290,
+      "nonEmptyLines": 245,
+      "sections": [
+        {
+          "heading": "SPEC: Workspace Context Menu + Tao Sheet Moi",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MUC TIEU",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "1.1 Van de hien tai",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "1.2 Ket qua can dat",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "2. MO TA CHI TIET",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "2.1 Mo Sheet khi click",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "2.2 Nut \"+ Tao\" trong workspace",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "2.3 Context Menu (chuot phai hoac click \"...\")",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "3. API & BACKEND (google.script.run)",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "4. GIAO DIEN",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "4.1 Context menu CSS",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "4.2 Item \"...\" button",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "4.3 Doi ten inline",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 264
+        },
+        {
+          "heading": "6. BAN GIAO",
+          "level": 2,
+          "line": 281
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 343,
+      "nonEmptyLines": 292,
+      "sections": [
+        {
+          "heading": "SPEC: Attachment Panel UI v2",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "2.1 Right Toolbar (thanh icon dọc bên phải)",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "2.2 Attachment Panel — cố định bên phải, đè lên layout",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "2.3 Layout Panel",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "2.4 File Item — nút xem / xóa / actions",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "2.5 Actions dropdown menu",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "2.6 Tab Row / Sheet / All",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "3. UPLOAD — NHIỀU FILE, KHÔNG GIỚI HẠN",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "3.1 Input cho phép multiple",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "3.2 Upload queue — nhiều file song song",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "3.3 Upload không giới hạn (google.script.run + DriveApp)",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "3.4 Upload progress UI",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "4. APPS SCRIPT (Code.gs) — uploadAttachment",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 317
+        },
+        {
+          "heading": "6. BÀN GIAO",
+          "level": 2,
+          "line": 334
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/BAN_GIAO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "📋 BIÊN BẢN BÀN GIAO — Tư vấn thiết kế → Ban QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "11. Repost with Carry-Forward",
+          "level": 2,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 576,
+      "nonEmptyLines": 477,
+      "sections": [
+        {
+          "heading": "SPEC: Repost with Carry-Forward",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "2.1 Column Classification",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "2.2 User Flow",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "2.3 So sánh với các nút hiện có",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "2.4 Cấu hình nâng cao (Advanced Config)",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "2.5 Data Model",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "2.6 Logic xóa theo type",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "3.1 Hàm mới",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "3.2 Logic backend",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "3.3 Hàm hỗ trợ cho frontend",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "4. GIAO DIỆN",
+          "level": 2,
+          "line": 280
+        },
+        {
+          "heading": "4.1 Toolbar",
+          "level": 3,
+          "line": 282
+        },
+        {
+          "heading": "4.2 CSS",
+          "level": 3,
+          "line": 318
+        },
+        {
+          "heading": "4.3 JS Handlers",
+          "level": 3,
+          "line": 367
+        },
+        {
+          "heading": "4.4 Summary Preview (tùy chọn)",
+          "level": 3,
+          "line": 464
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 506
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 533
+        },
+        {
+          "heading": "6.1 Phụ thuộc",
+          "level": 3,
+          "line": 535
+        },
+        {
+          "heading": "6.2 File cần sửa",
+          "level": 3,
+          "line": 546
+        },
+        {
+          "heading": "6.3 Checklist cho nhà thầu",
+          "level": 3,
+          "line": 558
+        },
+        {
+          "heading": "6.4 Cam kết",
+          "level": 3,
+          "line": 571
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/SPEC_column-header-context-menu.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 46,
+      "nonEmptyLines": 37,
+      "sections": [
+        {
+          "heading": "SPEC: Column Header Context Menu (Menu ngữ cảnh cột)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Phạm vi",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "1. Nhóm Chèn/Xóa cột",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. Nhóm Đặt tên / Mô tả",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "3. Nhóm Dữ liệu",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "4. Nhóm Khóa / Ẩn",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "5. Cấu hình cột",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Loại trừ khỏi phạm vi (theo rule đã chốt)",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Ghi chú",
+          "level": 2,
+          "line": 45
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 290,
+      "nonEmptyLines": 245,
+      "sections": [
+        {
+          "heading": "SPEC: Workspace Context Menu + Tao Sheet Moi",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MUC TIEU",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "1.1 Van de hien tai",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "1.2 Ket qua can dat",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "2. MO TA CHI TIET",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "2.1 Mo Sheet khi click",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "2.2 Nut \"+ Tao\" trong workspace",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "2.3 Context Menu (chuot phai hoac click \"...\")",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "3. API & BACKEND (google.script.run)",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "4. GIAO DIEN",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "4.1 Context menu CSS",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "4.2 Item \"...\" button",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "4.3 Doi ten inline",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 264
+        },
+        {
+          "heading": "6. BAN GIAO",
+          "level": 2,
+          "line": 281
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    }
+  ]
+}

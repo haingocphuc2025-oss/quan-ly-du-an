@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Agent Skills/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Browser Harness/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Context7/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Filesystem MCP/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Git MCP/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Memory MCP/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Obscura/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/OmniParser/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/PLUGIN_REGISTRY.md",
+                           "language":  "markdown",
+                           "sizeLines":  26,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Sequential Thinking MCP/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Spec Kit/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/06_PLUGINS/Superpowers/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  5,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/manifest.json",
+                           "language":  "json",
+                           "sizeLines":  10,
+                           "fileCategory":  "config"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  28,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".gitmodules",
+                           "language":  "unknown",
+                           "sizeLines":  3,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  ".ua/.understandignore",
+                           "language":  "unknown",
+                           "sizeLines":  65,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/attachment-panel-ui/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  346,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/auto-save-on-exit/SPEC_009_auto-save-on-exit.md",
+                           "language":  "markdown",
+                           "sizeLines":  304,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/automation/SPEC_005_automation.md",
+                           "language":  "markdown",
+                           "sizeLines":  122,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/browse-status-display/SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  120,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+                           "language":  "markdown",
+                           "sizeLines":  214,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/COLUMN_UNHIDE_SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_khongdau.md",
+                           "language":  "markdown",
+                           "sizeLines":  46,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_mojibake.md",
+                           "language":  "markdown",
+                           "sizeLines":  46,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "01_SPEC/DA_TRIEN_KHAI/column-types-extended/SPEC_column-types-extended.md",
+                           "language":  "markdown",
+                           "sizeLines":  927,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/Hermes-Cloner/06_PLUGINS/Agent Skills/README.md":  [
+
+                                                                                        ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Browser Harness/README.md":  [
+
+                                                                                           ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Context7/README.md":  [
+
+                                                                                    ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Filesystem MCP/README.md":  [
+
+                                                                                          ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Git MCP/README.md":  [
+
+                                                                                   ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Memory MCP/README.md":  [
+
+                                                                                      ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Obscura/README.md":  [
+
+                                                                                   ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/OmniParser/README.md":  [
+
+                                                                                      ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/PLUGIN_REGISTRY.md":  [
+
+                                                                                    ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Sequential Thinking MCP/README.md":  [
+
+                                                                                                   ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Spec Kit/README.md":  [
+
+                                                                                    ],
+                            ".agents/Hermes-Cloner/06_PLUGINS/Superpowers/README.md":  [
+
+                                                                                       ],
+                            ".agents/Hermes-Cloner/manifest.json":  [
+
+                                                                    ],
+                            ".agents/Hermes-Cloner/README.md":  [
+
+                                                                ],
+                            ".gitmodules":  [
+
+                                            ],
+                            ".ua/.understandignore":  [
+
+                                                      ],
+                            "01_SPEC/DA_TRIEN_KHAI/attachment-panel-ui/spec.md":  [
+
+                                                                                  ],
+                            "01_SPEC/DA_TRIEN_KHAI/auto-save-on-exit/SPEC_009_auto-save-on-exit.md":  [
+
+                                                                                                      ],
+                            "01_SPEC/DA_TRIEN_KHAI/automation/SPEC_005_automation.md":  [
+
+                                                                                        ],
+                            "01_SPEC/DA_TRIEN_KHAI/browse-status-display/SPEC.md":  [
+
+                                                                                    ],
+                            "01_SPEC/DA_TRIEN_KHAI/clear-data-repost-date/SPEC_013_clear-data-repost-date.md":  [
+
+                                                                                                                ],
+                            "01_SPEC/DA_TRIEN_KHAI/COLUMN_UNHIDE_SPEC.md":  [
+
+                                                                            ],
+                            "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_khongdau.md":  [
+
+                                                                                                                             ],
+                            "01_SPEC/DA_TRIEN_KHAI/column-header-context-menu/SPEC_column-header-context-menu_mojibake.md":  [
+
+                                                                                                                             ],
+                            "01_SPEC/DA_TRIEN_KHAI/column-types-extended/SPEC_column-types-extended.md":  [
+
+                                                                                                          ]
+                        }
+}

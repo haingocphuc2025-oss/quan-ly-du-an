@@ -1,0 +1,39 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V25_LOCALHOST.bat",
+      "language": "batch",
+      "fileCategory": "script",
+      "totalLines": 21,
+      "nonEmptyLines": 17,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V26_LOCALHOST.bat",
+      "language": "batch",
+      "fileCategory": "script",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v25_quan.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 11713,
+      "nonEmptyLines": 10927,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v26_quan.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 12025,
+      "nonEmptyLines": 10882,
+      "metrics": {}
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+- generic [ref=e2]:
+  - button "‹ Dự án" [ref=e3] [cursor=pointer]
+  - generic [ref=e4]:
+    - button "Đính kèm" [ref=e5] [cursor=pointer]
+    - button "Bình luận" [ref=e8] [cursor=pointer]
+    - button "Lịch sử" [ref=e11] [cursor=pointer]
+    - button "Thông tin" [ref=e15] [cursor=pointer]
+  - generic [ref=e18]:
+    - generic [ref=e19]:
+      - button "☰" [ref=e20] [cursor=pointer]
+      - button "←" [disabled] [ref=e21]
+      - button "→" [disabled] [ref=e22]
+    - generic [ref=e27]:
+      - generic [ref=e28]: ▦
+      - generic [ref=e29]: Hồ sơ dự án
+    - generic "Số phiên bản file — dùng để biết đang mở đúng bản mới nhất chưa" [ref=e31]: v29
+    - button "👤" [ref=e32] [cursor=pointer]
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: ⌂
+      - generic [ref=e35]: Trang chủ
+    - generic [ref=e36] [cursor=pointer]:
+      - generic [ref=e37]: ⌕
+      - generic [ref=e38]: Tìm
+    - generic [ref=e39] [cursor=pointer]:
+      - generic [ref=e40]: ▤
+      - generic [ref=e41]: Dự án
+    - generic [ref=e42] [cursor=pointer]:
+      - generic [ref=e43]: ◔
+      - generic [ref=e44]: Gần đây
+    - generic [ref=e45] [cursor=pointer]:
+      - generic [ref=e46]: ★
+      - generic [ref=e47]: Yêu thích
+    - button "＋ Tạo dự án" [ref=e48] [cursor=pointer]
+  - generic [ref=e49]:
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - heading "Theo dõi hồ sơ, thư mục và chia sẻ Dự án của tôi" [level=1] [ref=e52]:
+          - generic [ref=e54]:
+            - generic [ref=e55]: Theo dõi hồ sơ, thư mục và chia sẻ
+            - text: Dự án của tôi
+        - generic [ref=e56]:
+          - generic [ref=e57]: ⌕
+          - textbox "Tìm dự án..." [ref=e58]
+        - generic [ref=e59]:
+          - button "Actions ▾" [ref=e60] [cursor=pointer]
+          - button "🗑" [ref=e61] [cursor=pointer]
+          - button "＋ Tạo dự án mới" [ref=e62] [cursor=pointer]
+      - generic [ref=e63]:
+        - checkbox [ref=e64]
+        - generic [ref=e65]: 2 dự án
+      - generic [ref=e66]:
+        - complementary [ref=e67]:
+          - heading "Browse" [level=3] [ref=e68]
+          - generic [ref=e69]:
+            - button "▥ Workspaces" [ref=e70] [cursor=pointer]
+            - button "▾ Đường điện chiếu sáng — Xã Liên Sơn" [ref=e71] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [ref=e72] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=e82] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=e92] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=e102] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=e112] [cursor=pointer]
+            - button "Repost" [ref=e122] [cursor=pointer]
+            - button "Dashboard" [ref=e132] [cursor=pointer]
+            - button "▾ Nhà văn hoá thôn 5 — Xã Đông Thành" [ref=e142] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [ref=e143] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=e153] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=e163] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=e173] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=e183] [cursor=pointer]
+            - button "Repost" [ref=e193] [cursor=pointer]
+            - button "Dashboard" [ref=e203] [cursor=pointer]
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - generic [ref=e215]: Đường điện chiếu sáng — Xã Liên Sơn
+            - generic [ref=e216]:
+              - button "Actions ▾" [ref=e217] [cursor=pointer]
+              - button "＋ Tạo" [ref=e218] [cursor=pointer]
+          - table [ref=e220]:
+            - rowgroup [ref=e221]:
+              - row [ref=e222]:
+                - columnheader "Name"
+                - columnheader "Trạng thái chia sẻ" [ref=e223]
+                - columnheader "Người sở hữu" [ref=e224]
+                - columnheader "Last Update" [ref=e225]
+            - rowgroup [ref=e226]:
+              - row [ref=e227] [cursor=pointer]:
+                - cell "Hợp đồng - pháp lý"
+                - cell [ref=e236]
+                - cell "Quân" [ref=e239]
+                - cell "16/7/2026" [ref=e240]
+              - row [ref=e241] [cursor=pointer]:
+                - cell "Vật liệu - CO CQ"
+                - cell [ref=e250]
+                - cell "Quân" [ref=e253]
+                - cell "16/7/2026" [ref=e254]
+              - row [ref=e255] [cursor=pointer]:
+                - cell "Thi công - nghiệm thu"
+                - cell [ref=e264]
+                - cell "Quân" [ref=e267]
+                - cell "16/7/2026" [ref=e268]
+              - row [ref=e269] [cursor=pointer]:
+                - cell "Thanh toán - quyết toán"
+                - cell [ref=e278]
+                - cell "Quân" [ref=e281]
+                - cell "16/7/2026" [ref=e282]
+              - row [ref=e283] [cursor=pointer]:
+                - cell "Tổng hợp - đối chiếu"
+                - cell [ref=e292]
+                - cell "Quân" [ref=e295]
+                - cell "16/7/2026" [ref=e296]
+              - row [ref=e297] [cursor=pointer]:
+                - cell "Repost"
+                - cell [ref=e306]
+                - cell "Quân" [ref=e309]
+                - cell "16/7/2026" [ref=e310]
+              - row [ref=e311] [cursor=pointer]:
+                - cell "Dashboard"
+                - cell [ref=e320]
+                - cell "Quân" [ref=e323]
+                - cell "16/7/2026" [ref=e324]
+    - text: ⋮

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "acorn": "^8.17.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.0"
+  }
+}

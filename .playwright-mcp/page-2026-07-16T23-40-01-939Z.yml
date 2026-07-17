@@ -1,0 +1,508 @@
+- generic [ref=e2]:
+  - button "‹ Dự án" [ref=e3] [cursor=pointer]
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - button "☰" [ref=e6] [cursor=pointer]
+      - button "←" [ref=e7] [cursor=pointer]
+      - button "→" [disabled] [ref=e8]
+    - generic [ref=e13]:
+      - generic [ref=e14]: ▦
+      - generic [ref=e15]: Hồ sơ dự án
+    - generic "Số phiên bản file — dùng để biết đang mở đúng bản mới nhất chưa" [ref=e17]: v30
+    - button "👤" [ref=e18] [cursor=pointer]
+    - generic [ref=e19] [cursor=pointer]:
+      - generic [ref=e20]: ⌂
+      - generic [ref=e21]: Trang chủ
+    - generic [ref=e22] [cursor=pointer]:
+      - generic [ref=e23]: ⌕
+      - generic [ref=e24]: Tìm
+    - generic [ref=e25] [cursor=pointer]:
+      - generic [ref=e26]: ▤
+      - generic [ref=e27]: Dự án
+    - generic [ref=e28] [cursor=pointer]:
+      - generic [ref=e29]: ◔
+      - generic [ref=e30]: Gần đây
+    - generic [ref=e31] [cursor=pointer]:
+      - generic [ref=e32]: ★
+      - generic [ref=e33]: Yêu thích
+    - button "＋ Tạo dự án" [ref=e34] [cursor=pointer]
+  - generic [ref=e35]:
+    - generic [ref=e36]:
+      - banner [ref=e37]:
+        - heading "Theo dõi hồ sơ, thư mục và chia sẻ Dự án của tôi" [level=1] [ref=e38]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: Theo dõi hồ sơ, thư mục và chia sẻ
+            - text: Dự án của tôi
+        - button "×" [ref=e332] [cursor=pointer]
+        - generic "Công cụ dự án" [ref=e42]:
+          - button "Đính kèm" [ref=e43] [cursor=pointer]
+          - button "Bình luận" [ref=e46] [cursor=pointer]
+          - button "Lịch sử" [ref=e49] [cursor=pointer]
+          - button "Thông tin" [ref=e53] [cursor=pointer]
+      - generic [ref=e66]:
+        - complementary [ref=e67]:
+          - heading "Browse" [level=3] [ref=e68]
+          - generic [ref=e69]:
+            - button "▥ Workspaces" [ref=e70] [cursor=pointer]
+            - button "▾ Đường điện chiếu sáng — Xã Liên Sơn" [ref=e71] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [active] [ref=e72] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=e82] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=e92] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=e102] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=e112] [cursor=pointer]
+            - button "Repost" [ref=e122] [cursor=pointer]
+            - button "Dashboard" [ref=e132] [cursor=pointer]
+            - button "▾ Nhà văn hoá thôn 5 — Xã Đông Thành" [ref=e142] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [ref=e143] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=e153] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=e163] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=e173] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=e183] [cursor=pointer]
+            - button "Repost" [ref=e193] [cursor=pointer]
+            - button "Dashboard" [ref=e203] [cursor=pointer]
+        - generic:
+          - generic [ref=e214]:
+            - generic [ref=e215]: Đường điện chiếu sáng — Xã Liên Sơn
+            - generic [ref=e216]:
+              - button "Actions ▾" [ref=e217] [cursor=pointer]
+              - button "＋ Tạo" [ref=e218] [cursor=pointer]
+          - table [ref=e220]:
+            - rowgroup [ref=e221]:
+              - row [ref=e333]:
+                - columnheader "Name"
+                - columnheader "Trạng thái chia sẻ" [ref=e223]
+                - columnheader "Người sở hữu" [ref=e224]
+            - rowgroup [ref=e226]:
+              - row [ref=e334] [cursor=pointer]:
+                - cell "Chọn Hợp đồng - pháp lý Hợp đồng - pháp lý":
+                  - generic:
+                    - checkbox "Chọn Hợp đồng - pháp lý" [ref=e228]
+                    - generic: Hợp đồng - pháp lý
+                - cell [ref=e237]
+                - cell "Quân" [ref=e240]
+              - row [ref=e335] [cursor=pointer]:
+                - cell "Chọn Vật liệu - CO CQ Vật liệu - CO CQ":
+                  - generic:
+                    - checkbox "Chọn Vật liệu - CO CQ" [ref=e243]
+                    - generic: Vật liệu - CO CQ
+                - cell [ref=e252]
+                - cell "Quân" [ref=e255]
+              - row [ref=e336] [cursor=pointer]:
+                - cell "Chọn Thi công - nghiệm thu Thi công - nghiệm thu":
+                  - generic:
+                    - checkbox "Chọn Thi công - nghiệm thu" [ref=e258]
+                    - generic: Thi công - nghiệm thu
+                - cell [ref=e267]
+                - cell "Quân" [ref=e270]
+              - row [ref=e337] [cursor=pointer]:
+                - cell "Chọn Thanh toán - quyết toán Thanh toán - quyết toán":
+                  - generic:
+                    - checkbox "Chọn Thanh toán - quyết toán" [ref=e273]
+                    - generic: Thanh toán - quyết toán
+                - cell [ref=e282]
+                - cell "Quân" [ref=e285]
+              - row [ref=e338] [cursor=pointer]:
+                - cell "Chọn Tổng hợp - đối chiếu Tổng hợp - đối chiếu":
+                  - generic:
+                    - checkbox "Chọn Tổng hợp - đối chiếu" [ref=e288]
+                    - generic: Tổng hợp - đối chiếu
+                - cell [ref=e297]
+                - cell "Quân" [ref=e300]
+              - row [ref=e339] [cursor=pointer]:
+                - cell "Chọn Repost Repost":
+                  - generic:
+                    - checkbox "Chọn Repost" [ref=e303]
+                    - generic: Repost
+                - cell [ref=e312]
+                - cell "Quân" [ref=e315]
+              - row [ref=e340] [cursor=pointer]:
+                - cell "Chọn Dashboard Dashboard":
+                  - generic:
+                    - checkbox "Chọn Dashboard" [ref=e318]
+                    - generic: Dashboard
+                - cell [ref=e327]
+                - cell "Quân" [ref=e330]
+    - text: ⋮
+    - generic [ref=e342]:
+      - banner [ref=e343]:
+        - generic [ref=e344]:
+          - generic "Grid menu":
+            - button "‹ Đường điện chiếu sáng — Xã Liên Sơn" [ref=e345] [cursor=pointer]
+            - button "File" [ref=e346] [cursor=pointer]
+            - button "Automation" [ref=e347] [cursor=pointer]
+            - button "Forms" [ref=e348] [cursor=pointer]
+            - button "Connections" [ref=e349] [cursor=pointer]
+          - generic "Bấm để đổi tên" [ref=e359] [cursor=pointer]: Hợp đồng - pháp lý / Sheet hồ sơ
+          - generic "Sheet top actions" [ref=e360]:
+            - button "Share" [ref=e361] [cursor=pointer]
+            - button "AI" [ref=e366] [cursor=pointer]
+            - button "More" [ref=e370] [cursor=pointer]
+            - button "An/hien panel lam viec" [ref=e373] [cursor=pointer]
+        - generic [ref=e376]:
+          - button "Save" [ref=e377] [cursor=pointer]
+          - button "Print" [ref=e381] [cursor=pointer]
+          - button "Undo" [disabled] [ref=e385]
+          - button "Redo" [disabled] [ref=e389]
+          - button "Grid view" [ref=e394] [cursor=pointer]:
+            - generic [ref=e398]: Grid
+          - button "Filter" [ref=e400] [cursor=pointer]
+          - button "Thụt dòng vào" [ref=e405] [cursor=pointer]
+          - button "Thụt dòng ra" [ref=e408] [cursor=pointer]
+          - combobox "Font chữ" [ref=e412] [cursor=pointer]:
+            - option "Inter" [selected]
+            - option "Segoe UI"
+            - option "Arial"
+            - option "Times New Roman"
+            - option "Calibri"
+            - option "Courier New"
+          - combobox "Cỡ chữ" [ref=e413] [cursor=pointer]:
+            - option "9"
+            - option "10"
+            - option "11" [selected]
+            - option "12"
+            - option "14"
+            - option "16"
+            - option "18"
+            - option "20"
+            - option "24"
+            - option "28"
+            - option "36"
+            - option "48"
+          - button "Bold" [ref=e415] [cursor=pointer]:
+            - generic [ref=e416]: B
+          - button "Italic" [ref=e417] [cursor=pointer]:
+            - generic [ref=e418]: I
+          - button "Underline" [ref=e419] [cursor=pointer]:
+            - generic [ref=e420]: U
+          - button "Strike" [ref=e421] [cursor=pointer]:
+            - generic [ref=e422]: S
+          - button "Fill color" [ref=e425] [cursor=pointer]
+          - button "Text color" [ref=e429] [cursor=pointer]
+          - button "Align left" [ref=e433] [cursor=pointer]
+          - button "Align center" [ref=e436] [cursor=pointer]
+          - button "Align right" [ref=e439] [cursor=pointer]
+          - button "Wrap" [ref=e442] [cursor=pointer]
+          - button "Clear format" [ref=e446] [cursor=pointer]
+          - button "Format painter" [ref=e450] [cursor=pointer]
+          - button "Cột" [ref=e456] [cursor=pointer]
+          - button "Highlight" [ref=e462] [cursor=pointer]
+          - button "More" [ref=e467] [cursor=pointer]
+      - generic [ref=e472]:
+        - generic [ref=e473]: C2
+        - generic [ref=e474]: fx
+        - textbox [ref=e475]: "1"
+      - table [ref=e478]:
+        - rowgroup [ref=e495]:
+          - row [ref=e496]:
+            - columnheader [ref=e497]
+            - columnheader "📎" [ref=e498]
+            - columnheader "STT ↕" [ref=e500] [cursor=pointer]:
+              - generic [ref=e501]: STT
+              - text: ↕
+            - columnheader "≡ Loại hồ sơ ↕" [ref=e503] [cursor=pointer]:
+              - generic [ref=e504]: ≡
+              - generic [ref=e505]: Loại hồ sơ
+              - text: ↕
+            - columnheader "Hạng mục ↕" [ref=e507] [cursor=pointer]:
+              - generic [ref=e508]: Hạng mục
+              - text: ↕
+            - columnheader "Số văn bản ↕" [ref=e510] [cursor=pointer]:
+              - generic [ref=e511]: Số văn bản
+              - text: ↕
+            - columnheader "📅 Ngày văn bản ↕" [ref=e513] [cursor=pointer]:
+              - generic [ref=e514]: 📅
+              - generic [ref=e515]: Ngày văn bản
+              - text: ↕
+            - columnheader "Nội dung ↕" [ref=e517] [cursor=pointer]:
+              - generic [ref=e518]: Nội dung
+              - text: ↕
+            - columnheader "Đơn vị phát hành ↕" [ref=e520] [cursor=pointer]:
+              - generic [ref=e521]: Đơn vị phát hành
+              - text: ↕
+            - columnheader "👤 Người phụ trách ↕" [ref=e523] [cursor=pointer]:
+              - generic [ref=e524]: 👤
+              - generic [ref=e525]: Người phụ trách
+              - text: ↕
+            - columnheader "📅 Hạn xử lý ↕" [ref=e527] [cursor=pointer]:
+              - generic [ref=e528]: 📅
+              - generic [ref=e529]: Hạn xử lý
+              - text: ↕
+            - columnheader "₫ Giá trị ↕" [ref=e531] [cursor=pointer]:
+              - generic [ref=e532]: ₫
+              - generic [ref=e533]: Giá trị
+              - text: ↕
+            - columnheader "≡ Tình trạng ↕" [ref=e535] [cursor=pointer]:
+              - generic [ref=e536]: ≡
+              - generic [ref=e537]: Tình trạng
+              - text: ↕
+            - columnheader "Ghi chú ↕" [ref=e539] [cursor=pointer]:
+              - generic [ref=e540]: Ghi chú
+              - text: ↕
+        - rowgroup [ref=e542]:
+          - row:
+            - cell
+          - row [ref=e543] [cursor=pointer]:
+            - rowheader "1" [ref=e544]
+            - cell "📎" [ref=e545]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e546]: 📎
+            - cell "1" [ref=e547]
+            - cell "Hợp đồng - pháp lý" [ref=e549]
+            - cell "Gói thầu xây lắp" [ref=e553]
+            - cell "01/HĐ-XL" [ref=e555]
+            - cell "07/08/2026" [ref=e557]
+            - cell "Hợp đồng thi công xây dựng công trình" [ref=e559]
+            - cell "UBND xã" [ref=e561]
+            - cell "Q Quân Trinh" [ref=e563]:
+              - generic [ref=e565]:
+                - generic [ref=e566]: Q
+                - text: Quân Trinh
+            - cell "15/07/2026" [ref=e567]
+            - cell "250000000 ₫" [ref=e569]
+            - cell "Đã đủ" [ref=e571]
+            - cell "Lưu hợp đồng, phụ lục, bảo lãnh" [ref=e573]
+          - row [ref=e575] [cursor=pointer]:
+            - rowheader "2" [ref=e576]
+            - cell "📎" [ref=e577]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e578]: 📎
+            - cell "2" [ref=e579]
+            - cell "Hợp đồng - pháp lý" [ref=e581]
+            - cell "Bảo lãnh thực hiện hợp đồng" [ref=e585]
+            - cell "BL-01" [ref=e587]
+            - cell "07/09/2026" [ref=e589]
+            - cell "Bảo lãnh thực hiện hợp đồng của nhà thầu" [ref=e591]
+            - cell "Ngân hàng" [ref=e593]
+            - cell "Q Quân Trinh" [ref=e595]:
+              - generic [ref=e597]:
+                - generic [ref=e598]: Q
+                - text: Quân Trinh
+            - cell "16/07/2026" [ref=e599]
+            - cell "12500000 ₫" [ref=e601]
+            - cell "Đang xử lý" [ref=e603]
+            - cell "Chờ bản gốc" [ref=e605]
+          - row [ref=e607] [cursor=pointer]:
+            - rowheader "3" [ref=e608]
+            - cell "📎" [ref=e609]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e610]: 📎
+            - cell [ref=e611]
+            - cell [ref=e613]
+            - cell [ref=e617]
+            - cell [ref=e619]
+            - cell [ref=e621]
+            - cell [ref=e623]
+            - cell [ref=e625]
+            - cell [ref=e627]
+            - cell [ref=e629]
+            - cell [ref=e631]
+            - cell [ref=e633]
+            - cell [ref=e635]
+          - row [ref=e637] [cursor=pointer]:
+            - rowheader "4" [ref=e638]
+            - cell "📎" [ref=e639]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e640]: 📎
+            - cell [ref=e641]
+            - cell [ref=e643]
+            - cell [ref=e647]
+            - cell [ref=e649]
+            - cell [ref=e651]
+            - cell [ref=e653]
+            - cell [ref=e655]
+            - cell [ref=e657]
+            - cell [ref=e659]
+            - cell [ref=e661]
+            - cell [ref=e663]
+            - cell [ref=e665]
+          - row [ref=e667] [cursor=pointer]:
+            - rowheader "5" [ref=e668]
+            - cell "📎" [ref=e669]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e670]: 📎
+            - cell [ref=e671]
+            - cell [ref=e673]
+            - cell [ref=e677]
+            - cell [ref=e679]
+            - cell [ref=e681]
+            - cell [ref=e683]
+            - cell [ref=e685]
+            - cell [ref=e687]
+            - cell [ref=e689]
+            - cell [ref=e691]
+            - cell [ref=e693]
+            - cell [ref=e695]
+          - row [ref=e697] [cursor=pointer]:
+            - rowheader "6" [ref=e698]
+            - cell "📎" [ref=e699]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e700]: 📎
+            - cell [ref=e701]
+            - cell [ref=e703]
+            - cell [ref=e707]
+            - cell [ref=e709]
+            - cell [ref=e711]
+            - cell [ref=e713]
+            - cell [ref=e715]
+            - cell [ref=e717]
+            - cell [ref=e719]
+            - cell [ref=e721]
+            - cell [ref=e723]
+            - cell [ref=e725]
+          - row [ref=e727] [cursor=pointer]:
+            - rowheader "7" [ref=e728]
+            - cell "📎" [ref=e729]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e730]: 📎
+            - cell [ref=e731]
+            - cell [ref=e733]
+            - cell [ref=e737]
+            - cell [ref=e739]
+            - cell [ref=e741]
+            - cell [ref=e743]
+            - cell [ref=e745]
+            - cell [ref=e747]
+            - cell [ref=e749]
+            - cell [ref=e751]
+            - cell [ref=e753]
+            - cell [ref=e755]
+          - row [ref=e757] [cursor=pointer]:
+            - rowheader "8" [ref=e758]
+            - cell "📎" [ref=e759]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e760]: 📎
+            - cell [ref=e761]
+            - cell [ref=e763]
+            - cell [ref=e767]
+            - cell [ref=e769]
+            - cell [ref=e771]
+            - cell [ref=e773]
+            - cell [ref=e775]
+            - cell [ref=e777]
+            - cell [ref=e779]
+            - cell [ref=e781]
+            - cell [ref=e783]
+            - cell [ref=e785]
+          - row [ref=e787] [cursor=pointer]:
+            - rowheader "9" [ref=e788]
+            - cell "📎" [ref=e789]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e790]: 📎
+            - cell [ref=e791]
+            - cell [ref=e793]
+            - cell [ref=e797]
+            - cell [ref=e799]
+            - cell [ref=e801]
+            - cell [ref=e803]
+            - cell [ref=e805]
+            - cell [ref=e807]
+            - cell [ref=e809]
+            - cell [ref=e811]
+            - cell [ref=e813]
+            - cell [ref=e815]
+          - row [ref=e817] [cursor=pointer]:
+            - rowheader "10" [ref=e818]
+            - cell "📎" [ref=e819]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e820]: 📎
+            - cell [ref=e821]
+            - cell [ref=e823]
+            - cell [ref=e827]
+            - cell [ref=e829]
+            - cell [ref=e831]
+            - cell [ref=e833]
+            - cell [ref=e835]
+            - cell [ref=e837]
+            - cell [ref=e839]
+            - cell [ref=e841]
+            - cell [ref=e843]
+            - cell [ref=e845]
+          - row [ref=e847] [cursor=pointer]:
+            - rowheader "11" [ref=e848]
+            - cell "📎" [ref=e849]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e850]: 📎
+            - cell [ref=e851]
+            - cell [ref=e853]
+            - cell [ref=e857]
+            - cell [ref=e859]
+            - cell [ref=e861]
+            - cell [ref=e863]
+            - cell [ref=e865]
+            - cell [ref=e867]
+            - cell [ref=e869]
+            - cell [ref=e871]
+            - cell [ref=e873]
+            - cell [ref=e875]
+          - row [ref=e877] [cursor=pointer]:
+            - rowheader "12" [ref=e878]
+            - cell "📎" [ref=e879]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e880]: 📎
+            - cell [ref=e881]
+            - cell [ref=e883]
+            - cell [ref=e887]
+            - cell [ref=e889]
+            - cell [ref=e891]
+            - cell [ref=e893]
+            - cell [ref=e895]
+            - cell [ref=e897]
+            - cell [ref=e899]
+            - cell [ref=e901]
+            - cell [ref=e903]
+            - cell [ref=e905]
+          - row [ref=e907] [cursor=pointer]:
+            - rowheader "13" [ref=e908]
+            - cell "📎" [ref=e909]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e910]: 📎
+            - cell [ref=e911]
+            - cell [ref=e913]
+            - cell [ref=e917]
+            - cell [ref=e919]
+            - cell [ref=e921]
+            - cell [ref=e923]
+            - cell [ref=e925]
+            - cell [ref=e927]
+            - cell [ref=e929]
+            - cell [ref=e931]
+            - cell [ref=e933]
+            - cell [ref=e935]
+          - row [ref=e937] [cursor=pointer]:
+            - rowheader "14" [ref=e938]
+            - cell "📎" [ref=e939]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e940]: 📎
+            - cell [ref=e941]
+            - cell [ref=e943]
+            - cell [ref=e947]
+            - cell [ref=e949]
+            - cell [ref=e951]
+            - cell [ref=e953]
+            - cell [ref=e955]
+            - cell [ref=e957]
+            - cell [ref=e959]
+            - cell [ref=e961]
+            - cell [ref=e963]
+            - cell [ref=e965]
+          - row [ref=e967] [cursor=pointer]:
+            - rowheader "15" [ref=e968]
+            - cell "📎" [ref=e969]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e970]: 📎
+            - cell [ref=e971]
+            - cell [ref=e973]
+            - cell [ref=e977]
+            - cell [ref=e979]
+            - cell [ref=e981]
+            - cell [ref=e983]
+            - cell [ref=e985]
+            - cell [ref=e987]
+            - cell [ref=e989]
+            - cell [ref=e991]
+            - cell [ref=e993]
+            - cell [ref=e995]
+          - row [ref=e997] [cursor=pointer]:
+            - rowheader "16" [ref=e998]
+            - cell "📎" [ref=e999]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=e1000]: 📎
+            - cell [ref=e1001]
+            - cell [ref=e1003]
+            - cell [ref=e1007]
+            - cell [ref=e1009]
+            - cell [ref=e1011]
+            - cell [ref=e1013]
+            - cell [ref=e1015]
+            - cell [ref=e1017]
+            - cell [ref=e1019]
+            - cell [ref=e1021]
+            - cell [ref=e1023]
+            - cell [ref=e1025]
+          - row:
+            - cell
+      - generic [ref=e1027]: Bảng dạng lưới giống Excel · sửa trực tiếp, bấm "⬇ Xuất Excel" để tải file .xlsx

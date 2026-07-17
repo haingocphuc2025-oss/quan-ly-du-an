@@ -1,0 +1,43 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V25_LOCALHOST.bat",
+                           "language":  "batch",
+                           "sizeLines":  21,
+                           "fileCategory":  "script"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V26_LOCALHOST.bat",
+                           "language":  "batch",
+                           "sizeLines":  22,
+                           "fileCategory":  "script"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v25_quan.html",
+                           "language":  "html",
+                           "sizeLines":  11713,
+                           "fileCategory":  "markup"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v26_quan.html",
+                           "language":  "html",
+                           "sizeLines":  12025,
+                           "fileCategory":  "markup"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V25_LOCALHOST.bat":  [
+
+                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/RUN_V26_LOCALHOST.bat":  [
+
+                                                                                             ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v25_quan.html":  [
+
+                                                                                                                ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/BANDIAO/giao-dien-desktop-don-gian_v26_quan.html":  [
+
+                                                                                                                ]
+                        }
+}

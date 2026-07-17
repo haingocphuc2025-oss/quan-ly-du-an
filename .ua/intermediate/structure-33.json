@@ -1,0 +1,126 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/SPEC_README_TRUOC_CHUAN_HOA.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "QUAN LY SPEC",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Thu muc",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Nguyen tac",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Trang thai tai thoi diem tai cau truc",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/STAGING_README_CU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 13,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "Staging — nơi AI code nộp bản candidate để Claude nghiệm thu",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/THI_CONG_README_TRUOC_CHUAN_HOA.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 23,
+      "nonEmptyLines": 17,
+      "sections": [
+        {
+          "heading": "DU AN THI CONG",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Thu muc",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Quy trinh thi cong",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Trang thai hien tai",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/TRANG_THAI_TRUOC_2_TRANG_THAI.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "TRANG THAI THI CONG",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Cong viec tiep theo",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}

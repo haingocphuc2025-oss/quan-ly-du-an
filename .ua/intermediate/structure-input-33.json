@@ -1,0 +1,43 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/SPEC_README_TRUOC_CHUAN_HOA.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/STAGING_README_CU.md",
+                           "language":  "markdown",
+                           "sizeLines":  13,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/THI_CONG_README_TRUOC_CHUAN_HOA.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/TRANG_THAI_TRUOC_2_TRANG_THAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/SPEC_README_TRUOC_CHUAN_HOA.md":  [
+
+                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/STAGING_README_CU.md":  [
+
+                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/THI_CONG_README_TRUOC_CHUAN_HOA.md":  [
+
+                                                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/QUY_TRINH_THI_CONG_CU/TRANG_THAI_TRUOC_2_TRANG_THAI.md":  [
+
+                                                                                                               ]
+                        }
+}

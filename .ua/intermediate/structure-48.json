@@ -1,0 +1,2149 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/00_README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "SPEC QLDA DA DUYET",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/attachment-panel-ui/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 343,
+      "nonEmptyLines": 292,
+      "sections": [
+        {
+          "heading": "SPEC: Attachment Panel UI v2",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "2.1 Right Toolbar (thanh icon dọc bên phải)",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "2.2 Attachment Panel — cố định bên phải, đè lên layout",
+          "level": 3,
+          "line": 74
+        },
+        {
+          "heading": "2.3 Layout Panel",
+          "level": 3,
+          "line": 97
+        },
+        {
+          "heading": "2.4 File Item — nút xem / xóa / actions",
+          "level": 3,
+          "line": 120
+        },
+        {
+          "heading": "2.5 Actions dropdown menu",
+          "level": 3,
+          "line": 167
+        },
+        {
+          "heading": "2.6 Tab Row / Sheet / All",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "3. UPLOAD — NHIỀU FILE, KHÔNG GIỚI HẠN",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "3.1 Input cho phép multiple",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "3.2 Upload queue — nhiều file song song",
+          "level": 3,
+          "line": 205
+        },
+        {
+          "heading": "3.3 Upload không giới hạn (google.script.run + DriveApp)",
+          "level": 3,
+          "line": 230
+        },
+        {
+          "heading": "3.4 Upload progress UI",
+          "level": 3,
+          "line": 267
+        },
+        {
+          "heading": "4. APPS SCRIPT (Code.gs) — uploadAttachment",
+          "level": 2,
+          "line": 278
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 317
+        },
+        {
+          "heading": "6. BÀN GIAO",
+          "level": 2,
+          "line": 334
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 17
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/auto-save-on-exit/SPEC_009_auto-save-on-exit.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 302,
+      "nonEmptyLines": 244,
+      "sections": [
+        {
+          "heading": "SPEC: Auto-Save On Exit (Tự động lưu khi thoát trang)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. Tóm tắt thay đổi (Summary)",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "1. Bối cảnh & Vấn đề (Context & Problem)",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "1.1 Cơ chế save hiện tại (Baseline v18)",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "1.2 Các scenario mất data thực tế",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "2. Yêu cầu chức năng (Functional Requirements)",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "3. Yêu cầu phi chức năng (Non-Functional Requirements)",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "4. Kiến trúc & Thiết kế (Design)",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "4.1 Sơ đồ luồng dữ liệu (Data Flow)",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "4.2 Thêm Auto-Save On Exit Layer",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "4.3 Refactor Code Structure (Minimal Diff)",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "5. Kịch bản test (Test Scenarios)",
+          "level": 2,
+          "line": 222
+        },
+        {
+          "heading": "6. Rủi ro & Mitigation (Risks & Mitigations)",
+          "level": 2,
+          "line": 239
+        },
+        {
+          "heading": "7. Checklist triển khai (Implementation Checklist)",
+          "level": 2,
+          "line": 252
+        },
+        {
+          "heading": "8. Phụ lục: File & Dòng code tham chiếu (baseline v18)",
+          "level": 2,
+          "line": 269
+        },
+        {
+          "heading": "9. Lưu ý triển khai (Dev Notes)",
+          "level": 2,
+          "line": 289
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/automation/SPEC_005_automation.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 119,
+      "nonEmptyLines": 94,
+      "sections": [
+        {
+          "heading": "SPEC: Automation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "2.1 Workflow Engine",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2.2 Cấu trúc workflow",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "3.1 Storage",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 115
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 212,
+      "nonEmptyLines": 162,
+      "sections": [
+        {
+          "heading": "SPEC: Clear Data & Repost Date (2 nút đơn giản)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "2.1 Nút trên Toolbar",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "2.2 Clear Data (🗑)",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "2.3 Repost Date (🔄)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "3. LUỒNG NGƯỜI DÙNG",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Flow 1: Clear Data",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Flow 2: Repost Date",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "4. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "4.1 Hàm mới",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "4.2 Logic Repost Date (backend)",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "6. CODE MẪU (Frontend)",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "6.1 Toolbar buttons (thêm vào HTML)",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "6.2 JS Handlers",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "7. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "8. ƯU TIÊN",
+          "level": 2,
+          "line": 205
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/column-types/SPEC_006_column-types.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 569,
+      "nonEmptyLines": 464,
+      "sections": [
+        {
+          "heading": "SPEC: Column Operations",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "2.1 Tổng quan luồng thao tác",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "2.2 Khả năng Apps Script (DO nhà thầu code)",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "2.3 Design Decisions",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "3. SPEC CHI TIẾT",
+          "level": 2,
+          "line": 53
+        },
+        {
+          "heading": "3.1 Column Context Menu",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "3.2 Add Column (Insert)",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "3.3 Edit Column Properties",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "3.4 Move Column",
+          "level": 3,
+          "line": 169
+        },
+        {
+          "heading": "3.5 Delete Column",
+          "level": 3,
+          "line": 187
+        },
+        {
+          "heading": "3.6 Hide / Unhide Column",
+          "level": 3,
+          "line": 203
+        },
+        {
+          "heading": "3.7 Freeze / Unfreeze Column",
+          "level": 3,
+          "line": 219
+        },
+        {
+          "heading": "3.8 Column Width & Auto-fit",
+          "level": 3,
+          "line": 239
+        },
+        {
+          "heading": "3.9 Formula Column",
+          "level": 3,
+          "line": 250
+        },
+        {
+          "heading": "3.10 System Column (Read-only)",
+          "level": 3,
+          "line": 274
+        },
+        {
+          "heading": "3.11 Auto-Number Column",
+          "level": 3,
+          "line": 289
+        },
+        {
+          "heading": "3.12 Dropdown Column (Single & Multi)",
+          "level": 3,
+          "line": 304
+        },
+        {
+          "heading": "3.13 Symbol Column",
+          "level": 3,
+          "line": 321
+        },
+        {
+          "heading": "3.14 Checkbox Column",
+          "level": 3,
+          "line": 336
+        },
+        {
+          "heading": "3.15 Contact List Column",
+          "level": 3,
+          "line": 343
+        },
+        {
+          "heading": "3.16 Sort & Filter by Column",
+          "level": 3,
+          "line": 350
+        },
+        {
+          "heading": "3.17 Copy / Paste Column",
+          "level": 3,
+          "line": 369
+        },
+        {
+          "heading": "3.18 Primary Column",
+          "level": 3,
+          "line": 387
+        },
+        {
+          "heading": "3.19 Undo / Redo",
+          "level": 3,
+          "line": 401
+        },
+        {
+          "heading": "3.20 Data Model",
+          "level": 3,
+          "line": 410
+        },
+        {
+          "heading": "3.21 SHEET_CONFIG mở rộng",
+          "level": 3,
+          "line": 476
+        },
+        {
+          "heading": "3.22 Test Cases (bắt buộc)",
+          "level": 3,
+          "line": 496
+        },
+        {
+          "heading": "4. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 533
+        },
+        {
+          "heading": "4.1 Phụ thuộc",
+          "level": 3,
+          "line": 535
+        },
+        {
+          "heading": "4.2 Files cần tạo / sửa",
+          "level": 3,
+          "line": 543
+        },
+        {
+          "heading": "4.3 Test Kit",
+          "level": 3,
+          "line": 559
+        },
+        {
+          "heading": "4.4 Cam kết",
+          "level": 3,
+          "line": 565
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/conditional-formatting/SPEC_007_conditional-formatting.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 110,
+      "nonEmptyLines": 85,
+      "sections": [
+        {
+          "heading": "SPEC: Conditional Formatting",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "2.1 Rule Engine",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2.2 Cấu trúc rule",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 64
+        },
+        {
+          "heading": "3.1 Storage",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 106
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/contact-column/SPEC_008_contact-column.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 105,
+      "nonEmptyLines": 79,
+      "sections": [
+        {
+          "heading": "SPEC: Contact Column + Người phụ trách",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "2.1 Cấu trúc Contact Column",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2.2 Column Config",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "2.3 Tính năng chính",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "4.1 Contact Picker Modal",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "4.2 Hiển thị trong ô",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 101
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/copy-cut-paste/SPEC_010_copy-cut-paste.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 167,
+      "nonEmptyLines": 128,
+      "sections": [
+        {
+          "heading": "SPEC: Copy/Cut/Paste Multiple Cells/Rows (giống Excel)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Cấu trúc dữ liệu / Column Config (JSON)",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Tính năng chính",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "2.3 Luồng người dùng (User Flow)",
+          "level": 3,
+          "line": 46
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 71
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "3.2 Hàm Apps Script mới/cần mở rộng",
+          "level": 3,
+          "line": 77
+        },
+        {
+          "heading": "3.3 OAuth / Web App / Trigger yêu cầu",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 94
+        },
+        {
+          "heading": "4.1 Component / Modal / Picker",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "4.2 Hiển thị trong Sheet / Grid",
+          "level": 3,
+          "line": 101
+        },
+        {
+          "heading": "4.3 Tương tác (Keyboard + Mouse)",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 122
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "7. PHỤ THUỘC & RÀNG BUỘC",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "8. ƯU TIÊN VÀ DỰ KIẾN",
+          "level": 2,
+          "line": 160
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/default-row-height-wrap/SPEC_012_default-row-height-wrap.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 239,
+      "nonEmptyLines": 187,
+      "sections": [
+        {
+          "heading": "SPEC: Default Row Height & Text Wrap (Mặc định độ rộng hàng + Tự động xuống dòng)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Cấu trúc dữ liệu / Column Config (JSON)",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Tính năng chính",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "2.3 Luồng người dùng (User Flow)",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 89
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "4.1 Component / Toolbar",
+          "level": 3,
+          "line": 102
+        },
+        {
+          "heading": "4.2 CSS Implementation",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "4.3 Render Logic (JavaScript)",
+          "level": 3,
+          "line": 159
+        },
+        {
+          "heading": "4.4 Context Menu Header Cột",
+          "level": 3,
+          "line": 187
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 194
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 211
+        },
+        {
+          "heading": "7. PHỤ THUỘC & RÀNG BUỘC",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "8. ƯU TIÊN VÀ DỰ KIẾN",
+          "level": 2,
+          "line": 232
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 274,
+      "nonEmptyLines": 222,
+      "sections": [
+        {
+          "heading": "SPEC: Drive API Backend (Nền tảng lưu trữ)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "2.1 Kiến trúc mới",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "2.2 Cấu trúc file trên Drive",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "2.3 Cấu trúc JSON mỗi dự án",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "2.4 Auth flow",
+          "level": 3,
+          "line": 66
+        },
+        {
+          "heading": "3. API & BACKEND (Drive REST API)",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "3.1 Khởi tạo Google Sign-In",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "3.2 Tìm hoặc tạo thư mục gốc",
+          "level": 3,
+          "line": 114
+        },
+        {
+          "heading": "3.3 Save data (create hoặc update)",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "3.4 Load data",
+          "level": 3,
+          "line": 169
+        },
+        {
+          "heading": "3.5 List projects",
+          "level": 3,
+          "line": 181
+        },
+        {
+          "heading": "3.6 Helper chung",
+          "level": 3,
+          "line": 192
+        },
+        {
+          "heading": "4. GIAO DIỆN",
+          "level": 2,
+          "line": 218
+        },
+        {
+          "heading": "4.1 Màn hình chưa đăng nhập",
+          "level": 3,
+          "line": 220
+        },
+        {
+          "heading": "4.2 Trạng thái save (UI feedback)",
+          "level": 3,
+          "line": 234
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 251
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 266
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/file-attachment/SPEC_002_file-attachment.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 337,
+      "nonEmptyLines": 280,
+      "sections": [
+        {
+          "heading": "SPEC: File Attachment + Icon Fix + Excel 365 Toolbar Style",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "2. FILE ATTACHMENT — APPROACH MỚI (dùng code cũ)",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Tại sao khác với SPEC trước?",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "2.1 Luồng upload",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "2.2 Apps Script — thêm vào Code.gs",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "2.3 Frontend — upload function",
+          "level": 3,
+          "line": 93
+        },
+        {
+          "heading": "2.4 UI Attachment Panel",
+          "level": 3,
+          "line": 148
+        },
+        {
+          "heading": "3. EXCEL 365 TOOLBAR",
+          "level": 2,
+          "line": 247
+        },
+        {
+          "heading": "Layout toolbar mới",
+          "level": 3,
+          "line": 249
+        },
+        {
+          "heading": "CSS thêm",
+          "level": 3,
+          "line": 255
+        },
+        {
+          "heading": "HTML thêm trước nhóm B I U S",
+          "level": 3,
+          "line": 281
+        },
+        {
+          "heading": "4. ICON FIX",
+          "level": 2,
+          "line": 306
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 313
+        },
+        {
+          "heading": "6. BÀN GIAO",
+          "level": 2,
+          "line": 330
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/forms/SPEC_004_forms.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 98,
+      "nonEmptyLines": 74,
+      "sections": [
+        {
+          "heading": "SPEC: Forms",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "2.1 Form Builder",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2.2 Form Render",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "2.3 Cấu trúc dữ liệu",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "3.1 Form Storage",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 393,
+      "nonEmptyLines": 320,
+      "sections": [
+        {
+          "heading": "SPEC: Keyboard Shortcuts — Phím tắt điều hướng & chỉnh sửa",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. Tóm tắt thay đổi (Summary)",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "1. Bối cảnh & Vấn đề (Context & Problem)",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "1.1 Hiện trạng baseline v18",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "1.2 Keydown handlers hiện có",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "1.3 Functions có sẵn để tái dùng",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "2. Yêu cầu chức năng (Functional Requirements)",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "2.1 Navigation (Điều hướng)",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "2.2 Cell Editing (Chỉnh sửa ô)",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "2.3 Clipboard (Sao chép)",
+          "level": 3,
+          "line": 107
+        },
+        {
+          "heading": "2.4 Undo/Redo",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "2.5 Selection & Navigation toàn cục",
+          "level": 3,
+          "line": 122
+        },
+        {
+          "heading": "2.6 Row operations (Thao tác dòng)",
+          "level": 3,
+          "line": 134
+        },
+        {
+          "heading": "3. Yêu cầu phi chức năng (Non-Functional Requirements)",
+          "level": 2,
+          "line": 145
+        },
+        {
+          "heading": "4. Kiến trúc & Thiết kế (Design)",
+          "level": 2,
+          "line": 158
+        },
+        {
+          "heading": "4.1 Shortcut Controller Architecture",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "4.2 Handler Functions Detail",
+          "level": 3,
+          "line": 248
+        },
+        {
+          "heading": "4.3 Vị trí chèn code",
+          "level": 3,
+          "line": 269
+        },
+        {
+          "heading": "4.4 Logic ưu tiên keyboard shortcut",
+          "level": 3,
+          "line": 280
+        },
+        {
+          "heading": "5. Kịch bản test (Test Scenarios)",
+          "level": 2,
+          "line": 295
+        },
+        {
+          "heading": "6. Rủi ro & Mitigation (Risks & Mitigations)",
+          "level": 2,
+          "line": 317
+        },
+        {
+          "heading": "7. Phụ thuộc (Dependencies)",
+          "level": 2,
+          "line": 329
+        },
+        {
+          "heading": "8. Checklist triển khai (Implementation Checklist)",
+          "level": 2,
+          "line": 341
+        },
+        {
+          "heading": "9. Phụ lục: File & Dòng code tham chiếu (baseline v18)",
+          "level": 2,
+          "line": 360
+        },
+        {
+          "heading": "10. Lưu ý triển khai (Dev Notes)",
+          "level": 2,
+          "line": 379
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/publish-report/SPEC_001_publish-report.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 98,
+      "nonEmptyLines": 74,
+      "sections": [
+        {
+          "heading": "SPEC: Publish Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "2.1 Publish Settings",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "2.2 Cấu trúc dữ liệu",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 48
+        },
+        {
+          "heading": "3.1 Storage",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 73
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 82
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/BAN_GIAO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 12,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "📋 BIÊN BẢN BÀN GIAO — Tư vấn thiết kế → Ban QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "11. Repost with Carry-Forward",
+          "level": 2,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 576,
+      "nonEmptyLines": 477,
+      "sections": [
+        {
+          "heading": "SPEC: Repost with Carry-Forward",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "2.1 Column Classification",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "2.2 User Flow",
+          "level": 3,
+          "line": 42
+        },
+        {
+          "heading": "2.3 So sánh với các nút hiện có",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "2.4 Cấu hình nâng cao (Advanced Config)",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "2.5 Data Model",
+          "level": 3,
+          "line": 106
+        },
+        {
+          "heading": "2.6 Logic xóa theo type",
+          "level": 3,
+          "line": 140
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 152
+        },
+        {
+          "heading": "3.1 Hàm mới",
+          "level": 3,
+          "line": 154
+        },
+        {
+          "heading": "3.2 Logic backend",
+          "level": 3,
+          "line": 160
+        },
+        {
+          "heading": "3.3 Hàm hỗ trợ cho frontend",
+          "level": 3,
+          "line": 247
+        },
+        {
+          "heading": "4. GIAO DIỆN",
+          "level": 2,
+          "line": 280
+        },
+        {
+          "heading": "4.1 Toolbar",
+          "level": 3,
+          "line": 282
+        },
+        {
+          "heading": "4.2 CSS",
+          "level": 3,
+          "line": 318
+        },
+        {
+          "heading": "4.3 JS Handlers",
+          "level": 3,
+          "line": 367
+        },
+        {
+          "heading": "4.4 Summary Preview (tùy chọn)",
+          "level": 3,
+          "line": 464
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 506
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 533
+        },
+        {
+          "heading": "6.1 Phụ thuộc",
+          "level": 3,
+          "line": 535
+        },
+        {
+          "heading": "6.2 File cần sửa",
+          "level": 3,
+          "line": 546
+        },
+        {
+          "heading": "6.3 Checklist cho nhà thầu",
+          "level": 3,
+          "line": 558
+        },
+        {
+          "heading": "6.4 Cam kết",
+          "level": 3,
+          "line": 571
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_QL_DA_DUYET/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 290,
+      "nonEmptyLines": 245,
+      "sections": [
+        {
+          "heading": "SPEC: Workspace Context Menu + Tao Sheet Moi",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MUC TIEU",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "1.1 Van de hien tai",
+          "level": 3,
+          "line": 13
+        },
+        {
+          "heading": "1.2 Ket qua can dat",
+          "level": 3,
+          "line": 18
+        },
+        {
+          "heading": "2. MO TA CHI TIET",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "2.1 Mo Sheet khi click",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "2.2 Nut \"+ Tao\" trong workspace",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "2.3 Context Menu (chuot phai hoac click \"...\")",
+          "level": 3,
+          "line": 84
+        },
+        {
+          "heading": "3. API & BACKEND (google.script.run)",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "4. GIAO DIEN",
+          "level": 2,
+          "line": 164
+        },
+        {
+          "heading": "4.1 Context menu CSS",
+          "level": 3,
+          "line": 166
+        },
+        {
+          "heading": "4.2 Item \"...\" button",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "4.3 Doi ten inline",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 264
+        },
+        {
+          "heading": "6. BAN GIAO",
+          "level": 2,
+          "line": 281
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/app-feature-research.skill",
+      "language": "skill",
+      "fileCategory": "code",
+      "totalLines": 11,
+      "nonEmptyLines": 11,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/QUYET_DINH.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "📋 YÊU CẦU CHỦ ĐẦU TƯ",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Lịch sử yêu cầu / quyết định",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Quy tắc chung",
+          "level": 2,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/00_CHU_DAU_TU/YEU_CAU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 29,
+      "nonEmptyLines": 22,
+      "sections": [
+        {
+          "heading": "📋 YÊU CẦU CHỦ ĐẦU TƯ",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Lịch sử yêu cầu / quyết định",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Quy tắc chung",
+          "level": 2,
+          "line": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 212,
+      "nonEmptyLines": 162,
+      "sections": [
+        {
+          "heading": "SPEC: Clear Data & Repost Date (2 nút đơn giản)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "2.1 Nút trên Toolbar",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "2.2 Clear Data (🗑)",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "2.3 Repost Date (🔄)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "3. LUỒNG NGƯỜI DÙNG",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "Flow 1: Clear Data",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "Flow 2: Repost Date",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "4. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "4.1 Hàm mới",
+          "level": 3,
+          "line": 79
+        },
+        {
+          "heading": "4.2 Logic Repost Date (backend)",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 116
+        },
+        {
+          "heading": "6. CODE MẪU (Frontend)",
+          "level": 2,
+          "line": 133
+        },
+        {
+          "heading": "6.1 Toolbar buttons (thêm vào HTML)",
+          "level": 3,
+          "line": 135
+        },
+        {
+          "heading": "6.2 JS Handlers",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "7. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 196
+        },
+        {
+          "heading": "8. ƯU TIÊN",
+          "level": 2,
+          "line": 205
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 324,
+      "nonEmptyLines": 256,
+      "sections": [
+        {
+          "heading": "SPEC: Clear Sheet — Xóa toàn bộ dữ liệu sheet (kèm reset ngày tháng)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Tính năng chính",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Chi tiết các chế độ Clear",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "2.3 Luồng người dùng (User Flow)",
+          "level": 3,
+          "line": 43
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 75
+        },
+        {
+          "heading": "3.3 Xử lý đặc biệt — \"Repost date\"",
+          "level": 3,
+          "line": 85
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 109
+        },
+        {
+          "heading": "4.1 Nút Clear Sheet trên Toolbar",
+          "level": 3,
+          "line": 111
+        },
+        {
+          "heading": "4.2 Modal Xác Nhận (3 bước)",
+          "level": 3,
+          "line": 123
+        },
+        {
+          "heading": "4.3 Toast + Animation",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 160
+        },
+        {
+          "heading": "6. GIAO DIỆN (CODE MẪU)",
+          "level": 2,
+          "line": 177
+        },
+        {
+          "heading": "6.1 Modal HTML (thêm vào `<div id=\"app\">`)",
+          "level": 3,
+          "line": 179
+        },
+        {
+          "heading": "6.2 JS Handler",
+          "level": 3,
+          "line": 210
+        },
+        {
+          "heading": "7. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 281
+        },
+        {
+          "heading": "8. PHỤ THUỘC & RÀNG BUỘC",
+          "level": 2,
+          "line": 290
+        },
+        {
+          "heading": "9. ƯU TIÊN VÀ DỰ KIẾN",
+          "level": 2,
+          "line": 302
+        },
+        {
+          "heading": "10. LƯU Ý ĐẶC BIỆT — \"Repost cả date\"",
+          "level": 2,
+          "line": 313
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 22
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/dashboard-configuration/SPEC_Dashboard_Configuration_v1.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 143,
+      "nonEmptyLines": 125,
+      "sections": [
+        {
+          "heading": "DASHBOARD_SPEC v3 — Bảng điều khiển dự án cho DU AN WEB QUAN LY",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Dashboard là gì",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. Mô hình JSON dashboard",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "3. Sáu loại widget (khảo sát DOM: metric×42, title×nhiều, chart×10, report×5, shortcut×4)",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "3B. Cách CHART lấy dữ liệu (mô hình Smartsheet — đơn giản hơn groupBy)",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "3C. PANEL CẤU HÌNH CHART WIDGET — đầy đủ (khảo sát trực tiếp)",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "4. Lưới & bố cục",
+          "level": 2,
+          "line": 89
+        },
+        {
+          "heading": "5. Toolbar dashboard (khảo sát DOM)",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "6. Token giao diện (từ file mẫu)",
+          "level": 2,
+          "line": 101
+        },
+        {
+          "heading": "7. Thứ tự triển khai",
+          "level": 2,
+          "line": 110
+        },
+        {
+          "heading": "8. Checklist nghiệm thu (Codex tự điền XONG / CHƯA + lý do)",
+          "level": 2,
+          "line": 117
+        },
+        {
+          "heading": "9. Lưu ý phạm vi",
+          "level": 2,
+          "line": 139
+        },
+        {
+          "heading": "10. Giao nộp",
+          "level": 2,
+          "line": 142
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 109,
+      "nonEmptyLines": 83,
+      "sections": [
+        {
+          "heading": "SPEC: Delete Key + Repost Date (Xóa dữ liệu + Reset ngày)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. TÍNH NĂNG CHÍNH",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "3. GIẢI PHÁP",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "3.1 Delete Key — Đã có, chỉ verify",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "3.2 Clear Data — Nút toolbar",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "3.3 Repost Date — Nút toolbar",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "4. TEST CASES",
+          "level": 2,
+          "line": 61
+        },
+        {
+          "heading": "5. CODE MẪU (thêm vào JS)",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "6. BÀN GIAO NHÀ THẦU",
+          "level": 2,
+          "line": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    }
+  ]
+}

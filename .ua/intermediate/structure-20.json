@@ -1,0 +1,563 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_DOC_TRUOC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 32,
+      "nonEmptyLines": 23,
+      "sections": [
+        {
+          "heading": "DU AN WEB QUAN LY",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Trang thai nhanh",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Thu tu doc tai lieu",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Cac vung chinh",
+          "level": 2,
+          "line": 24
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_TONG_HOP_NOI_DUNG_DU_AN.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 116,
+      "nonEmptyLines": 86,
+      "sections": [
+        {
+          "heading": "00_TONG_HOP_NOI_DUNG_DU_AN",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc dich",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Trang thai hien tai",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Viec dang lam — v24",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Cau truc ho so moi du an",
+          "level": 2,
+          "line": 42
+        },
+        {
+          "heading": "Cau truc folder quan ly",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "File goc quan ly tung loai thong tin",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "Lich su version",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "Quy tac cho AI khi lam viec",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "Viec can dong bo tiep",
+          "level": 2,
+          "line": 111
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/01_QUY_TRINH_BAN_GIAO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 528,
+      "nonEmptyLines": 431,
+      "sections": [
+        {
+          "heading": "📋 QUY TRÌNH BÀN GIAO SẢN PHẨM — AI SOFTWARE FACTORY v1.0",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🎯 MỤC ĐÍCH",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "🏗️ SƠ ĐỒ LUỒNG BÀN GIAO",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "⚡ NGUYÊN TẮC CHUNG — Tự động hóa & Ổ đĩa bàn giao",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "🔄 NGUYÊN TẮC TỰ ĐỘNG HÓA — KHÔNG HỎI NHIỀU",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "📁 QUY TẮC Ổ ĐĨA — Làm C, Bàn giao E/G",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "🎯 Nguyên tắc",
+          "level": 4,
+          "line": 74
+        },
+        {
+          "heading": "✅ Quy tắc chi tiết",
+          "level": 4,
+          "line": 91
+        },
+        {
+          "heading": "🧭 Cách xác định ổ đĩa mặc định",
+          "level": 4,
+          "line": 102
+        },
+        {
+          "heading": "📝 Script kiểm tra ổ đĩa tự động",
+          "level": 4,
+          "line": 119
+        },
+        {
+          "heading": "📦 1. BÀN GIAO THIẾT KẾ — Tư vấn Thiết kế → Nhà thầu",
+          "level": 2,
+          "line": 137
+        },
+        {
+          "heading": "🎯 Mục đích",
+          "level": 3,
+          "line": 139
+        },
+        {
+          "heading": "📋 Các bước thực hiện",
+          "level": 3,
+          "line": 142
+        },
+        {
+          "heading": "📝 Biên bản bàn giao SPEC (mẫu)",
+          "level": 3,
+          "line": 153
+        },
+        {
+          "heading": "❌ Điều kiện từ chối bàn giao SPEC",
+          "level": 3,
+          "line": 170
+        },
+        {
+          "heading": "💻 2. BÀN GIAO CODE — Nhà thầu → Ban QLDA + Giám sát",
+          "level": 2,
+          "line": 178
+        },
+        {
+          "heading": "🎯 Mục đích",
+          "level": 3,
+          "line": 180
+        },
+        {
+          "heading": "📋 Các bước thực hiện",
+          "level": 3,
+          "line": 183
+        },
+        {
+          "heading": "📝 5 MỤC BẮT BUỘC TRONG BIÊN BẢN BÀN GIAO CODE",
+          "level": 3,
+          "line": 196
+        },
+        {
+          "heading": "❌ Điều kiện từ chối bàn giao code",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "✅ 3. BÀN GIAO NGHIỆM THU — Giám sát → Ban QLDA",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "🎯 Mục đích",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "📋 Các bước thực hiện",
+          "level": 3,
+          "line": 225
+        },
+        {
+          "heading": "📝 Quy tắc nghiệm thu",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "📝 Biên bản nghiệm thu (mẫu)",
+          "level": 3,
+          "line": 254
+        },
+        {
+          "heading": "🚀 4. BÀN GIAO TRIỂN KHAI — Ban QLDA → Triển khai",
+          "level": 2,
+          "line": 275
+        },
+        {
+          "heading": "🎯 Mục đích",
+          "level": 3,
+          "line": 277
+        },
+        {
+          "heading": "📋 Các bước thực hiện",
+          "level": 3,
+          "line": 280
+        },
+        {
+          "heading": "🔄 5. BÀN GIAO NGHIÊN CỨU — Tư vấn Thiết kế → Nghiên cứu SPEC mới",
+          "level": 2,
+          "line": 293
+        },
+        {
+          "heading": "🎯 Mục đích",
+          "level": 3,
+          "line": 295
+        },
+        {
+          "heading": "📋 Các bước thực hiện",
+          "level": 3,
+          "line": 298
+        },
+        {
+          "heading": "🗺️ SƠ ĐỒ TỔNG THỂ — LUỒNG BÀN GIAO ĐẦY ĐỦ",
+          "level": 2,
+          "line": 311
+        },
+        {
+          "heading": "📁 CẤU TRÚC FILE BÀN GIAO — TỔNG QUAN",
+          "level": 2,
+          "line": 363
+        },
+        {
+          "heading": "✅ TIÊU CHÍ BẮT BUỘC — TỪNG LOẠI BÀN GIAO",
+          "level": 2,
+          "line": 417
+        },
+        {
+          "heading": "📐 Bàn giao SPEC (Tư vấn → Nhà thầu)",
+          "level": 3,
+          "line": 419
+        },
+        {
+          "heading": "💻 Bàn giao CODE (Nhà thầu → Ban QLDA)",
+          "level": 3,
+          "line": 428
+        },
+        {
+          "heading": "✅ Bàn giao NGHIỆM THU (QA → Ban QLDA)",
+          "level": 3,
+          "line": 438
+        },
+        {
+          "heading": "🚀 Bàn giao TRIỂN KHAI (Ban QLDA → Triển khai)",
+          "level": 3,
+          "line": 447
+        },
+        {
+          "heading": "⏱️ THỜI GIAN MỤC TIÊU CHO MỖI LẦN BÀN GIAO",
+          "level": 2,
+          "line": 457
+        },
+        {
+          "heading": "🚨 XỬ LÝ BÀN GIAO THẤT BẠI",
+          "level": 2,
+          "line": 469
+        },
+        {
+          "heading": "Khi bàn giao CODE bị từ chối:",
+          "level": 3,
+          "line": 471
+        },
+        {
+          "heading": "Khi nghiệm thu KHÔNG ĐẠT:",
+          "level": 3,
+          "line": 480
+        },
+        {
+          "heading": "📊 THEO DÕI TRẠNG THÁI BÀN GIAO",
+          "level": 2,
+          "line": 491
+        },
+        {
+          "heading": "✅ KẾT LUẬN",
+          "level": 2,
+          "line": 505
+        },
+        {
+          "heading": "📌 TÓM TẮT 2 NGUYÊN TẮC VÀNG",
+          "level": 2,
+          "line": 517
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 45
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/02_DEVELOPER_NOTES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 275,
+      "nonEmptyLines": 203,
+      "sections": [
+        {
+          "heading": "📋 CÔNG VIỆC — NHÀ THẦU THI CÔNG (Codex/AI Code)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🔴 VIỆC ĐANG LÀM",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "✅ ĐÃ HOÀN THÀNH (Ban QLDA duyệt 07/07/2026)",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "📋 QUY TRÌNH LÀM VIỆC (BẮT BUỘC)",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "🎯 TIÊU CHÍ BÀN GIAO (5 MỤC BẮT BUỘC)",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "📁 CẤU TRÚC THƯ MỤC",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "📝 GHI CHÚ",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "📤 BÀN GIAO STAGING — NHÀ THẦU THI CÔNG → BAN QLDA + GIÁM SÁT NGHIỆM THU",
+          "level": 2,
+          "line": 91
+        },
+        {
+          "heading": "📋 QUY TRÌNH BÀN GIAO",
+          "level": 2,
+          "line": 99
+        },
+        {
+          "heading": "📝 BIÊN BAN BÀN GIAO MẪU",
+          "level": 2,
+          "line": 111
+        },
+        {
+          "heading": "BIÊN BAN BÀN GIAO — v[N]",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "📌 LƯU Ý QUAN TRỌNG",
+          "level": 2,
+          "line": 130
+        },
+        {
+          "heading": "📋 CÔNG VIỆC — NHÀ THẦU THI CÔNG (Codex/AI Code)",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "🔴 VIỆC ĐANG LÀM (Đã giao 07/07/2026)",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "✅ ĐÃ HOÀN THÀNH (Ban QLDA duyệt 07/07/2026)",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "📋 QUY TRÌNH LÀM VIỆC (BẮT BUỘC)",
+          "level": 2,
+          "line": 175
+        },
+        {
+          "heading": "🎯 TIÊU CHÍ BÀN GIAO (5 MỤC BẮT BUỘC)",
+          "level": 2,
+          "line": 195
+        },
+        {
+          "heading": "📁 CẤU TRÚC THƯ MỤC",
+          "level": 2,
+          "line": 207
+        },
+        {
+          "heading": "📝 GHI CHÚ",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "📤 BÀN GIAO STAGING — NHÀ THẦU THI CÔNG → BAN QLDA + GIÁM SÁT NGHIỆM THU",
+          "level": 2,
+          "line": 230
+        },
+        {
+          "heading": "📋 QUY TRÌNH BÀN GIAO",
+          "level": 2,
+          "line": 238
+        },
+        {
+          "heading": "📝 BIÊN BAN BÀN GIAO MẪU",
+          "level": 2,
+          "line": 250
+        },
+        {
+          "heading": "BIÊN BAN BÀN GIAO — v[N]",
+          "level": 3,
+          "line": 256
+        },
+        {
+          "heading": "📌 LƯU Ý QUAN TRỌNG",
+          "level": 2,
+          "line": 269
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/03_CURRENT_STATUS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "CURRENT STATUS - DU AN WEB QUAN LY",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Ban hien hanh",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Lich su version",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Viec dang cho",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Quy tac dieu phoi",
+          "level": 2,
+          "line": 39
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/04_MD_NAMING_MAP.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "MD NAMING MAP",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quy uoc chung",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Trang thai du an da chot",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Ghi chu",
+          "level": 2,
+          "line": 20
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "04_REPORTS/2026-07-14_release_v26.md",
+                           "language":  "markdown",
+                           "sizeLines":  38,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/2026-07-14_workspace_browse_tree_fix.md",
+                           "language":  "markdown",
+                           "sizeLines":  47,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/CODE_MAP_V25.md",
+                           "language":  "markdown",
+                           "sizeLines":  157,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/KNOWN_ISSUES.md",
+                           "language":  "markdown",
+                           "sizeLines":  11,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "04_REPORTS/2026-07-14_release_v26.md":  [
+
+                                                                     ],
+                            "04_REPORTS/2026-07-14_workspace_browse_tree_fix.md":  [
+
+                                                                                   ],
+                            "04_REPORTS/CODE_MAP_V25.md":  [
+
+                                                           ],
+                            "04_REPORTS/KNOWN_ISSUES.md":  [
+
+                                                           ]
+                        }
+}

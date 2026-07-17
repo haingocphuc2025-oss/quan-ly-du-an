@@ -1,0 +1,63 @@
+- generic [ref=e2]:
+  - button "‹ Dự án" [ref=e3] [cursor=pointer]
+  - generic [ref=e4]:
+    - button "📎" [ref=e5] [cursor=pointer]
+    - button "💬" [ref=e6] [cursor=pointer]
+    - button "📋" [ref=e7] [cursor=pointer]
+    - button "ℹ️" [ref=e8] [cursor=pointer]
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - button "☰" [ref=e11] [cursor=pointer]
+      - button "←" [disabled] [ref=e12]
+      - button "→" [disabled] [ref=e13]
+    - generic [ref=e18]:
+      - generic [ref=e19]: ▦
+      - generic [ref=e20]: Hồ sơ dự án
+    - generic "Số phiên bản file — dùng để biết đang mở đúng bản mới nhất chưa" [ref=e22]: v25
+    - button "👤" [ref=e23] [cursor=pointer]
+    - generic [ref=e24] [cursor=pointer]:
+      - generic [ref=e25]: ⌂
+      - generic [ref=e26]: Trang chủ
+    - generic [ref=e27] [cursor=pointer]:
+      - generic [ref=e28]: ⌕
+      - generic [ref=e29]: Tìm
+    - generic [ref=e30] [cursor=pointer]:
+      - generic [ref=e31]: ▤
+      - generic [ref=e32]: Dự án
+    - generic [ref=e33] [cursor=pointer]:
+      - generic [ref=e34]: ◔
+      - generic [ref=e35]: Gần đây
+    - generic [ref=e36] [cursor=pointer]:
+      - generic [ref=e37]: ★
+      - generic [ref=e38]: Yêu thích
+    - button "＋ Tạo dự án" [ref=e39] [cursor=pointer]
+  - generic [ref=e40]:
+    - generic [ref=e41]:
+      - generic [ref=e42]:
+        - heading "Theo dõi hồ sơ, thư mục và chia sẻ Dự án của tôi" [level=1] [ref=e43]:
+          - generic [ref=e45]:
+            - generic [ref=e46]: Theo dõi hồ sơ, thư mục và chia sẻ
+            - text: Dự án của tôi
+        - generic [ref=e47]:
+          - generic [ref=e48]: ⌕
+          - textbox "Tìm dự án..." [ref=e49]
+        - generic [ref=e50]:
+          - button "Actions ▾" [ref=e51] [cursor=pointer]
+          - button "🗑" [ref=e52] [cursor=pointer]
+          - button "＋ Tạo dự án mới" [ref=e53] [cursor=pointer]
+      - generic [ref=e54]:
+        - checkbox [ref=e55]
+        - generic [ref=e56]: 8 dự án
+      - generic [ref=e57]:
+        - table [ref=e58]:
+          - rowgroup [ref=e59]:
+            - row [ref=e60]:
+              - columnheader [ref=e61]
+              - columnheader [ref=e62] [cursor=pointer]
+              - columnheader "Tên dự án" [ref=e63]
+              - columnheader "Trạng thái chia sẻ" [ref=e64]
+              - columnheader "Người tạo" [ref=e65]
+              - columnheader "Cập nhật lần cuối" [ref=e66]
+          - rowgroup
+        - generic "Chuột phải để tạo mới" [ref=e67]
+    - text: ⋮

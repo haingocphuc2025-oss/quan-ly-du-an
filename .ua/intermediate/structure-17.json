@@ -1,0 +1,79 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 9,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v18_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 5580,
+      "nonEmptyLines": 5204,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v19_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 6468,
+      "nonEmptyLines": 6058,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v20_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 6540,
+      "nonEmptyLines": 6109,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v21_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 6631,
+      "nonEmptyLines": 6197,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v22_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 9404,
+      "nonEmptyLines": 8764,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v23_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 10564,
+      "nonEmptyLines": 9854,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v24_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 10614,
+      "nonEmptyLines": 9904,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v25_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 11713,
+      "nonEmptyLines": 10927,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 12025,
+      "nonEmptyLines": 10882,
+      "metrics": {}
+    }
+  ]
+}

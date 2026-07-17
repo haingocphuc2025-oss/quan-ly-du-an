@@ -1,0 +1,70 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_selection_focus_bug_fix_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_sheet_column_insert_delete_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_sheet_report_compact_spacing_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_toolbar_grid_smartsheet_style_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  18,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_two_projects_repost_dashboard_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  17,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_workspace_navigator_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v26_browse_status_display_2026-07-15.md",
+                           "language":  "markdown",
+                           "sizeLines":  22,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "04_REPORTS/VERIFY/VERIFY_v25_selection_focus_bug_fix_2026-07-13.md":  [
+
+                                                                                                   ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_sheet_column_insert_delete_2026-07-13.md":  [
+
+                                                                                                      ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_sheet_report_compact_spacing_2026-07-13.md":  [
+
+                                                                                                        ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_toolbar_grid_smartsheet_style_2026-07-13.md":  [
+
+                                                                                                         ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_two_projects_repost_dashboard_2026-07-13.md":  [
+
+                                                                                                         ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_workspace_navigator_2026-07-13.md":  [
+
+                                                                                               ],
+                            "04_REPORTS/VERIFY/VERIFY_v26_browse_status_display_2026-07-15.md":  [
+
+                                                                                                 ]
+                        }
+}

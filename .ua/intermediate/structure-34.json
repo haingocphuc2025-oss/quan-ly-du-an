@@ -1,0 +1,153 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/BAN_DO_BO_NHO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 270,
+      "nonEmptyLines": 235,
+      "sections": [
+        {
+          "heading": "🗺️ BẢN ĐỒ BỘ NHỚ — giao-dien-desktop-don-gian_v23_quan.html",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. TỔNG QUAN KIẾN TRÚC",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "2. CSS COMPONENTS CHÍNH",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "3. JS MODULES & FUNCTIONS CHÍNH (333 functions)",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "A. Render & Navigation (22 functions)",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "B. Sheet Engine (40+ functions)",
+          "level": 3,
+          "line": 81
+        },
+        {
+          "heading": "C. File Management & Drive (30+ functions)",
+          "level": 3,
+          "line": 95
+        },
+        {
+          "heading": "D. Report Engine (20+ functions)",
+          "level": 3,
+          "line": 108
+        },
+        {
+          "heading": "E. Formatting (15+ functions)",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "F. Filter & Sort (15+ functions)",
+          "level": 3,
+          "line": 127
+        },
+        {
+          "heading": "G. Conditional Format (10+ functions)",
+          "level": 3,
+          "line": 138
+        },
+        {
+          "heading": "H. Data Persistence (15+ functions)",
+          "level": 3,
+          "line": 146
+        },
+        {
+          "heading": "I. Google Identity & Auth (5 functions)",
+          "level": 3,
+          "line": 156
+        },
+        {
+          "heading": "4. HTML DOM TREE (Key Elements)",
+          "level": 2,
+          "line": 166
+        },
+        {
+          "heading": "5. DATA MODEL",
+          "level": 2,
+          "line": 216
+        },
+        {
+          "heading": "6. EXTERNAL INTEGRATIONS",
+          "level": 2,
+          "line": 236
+        },
+        {
+          "heading": "7. VERSION HISTORY",
+          "level": 2,
+          "line": 248
+        },
+        {
+          "heading": "8. KEY ARCHITECTURE DECISIONS",
+          "level": 2,
+          "line": 259
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_DEEP.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 136,
+      "nonEmptyLines": 134,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_FULL.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 153,
+      "nonEmptyLines": 153,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_OBSIDIAN.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 437,
+      "nonEmptyLines": 393,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/GRAPH_VIEWER.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 189,
+      "nonEmptyLines": 172,
+      "metrics": {}
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/[Ai & Machine Learning]/giao-dien-desktop-don-gian_v23_quan.html",
+      "language": "html",
+      "fileCategory": "markup",
+      "totalLines": 9404,
+      "nonEmptyLines": 8764,
+      "metrics": {}
+    }
+  ]
+}

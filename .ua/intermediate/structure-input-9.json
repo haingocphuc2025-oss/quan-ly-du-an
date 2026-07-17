@@ -1,0 +1,52 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  ".agents/Hermes-Cloner/07_PROMPTS/browser.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/07_PROMPTS/claude.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/07_PROMPTS/codex.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/07_PROMPTS/planner.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  ".agents/Hermes-Cloner/07_PROMPTS/review.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            ".agents/Hermes-Cloner/07_PROMPTS/browser.md":  [
+
+                                                                            ],
+                            ".agents/Hermes-Cloner/07_PROMPTS/claude.md":  [
+
+                                                                           ],
+                            ".agents/Hermes-Cloner/07_PROMPTS/codex.md":  [
+
+                                                                          ],
+                            ".agents/Hermes-Cloner/07_PROMPTS/planner.md":  [
+
+                                                                            ],
+                            ".agents/Hermes-Cloner/07_PROMPTS/review.md":  [
+
+                                                                           ]
+                        }
+}

@@ -1,0 +1,19 @@
+{
+  "css": [
+    "css/main.css"
+  ],
+  "js": [
+    "js/state.js",
+    "js/storage.js",
+    "js/api.js",
+    "js/toolbar.js",
+    "js/grid.js",
+    "js/report.js",
+    "js/dashboard.js",
+    "js/repost.js",
+    "js/workspace-navigator.js",
+    "js/main.js"
+  ],
+  "index": "index.html",
+  "output": "giao-dien-desktop-don-gian_v26_quan.html"
+}

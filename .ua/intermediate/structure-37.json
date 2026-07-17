@@ -1,0 +1,152 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "03_TASKS/DONE/TASK_sheet-report-compact-wrap-spacing.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "TASK - Sheet Report compact wrap spacing",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_toolbar-grid-smartsheet-style.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 20,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Nghiem thu",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_two-projects-repost-dashboard.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "TASK — Hai dự án mẫu có Repost và Dashboard",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Việc làm",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Kết quả",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_v26-module-initialization-order.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 9,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "FIX: v26 module initialization order",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_workspace-navigator.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "TASK: workspace-navigator",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    }
+  ]
+}

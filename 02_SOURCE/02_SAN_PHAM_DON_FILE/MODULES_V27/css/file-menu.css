@@ -1,0 +1,109 @@
+/* ========== FILE MENU CSS (v27) ========== */
+
+/* File button active state */
+.sheet-menu-link.is-active {
+  background: #d0d0d0 !important;
+  border-radius: 3px;
+}
+
+/* Main dropdown */
+.file-dropdown {
+  position: fixed !important;
+  z-index: 10000 !important;
+  width: 300px !important;
+  max-height: 80vh !important;
+  overflow-y: auto !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.1) !important;
+  padding: 6px 0 !important;
+  display: none;
+}
+
+.file-dropdown.is-open {
+  display: block !important;
+}
+
+/* Menu items */
+.menu-item {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  padding: 10px 16px !important;
+  border: none !important;
+  background: none !important;
+  text-align: left !important;
+  font-size: 13px !important;
+  font-family: 'Segoe UI', system-ui, sans-serif !important;
+  color: #333 !important;
+  cursor: pointer !important;
+  transition: background 0.1s !important;
+  box-sizing: border-box !important;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  background: #f5f5f5 !important;
+  outline: none !important;
+}
+
+.menu-item.is-disabled {
+  color: #999 !important;
+  cursor: not-allowed !important;
+}
+
+.menu-item.is-disabled:hover {
+  background: none !important;
+}
+
+.menu-label {
+  flex: 1;
+}
+
+.menu-arrow {
+  font-size: 10px;
+  color: #888;
+  margin-left: 24px;
+}
+
+.menu-shortcut {
+  font-size: 11px;
+  color: #888;
+  margin-left: 24px;
+}
+
+/* Divider */
+.menu-divider {
+  height: 1px !important;
+  background: #e8e8e8 !important;
+  margin: 6px 12px !important;
+}
+
+/* Submenus */
+.file-submenu {
+  position: fixed !important;
+  z-index: 10001 !important;
+  width: 260px !important;
+  max-height: calc(100vh - 60px) !important;
+  overflow-y: auto !important;
+  background: #ffffff !important;
+  border: 1px solid rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2), 0 2px 8px rgba(0,0,0,0.1) !important;
+  padding: 6px 0 !important;
+  display: none;
+}
+
+.file-submenu.is-open {
+  display: block !important;
+}
+
+.file-submenu-export {
+  /* nothing extra */
+}
+
+.file-submenu-import {
+  /* nothing extra */
+}

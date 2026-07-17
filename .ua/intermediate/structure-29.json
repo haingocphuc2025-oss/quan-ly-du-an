@@ -1,0 +1,227 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 5,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 63,
+      "nonEmptyLines": 45,
+      "sections": [
+        {
+          "heading": "📋 BIÊN BẢN NGHIỆM THU — v19 (CHÍNH THỨC)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "📊 KẾT QUẢ KIỂM TRA KỸ THUẬT",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "📋 SO SÁNH SPEC vs CODE",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "⚠️ GHI NHẬN VI PHẠM NHỎ (không ảnh hưởng kết quả)",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "✅ KẾT LUẬN",
+          "level": 2,
+          "line": 44
+        },
+        {
+          "heading": "✍️ KÝ DUYỆT",
+          "level": 2,
+          "line": 58
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v19.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 42,
+      "nonEmptyLines": 33,
+      "sections": [
+        {
+          "heading": "BIÊN BẢN NGHIỆM THU — v19 CHÍNH THỨC",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "KẾT QUẢ KIỂM TRA",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "FEATURES ĐẠT",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "KÝ DUYỆT",
+          "level": 2,
+          "line": 34
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v20.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 36,
+      "sections": [
+        {
+          "heading": "BIÊN BẢN NGHIỆM THU — v20 CHÍNH THỨC",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "KẾT QUẢ KIỂM TRA",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "FEATURES ĐẠT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "TỒN ĐỌNG → FIX TRONG v21",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "GHI CHÚ",
+          "level": 2,
+          "line": 38
+        },
+        {
+          "heading": "KÝ DUYỆT",
+          "level": 2,
+          "line": 42
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v21.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 34,
+      "sections": [
+        {
+          "heading": "BIÊN BẢN NGHIỆM THU — v21 CHÍNH THỨC",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "KẾT QUẢ KIỂM TRA CODE",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "CHECKLIST NGHIỆM THU",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "KÝ DUYỆT",
+          "level": 2,
+          "line": 36
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/CONG_VIEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 88,
+      "nonEmptyLines": 67,
+      "sections": [
+        {
+          "heading": "📋 CÔNG VIỆC — GIÁM SÁT NGHIỆM THU (Claude + Playwright)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🔴 VIỆC ĐANG LÀM / CHỜ BÀN GIAO",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "✅ ĐÃ NGHIỆM THU v19 (07/07/2026)",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "✅ ĐÃ NGHIỆM THU v18",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "📋 QUY TRÌNH NGHIỆM THU",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "🎯 TIÊU CHÍ NGHIỆM THU (THEO SPEC + PLANNING)",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "📂 CẤU TRÚC THƯ MỤC",
+          "level": 2,
+          "line": 62
+        },
+        {
+          "heading": "📝 GHI CHÚ",
+          "level": 2,
+          "line": 84
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 8
+      }
+    }
+  ]
+}

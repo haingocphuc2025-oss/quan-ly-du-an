@@ -1,0 +1,142 @@
+- generic [ref=f4e2]:
+  - button "‹ Dự án" [ref=f4e3] [cursor=pointer]
+  - generic [ref=f4e4]:
+    - generic [ref=f4e5]:
+      - button "☰" [ref=f4e6] [cursor=pointer]
+      - button "←" [disabled] [ref=f4e7]
+      - button "→" [disabled] [ref=f4e8]
+    - generic [ref=f4e13]:
+      - generic [ref=f4e14]: ▦
+      - generic [ref=f4e15]: Hồ sơ dự án
+    - generic "Số phiên bản file — dùng để biết đang mở đúng bản mới nhất chưa" [ref=f4e17]: v29
+    - button "👤" [ref=f4e18] [cursor=pointer]
+    - generic [ref=f4e19] [cursor=pointer]:
+      - generic [ref=f4e20]: ⌂
+      - generic [ref=f4e21]: Trang chủ
+    - generic [ref=f4e22] [cursor=pointer]:
+      - generic [ref=f4e23]: ⌕
+      - generic [ref=f4e24]: Tìm
+    - generic [ref=f4e25] [cursor=pointer]:
+      - generic [ref=f4e26]: ▤
+      - generic [ref=f4e27]: Dự án
+    - generic [ref=f4e28] [cursor=pointer]:
+      - generic [ref=f4e29]: ◔
+      - generic [ref=f4e30]: Gần đây
+    - generic [ref=f4e31] [cursor=pointer]:
+      - generic [ref=f4e32]: ★
+      - generic [ref=f4e33]: Yêu thích
+    - button "＋ Tạo dự án" [ref=f4e34] [cursor=pointer]
+  - generic [ref=f4e35]:
+    - generic [ref=f4e36]:
+      - banner [ref=f4e37]:
+        - heading "Theo dõi hồ sơ, thư mục và chia sẻ Dự án của tôi" [level=1] [ref=f4e38]:
+          - generic [ref=f4e40]:
+            - generic [ref=f4e41]: Theo dõi hồ sơ, thư mục và chia sẻ
+            - text: Dự án của tôi
+        - generic "Công cụ dự án" [ref=f4e42]:
+          - button "Đính kèm" [ref=f4e43] [cursor=pointer]
+          - button "Bình luận" [ref=f4e46] [cursor=pointer]
+          - button "Lịch sử" [ref=f4e49] [cursor=pointer]
+          - button "Thông tin" [ref=f4e53] [cursor=pointer]
+        - generic [ref=f4e56]:
+          - generic [ref=f4e57]: ⌕
+          - textbox "Tìm dự án..." [ref=f4e58]
+        - generic [ref=f4e59]:
+          - button "Actions ▾" [ref=f4e60] [cursor=pointer]
+          - button "🗑" [ref=f4e61] [cursor=pointer]
+          - button "＋ Tạo dự án mới" [ref=f4e62] [cursor=pointer]
+      - generic [ref=f4e63]:
+        - checkbox [ref=f4e64]
+        - generic [ref=f4e65]: 2 dự án
+      - generic [ref=f4e66]:
+        - complementary [ref=f4e67]:
+          - heading "Browse" [level=3] [ref=f4e68]
+          - generic [ref=f4e69]:
+            - button "▥ Workspaces" [ref=f4e70] [cursor=pointer]
+            - button "▾ Đường điện chiếu sáng — Xã Liên Sơn" [ref=f4e71] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [ref=f4e72] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=f4e82] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=f4e92] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=f4e102] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=f4e112] [cursor=pointer]
+            - button "Repost" [ref=f4e122] [cursor=pointer]
+            - button "Dashboard" [ref=f4e132] [cursor=pointer]
+            - button "▾ Nhà văn hoá thôn 5 — Xã Đông Thành" [ref=f4e142] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [ref=f4e143] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=f4e153] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=f4e163] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=f4e173] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=f4e183] [cursor=pointer]
+            - button "Repost" [ref=f4e193] [cursor=pointer]
+            - button "Dashboard" [ref=f4e203] [cursor=pointer]
+        - generic [ref=f4e213]:
+          - generic [ref=f4e214]:
+            - generic [ref=f4e215]: Đường điện chiếu sáng — Xã Liên Sơn
+            - generic [ref=f4e216]:
+              - button "Actions ▾" [ref=f4e217] [cursor=pointer]
+              - button "＋ Tạo" [ref=f4e218] [cursor=pointer]
+          - table [ref=f4e220]:
+            - rowgroup [ref=f4e221]:
+              - row [ref=f4e222]:
+                - columnheader "Name" [ref=f4e332]
+                - columnheader "Trạng thái chia sẻ" [ref=f4e223]
+                - columnheader "Người sở hữu" [ref=f4e224]
+                - columnheader "Last Update" [ref=f4e225]
+            - rowgroup [ref=f4e226]:
+              - row [selected] [ref=f4e227] [cursor=pointer]:
+                - cell "Chọn Hợp đồng - pháp lý Hợp đồng - pháp lý" [ref=f4e333]:
+                  - generic [ref=f4e334]:
+                    - checkbox "Chọn Hợp đồng - pháp lý" [checked] [active] [ref=f4e228]
+                    - generic [ref=f4e335]: Hợp đồng - pháp lý
+                - cell [ref=f4e237]
+                - cell "Quân" [ref=f4e240]
+                - cell "16/7/2026" [ref=f4e241]
+              - row [ref=f4e242] [cursor=pointer]:
+                - cell "Chọn Vật liệu - CO CQ Vật liệu - CO CQ" [ref=f4e336]:
+                  - generic [ref=f4e337]:
+                    - checkbox "Chọn Vật liệu - CO CQ" [ref=f4e243]
+                    - generic [ref=f4e338]: Vật liệu - CO CQ
+                - cell [ref=f4e252]
+                - cell "Quân" [ref=f4e255]
+                - cell "16/7/2026" [ref=f4e256]
+              - row [ref=f4e257] [cursor=pointer]:
+                - cell "Chọn Thi công - nghiệm thu Thi công - nghiệm thu" [ref=f4e339]:
+                  - generic [ref=f4e340]:
+                    - checkbox "Chọn Thi công - nghiệm thu" [ref=f4e258]
+                    - generic [ref=f4e341]: Thi công - nghiệm thu
+                - cell [ref=f4e267]
+                - cell "Quân" [ref=f4e270]
+                - cell "16/7/2026" [ref=f4e271]
+              - row [ref=f4e272] [cursor=pointer]:
+                - cell "Chọn Thanh toán - quyết toán Thanh toán - quyết toán" [ref=f4e342]:
+                  - generic [ref=f4e343]:
+                    - checkbox "Chọn Thanh toán - quyết toán" [ref=f4e273]
+                    - generic [ref=f4e344]: Thanh toán - quyết toán
+                - cell [ref=f4e282]
+                - cell "Quân" [ref=f4e285]
+                - cell "16/7/2026" [ref=f4e286]
+              - row [ref=f4e287] [cursor=pointer]:
+                - cell "Chọn Tổng hợp - đối chiếu Tổng hợp - đối chiếu" [ref=f4e345]:
+                  - generic [ref=f4e346]:
+                    - checkbox "Chọn Tổng hợp - đối chiếu" [ref=f4e288]
+                    - generic [ref=f4e347]: Tổng hợp - đối chiếu
+                - cell [ref=f4e297]
+                - cell "Quân" [ref=f4e300]
+                - cell "16/7/2026" [ref=f4e301]
+              - row [ref=f4e302] [cursor=pointer]:
+                - cell "Chọn Repost Repost" [ref=f4e348]:
+                  - generic [ref=f4e349]:
+                    - checkbox "Chọn Repost" [ref=f4e303]
+                    - generic [ref=f4e350]: Repost
+                - cell [ref=f4e312]
+                - cell "Quân" [ref=f4e315]
+                - cell "16/7/2026" [ref=f4e316]
+              - row [ref=f4e317] [cursor=pointer]:
+                - cell "Chọn Dashboard Dashboard" [ref=f4e351]:
+                  - generic [ref=f4e352]:
+                    - checkbox "Chọn Dashboard" [ref=f4e318]
+                    - generic [ref=f4e353]: Dashboard
+                - cell [ref=f4e327]
+                - cell "Quân" [ref=f4e330]
+                - cell "16/7/2026" [ref=f4e331]
+    - text: ⋮

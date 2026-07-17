@@ -1,0 +1,587 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "04_REPORTS/VERIFY/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "VERIFY REPORTS",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_COLUMN_TYPES_v24.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 24,
+      "nonEmptyLines": 21,
+      "sections": [
+        {
+          "heading": "VERIFY — COLUMN TYPES EXTENDED v24",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_DASHBOARD_CARRY_STAGING_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "IMPLEMENTATION CHECK — Dashboard + Carry-Forward",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Đã triển khai",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Kiểm tra",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Trạng thái",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_SPEC_NEW_v23_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "VERIFY — SPEC NEW trên baseline v23",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Kiểm tra chung",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Kết quả",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Kết luận",
+          "level": 2,
+          "line": 25
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_column_header_context_menu_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "VERIFY v25: Column Header Context Menu",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Da kiem tra",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Kiem tra ky thuat",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_column_unhide_2026-07-14.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ghi chu",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_dashboard_view_leak_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Dashboard view leak into Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_grid_row_columns_fix_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - grid-row-columns-fix",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ghi chu",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_header_left_right_click_separation_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 14,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "VERIFY v25: Header Left/Right Click Separation",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Dieu chinh",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Kiem tra ky thuat",
+          "level": 2,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_helper_preserve_ui_state_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Helper preserve UI state on old tab save",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_nghiem_thu_fixes_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 20,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "VERIFY — v25 nghiệm thu fixes",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PASS",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Chưa đổi",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_persist_column_widths_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Persist column widths in project save",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_apply_stored_column_widths_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Report apply stored column widths",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_delete_multi_selection_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Report delete multi selection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_hide_source_status_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "VERIFY - v25 report hide source/status columns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PASS",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_multi_cell_selection_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "VERIFY - v25 Report multi cell selection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PASS",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_skip_empty_rows_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "VERIFY - v25 report skip empty rows",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PASS",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_summary_compact_ui_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "VERIFY - v25 report summary compact UI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PASS",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_report_wrap_cells_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "VERIFY v25 - Report wrap cells",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Noi dung da kiem",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ky thuat",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "04_REPORTS/VERIFY/VERIFY_v25_repost_cell_context_menu_2026-07-13.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 17,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "VERIFY - v25 Repost cell context menu",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "PASS",
+          "level": 2,
+          "line": 7
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    }
+  ]
+}

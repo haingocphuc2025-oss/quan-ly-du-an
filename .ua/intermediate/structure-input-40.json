@@ -1,0 +1,187 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "04_REPORTS/VERIFY/README.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_COLUMN_TYPES_v24.md",
+                           "language":  "markdown",
+                           "sizeLines":  23,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_DASHBOARD_CARRY_STAGING_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  18,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_SPEC_NEW_v23_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  26,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_column_header_context_menu_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_column_unhide_2026-07-14.md",
+                           "language":  "markdown",
+                           "sizeLines":  21,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_dashboard_view_leak_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_grid_row_columns_fix_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_header_left_right_click_separation_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  14,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_helper_preserve_ui_state_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_nghiem_thu_fixes_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  20,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_persist_column_widths_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_report_apply_stored_column_widths_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_report_delete_multi_selection_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_report_hide_source_status_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  17,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_report_multi_cell_selection_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  17,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_report_skip_empty_rows_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  15,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_report_summary_compact_ui_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  17,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_report_wrap_cells_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  16,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "04_REPORTS/VERIFY/VERIFY_v25_repost_cell_context_menu_2026-07-13.md",
+                           "language":  "markdown",
+                           "sizeLines":  17,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "04_REPORTS/VERIFY/README.md":  [
+
+                                                            ],
+                            "04_REPORTS/VERIFY/VERIFY_COLUMN_TYPES_v24.md":  [
+
+                                                                             ],
+                            "04_REPORTS/VERIFY/VERIFY_DASHBOARD_CARRY_STAGING_2026-07-13.md":  [
+
+                                                                                               ],
+                            "04_REPORTS/VERIFY/VERIFY_SPEC_NEW_v23_2026-07-13.md":  [
+
+                                                                                    ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_column_header_context_menu_2026-07-13.md":  [
+
+                                                                                                      ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_column_unhide_2026-07-14.md":  [
+
+                                                                                         ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_dashboard_view_leak_2026-07-13.md":  [
+
+                                                                                               ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_grid_row_columns_fix_2026-07-13.md":  [
+
+                                                                                                ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_header_left_right_click_separation_2026-07-13.md":  [
+
+                                                                                                              ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_helper_preserve_ui_state_2026-07-13.md":  [
+
+                                                                                                    ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_nghiem_thu_fixes_2026-07-13.md":  [
+
+                                                                                            ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_persist_column_widths_2026-07-13.md":  [
+
+                                                                                                 ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_report_apply_stored_column_widths_2026-07-13.md":  [
+
+                                                                                                             ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_report_delete_multi_selection_2026-07-13.md":  [
+
+                                                                                                         ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_report_hide_source_status_2026-07-13.md":  [
+
+                                                                                                     ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_report_multi_cell_selection_2026-07-13.md":  [
+
+                                                                                                       ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_report_skip_empty_rows_2026-07-13.md":  [
+
+                                                                                                  ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_report_summary_compact_ui_2026-07-13.md":  [
+
+                                                                                                     ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_report_wrap_cells_2026-07-13.md":  [
+
+                                                                                             ],
+                            "04_REPORTS/VERIFY/VERIFY_v25_repost_cell_context_menu_2026-07-13.md":  [
+
+                                                                                                    ]
+                        }
+}

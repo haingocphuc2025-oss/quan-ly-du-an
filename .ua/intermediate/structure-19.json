@@ -1,0 +1,90 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 3,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_CHU_DAU_TU/00_README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 6,
+      "nonEmptyLines": 4,
+      "sections": [
+        {
+          "heading": "CHU DAU TU",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_CHU_DAU_TU/01_QUYET_DINH.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "📋 YÊU CẦU CHỦ ĐẦU TƯ",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Lịch sử yêu cầu / quyết định",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Quy tắc chung",
+          "level": 2,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/00_CHU_DAU_TU/02_YEU_CAU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 29,
+      "nonEmptyLines": 22,
+      "sections": [
+        {
+          "heading": "📋 YÊU CẦU CHỦ ĐẦU TƯ",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Lịch sử yêu cầu / quyết định",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Quy tắc chung",
+          "level": 2,
+          "line": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    }
+  ]
+}

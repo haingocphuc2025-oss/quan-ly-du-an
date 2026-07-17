@@ -1,0 +1,388 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 6,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/BAN_GIAO.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 75,
+      "nonEmptyLines": 56,
+      "sections": [
+        {
+          "heading": "📋 BIÊN BẢN BÀN GIAO — NHÀ THẦU THI CÔNG → BAN QLDA",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Tổng quan phiên bản",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. Tóm tắt giải pháp",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "3. Phụ thuộc",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "4. Test case đề xuất",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "5. Cam kết",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "6. Drive API Backend",
+          "level": 2,
+          "line": 64
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 81,
+      "nonEmptyLines": 65,
+      "sections": [
+        {
+          "heading": "📋 CODE DIFF — NHÀ THẦU THI CÔNG v20 → v21",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Tổng quan thay đổi",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "2. Files thay đổi",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "3. Chi tiết code thay đổi",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "A. Icon Fix (58 dòng — double-encoding UTF-8)",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "B. CSS — Excel 365 Toolbar (thêm ~50 dòng)",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "C. HTML — Toolbar restructure (thêm ~30 dòng)",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "D. JS — File Attachment Drive Upload (thêm ~80 dòng)",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "4. Lưu ý khi triển khai",
+          "level": 2,
+          "line": 74
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CODE_DIFF_v22.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 86,
+      "nonEmptyLines": 65,
+      "sections": [
+        {
+          "heading": "📋 CODE DIFF — NHÀ THẦU THI CÔNG v21 → v22",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Tổng quan thay đổi",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "2. Files thay đổi",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "3. Chi tiết code thay đổi",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "A. Google Identity Services (thêm 1 dòng `<head>`)",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "B. Biến cấu hình mới",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "C. Auth flow mới (Google Sign-In)",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "D. Drive REST API helpers",
+          "level": 3,
+          "line": 51
+        },
+        {
+          "heading": "E. Save/Load — thay Apps Script → Drive REST API",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "F. Xoá code cũ",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "4. Lưu ý khi triển khai",
+          "level": 2,
+          "line": 78
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/CONG_VIEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 37,
+      "nonEmptyLines": 27,
+      "sections": [
+        {
+          "heading": "📋 CÔNG VIỆC — NHÀ THẦU THI CÔNG (Codex/AI Code)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🔴 VIỆC ƯU TIÊN — v21",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "✅ ĐÃ HOÀN THÀNH",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "📋 QUY TRÌNH",
+          "level": 2,
+          "line": 30
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SOP_NHA_THAU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 248,
+      "nonEmptyLines": 188,
+      "sections": [
+        {
+          "heading": "🏗️ SOP NHÀ THẦU THI CÔNG — Quy trình vận hành chuẩn",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "🎯 TỔNG QUAN LUỒNG CÔNG VIỆC",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "📋 QUY TRÌNH CHI TIẾT (8 BƯỚC)",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Bước 1: Đọc CONG_VIEC.md",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Bước 2: Đọc SPEC",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "Bước 3: Code",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "Bước 4: Test local",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "Bước 5: Nộp staging + Biên bản + **Code Diff**",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "Bước 6–8: Claude kiểm tra → nghiệm thu → cập nhật tracking",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "🎯 5 MỤC BẮT BUỘC — BIÊN BẢN BÀN GIAO",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "📄 CODE_DIFF.md — QUY TẮC REVIEW TIẾT KIỆM TOKEN",
+          "level": 2,
+          "line": 66
+        },
+        {
+          "heading": "Cấu trúc CODE_DIFF.md",
+          "level": 3,
+          "line": 72
+        },
+        {
+          "heading": "Quy tắc viết CODE_DIFF.md",
+          "level": 3,
+          "line": 116
+        },
+        {
+          "heading": "Ví dụ CODE_DIFF.md tốt (v20)",
+          "level": 3,
+          "line": 128
+        },
+        {
+          "heading": "🚨 LỖI PHỔ BIẾN — RÚT KINH NGHIỆM",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "Lỗi 1: Biến trùng lặp / xung đột",
+          "level": 3,
+          "line": 199
+        },
+        {
+          "heading": "Lỗi 2: Thiếu UI element SPEC yêu cầu",
+          "level": 3,
+          "line": 208
+        },
+        {
+          "heading": "Lỗi 3: BAN_GIAO.md không cập nhật theo version",
+          "level": 3,
+          "line": 211
+        },
+        {
+          "heading": "Lỗi 4: Test bằng file:/// thay vì localhost",
+          "level": 3,
+          "line": 214
+        },
+        {
+          "heading": "✅ CHECKLIST TRƯỚC KHI NỘP",
+          "level": 2,
+          "line": 220
+        },
+        {
+          "heading": "🚀 LƯU Ý QUAN TRỌNG",
+          "level": 2,
+          "line": 235
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/03_NHA_THAU_THI_CONG/SO_NGHIEM_THU.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 44,
+      "nonEmptyLines": 33,
+      "sections": [
+        {
+          "heading": "Sá»” NGHIá»†M THU - v19",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. PHáº M VI NGHIá»†M THU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. Báº°NG CHá»¨NG KIá»‚M THá»¬",
+          "level": 2,
+          "line": 21
+        },
+        {
+          "heading": "3. DANH SÃCH Lá»–I NGHIá»†M THU",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "4. Káº¾T LUáº¬N",
+          "level": 2,
+          "line": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    }
+  ]
+}

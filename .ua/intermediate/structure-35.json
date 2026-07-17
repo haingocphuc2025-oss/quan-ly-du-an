@@ -1,0 +1,139 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/ADR-002-HAI-TRANG-THAI-SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "ADR-002: Spec chi co NEW va DA_TRIEN_KHAI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Trang thai",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "Boi canh",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Quyet dinh",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "He qua",
+          "level": 2,
+          "line": 18
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "02_SOURCE/QUY_TRINH.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 40,
+      "nonEmptyLines": 28,
+      "sections": [
+        {
+          "heading": "QUY TRINH HAI VAI TRO",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. SPEC tao viec",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "2. THI CONG thuc hien",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "3. THI CONG ban giao",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "4. SPEC nghiem thu",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "5. Hoan tat",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "Definition of Done",
+          "level": 2,
+          "line": 33
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 7
+      }
+    },
+    {
+      "path": "02_SOURCE/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 10,
+      "nonEmptyLines": 7,
+      "sections": [
+        {
+          "heading": "DU AN THI CONG",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Cau truc",
+          "level": 2,
+          "line": 3
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "02_SOURCE/TRANG_THAI.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 11,
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 0
+      }
+    }
+  ]
+}

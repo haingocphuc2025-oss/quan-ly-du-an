@@ -1,0 +1,232 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/grid-dom-binding-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  26,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/module-initialization-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  19,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/project-folder-initialization-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  22,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/toolbar-color-initialization-order.test.js",
+                           "language":  "javascript",
+                           "sizeLines":  19,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_final-verification.md",
+                           "language":  "markdown",
+                           "sizeLines":  24,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_screen-state-behavior.md",
+                           "language":  "markdown",
+                           "sizeLines":  54,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/03_BAN_GIAO/DA_TRIEN_KHAI/BAN_GIAO_repost-carry-forward.md",
+                           "language":  "markdown",
+                           "sizeLines":  12,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/03_BAN_GIAO/MAU_BAN_GIAO.md",
+                           "language":  "markdown",
+                           "sizeLines":  45,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/03_BAN_GIAO/modular-split-v26/BAN_GIAO_v26.md",
+                           "language":  "markdown",
+                           "sizeLines":  69,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/HUONG_DAN_OAUTH_CLIENT_ID.pptx",
+                           "language":  "pptx",
+                           "sizeLines":  459,
+                           "fileCategory":  "code"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/00_README.md",
+                           "language":  "markdown",
+                           "sizeLines":  9,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md",
+                           "language":  "markdown",
+                           "sizeLines":  211,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/SPEC_REJECTED_clear-sheet-all-data.md",
+                           "language":  "markdown",
+                           "sizeLines":  323,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/SPEC_REJECTED_delete-key-repost-date.md",
+                           "language":  "markdown",
+                           "sizeLines":  108,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md",
+                           "language":  "markdown",
+                           "sizeLines":  274,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/report-configuration/SPEC_REWRITE_REQUIRED_report-configuration.md",
+                           "language":  "markdown",
+                           "sizeLines":  559,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/BAN_GIAO.md",
+                           "language":  "markdown",
+                           "sizeLines":  12,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  576,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/SPEC_010_column-types-moi_1.md",
+                           "language":  "markdown",
+                           "sizeLines":  924,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/workspace-context-menu/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  290,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/attachment-panel-ui/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  343,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/BAN_GIAO.md",
+                           "language":  "markdown",
+                           "sizeLines":  12,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  576,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/SPEC_column-header-context-menu.md",
+                           "language":  "markdown",
+                           "sizeLines":  46,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/workspace-context-menu/spec.md",
+                           "language":  "markdown",
+                           "sizeLines":  290,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/grid-dom-binding-order.test.js":  [
+
+                                                                                                                                  ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/module-initialization-order.test.js":  [
+
+                                                                                                                                       ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/project-folder-initialization-order.test.js":  [
+
+                                                                                                                                               ],
+                            "02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v26_baseline_modules/tests/toolbar-color-initialization-order.test.js":  [
+
+                                                                                                                                              ],
+                            "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_final-verification.md":  [
+
+                                                                                                                                 ],
+                            "02_SOURCE/03_BAN_GIAO/browse-status-display/BAN_GIAO_browse-status-display_screen-state-behavior.md":  [
+
+                                                                                                                                    ],
+                            "02_SOURCE/03_BAN_GIAO/DA_TRIEN_KHAI/BAN_GIAO_repost-carry-forward.md":  [
+
+                                                                                                     ],
+                            "02_SOURCE/03_BAN_GIAO/MAU_BAN_GIAO.md":  [
+
+                                                                      ],
+                            "02_SOURCE/03_BAN_GIAO/modular-split-v26/BAN_GIAO_v26.md":  [
+
+                                                                                        ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/HUONG_DAN_OAUTH_CLIENT_ID.pptx":  [
+
+                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/00_README.md":  [
+
+                                                                                                ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-data-repost-date/SPEC_013_clear-data-repost-date.md":  [
+
+                                                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/clear-sheet-all-data/SPEC_REJECTED_clear-sheet-all-data.md":  [
+
+                                                                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/delete-key-repost-date/SPEC_REJECTED_delete-key-repost-date.md":  [
+
+                                                                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/drive-api-backend/SPEC_003_drive-api-backend.md":  [
+
+                                                                                                                                   ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/report-configuration/SPEC_REWRITE_REQUIRED_report-configuration.md":  [
+
+                                                                                                                                                      ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/BAN_GIAO.md":  [
+
+                                                                                                                    ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/repost-carry-forward/spec.md":  [
+
+                                                                                                                ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/SPEC_010_column-types-moi_1.md":  [
+
+                                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_MOI_DUYET/workspace-context-menu/spec.md":  [
+
+                                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/attachment-panel-ui/spec.md":  [
+
+                                                                                                         ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/BAN_GIAO.md":  [
+
+                                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/repost-carry-forward/spec.md":  [
+
+                                                                                                          ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/SPEC_column-header-context-menu.md":  [
+
+                                                                                                                ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/SPEC_NEW/workspace-context-menu/spec.md":  [
+
+                                                                                                            ]
+                        }
+}

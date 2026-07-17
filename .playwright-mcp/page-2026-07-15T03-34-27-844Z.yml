@@ -1,0 +1,1172 @@
+- generic [ref=f2e2]:
+  - button "‹ Dự án" [ref=f2e3] [cursor=pointer]
+  - generic [ref=f2e4]:
+    - button "📎" [ref=f2e5] [cursor=pointer]
+    - button "💬" [ref=f2e6] [cursor=pointer]
+    - button "📋" [ref=f2e7] [cursor=pointer]
+    - button "ℹ️" [ref=f2e8] [cursor=pointer]
+  - generic [ref=f2e9]:
+    - generic [ref=f2e10]:
+      - button "☰" [ref=f2e11] [cursor=pointer]
+      - button "←" [ref=f2e12] [cursor=pointer]
+      - button "→" [disabled] [ref=f2e13]
+    - generic [ref=f2e18]:
+      - generic [ref=f2e19]: ▦
+      - generic [ref=f2e20]: Hồ sơ dự án
+    - generic "Số phiên bản file — dùng để biết đang mở đúng bản mới nhất chưa" [ref=f2e22]: v25
+    - button "👤" [ref=f2e23] [cursor=pointer]
+    - generic [ref=f2e24] [cursor=pointer]:
+      - generic [ref=f2e25]: ⌂
+      - generic [ref=f2e26]: Trang chủ
+    - generic [ref=f2e27] [cursor=pointer]:
+      - generic [ref=f2e28]: ⌕
+      - generic [ref=f2e29]: Tìm
+    - generic [ref=f2e30] [cursor=pointer]:
+      - generic [ref=f2e31]: ▤
+      - generic [ref=f2e32]: Dự án
+    - generic [ref=f2e33] [cursor=pointer]:
+      - generic [ref=f2e34]: ◔
+      - generic [ref=f2e35]: Gần đây
+    - generic [ref=f2e36] [cursor=pointer]:
+      - generic [ref=f2e37]: ★
+      - generic [ref=f2e38]: Yêu thích
+    - button "＋ Tạo dự án" [ref=f2e39] [cursor=pointer]
+  - generic [ref=f2e40]:
+    - generic [ref=f2e41]:
+      - generic [ref=f2e42]:
+        - heading "Theo dõi hồ sơ, thư mục và chia sẻ Dự án của tôi" [level=1] [ref=f2e4388]:
+          - generic [ref=f2e45]:
+            - generic [ref=f2e6498]: Theo dõi hồ sơ, thư mục và chia sẻ
+            - text: Dự án của tôi
+        - button "×" [ref=f2e338] [cursor=pointer]
+      - generic [ref=f2e57]:
+        - complementary [ref=f2e58]:
+          - heading "Browse" [level=3] [ref=f2e59]
+          - generic [ref=f2e60]:
+            - button "▥ Workspaces" [ref=f2e6499] [cursor=pointer]
+            - button "▾ Đường điện chiếu sáng — Xã Liên Sơn" [ref=f2e6500] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [ref=f2e6501] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=f2e6511] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=f2e6521] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=f2e6531] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=f2e6541] [cursor=pointer]
+            - button "Repost" [ref=f2e6551] [cursor=pointer]
+            - button "Dashboard" [ref=f2e6561] [cursor=pointer]
+            - button "▾ Nhà văn hoá thôn 5 — Xã Đông Thành" [ref=f2e6571] [cursor=pointer]
+            - button "Hợp đồng - pháp lý" [ref=f2e6572] [cursor=pointer]
+            - button "Vật liệu - CO CQ" [ref=f2e6582] [cursor=pointer]
+            - button "Thi công - nghiệm thu" [ref=f2e6592] [cursor=pointer]
+            - button "Thanh toán - quyết toán" [ref=f2e6602] [cursor=pointer]
+            - button "Tổng hợp - đối chiếu" [ref=f2e6612] [cursor=pointer]
+            - button "Repost" [ref=f2e6622] [cursor=pointer]
+            - button "Dashboard" [ref=f2e6632] [cursor=pointer]
+        - generic [ref=f2e204]:
+          - generic [ref=f2e205]:
+            - generic [ref=f2e206]: Đường điện chiếu sáng — Xã Liên Sơn
+            - generic [ref=f2e207]:
+              - button "Actions ▾" [ref=f2e208] [cursor=pointer]
+              - button "＋ Tạo" [ref=f2e209] [cursor=pointer]
+          - table [ref=f2e211]:
+            - rowgroup [ref=f2e212]:
+              - row [ref=f2e6762]:
+                - columnheader "Name"
+                - columnheader "Trạng thái chia sẻ" [ref=f2e215]
+                - columnheader "Người sở hữu" [ref=f2e216]
+            - rowgroup [ref=f2e218]:
+              - row [ref=f2e6763] [cursor=pointer]:
+                - cell "Hợp đồng - pháp lý"
+                - cell [ref=f2e6655]
+                - cell "Quân" [ref=f2e6658]
+              - row [ref=f2e6764] [cursor=pointer]:
+                - cell "Vật liệu - CO CQ"
+                - cell [ref=f2e6672]
+                - cell "Quân" [ref=f2e6675]
+              - row [ref=f2e6765] [cursor=pointer]:
+                - cell "Thi công - nghiệm thu"
+                - cell [ref=f2e6689]
+                - cell "Quân" [ref=f2e6692]
+              - row [ref=f2e6766] [cursor=pointer]:
+                - cell "Thanh toán - quyết toán"
+                - cell [ref=f2e6706]
+                - cell "Quân" [ref=f2e6709]
+              - row [ref=f2e6767] [cursor=pointer]:
+                - cell "Tổng hợp - đối chiếu"
+                - cell [ref=f2e6723]
+                - cell "Quân" [ref=f2e6726]
+              - row [ref=f2e6768] [cursor=pointer]:
+                - cell "Repost"
+                - cell [ref=f2e6740]
+                - cell "Quân" [ref=f2e6743]
+              - row [ref=f2e6769] [cursor=pointer]:
+                - cell "Dashboard"
+                - cell [ref=f2e6757]
+                - cell "Quân" [ref=f2e6760]
+    - text: ⋮
+    - generic [ref=f2e348]:
+      - generic [ref=f2e349]:
+        - generic "Grid menu" [ref=f2e350]:
+          - button "‹ Đường điện chiếu sáng — Xã Liên Sơn" [ref=f2e351] [cursor=pointer]
+          - button "File" [ref=f2e352] [cursor=pointer]
+          - button "Automation" [ref=f2e353] [cursor=pointer]
+          - button "Forms" [ref=f2e354] [cursor=pointer]
+          - button "Connections" [ref=f2e355] [cursor=pointer]
+          - button "Dynamic View" [ref=f2e356] [cursor=pointer]
+        - generic "Bấm để đổi tên" [ref=f2e366] [cursor=pointer]: Repost / Repost
+        - generic "Sheet top actions" [ref=f2e367]:
+          - button "Share" [ref=f2e368] [cursor=pointer]
+          - button "AI" [ref=f2e369] [cursor=pointer]
+          - button "▾" [ref=f2e370] [cursor=pointer]
+          - button "☰" [ref=f2e371] [cursor=pointer]
+      - generic [ref=f2e372]:
+        - button "Save" [ref=f2e373] [cursor=pointer]: □
+        - button "Print" [ref=f2e374] [cursor=pointer]: ▣
+        - button "Undo" [disabled] [ref=f2e375] [cursor=pointer]: ↶
+        - button "Redo" [disabled] [ref=f2e376] [cursor=pointer]: ↷
+        - button "▦ Grid ▾" [ref=f2e378] [cursor=pointer]
+        - button "▽ Filter" [ref=f2e380] [cursor=pointer]
+        - button "⇥" [ref=f2e382] [cursor=pointer]
+        - button "⇤" [ref=f2e383] [cursor=pointer]
+        - combobox "Font chữ" [ref=f2e385] [cursor=pointer]:
+          - option "Inter" [selected]
+          - option "Segoe UI"
+          - option "Arial"
+          - option "Times New Roman"
+          - option "Calibri"
+          - option "Courier New"
+        - combobox "Cỡ chữ" [ref=f2e386] [cursor=pointer]:
+          - option "9"
+          - option "10"
+          - option "11" [selected]
+          - option "12"
+          - option "14"
+          - option "16"
+          - option "18"
+          - option "20"
+          - option "24"
+          - option "28"
+          - option "36"
+          - option "48"
+        - button "B" [ref=f2e388] [cursor=pointer]
+        - button "I" [ref=f2e389] [cursor=pointer]
+        - button "U" [ref=f2e390] [cursor=pointer]
+        - button "S" [ref=f2e391] [cursor=pointer]
+        - button "▤▾" [ref=f2e394] [cursor=pointer]
+        - button "A▾" [ref=f2e396] [cursor=pointer]
+        - button "≡" [ref=f2e398] [cursor=pointer]
+        - button "≣" [ref=f2e399] [cursor=pointer]
+        - button "≡" [ref=f2e400] [cursor=pointer]
+        - button "↩" [ref=f2e401] [cursor=pointer]
+        - button "⌫" [ref=f2e402] [cursor=pointer]
+        - button "◱" [ref=f2e403] [cursor=pointer]
+        - button "▤ Cột" [ref=f2e406] [cursor=pointer]
+        - button "◇ Highlight" [ref=f2e408] [cursor=pointer]
+        - button "..." [ref=f2e410] [cursor=pointer]
+      - generic [ref=f2e411]:
+        - generic [ref=f2e412]: C2
+        - generic [ref=f2e413]: fx
+        - textbox [ref=f2e414]: "1"
+      - table [ref=f2e6777]:
+        - rowgroup [ref=f2e6794]:
+          - row [ref=f2e6795]:
+            - columnheader [ref=f2e6796]
+            - columnheader "📎" [ref=f2e6797]
+            - columnheader "A1 STT ↕" [ref=f2e6799] [cursor=pointer]:
+              - generic [ref=f2e6800]: A1
+              - generic [ref=f2e6801]: STT
+              - text: ↕
+            - columnheader "≡ Loại hồ sơ ↕" [ref=f2e6803] [cursor=pointer]:
+              - generic [ref=f2e6804]: ≡
+              - generic [ref=f2e6805]: Loại hồ sơ
+              - text: ↕
+            - columnheader "A1 Hạng mục ↕" [ref=f2e6807] [cursor=pointer]:
+              - generic [ref=f2e6808]: A1
+              - generic [ref=f2e6809]: Hạng mục
+              - text: ↕
+            - columnheader "A1 Số văn bản ↕" [ref=f2e6811] [cursor=pointer]:
+              - generic [ref=f2e6812]: A1
+              - generic [ref=f2e6813]: Số văn bản
+              - text: ↕
+            - columnheader "📅 Ngày văn bản ↕" [ref=f2e6815] [cursor=pointer]:
+              - generic [ref=f2e6816]: 📅
+              - generic [ref=f2e6817]: Ngày văn bản
+              - text: ↕
+            - columnheader "A1 Nội dung ↕" [ref=f2e6819] [cursor=pointer]:
+              - generic [ref=f2e6820]: A1
+              - generic [ref=f2e6821]: Nội dung
+              - text: ↕
+            - columnheader "A1 Đơn vị phát hành ↕" [ref=f2e6823] [cursor=pointer]:
+              - generic [ref=f2e6824]: A1
+              - generic [ref=f2e6825]: Đơn vị phát hành
+              - text: ↕
+            - columnheader "👤 Người phụ trách ↕" [ref=f2e6827] [cursor=pointer]:
+              - generic [ref=f2e6828]: 👤
+              - generic [ref=f2e6829]: Người phụ trách
+              - text: ↕
+            - columnheader "📅 Hạn xử lý ↕" [ref=f2e6831] [cursor=pointer]:
+              - generic [ref=f2e6832]: 📅
+              - generic [ref=f2e6833]: Hạn xử lý
+              - text: ↕
+            - columnheader "₫ Giá trị ↕" [ref=f2e6835] [cursor=pointer]:
+              - generic [ref=f2e6836]: ₫
+              - generic [ref=f2e6837]: Giá trị
+              - text: ↕
+            - columnheader "≡ Tình trạng ↕" [ref=f2e6839] [cursor=pointer]:
+              - generic [ref=f2e6840]: ≡
+              - generic [ref=f2e6841]: Tình trạng
+              - text: ↕
+            - columnheader "A1 Ghi chú ↕" [ref=f2e6843] [cursor=pointer]:
+              - generic [ref=f2e6844]: A1
+              - generic [ref=f2e6845]: Ghi chú
+              - text: ↕
+        - rowgroup [ref=f2e6847]:
+          - row [ref=f2e6848] [cursor=pointer]:
+            - rowheader "1" [ref=f2e6849]
+            - cell "📎" [ref=f2e6850]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e6851]: 📎
+            - cell "1" [ref=f2e6852]
+            - cell "Báo cáo định kỳ" [ref=f2e6854]
+            - cell "Cấu trúc giữ lại" [ref=f2e6858]
+            - cell "RP-01" [ref=f2e6860]
+            - cell "13/07/2026" [ref=f2e6862]
+            - cell "Dòng mẫu để thử Repost Carry Forward" [ref=f2e6864]
+            - cell "Ban QLDA" [ref=f2e6866]
+            - cell "Q Quân Trinh" [ref=f2e6868]:
+              - generic [ref=f2e6870]:
+                - generic [ref=f2e6871]: Q
+                - text: Quân Trinh
+            - cell "20/07/2026" [ref=f2e6872]
+            - cell "12500000 ₫" [ref=f2e6874]
+            - cell "Đang xử lý" [ref=f2e6876]
+            - cell "Dùng nút Carry Forward để giữ cấu trúc" [ref=f2e6878]
+          - row [ref=f2e6880] [cursor=pointer]:
+            - rowheader "2" [ref=f2e6881]
+            - cell "📎" [ref=f2e6882]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e6883]: 📎
+            - cell "2" [ref=f2e6884]
+            - cell "Báo cáo định kỳ" [ref=f2e6886]
+            - cell "Số liệu kỳ này" [ref=f2e6890]
+            - cell "RP-02" [ref=f2e6892]
+            - cell "13/07/2026" [ref=f2e6894]
+            - cell "Dòng mẫu có số liệu sẽ được xử lý khi repost" [ref=f2e6896]
+            - cell "Nhà thầu" [ref=f2e6898]
+            - cell "T Trần Dũng" [ref=f2e6900]:
+              - generic [ref=f2e6902]:
+                - generic [ref=f2e6903]: T
+                - text: Trần Dũng
+            - cell "20/07/2026" [ref=f2e6904]
+            - cell "8500000 ₫" [ref=f2e6906]
+            - cell "Cần đối chiếu" [ref=f2e6908]
+            - cell "Kiểm tra trước khi repost" [ref=f2e6910]
+          - row [ref=f2e6912] [cursor=pointer]:
+            - rowheader "3" [ref=f2e6913]
+            - cell "📎" [ref=f2e6914]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e6915]: 📎
+            - cell [ref=f2e6916]
+            - cell [ref=f2e6918]
+            - cell [ref=f2e6922]
+            - cell [ref=f2e6924]
+            - cell [ref=f2e6926]
+            - cell [ref=f2e6928]
+            - cell [ref=f2e6930]
+            - cell [ref=f2e6932]
+            - cell [ref=f2e6934]
+            - cell [ref=f2e6936]
+            - cell [ref=f2e6938]
+            - cell [ref=f2e6940]
+          - row [ref=f2e6942] [cursor=pointer]:
+            - rowheader "4" [ref=f2e6943]
+            - cell "📎" [ref=f2e6944]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e6945]: 📎
+            - cell [ref=f2e6946]
+            - cell [ref=f2e6948]
+            - cell [ref=f2e6952]
+            - cell [ref=f2e6954]
+            - cell [ref=f2e6956]
+            - cell [ref=f2e6958]
+            - cell [ref=f2e6960]
+            - cell [ref=f2e6962]
+            - cell [ref=f2e6964]
+            - cell [ref=f2e6966]
+            - cell [ref=f2e6968]
+            - cell [ref=f2e6970]
+          - row [ref=f2e6972] [cursor=pointer]:
+            - rowheader "5" [ref=f2e6973]
+            - cell "📎" [ref=f2e6974]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e6975]: 📎
+            - cell [ref=f2e6976]
+            - cell [ref=f2e6978]
+            - cell [ref=f2e6982]
+            - cell [ref=f2e6984]
+            - cell [ref=f2e6986]
+            - cell [ref=f2e6988]
+            - cell [ref=f2e6990]
+            - cell [ref=f2e6992]
+            - cell [ref=f2e6994]
+            - cell [ref=f2e6996]
+            - cell [ref=f2e6998]
+            - cell [ref=f2e7000]
+          - row [ref=f2e7002] [cursor=pointer]:
+            - rowheader "6" [ref=f2e7003]
+            - cell "📎" [ref=f2e7004]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7005]: 📎
+            - cell [ref=f2e7006]
+            - cell [ref=f2e7008]
+            - cell [ref=f2e7012]
+            - cell [ref=f2e7014]
+            - cell [ref=f2e7016]
+            - cell [ref=f2e7018]
+            - cell [ref=f2e7020]
+            - cell [ref=f2e7022]
+            - cell [ref=f2e7024]
+            - cell [ref=f2e7026]
+            - cell [ref=f2e7028]
+            - cell [ref=f2e7030]
+          - row [ref=f2e7032] [cursor=pointer]:
+            - rowheader "7" [ref=f2e7033]
+            - cell "📎" [ref=f2e7034]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7035]: 📎
+            - cell [ref=f2e7036]
+            - cell [ref=f2e7038]
+            - cell [ref=f2e7042]
+            - cell [ref=f2e7044]
+            - cell [ref=f2e7046]
+            - cell [ref=f2e7048]
+            - cell [ref=f2e7050]
+            - cell [ref=f2e7052]
+            - cell [ref=f2e7054]
+            - cell [ref=f2e7056]
+            - cell [ref=f2e7058]
+            - cell [ref=f2e7060]
+          - row [ref=f2e7062] [cursor=pointer]:
+            - rowheader "8" [ref=f2e7063]
+            - cell "📎" [ref=f2e7064]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7065]: 📎
+            - cell [ref=f2e7066]
+            - cell [ref=f2e7068]
+            - cell [ref=f2e7072]
+            - cell [ref=f2e7074]
+            - cell [ref=f2e7076]
+            - cell [ref=f2e7078]
+            - cell [ref=f2e7080]
+            - cell [ref=f2e7082]
+            - cell [ref=f2e7084]
+            - cell [ref=f2e7086]
+            - cell [ref=f2e7088]
+            - cell [ref=f2e7090]
+          - row [ref=f2e7092] [cursor=pointer]:
+            - rowheader "9" [ref=f2e7093]
+            - cell "📎" [ref=f2e7094]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7095]: 📎
+            - cell [ref=f2e7096]
+            - cell [ref=f2e7098]
+            - cell [ref=f2e7102]
+            - cell [ref=f2e7104]
+            - cell [ref=f2e7106]
+            - cell [ref=f2e7108]
+            - cell [ref=f2e7110]
+            - cell [ref=f2e7112]
+            - cell [ref=f2e7114]
+            - cell [ref=f2e7116]
+            - cell [ref=f2e7118]
+            - cell [ref=f2e7120]
+          - row [ref=f2e7122] [cursor=pointer]:
+            - rowheader "10" [ref=f2e7123]
+            - cell "📎" [ref=f2e7124]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7125]: 📎
+            - cell [ref=f2e7126]
+            - cell [ref=f2e7128]
+            - cell [ref=f2e7132]
+            - cell [ref=f2e7134]
+            - cell [ref=f2e7136]
+            - cell [ref=f2e7138]
+            - cell [ref=f2e7140]
+            - cell [ref=f2e7142]
+            - cell [ref=f2e7144]
+            - cell [ref=f2e7146]
+            - cell [ref=f2e7148]
+            - cell [ref=f2e7150]
+          - row [ref=f2e7152] [cursor=pointer]:
+            - rowheader "11" [ref=f2e7153]
+            - cell "📎" [ref=f2e7154]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7155]: 📎
+            - cell [ref=f2e7156]
+            - cell [ref=f2e7158]
+            - cell [ref=f2e7162]
+            - cell [ref=f2e7164]
+            - cell [ref=f2e7166]
+            - cell [ref=f2e7168]
+            - cell [ref=f2e7170]
+            - cell [ref=f2e7172]
+            - cell [ref=f2e7174]
+            - cell [ref=f2e7176]
+            - cell [ref=f2e7178]
+            - cell [ref=f2e7180]
+          - row [ref=f2e7182] [cursor=pointer]:
+            - rowheader "12" [ref=f2e7183]
+            - cell "📎" [ref=f2e7184]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7185]: 📎
+            - cell [ref=f2e7186]
+            - cell [ref=f2e7188]
+            - cell [ref=f2e7192]
+            - cell [ref=f2e7194]
+            - cell [ref=f2e7196]
+            - cell [ref=f2e7198]
+            - cell [ref=f2e7200]
+            - cell [ref=f2e7202]
+            - cell [ref=f2e7204]
+            - cell [ref=f2e7206]
+            - cell [ref=f2e7208]
+            - cell [ref=f2e7210]
+          - row [ref=f2e7212] [cursor=pointer]:
+            - rowheader "13" [ref=f2e7213]
+            - cell "📎" [ref=f2e7214]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7215]: 📎
+            - cell [ref=f2e7216]
+            - cell [ref=f2e7218]
+            - cell [ref=f2e7222]
+            - cell [ref=f2e7224]
+            - cell [ref=f2e7226]
+            - cell [ref=f2e7228]
+            - cell [ref=f2e7230]
+            - cell [ref=f2e7232]
+            - cell [ref=f2e7234]
+            - cell [ref=f2e7236]
+            - cell [ref=f2e7238]
+            - cell [ref=f2e7240]
+          - row [ref=f2e7242] [cursor=pointer]:
+            - rowheader "14" [ref=f2e7243]
+            - cell "📎" [ref=f2e7244]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7245]: 📎
+            - cell [ref=f2e7246]
+            - cell [ref=f2e7248]
+            - cell [ref=f2e7252]
+            - cell [ref=f2e7254]
+            - cell [ref=f2e7256]
+            - cell [ref=f2e7258]
+            - cell [ref=f2e7260]
+            - cell [ref=f2e7262]
+            - cell [ref=f2e7264]
+            - cell [ref=f2e7266]
+            - cell [ref=f2e7268]
+            - cell [ref=f2e7270]
+          - row [ref=f2e7272] [cursor=pointer]:
+            - rowheader "15" [ref=f2e7273]
+            - cell "📎" [ref=f2e7274]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7275]: 📎
+            - cell [ref=f2e7276]
+            - cell [ref=f2e7278]
+            - cell [ref=f2e7282]
+            - cell [ref=f2e7284]
+            - cell [ref=f2e7286]
+            - cell [ref=f2e7288]
+            - cell [ref=f2e7290]
+            - cell [ref=f2e7292]
+            - cell [ref=f2e7294]
+            - cell [ref=f2e7296]
+            - cell [ref=f2e7298]
+            - cell [ref=f2e7300]
+          - row [ref=f2e7302] [cursor=pointer]:
+            - rowheader "16" [ref=f2e7303]
+            - cell "📎" [ref=f2e7304]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7305]: 📎
+            - cell [ref=f2e7306]
+            - cell [ref=f2e7308]
+            - cell [ref=f2e7312]
+            - cell [ref=f2e7314]
+            - cell [ref=f2e7316]
+            - cell [ref=f2e7318]
+            - cell [ref=f2e7320]
+            - cell [ref=f2e7322]
+            - cell [ref=f2e7324]
+            - cell [ref=f2e7326]
+            - cell [ref=f2e7328]
+            - cell [ref=f2e7330]
+          - row [ref=f2e7332] [cursor=pointer]:
+            - rowheader "17" [ref=f2e7333]
+            - cell "📎" [ref=f2e7334]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7335]: 📎
+            - cell [ref=f2e7336]
+            - cell [ref=f2e7338]
+            - cell [ref=f2e7342]
+            - cell [ref=f2e7344]
+            - cell [ref=f2e7346]
+            - cell [ref=f2e7348]
+            - cell [ref=f2e7350]
+            - cell [ref=f2e7352]
+            - cell [ref=f2e7354]
+            - cell [ref=f2e7356]
+            - cell [ref=f2e7358]
+            - cell [ref=f2e7360]
+          - row [ref=f2e7362] [cursor=pointer]:
+            - rowheader "18" [ref=f2e7363]
+            - cell "📎" [ref=f2e7364]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7365]: 📎
+            - cell [ref=f2e7366]
+            - cell [ref=f2e7368]
+            - cell [ref=f2e7372]
+            - cell [ref=f2e7374]
+            - cell [ref=f2e7376]
+            - cell [ref=f2e7378]
+            - cell [ref=f2e7380]
+            - cell [ref=f2e7382]
+            - cell [ref=f2e7384]
+            - cell [ref=f2e7386]
+            - cell [ref=f2e7388]
+            - cell [ref=f2e7390]
+          - row [ref=f2e7392] [cursor=pointer]:
+            - rowheader "19" [ref=f2e7393]
+            - cell "📎" [ref=f2e7394]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7395]: 📎
+            - cell [ref=f2e7396]
+            - cell [ref=f2e7398]
+            - cell [ref=f2e7402]
+            - cell [ref=f2e7404]
+            - cell [ref=f2e7406]
+            - cell [ref=f2e7408]
+            - cell [ref=f2e7410]
+            - cell [ref=f2e7412]
+            - cell [ref=f2e7414]
+            - cell [ref=f2e7416]
+            - cell [ref=f2e7418]
+            - cell [ref=f2e7420]
+          - row [ref=f2e7422] [cursor=pointer]:
+            - rowheader "20" [ref=f2e7423]
+            - cell "📎" [ref=f2e7424]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7425]: 📎
+            - cell [ref=f2e7426]
+            - cell [ref=f2e7428]
+            - cell [ref=f2e7432]
+            - cell [ref=f2e7434]
+            - cell [ref=f2e7436]
+            - cell [ref=f2e7438]
+            - cell [ref=f2e7440]
+            - cell [ref=f2e7442]
+            - cell [ref=f2e7444]
+            - cell [ref=f2e7446]
+            - cell [ref=f2e7448]
+            - cell [ref=f2e7450]
+          - row [ref=f2e7452] [cursor=pointer]:
+            - rowheader "21" [ref=f2e7453]
+            - cell "📎" [ref=f2e7454]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7455]: 📎
+            - cell [ref=f2e7456]
+            - cell [ref=f2e7458]
+            - cell [ref=f2e7462]
+            - cell [ref=f2e7464]
+            - cell [ref=f2e7466]
+            - cell [ref=f2e7468]
+            - cell [ref=f2e7470]
+            - cell [ref=f2e7472]
+            - cell [ref=f2e7474]
+            - cell [ref=f2e7476]
+            - cell [ref=f2e7478]
+            - cell [ref=f2e7480]
+          - row [ref=f2e7482] [cursor=pointer]:
+            - rowheader "22" [ref=f2e7483]
+            - cell "📎" [ref=f2e7484]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7485]: 📎
+            - cell [ref=f2e7486]
+            - cell [ref=f2e7488]
+            - cell [ref=f2e7492]
+            - cell [ref=f2e7494]
+            - cell [ref=f2e7496]
+            - cell [ref=f2e7498]
+            - cell [ref=f2e7500]
+            - cell [ref=f2e7502]
+            - cell [ref=f2e7504]
+            - cell [ref=f2e7506]
+            - cell [ref=f2e7508]
+            - cell [ref=f2e7510]
+          - row [ref=f2e7512] [cursor=pointer]:
+            - rowheader "23" [ref=f2e7513]
+            - cell "📎" [ref=f2e7514]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7515]: 📎
+            - cell [ref=f2e7516]
+            - cell [ref=f2e7518]
+            - cell [ref=f2e7522]
+            - cell [ref=f2e7524]
+            - cell [ref=f2e7526]
+            - cell [ref=f2e7528]
+            - cell [ref=f2e7530]
+            - cell [ref=f2e7532]
+            - cell [ref=f2e7534]
+            - cell [ref=f2e7536]
+            - cell [ref=f2e7538]
+            - cell [ref=f2e7540]
+          - row [ref=f2e7542] [cursor=pointer]:
+            - rowheader "24" [ref=f2e7543]
+            - cell "📎" [ref=f2e7544]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7545]: 📎
+            - cell [ref=f2e7546]
+            - cell [ref=f2e7548]
+            - cell [ref=f2e7552]
+            - cell [ref=f2e7554]
+            - cell [ref=f2e7556]
+            - cell [ref=f2e7558]
+            - cell [ref=f2e7560]
+            - cell [ref=f2e7562]
+            - cell [ref=f2e7564]
+            - cell [ref=f2e7566]
+            - cell [ref=f2e7568]
+            - cell [ref=f2e7570]
+          - row [ref=f2e7572] [cursor=pointer]:
+            - rowheader "25" [ref=f2e7573]
+            - cell "📎" [ref=f2e7574]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7575]: 📎
+            - cell [ref=f2e7576]
+            - cell [ref=f2e7578]
+            - cell [ref=f2e7582]
+            - cell [ref=f2e7584]
+            - cell [ref=f2e7586]
+            - cell [ref=f2e7588]
+            - cell [ref=f2e7590]
+            - cell [ref=f2e7592]
+            - cell [ref=f2e7594]
+            - cell [ref=f2e7596]
+            - cell [ref=f2e7598]
+            - cell [ref=f2e7600]
+          - row [ref=f2e7602] [cursor=pointer]:
+            - rowheader "26" [ref=f2e7603]
+            - cell "📎" [ref=f2e7604]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7605]: 📎
+            - cell [ref=f2e7606]
+            - cell [ref=f2e7608]
+            - cell [ref=f2e7612]
+            - cell [ref=f2e7614]
+            - cell [ref=f2e7616]
+            - cell [ref=f2e7618]
+            - cell [ref=f2e7620]
+            - cell [ref=f2e7622]
+            - cell [ref=f2e7624]
+            - cell [ref=f2e7626]
+            - cell [ref=f2e7628]
+            - cell [ref=f2e7630]
+          - row [ref=f2e7632] [cursor=pointer]:
+            - rowheader "27" [ref=f2e7633]
+            - cell "📎" [ref=f2e7634]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7635]: 📎
+            - cell [ref=f2e7636]
+            - cell [ref=f2e7638]
+            - cell [ref=f2e7642]
+            - cell [ref=f2e7644]
+            - cell [ref=f2e7646]
+            - cell [ref=f2e7648]
+            - cell [ref=f2e7650]
+            - cell [ref=f2e7652]
+            - cell [ref=f2e7654]
+            - cell [ref=f2e7656]
+            - cell [ref=f2e7658]
+            - cell [ref=f2e7660]
+          - row [ref=f2e7662] [cursor=pointer]:
+            - rowheader "28" [ref=f2e7663]
+            - cell "📎" [ref=f2e7664]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7665]: 📎
+            - cell [ref=f2e7666]
+            - cell [ref=f2e7668]
+            - cell [ref=f2e7672]
+            - cell [ref=f2e7674]
+            - cell [ref=f2e7676]
+            - cell [ref=f2e7678]
+            - cell [ref=f2e7680]
+            - cell [ref=f2e7682]
+            - cell [ref=f2e7684]
+            - cell [ref=f2e7686]
+            - cell [ref=f2e7688]
+            - cell [ref=f2e7690]
+          - row [ref=f2e7692] [cursor=pointer]:
+            - rowheader "29" [ref=f2e7693]
+            - cell "📎" [ref=f2e7694]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7695]: 📎
+            - cell [ref=f2e7696]
+            - cell [ref=f2e7698]
+            - cell [ref=f2e7702]
+            - cell [ref=f2e7704]
+            - cell [ref=f2e7706]
+            - cell [ref=f2e7708]
+            - cell [ref=f2e7710]
+            - cell [ref=f2e7712]
+            - cell [ref=f2e7714]
+            - cell [ref=f2e7716]
+            - cell [ref=f2e7718]
+            - cell [ref=f2e7720]
+          - row [ref=f2e7722] [cursor=pointer]:
+            - rowheader "30" [ref=f2e7723]
+            - cell "📎" [ref=f2e7724]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7725]: 📎
+            - cell [ref=f2e7726]
+            - cell [ref=f2e7728]
+            - cell [ref=f2e7732]
+            - cell [ref=f2e7734]
+            - cell [ref=f2e7736]
+            - cell [ref=f2e7738]
+            - cell [ref=f2e7740]
+            - cell [ref=f2e7742]
+            - cell [ref=f2e7744]
+            - cell [ref=f2e7746]
+            - cell [ref=f2e7748]
+            - cell [ref=f2e7750]
+          - row [ref=f2e7752] [cursor=pointer]:
+            - rowheader "31" [ref=f2e7753]
+            - cell "📎" [ref=f2e7754]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7755]: 📎
+            - cell [ref=f2e7756]
+            - cell [ref=f2e7758]
+            - cell [ref=f2e7762]
+            - cell [ref=f2e7764]
+            - cell [ref=f2e7766]
+            - cell [ref=f2e7768]
+            - cell [ref=f2e7770]
+            - cell [ref=f2e7772]
+            - cell [ref=f2e7774]
+            - cell [ref=f2e7776]
+            - cell [ref=f2e7778]
+            - cell [ref=f2e7780]
+          - row [ref=f2e7782] [cursor=pointer]:
+            - rowheader "32" [ref=f2e7783]
+            - cell "📎" [ref=f2e7784]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7785]: 📎
+            - cell [ref=f2e7786]
+            - cell [ref=f2e7788]
+            - cell [ref=f2e7792]
+            - cell [ref=f2e7794]
+            - cell [ref=f2e7796]
+            - cell [ref=f2e7798]
+            - cell [ref=f2e7800]
+            - cell [ref=f2e7802]
+            - cell [ref=f2e7804]
+            - cell [ref=f2e7806]
+            - cell [ref=f2e7808]
+            - cell [ref=f2e7810]
+          - row [ref=f2e7812] [cursor=pointer]:
+            - rowheader "33" [ref=f2e7813]
+            - cell "📎" [ref=f2e7814]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7815]: 📎
+            - cell [ref=f2e7816]
+            - cell [ref=f2e7818]
+            - cell [ref=f2e7822]
+            - cell [ref=f2e7824]
+            - cell [ref=f2e7826]
+            - cell [ref=f2e7828]
+            - cell [ref=f2e7830]
+            - cell [ref=f2e7832]
+            - cell [ref=f2e7834]
+            - cell [ref=f2e7836]
+            - cell [ref=f2e7838]
+            - cell [ref=f2e7840]
+          - row [ref=f2e7842] [cursor=pointer]:
+            - rowheader "34" [ref=f2e7843]
+            - cell "📎" [ref=f2e7844]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7845]: 📎
+            - cell [ref=f2e7846]
+            - cell [ref=f2e7848]
+            - cell [ref=f2e7852]
+            - cell [ref=f2e7854]
+            - cell [ref=f2e7856]
+            - cell [ref=f2e7858]
+            - cell [ref=f2e7860]
+            - cell [ref=f2e7862]
+            - cell [ref=f2e7864]
+            - cell [ref=f2e7866]
+            - cell [ref=f2e7868]
+            - cell [ref=f2e7870]
+          - row [ref=f2e7872] [cursor=pointer]:
+            - rowheader "35" [ref=f2e7873]
+            - cell "📎" [ref=f2e7874]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7875]: 📎
+            - cell [ref=f2e7876]
+            - cell [ref=f2e7878]
+            - cell [ref=f2e7882]
+            - cell [ref=f2e7884]
+            - cell [ref=f2e7886]
+            - cell [ref=f2e7888]
+            - cell [ref=f2e7890]
+            - cell [ref=f2e7892]
+            - cell [ref=f2e7894]
+            - cell [ref=f2e7896]
+            - cell [ref=f2e7898]
+            - cell [ref=f2e7900]
+          - row [ref=f2e7902] [cursor=pointer]:
+            - rowheader "36" [ref=f2e7903]
+            - cell "📎" [ref=f2e7904]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7905]: 📎
+            - cell [ref=f2e7906]
+            - cell [ref=f2e7908]
+            - cell [ref=f2e7912]
+            - cell [ref=f2e7914]
+            - cell [ref=f2e7916]
+            - cell [ref=f2e7918]
+            - cell [ref=f2e7920]
+            - cell [ref=f2e7922]
+            - cell [ref=f2e7924]
+            - cell [ref=f2e7926]
+            - cell [ref=f2e7928]
+            - cell [ref=f2e7930]
+          - row [ref=f2e7932] [cursor=pointer]:
+            - rowheader "37" [ref=f2e7933]
+            - cell "📎" [ref=f2e7934]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7935]: 📎
+            - cell [ref=f2e7936]
+            - cell [ref=f2e7938]
+            - cell [ref=f2e7942]
+            - cell [ref=f2e7944]
+            - cell [ref=f2e7946]
+            - cell [ref=f2e7948]
+            - cell [ref=f2e7950]
+            - cell [ref=f2e7952]
+            - cell [ref=f2e7954]
+            - cell [ref=f2e7956]
+            - cell [ref=f2e7958]
+            - cell [ref=f2e7960]
+          - row [ref=f2e7962] [cursor=pointer]:
+            - rowheader "38" [ref=f2e7963]
+            - cell "📎" [ref=f2e7964]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7965]: 📎
+            - cell [ref=f2e7966]
+            - cell [ref=f2e7968]
+            - cell [ref=f2e7972]
+            - cell [ref=f2e7974]
+            - cell [ref=f2e7976]
+            - cell [ref=f2e7978]
+            - cell [ref=f2e7980]
+            - cell [ref=f2e7982]
+            - cell [ref=f2e7984]
+            - cell [ref=f2e7986]
+            - cell [ref=f2e7988]
+            - cell [ref=f2e7990]
+          - row [ref=f2e7992] [cursor=pointer]:
+            - rowheader "39" [ref=f2e7993]
+            - cell "📎" [ref=f2e7994]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e7995]: 📎
+            - cell [ref=f2e7996]
+            - cell [ref=f2e7998]
+            - cell [ref=f2e8002]
+            - cell [ref=f2e8004]
+            - cell [ref=f2e8006]
+            - cell [ref=f2e8008]
+            - cell [ref=f2e8010]
+            - cell [ref=f2e8012]
+            - cell [ref=f2e8014]
+            - cell [ref=f2e8016]
+            - cell [ref=f2e8018]
+            - cell [ref=f2e8020]
+          - row [ref=f2e8022] [cursor=pointer]:
+            - rowheader "40" [ref=f2e8023]
+            - cell "📎" [ref=f2e8024]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8025]: 📎
+            - cell [ref=f2e8026]
+            - cell [ref=f2e8028]
+            - cell [ref=f2e8032]
+            - cell [ref=f2e8034]
+            - cell [ref=f2e8036]
+            - cell [ref=f2e8038]
+            - cell [ref=f2e8040]
+            - cell [ref=f2e8042]
+            - cell [ref=f2e8044]
+            - cell [ref=f2e8046]
+            - cell [ref=f2e8048]
+            - cell [ref=f2e8050]
+          - row [ref=f2e8052] [cursor=pointer]:
+            - rowheader "41" [ref=f2e8053]
+            - cell "📎" [ref=f2e8054]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8055]: 📎
+            - cell [ref=f2e8056]
+            - cell [ref=f2e8058]
+            - cell [ref=f2e8062]
+            - cell [ref=f2e8064]
+            - cell [ref=f2e8066]
+            - cell [ref=f2e8068]
+            - cell [ref=f2e8070]
+            - cell [ref=f2e8072]
+            - cell [ref=f2e8074]
+            - cell [ref=f2e8076]
+            - cell [ref=f2e8078]
+            - cell [ref=f2e8080]
+          - row [ref=f2e8082] [cursor=pointer]:
+            - rowheader "42" [ref=f2e8083]
+            - cell "📎" [ref=f2e8084]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8085]: 📎
+            - cell [ref=f2e8086]
+            - cell [ref=f2e8088]
+            - cell [ref=f2e8092]
+            - cell [ref=f2e8094]
+            - cell [ref=f2e8096]
+            - cell [ref=f2e8098]
+            - cell [ref=f2e8100]
+            - cell [ref=f2e8102]
+            - cell [ref=f2e8104]
+            - cell [ref=f2e8106]
+            - cell [ref=f2e8108]
+            - cell [ref=f2e8110]
+          - row [ref=f2e8112] [cursor=pointer]:
+            - rowheader "43" [ref=f2e8113]
+            - cell "📎" [ref=f2e8114]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8115]: 📎
+            - cell [ref=f2e8116]
+            - cell [ref=f2e8118]
+            - cell [ref=f2e8122]
+            - cell [ref=f2e8124]
+            - cell [ref=f2e8126]
+            - cell [ref=f2e8128]
+            - cell [ref=f2e8130]
+            - cell [ref=f2e8132]
+            - cell [ref=f2e8134]
+            - cell [ref=f2e8136]
+            - cell [ref=f2e8138]
+            - cell [ref=f2e8140]
+          - row [ref=f2e8142] [cursor=pointer]:
+            - rowheader "44" [ref=f2e8143]
+            - cell "📎" [ref=f2e8144]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8145]: 📎
+            - cell [ref=f2e8146]
+            - cell [ref=f2e8148]
+            - cell [ref=f2e8152]
+            - cell [ref=f2e8154]
+            - cell [ref=f2e8156]
+            - cell [ref=f2e8158]
+            - cell [ref=f2e8160]
+            - cell [ref=f2e8162]
+            - cell [ref=f2e8164]
+            - cell [ref=f2e8166]
+            - cell [ref=f2e8168]
+            - cell [ref=f2e8170]
+          - row [ref=f2e8172] [cursor=pointer]:
+            - rowheader "45" [ref=f2e8173]
+            - cell "📎" [ref=f2e8174]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8175]: 📎
+            - cell [ref=f2e8176]
+            - cell [ref=f2e8178]
+            - cell [ref=f2e8182]
+            - cell [ref=f2e8184]
+            - cell [ref=f2e8186]
+            - cell [ref=f2e8188]
+            - cell [ref=f2e8190]
+            - cell [ref=f2e8192]
+            - cell [ref=f2e8194]
+            - cell [ref=f2e8196]
+            - cell [ref=f2e8198]
+            - cell [ref=f2e8200]
+          - row [ref=f2e8202] [cursor=pointer]:
+            - rowheader "46" [ref=f2e8203]
+            - cell "📎" [ref=f2e8204]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8205]: 📎
+            - cell [ref=f2e8206]
+            - cell [ref=f2e8208]
+            - cell [ref=f2e8212]
+            - cell [ref=f2e8214]
+            - cell [ref=f2e8216]
+            - cell [ref=f2e8218]
+            - cell [ref=f2e8220]
+            - cell [ref=f2e8222]
+            - cell [ref=f2e8224]
+            - cell [ref=f2e8226]
+            - cell [ref=f2e8228]
+            - cell [ref=f2e8230]
+          - row [ref=f2e8232] [cursor=pointer]:
+            - rowheader "47" [ref=f2e8233]
+            - cell "📎" [ref=f2e8234]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8235]: 📎
+            - cell [ref=f2e8236]
+            - cell [ref=f2e8238]
+            - cell [ref=f2e8242]
+            - cell [ref=f2e8244]
+            - cell [ref=f2e8246]
+            - cell [ref=f2e8248]
+            - cell [ref=f2e8250]
+            - cell [ref=f2e8252]
+            - cell [ref=f2e8254]
+            - cell [ref=f2e8256]
+            - cell [ref=f2e8258]
+            - cell [ref=f2e8260]
+          - row [ref=f2e8262] [cursor=pointer]:
+            - rowheader "48" [ref=f2e8263]
+            - cell "📎" [ref=f2e8264]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8265]: 📎
+            - cell [ref=f2e8266]
+            - cell [ref=f2e8268]
+            - cell [ref=f2e8272]
+            - cell [ref=f2e8274]
+            - cell [ref=f2e8276]
+            - cell [ref=f2e8278]
+            - cell [ref=f2e8280]
+            - cell [ref=f2e8282]
+            - cell [ref=f2e8284]
+            - cell [ref=f2e8286]
+            - cell [ref=f2e8288]
+            - cell [ref=f2e8290]
+          - row [ref=f2e8292] [cursor=pointer]:
+            - rowheader "49" [ref=f2e8293]
+            - cell "📎" [ref=f2e8294]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8295]: 📎
+            - cell [ref=f2e8296]
+            - cell [ref=f2e8298]
+            - cell [ref=f2e8302]
+            - cell [ref=f2e8304]
+            - cell [ref=f2e8306]
+            - cell [ref=f2e8308]
+            - cell [ref=f2e8310]
+            - cell [ref=f2e8312]
+            - cell [ref=f2e8314]
+            - cell [ref=f2e8316]
+            - cell [ref=f2e8318]
+            - cell [ref=f2e8320]
+          - row [ref=f2e8322] [cursor=pointer]:
+            - rowheader "50" [ref=f2e8323]
+            - cell "📎" [ref=f2e8324]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8325]: 📎
+            - cell [ref=f2e8326]
+            - cell [ref=f2e8328]
+            - cell [ref=f2e8332]
+            - cell [ref=f2e8334]
+            - cell [ref=f2e8336]
+            - cell [ref=f2e8338]
+            - cell [ref=f2e8340]
+            - cell [ref=f2e8342]
+            - cell [ref=f2e8344]
+            - cell [ref=f2e8346]
+            - cell [ref=f2e8348]
+            - cell [ref=f2e8350]
+          - row [ref=f2e8352] [cursor=pointer]:
+            - rowheader "51" [ref=f2e8353]
+            - cell "📎" [ref=f2e8354]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8355]: 📎
+            - cell [ref=f2e8356]
+            - cell [ref=f2e8358]
+            - cell [ref=f2e8362]
+            - cell [ref=f2e8364]
+            - cell [ref=f2e8366]
+            - cell [ref=f2e8368]
+            - cell [ref=f2e8370]
+            - cell [ref=f2e8372]
+            - cell [ref=f2e8374]
+            - cell [ref=f2e8376]
+            - cell [ref=f2e8378]
+            - cell [ref=f2e8380]
+          - row [ref=f2e8382] [cursor=pointer]:
+            - rowheader "52" [ref=f2e8383]
+            - cell "📎" [ref=f2e8384]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8385]: 📎
+            - cell [ref=f2e8386]
+            - cell [ref=f2e8388]
+            - cell [ref=f2e8392]
+            - cell [ref=f2e8394]
+            - cell [ref=f2e8396]
+            - cell [ref=f2e8398]
+            - cell [ref=f2e8400]
+            - cell [ref=f2e8402]
+            - cell [ref=f2e8404]
+            - cell [ref=f2e8406]
+            - cell [ref=f2e8408]
+            - cell [ref=f2e8410]
+          - row [ref=f2e8412] [cursor=pointer]:
+            - rowheader "53" [ref=f2e8413]
+            - cell "📎" [ref=f2e8414]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8415]: 📎
+            - cell [ref=f2e8416]
+            - cell [ref=f2e8418]
+            - cell [ref=f2e8422]
+            - cell [ref=f2e8424]
+            - cell [ref=f2e8426]
+            - cell [ref=f2e8428]
+            - cell [ref=f2e8430]
+            - cell [ref=f2e8432]
+            - cell [ref=f2e8434]
+            - cell [ref=f2e8436]
+            - cell [ref=f2e8438]
+            - cell [ref=f2e8440]
+          - row [ref=f2e8442] [cursor=pointer]:
+            - rowheader "54" [ref=f2e8443]
+            - cell "📎" [ref=f2e8444]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8445]: 📎
+            - cell [ref=f2e8446]
+            - cell [ref=f2e8448]
+            - cell [ref=f2e8452]
+            - cell [ref=f2e8454]
+            - cell [ref=f2e8456]
+            - cell [ref=f2e8458]
+            - cell [ref=f2e8460]
+            - cell [ref=f2e8462]
+            - cell [ref=f2e8464]
+            - cell [ref=f2e8466]
+            - cell [ref=f2e8468]
+            - cell [ref=f2e8470]
+          - row [ref=f2e8472] [cursor=pointer]:
+            - rowheader "55" [ref=f2e8473]
+            - cell "📎" [ref=f2e8474]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8475]: 📎
+            - cell [ref=f2e8476]
+            - cell [ref=f2e8478]
+            - cell [ref=f2e8482]
+            - cell [ref=f2e8484]
+            - cell [ref=f2e8486]
+            - cell [ref=f2e8488]
+            - cell [ref=f2e8490]
+            - cell [ref=f2e8492]
+            - cell [ref=f2e8494]
+            - cell [ref=f2e8496]
+            - cell [ref=f2e8498]
+            - cell [ref=f2e8500]
+          - row [ref=f2e8502] [cursor=pointer]:
+            - rowheader "56" [ref=f2e8503]
+            - cell "📎" [ref=f2e8504]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8505]: 📎
+            - cell [ref=f2e8506]
+            - cell [ref=f2e8508]
+            - cell [ref=f2e8512]
+            - cell [ref=f2e8514]
+            - cell [ref=f2e8516]
+            - cell [ref=f2e8518]
+            - cell [ref=f2e8520]
+            - cell [ref=f2e8522]
+            - cell [ref=f2e8524]
+            - cell [ref=f2e8526]
+            - cell [ref=f2e8528]
+            - cell [ref=f2e8530]
+          - row [ref=f2e8532] [cursor=pointer]:
+            - rowheader "57" [ref=f2e8533]
+            - cell "📎" [ref=f2e8534]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8535]: 📎
+            - cell [ref=f2e8536]
+            - cell [ref=f2e8538]
+            - cell [ref=f2e8542]
+            - cell [ref=f2e8544]
+            - cell [ref=f2e8546]
+            - cell [ref=f2e8548]
+            - cell [ref=f2e8550]
+            - cell [ref=f2e8552]
+            - cell [ref=f2e8554]
+            - cell [ref=f2e8556]
+            - cell [ref=f2e8558]
+            - cell [ref=f2e8560]
+          - row [ref=f2e8562] [cursor=pointer]:
+            - rowheader "58" [ref=f2e8563]
+            - cell "📎" [ref=f2e8564]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8565]: 📎
+            - cell [ref=f2e8566]
+            - cell [ref=f2e8568]
+            - cell [ref=f2e8572]
+            - cell [ref=f2e8574]
+            - cell [ref=f2e8576]
+            - cell [ref=f2e8578]
+            - cell [ref=f2e8580]
+            - cell [ref=f2e8582]
+            - cell [ref=f2e8584]
+            - cell [ref=f2e8586]
+            - cell [ref=f2e8588]
+            - cell [ref=f2e8590]
+          - row [ref=f2e8592] [cursor=pointer]:
+            - rowheader "59" [ref=f2e8593]
+            - cell "📎" [ref=f2e8594]:
+              - generic "Bấm để đính kèm file lên Google Drive" [ref=f2e8595]: 📎
+            - cell [ref=f2e8596]
+            - cell [ref=f2e8598]
+            - cell [ref=f2e8602]
+            - cell [ref=f2e8604]
+            - cell [ref=f2e8606]
+            - cell [ref=f2e8608]
+            - cell [ref=f2e8610]
+            - cell [ref=f2e8612]
+            - cell [ref=f2e8614]
+            - cell [ref=f2e8616]
+            - cell [ref=f2e8618]
+            - cell [ref=f2e8620]
+      - generic [ref=f2e2262]: Bảng dạng lưới giống Excel · sửa trực tiếp, bấm "⬇ Xuất Excel" để tải file .xlsx

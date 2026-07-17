@@ -1,0 +1,106 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/00_README.md",
+                           "language":  "markdown",
+                           "sizeLines":  27,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/01_VAI_TRO_BAN_QLDA.md",
+                           "language":  "markdown",
+                           "sizeLines":  36,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/02_QUY_TRINH_DUYET_SPEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  134,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/03_TRANG_THAI_HIEN_TAI.md",
+                           "language":  "markdown",
+                           "sizeLines":  46,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/04_SO_GIAO_VIEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  45,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/05_SO_NGHIEM_THU.md",
+                           "language":  "markdown",
+                           "sizeLines":  37,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/06_BAO_CAO_NGAY.md",
+                           "language":  "markdown",
+                           "sizeLines":  35,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/07_THIET_KE_TONG_HOP.md",
+                           "language":  "markdown",
+                           "sizeLines":  784,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/08_KE_HOACH_LICH_SU.md",
+                           "language":  "markdown",
+                           "sizeLines":  233,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/09_DINH_CHINH_DUONG_DAN.md",
+                           "language":  "markdown",
+                           "sizeLines":  67,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/10_HUONG_DAN_OAUTH_CLIENT_ID.md",
+                           "language":  "markdown",
+                           "sizeLines":  81,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/00_README.md":  [
+
+                                                                                 ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/01_VAI_TRO_BAN_QLDA.md":  [
+
+                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/02_QUY_TRINH_DUYET_SPEC.md":  [
+
+                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/03_TRANG_THAI_HIEN_TAI.md":  [
+
+                                                                                              ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/04_SO_GIAO_VIEC.md":  [
+
+                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/05_SO_NGHIEM_THU.md":  [
+
+                                                                                        ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/06_BAO_CAO_NGAY.md":  [
+
+                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/07_THIET_KE_TONG_HOP.md":  [
+
+                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/08_KE_HOACH_LICH_SU.md":  [
+
+                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/09_DINH_CHINH_DUONG_DAN.md":  [
+
+                                                                                               ],
+                            "02_SOURCE/99_LUU_TRU_CU/01_BAN_QLDA/10_HUONG_DAN_OAUTH_CLIENT_ID.md":  [
+
+                                                                                                    ]
+                        }
+}

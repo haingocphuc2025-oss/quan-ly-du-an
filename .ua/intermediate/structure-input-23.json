@@ -1,0 +1,88 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/00_README.md",
+                           "language":  "markdown",
+                           "sizeLines":  3,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/01_VAI_TRO_GIAM_SAT.md",
+                           "language":  "markdown",
+                           "sizeLines":  87,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/03_CURRENT_STATUS.md",
+                           "language":  "markdown",
+                           "sizeLines":  14,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/04_BIEN_BAN_NGHIEM_THU_TONG_HOP.md",
+                           "language":  "markdown",
+                           "sizeLines":  63,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/05_BIEN_BAN_NGHIEM_THU_v19.md",
+                           "language":  "markdown",
+                           "sizeLines":  42,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/06_BIEN_BAN_NGHIEM_THU_v20.md",
+                           "language":  "markdown",
+                           "sizeLines":  49,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/07_BIEN_BAN_NGHIEM_THU_v21.md",
+                           "language":  "markdown",
+                           "sizeLines":  43,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/08_BIEN_BAN_NGHIEM_THU_v24.md",
+                           "language":  "markdown",
+                           "sizeLines":  96,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v23.md",
+                           "language":  "markdown",
+                           "sizeLines":  53,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/00_README.md":  [
+
+                                                                                            ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/01_VAI_TRO_GIAM_SAT.md":  [
+
+                                                                                                      ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/03_CURRENT_STATUS.md":  [
+
+                                                                                                    ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/04_BIEN_BAN_NGHIEM_THU_TONG_HOP.md":  [
+
+                                                                                                                  ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/05_BIEN_BAN_NGHIEM_THU_v19.md":  [
+
+                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/06_BIEN_BAN_NGHIEM_THU_v20.md":  [
+
+                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/07_BIEN_BAN_NGHIEM_THU_v21.md":  [
+
+                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/08_BIEN_BAN_NGHIEM_THU_v24.md":  [
+
+                                                                                                             ],
+                            "02_SOURCE/99_LUU_TRU_CU/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v23.md":  [
+
+                                                                                                          ]
+                        }
+}

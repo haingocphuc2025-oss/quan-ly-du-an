@@ -1,0 +1,1677 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 25,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/column-types/SPEC_006_column-types.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 572,
+      "nonEmptyLines": 466,
+      "sections": [
+        {
+          "heading": "SPEC: Column Operations",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "2.1 Tổng quan luồng thao tác",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "2.2 Khả năng Apps Script (DO nhà thầu code)",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "2.3 Design Decisions",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "3. SPEC CHI TIẾT",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "3.1 Column Context Menu",
+          "level": 3,
+          "line": 58
+        },
+        {
+          "heading": "3.2 Add Column (Insert)",
+          "level": 3,
+          "line": 90
+        },
+        {
+          "heading": "3.3 Edit Column Properties",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "3.4 Move Column",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "3.5 Delete Column",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "3.6 Hide / Unhide Column",
+          "level": 3,
+          "line": 206
+        },
+        {
+          "heading": "3.7 Freeze / Unfreeze Column",
+          "level": 3,
+          "line": 222
+        },
+        {
+          "heading": "3.8 Column Width & Auto-fit",
+          "level": 3,
+          "line": 242
+        },
+        {
+          "heading": "3.9 Formula Column",
+          "level": 3,
+          "line": 253
+        },
+        {
+          "heading": "3.10 System Column (Read-only)",
+          "level": 3,
+          "line": 277
+        },
+        {
+          "heading": "3.11 Auto-Number Column",
+          "level": 3,
+          "line": 292
+        },
+        {
+          "heading": "3.12 Dropdown Column (Single & Multi)",
+          "level": 3,
+          "line": 307
+        },
+        {
+          "heading": "3.13 Symbol Column",
+          "level": 3,
+          "line": 324
+        },
+        {
+          "heading": "3.14 Checkbox Column",
+          "level": 3,
+          "line": 339
+        },
+        {
+          "heading": "3.15 Contact List Column",
+          "level": 3,
+          "line": 346
+        },
+        {
+          "heading": "3.16 Sort & Filter by Column",
+          "level": 3,
+          "line": 353
+        },
+        {
+          "heading": "3.17 Copy / Paste Column",
+          "level": 3,
+          "line": 372
+        },
+        {
+          "heading": "3.18 Primary Column",
+          "level": 3,
+          "line": 390
+        },
+        {
+          "heading": "3.19 Undo / Redo",
+          "level": 3,
+          "line": 404
+        },
+        {
+          "heading": "3.20 Data Model",
+          "level": 3,
+          "line": 413
+        },
+        {
+          "heading": "3.21 SHEET_CONFIG mở rộng",
+          "level": 3,
+          "line": 479
+        },
+        {
+          "heading": "3.22 Test Cases (bắt buộc)",
+          "level": 3,
+          "line": 499
+        },
+        {
+          "heading": "4. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 536
+        },
+        {
+          "heading": "4.1 Phụ thuộc",
+          "level": 3,
+          "line": 538
+        },
+        {
+          "heading": "4.2 Files cần tạo / sửa",
+          "level": 3,
+          "line": 546
+        },
+        {
+          "heading": "4.3 Test Kit",
+          "level": 3,
+          "line": 562
+        },
+        {
+          "heading": "4.4 Cam kết",
+          "level": 3,
+          "line": 568
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 34
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/conditional-formatting/SPEC_007_conditional-formatting.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 113,
+      "nonEmptyLines": 87,
+      "sections": [
+        {
+          "heading": "SPEC: Conditional Formatting",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Rule Engine",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Cấu trúc rule",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "3.1 Storage",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 73
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 88
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 109
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/contact-column/SPEC_008_contact-column.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 108,
+      "nonEmptyLines": 81,
+      "sections": [
+        {
+          "heading": "SPEC: Contact Column + Người phụ trách",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Cấu trúc Contact Column",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Column Config",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "2.3 Tính năng chính",
+          "level": 3,
+          "line": 40
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 78
+        },
+        {
+          "heading": "4.1 Contact Picker Modal",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "4.2 Hiển thị trong ô",
+          "level": 3,
+          "line": 86
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 104
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/copy-cut-paste/SPEC_010_copy-cut-paste.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 170,
+      "nonEmptyLines": 130,
+      "sections": [
+        {
+          "heading": "SPEC: Copy/Cut/Paste Multiple Cells/Rows (giống Excel)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "2.1 Cấu trúc dữ liệu / Column Config (JSON)",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "2.2 Tính năng chính",
+          "level": 3,
+          "line": 37
+        },
+        {
+          "heading": "2.3 Luồng người dùng (User Flow)",
+          "level": 3,
+          "line": 49
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 76
+        },
+        {
+          "heading": "3.2 Hàm Apps Script mới/cần mở rộng",
+          "level": 3,
+          "line": 80
+        },
+        {
+          "heading": "3.3 OAuth / Web App / Trigger yêu cầu",
+          "level": 3,
+          "line": 91
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 97
+        },
+        {
+          "heading": "4.1 Component / Modal / Picker",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "4.2 Hiển thị trong Sheet / Grid",
+          "level": 3,
+          "line": 104
+        },
+        {
+          "heading": "4.3 Tương tác (Keyboard + Mouse)",
+          "level": 3,
+          "line": 112
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "7. PHỤ THUỘC & RÀNG BUỘC",
+          "level": 2,
+          "line": 151
+        },
+        {
+          "heading": "8. ƯU TIÊN VÀ DỰ KIẾN",
+          "level": 2,
+          "line": 163
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "dashboard-configuration — NEW",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Tài liệu nguồn (đang nằm ngoài thư mục này)",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Ràng buộc",
+          "level": 2,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/dashboard-configuration/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 146,
+      "nonEmptyLines": 127,
+      "sections": [
+        {
+          "heading": "DASHBOARD_SPEC v3 — Bảng điều khiển dự án cho DU AN WEB QUAN LY",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Dashboard là gì",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "2. Mô hình JSON dashboard",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "3. Sáu loại widget (khảo sát DOM: metric×42, title×nhiều, chart×10, report×5, shortcut×4)",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "3B. Cách CHART lấy dữ liệu (mô hình Smartsheet — đơn giản hơn groupBy)",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "3C. PANEL CẤU HÌNH CHART WIDGET — đầy đủ (khảo sát trực tiếp)",
+          "level": 2,
+          "line": 54
+        },
+        {
+          "heading": "4. Lưới & bố cục",
+          "level": 2,
+          "line": 92
+        },
+        {
+          "heading": "5. Toolbar dashboard (khảo sát DOM)",
+          "level": 2,
+          "line": 95
+        },
+        {
+          "heading": "6. Token giao diện (từ file mẫu)",
+          "level": 2,
+          "line": 104
+        },
+        {
+          "heading": "7. Thứ tự triển khai",
+          "level": 2,
+          "line": 113
+        },
+        {
+          "heading": "8. Checklist nghiệm thu (Codex tự điền XONG / CHƯA + lý do)",
+          "level": 2,
+          "line": 120
+        },
+        {
+          "heading": "9. Lưu ý phạm vi",
+          "level": 2,
+          "line": 142
+        },
+        {
+          "heading": "10. Giao nộp",
+          "level": 2,
+          "line": 145
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 13
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/dashboard-view-leaks-into-report/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "SPEC - Dashboard view leaks into Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/default-row-height-wrap/SPEC_012_default-row-height-wrap.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 242,
+      "nonEmptyLines": 189,
+      "sections": [
+        {
+          "heading": "SPEC: Default Row Height & Text Wrap (Mặc định độ rộng hàng + Tự động xuống dòng)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "2.1 Cấu trúc dữ liệu / Column Config (JSON)",
+          "level": 3,
+          "line": 25
+        },
+        {
+          "heading": "2.2 Tính năng chính",
+          "level": 3,
+          "line": 54
+        },
+        {
+          "heading": "2.3 Luồng người dùng (User Flow)",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 86
+        },
+        {
+          "heading": "3.1 Lưu trữ",
+          "level": 3,
+          "line": 88
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 92
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 103
+        },
+        {
+          "heading": "4.1 Component / Toolbar",
+          "level": 3,
+          "line": 105
+        },
+        {
+          "heading": "4.2 CSS Implementation",
+          "level": 3,
+          "line": 115
+        },
+        {
+          "heading": "4.3 Render Logic (JavaScript)",
+          "level": 3,
+          "line": 162
+        },
+        {
+          "heading": "4.4 Context Menu Header Cột",
+          "level": 3,
+          "line": 190
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 197
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 214
+        },
+        {
+          "heading": "7. PHỤ THUỘC & RÀNG BUỘC",
+          "level": 2,
+          "line": 223
+        },
+        {
+          "heading": "8. ƯU TIÊN VÀ DỰ KIẾN",
+          "level": 2,
+          "line": 235
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/drive-api-backend/SPEC_003_drive-api-backend.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 277,
+      "nonEmptyLines": 224,
+      "sections": [
+        {
+          "heading": "SPEC: Drive API Backend (Nền tảng lưu trữ)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "2.1 Kiến trúc mới",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "2.2 Cấu trúc file trên Drive",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "2.3 Cấu trúc JSON mỗi dự án",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "2.4 Auth flow",
+          "level": 3,
+          "line": 69
+        },
+        {
+          "heading": "3. API & BACKEND (Drive REST API)",
+          "level": 2,
+          "line": 81
+        },
+        {
+          "heading": "3.1 Khởi tạo Google Sign-In",
+          "level": 3,
+          "line": 83
+        },
+        {
+          "heading": "3.2 Tìm hoặc tạo thư mục gốc",
+          "level": 3,
+          "line": 117
+        },
+        {
+          "heading": "3.3 Save data (create hoặc update)",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "3.4 Load data",
+          "level": 3,
+          "line": 172
+        },
+        {
+          "heading": "3.5 List projects",
+          "level": 3,
+          "line": 184
+        },
+        {
+          "heading": "3.6 Helper chung",
+          "level": 3,
+          "line": 195
+        },
+        {
+          "heading": "4. GIAO DIỆN",
+          "level": 2,
+          "line": 221
+        },
+        {
+          "heading": "4.1 Màn hình chưa đăng nhập",
+          "level": 3,
+          "line": 223
+        },
+        {
+          "heading": "4.2 Trạng thái save (UI feedback)",
+          "level": 3,
+          "line": 237
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 254
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 269
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 19
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/file-attachment/SPEC_002_file-attachment.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 340,
+      "nonEmptyLines": 282,
+      "sections": [
+        {
+          "heading": "SPEC: File Attachment + Icon Fix + Excel 365 Toolbar Style",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "2. FILE ATTACHMENT — APPROACH MỚI (dùng code cũ)",
+          "level": 2,
+          "line": 22
+        },
+        {
+          "heading": "Tại sao khác với SPEC trước?",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "2.1 Luồng upload",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "2.2 Apps Script — thêm vào Code.gs",
+          "level": 3,
+          "line": 52
+        },
+        {
+          "heading": "2.3 Frontend — upload function",
+          "level": 3,
+          "line": 96
+        },
+        {
+          "heading": "2.4 UI Attachment Panel",
+          "level": 3,
+          "line": 151
+        },
+        {
+          "heading": "3. EXCEL 365 TOOLBAR",
+          "level": 2,
+          "line": 250
+        },
+        {
+          "heading": "Layout toolbar mới",
+          "level": 3,
+          "line": 252
+        },
+        {
+          "heading": "CSS thêm",
+          "level": 3,
+          "line": 258
+        },
+        {
+          "heading": "HTML thêm trước nhóm B I U S",
+          "level": 3,
+          "line": 284
+        },
+        {
+          "heading": "4. ICON FIX",
+          "level": 2,
+          "line": 309
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 316
+        },
+        {
+          "heading": "6. BÀN GIAO",
+          "level": 2,
+          "line": 333
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/forms/SPEC_004_forms.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 101,
+      "nonEmptyLines": 76,
+      "sections": [
+        {
+          "heading": "SPEC: Forms",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Form Builder",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Form Render",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "2.3 Cấu trúc dữ liệu",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 55
+        },
+        {
+          "heading": "3.1 Form Storage",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 61
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 77
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/grid-row-columns-fix/SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 25,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Yeu cau",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Acceptance criteria",
+          "level": 2,
+          "line": 21
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/helper-preserve-ui-state-on-old-tab-save/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "SPEC - Helper preserve UI state on old tab save",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/keyboard-shortcuts/SPEC_011_keyboard-shortcuts.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 396,
+      "nonEmptyLines": 322,
+      "sections": [
+        {
+          "heading": "SPEC: Keyboard Shortcuts — Phím tắt điều hướng & chỉnh sửa",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. Tóm tắt thay đổi (Summary)",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "1. Bối cảnh & Vấn đề (Context & Problem)",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "1.1 Hiện trạng baseline v18",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "1.2 Keydown handlers hiện có",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "1.3 Functions có sẵn để tái dùng",
+          "level": 3,
+          "line": 65
+        },
+        {
+          "heading": "2. Yêu cầu chức năng (Functional Requirements)",
+          "level": 2,
+          "line": 80
+        },
+        {
+          "heading": "2.1 Navigation (Điều hướng)",
+          "level": 3,
+          "line": 82
+        },
+        {
+          "heading": "2.2 Cell Editing (Chỉnh sửa ô)",
+          "level": 3,
+          "line": 99
+        },
+        {
+          "heading": "2.3 Clipboard (Sao chép)",
+          "level": 3,
+          "line": 110
+        },
+        {
+          "heading": "2.4 Undo/Redo",
+          "level": 3,
+          "line": 118
+        },
+        {
+          "heading": "2.5 Selection & Navigation toàn cục",
+          "level": 3,
+          "line": 125
+        },
+        {
+          "heading": "2.6 Row operations (Thao tác dòng)",
+          "level": 3,
+          "line": 137
+        },
+        {
+          "heading": "3. Yêu cầu phi chức năng (Non-Functional Requirements)",
+          "level": 2,
+          "line": 148
+        },
+        {
+          "heading": "4. Kiến trúc & Thiết kế (Design)",
+          "level": 2,
+          "line": 161
+        },
+        {
+          "heading": "4.1 Shortcut Controller Architecture",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "4.2 Handler Functions Detail",
+          "level": 3,
+          "line": 251
+        },
+        {
+          "heading": "4.3 Vị trí chèn code",
+          "level": 3,
+          "line": 272
+        },
+        {
+          "heading": "4.4 Logic ưu tiên keyboard shortcut",
+          "level": 3,
+          "line": 283
+        },
+        {
+          "heading": "5. Kịch bản test (Test Scenarios)",
+          "level": 2,
+          "line": 298
+        },
+        {
+          "heading": "6. Rủi ro & Mitigation (Risks & Mitigations)",
+          "level": 2,
+          "line": 320
+        },
+        {
+          "heading": "7. Phụ thuộc (Dependencies)",
+          "level": 2,
+          "line": 332
+        },
+        {
+          "heading": "8. Checklist triển khai (Implementation Checklist)",
+          "level": 2,
+          "line": 344
+        },
+        {
+          "heading": "9. Phụ lục: File & Dòng code tham chiếu (baseline v18)",
+          "level": 2,
+          "line": 363
+        },
+        {
+          "heading": "10. Lưu ý triển khai (Dev Notes)",
+          "level": 2,
+          "line": 382
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 25
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/modular-split-v26/SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 69,
+      "nonEmptyLines": 55,
+      "sections": [
+        {
+          "heading": "SPEC: modular-split-v26 — Tách file đơn v25 thành modules",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Mục tiêu",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "2. Điều kiện tiên quyết",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "3. Cấu trúc đích (trong `02_SAN_PHAM_DON_FILE/MODULES_V26/`)",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "4. Thứ tự nạp script trong index.html",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "5. Luật thi công (bắt buộc)",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "6. build.py",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "7. Acceptance criteria",
+          "level": 2,
+          "line": 57
+        },
+        {
+          "heading": "8. Bàn giao",
+          "level": 2,
+          "line": 65
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 9
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/multi-select-column/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 36,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "SPEC — Multi-select Column",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Phạm vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Ngoài phạm vi",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Acceptance criteria",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Test case",
+          "level": 2,
+          "line": 32
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/nghiem-thu-v25-fixes/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 27,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "SPEC — Nghiệm thu v25 fixes",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Phạm vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Ngoài phạm vi",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/persist-column-widths-in-project-save/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 23,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "SPEC - Persist column widths in project save",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/publish-report/SPEC_001_publish-report.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 101,
+      "nonEmptyLines": 76,
+      "sections": [
+        {
+          "heading": "SPEC: Publish Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "2.1 Publish Settings",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "2.2 Cấu trúc dữ liệu",
+          "level": 3,
+          "line": 31
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "3.1 Storage",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "3.2 Hàm Apps Script",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "4. GIAO DIỆN (Frontend)",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 97
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-apply-stored-column-widths/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "SPEC - Report apply stored column widths",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-delete-multi-selection/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 25,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "SPEC - Report delete multi selection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-hide-source-status-columns/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "SPEC - Report hide source and status columns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-multi-cell-selection/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 25,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "SPEC - Report multi cell selection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-skip-empty-source-rows/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 28,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "SPEC - Report bo qua dong rong nghiep vu",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Ngoai pham vi",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-summary-compact-ui/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 25,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "SPEC - Report summary compact UI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    }
+  ]
+}

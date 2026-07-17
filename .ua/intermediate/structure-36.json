@@ -1,0 +1,597 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "03_TASKS/DONE/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 5,
+      "nonEmptyLines": 3,
+      "sections": [
+        {
+          "heading": "DONE",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_RELEASE_v24_v25.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "Phạm vi",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Kiểm chứng",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Tài liệu liên quan",
+          "level": 2,
+          "line": 22
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_browse-status-display.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 13,
+      "nonEmptyLines": 10,
+      "sections": [
+        {
+          "heading": "TASK: browse-status-display",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Kết quả",
+          "level": 2,
+          "line": 8
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_column-header-context-menu.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 15,
+      "nonEmptyLines": 12,
+      "sections": [
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Pham vi thi cong",
+          "level": 2,
+          "line": 10
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_column-unhide.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "Viec da lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_dashboard-view-leaks-into-report.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "TASK - Dashboard view leaks into Report",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_grid-row-columns-fix.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_helper-preserve-ui-state-on-old-tab-save.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "TASK - Helper preserve UI state on old tab save",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_nghiem-thu-v25-fixes.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 20,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "TASK — Nghiệm thu v25 fixes",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Việc làm",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Kết quả",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_persist-column-widths-in-project-save.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "TASK - Persist column widths in project save",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-apply-stored-column-widths.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "TASK - Report apply stored column widths",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-delete-multi-selection.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "TASK - Report delete multi selection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 12
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-hide-source-status-columns.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 24,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "TASK - Report hide source and status columns",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec da lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-multi-cell-selection.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 17,
+      "sections": [
+        {
+          "heading": "TASK - Report multi cell selection",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec da lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-skip-empty-source-rows.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 20,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "TASK - Report bo qua dong rong nghiep vu",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec da lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-summary-compact-ui.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 23,
+      "nonEmptyLines": 18,
+      "sections": [
+        {
+          "heading": "TASK - Report summary compact UI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec da lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 16
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_report-wrap-cells.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 19,
+      "nonEmptyLines": 14,
+      "sections": [
+        {
+          "heading": "TASK - Report wrap cells",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 14
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_repost-cell-context-column-menu.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 21,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "TASK - Repost cell right-click column menu",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec da lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 15
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_selection-focus-bug-fix.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "TASK: selection-focus-bug-fix",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "03_TASKS/DONE/TASK_sheet-column-insert-delete-actions.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 18,
+      "nonEmptyLines": 13,
+      "sections": [
+        {
+          "heading": "TASK - Sheet column insert delete actions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Viec can lam",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ket qua",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    }
+  ]
+}

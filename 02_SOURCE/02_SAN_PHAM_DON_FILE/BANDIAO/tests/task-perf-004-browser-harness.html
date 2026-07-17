@@ -1,0 +1,29 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>TASK-PERF-004 browser harness</title>
+<output id="result">pending</output>
+<iframe id="app" src="../../STAGING/giao-dien-desktop-don-gian_v30_quan.html"></iframe>
+<script>
+const frame = document.getElementById('app');
+frame.addEventListener('load', async () => {
+  const app = frame.contentWindow;
+  const originalSerialize = app.__QLDA_PERF__.serialize;
+  let serializes = 0;
+  app.__QLDA_PERF__.serialize = value => {
+    serializes += 1;
+    return originalSerialize(value);
+  };
+  for(let index = 0; index < 8; index += 1) app.persistToDrive();
+  const immediate = serializes;
+  await new Promise(resolve => setTimeout(resolve, 950));
+  const afterBatch = serializes;
+  const beforeSelection = serializes;
+  frame.contentDocument.querySelector('#rows tr[data-i]')?.click();
+  await new Promise(resolve => setTimeout(resolve, 100));
+  const afterSelection = serializes;
+  const saveDurations = app.performance.getEntriesByName('QLDA Save Duration').map(entry => entry.duration);
+  app.__QLDA_PERF__.serialize = originalSerialize;
+  const passed = immediate === 0 && afterBatch === 3 && afterSelection === beforeSelection && saveDurations.length === 1;
+  document.getElementById('result').textContent = JSON.stringify({passed, immediate, afterBatch, beforeSelection, afterSelection, saveDurations});
+});
+</script>

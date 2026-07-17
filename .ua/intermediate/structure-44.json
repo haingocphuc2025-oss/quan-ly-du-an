@@ -1,0 +1,1275 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [
+    "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/04_THANH_TOAN_QUYET_TOAN/TT-01 - Há»“ sÆ¡ thanh toÃ¡n khá»‘i lÆ°á»£ng hoÃ n thÃ nh Ä‘á»£t 1/Gia_HD_phanchia_chuanTT.xlsx",
+    "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1 (2).docx",
+    "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1 (3).docx",
+    "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/HOPDON_2_da_bo_sung_1.docx",
+    "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/ÄÆ°á»ng Ä‘iá»‡n chiáº¿u sÃ¡ng â€” XÃ£ LiÃªn SÆ¡n/05_TONG_HOP_DOI_CHIEU/DM-01 - Danh má»¥c há»“ sÆ¡ toÃ n dá»± Ã¡n/PhuLuc_PhanChia_GiaTri_LienDanh_Goi14.docx"
+  ],
+  "results": [
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-view/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 16,
+      "nonEmptyLines": 11,
+      "sections": [
+        {
+          "heading": "report-view — NEW",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Tài liệu nguồn (đang nằm ngoài thư mục này)",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Ràng buộc",
+          "level": 2,
+          "line": 13
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-view/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 82,
+      "nonEmptyLines": 69,
+      "sections": [
+        {
+          "heading": "SPEC — Report view (màn tổng hợp: nguồn + cột + lọc + nhóm + tóm tắt)",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. Mục tiêu",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "2. Ngoài phạm vi",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "3. Mô hình dữ liệu (JSON định nghĩa report — KHÔNG chứa dữ liệu)",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "4. Toolbar Report — 8 chức năng (khảo sát DOM)",
+          "level": 2,
+          "line": 34
+        },
+        {
+          "heading": "5. Nhóm (Group)",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "6. Tóm tắt (Summarize)",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "7. Ghi ngược sheet nguồn",
+          "level": 2,
+          "line": 56
+        },
+        {
+          "heading": "8. Tiêu chí chấp nhận",
+          "level": 2,
+          "line": 60
+        },
+        {
+          "heading": "9. Test case",
+          "level": 2,
+          "line": 68
+        },
+        {
+          "heading": "10. Phụ thuộc",
+          "level": 2,
+          "line": 76
+        },
+        {
+          "heading": "11. Baseline & output",
+          "level": 2,
+          "line": 81
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/report-wrap-cells/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 15,
+      "sections": [
+        {
+          "heading": "SPEC - Report wrap cells",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/repost-carry-forward/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 579,
+      "nonEmptyLines": 479,
+      "sections": [
+        {
+          "heading": "SPEC: Repost with Carry-Forward",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MỤC TIÊU",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "2. MÔ TẢ CHI TIẾT",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "2.1 Column Classification",
+          "level": 3,
+          "line": 33
+        },
+        {
+          "heading": "2.2 User Flow",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "2.3 So sánh với các nút hiện có",
+          "level": 3,
+          "line": 70
+        },
+        {
+          "heading": "2.4 Cấu hình nâng cao (Advanced Config)",
+          "level": 3,
+          "line": 78
+        },
+        {
+          "heading": "2.5 Data Model",
+          "level": 3,
+          "line": 109
+        },
+        {
+          "heading": "2.6 Logic xóa theo type",
+          "level": 3,
+          "line": 143
+        },
+        {
+          "heading": "3. API & BACKEND (Apps Script)",
+          "level": 2,
+          "line": 155
+        },
+        {
+          "heading": "3.1 Hàm mới",
+          "level": 3,
+          "line": 157
+        },
+        {
+          "heading": "3.2 Logic backend",
+          "level": 3,
+          "line": 163
+        },
+        {
+          "heading": "3.3 Hàm hỗ trợ cho frontend",
+          "level": 3,
+          "line": 250
+        },
+        {
+          "heading": "4. GIAO DIỆN",
+          "level": 2,
+          "line": 283
+        },
+        {
+          "heading": "4.1 Toolbar",
+          "level": 3,
+          "line": 285
+        },
+        {
+          "heading": "4.2 CSS",
+          "level": 3,
+          "line": 321
+        },
+        {
+          "heading": "4.3 JS Handlers",
+          "level": 3,
+          "line": 370
+        },
+        {
+          "heading": "4.4 Summary Preview (tùy chọn)",
+          "level": 3,
+          "line": 467
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 509
+        },
+        {
+          "heading": "6. BÀN GIAO CHO NHÀ THẦU",
+          "level": 2,
+          "line": 536
+        },
+        {
+          "heading": "6.1 Phụ thuộc",
+          "level": 3,
+          "line": 538
+        },
+        {
+          "heading": "6.2 File cần sửa",
+          "level": 3,
+          "line": 549
+        },
+        {
+          "heading": "6.3 Checklist cho nhà thầu",
+          "level": 3,
+          "line": 561
+        },
+        {
+          "heading": "6.4 Cam kết",
+          "level": 3,
+          "line": 574
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 24
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/repost-cell-context-column-menu/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 19,
+      "sections": [
+        {
+          "heading": "SPEC - Repost cell right-click column menu",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 19
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/screen-state-behavior/SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 135,
+      "nonEmptyLines": 107,
+      "sections": [
+        {
+          "heading": "SPEC: screen-state-behavior — Chuẩn hoá trạng thái màn hình (screen state) + hành vi chuột phải/menu theo ngữ cảnh",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. Giải thích thuật ngữ (để dùng chung, tránh hiểu nhầm sau này)",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "1. Kết quả khảo sát chi tiết (đã test tay từng trường hợp)",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "1.1 Browse root (`/browse/workspaces` — danh sách Workspaces gốc)",
+          "level": 3,
+          "line": 27
+        },
+        {
+          "heading": "1.2 Khi mở 1 Workspace (bảng con bên trong, vd \"DAP608.CC2 - Client\")",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "1.3 Khi mở 1 Sheet cụ thể",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "1.4 Bảng menu theo loại item (đối chiếu Actions-button = Context-menu, đã xác minh giống nhau)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "1.5 Trang Home (`/home` — khác Browse)",
+          "level": 3,
+          "line": 67
+        },
+        {
+          "heading": "2. Nguyên tắc thiết kế rút ra (áp dụng khi chuẩn hoá app hiện tại)",
+          "level": 2,
+          "line": 74
+        },
+        {
+          "heading": "3. Đối chiếu với app hiện tại (v26) — ĐÃ TEST TRỰC TIẾP TRÊN APP THẬT (localhost, bản ghép v26)",
+          "level": 2,
+          "line": 83
+        },
+        {
+          "heading": "4. Mục tiêu",
+          "level": 2,
+          "line": 98
+        },
+        {
+          "heading": "5. Phạm vi — CHỈ làm",
+          "level": 2,
+          "line": 105
+        },
+        {
+          "heading": "6. KHÔNG làm (ngoài phạm vi)",
+          "level": 2,
+          "line": 112
+        },
+        {
+          "heading": "7. Luật thi công",
+          "level": 2,
+          "line": 119
+        },
+        {
+          "heading": "8. Acceptance Criteria",
+          "level": 2,
+          "line": 125
+        },
+        {
+          "heading": "9. Bàn giao",
+          "level": 2,
+          "line": 132
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX (1).md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 63,
+      "nonEmptyLines": 49,
+      "sections": [
+        {
+          "heading": "SPEC: Selection & Focus Bug Fix",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ngoai pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Cac bug can fix",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Bug 1 - Click checkbox nhay ve o dau tien",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "Bug 2 - O boi den cach xa nhau khi chon vung trong Report view",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Bug 3 - Vung boi den lech do rong cot trong Grid/Sheet view",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Bug 4 - Can trai/can phai lam nhay ve o dau tien",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "Bug 5 - Khong xoa duoc nhieu cot cung luc",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "Nguyen nhan nghi ngo (de dev kiem tra)",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Tieu chi chap nhan",
+          "level": 2,
+          "line": 41
+        },
+        {
+          "heading": "Test case",
+          "level": 2,
+          "line": 49
+        },
+        {
+          "heading": "Baseline/output du kien",
+          "level": 2,
+          "line": 58
+        },
+        {
+          "heading": "Phu thuoc",
+          "level": 2,
+          "line": 61
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/selection-focus-bug-fix/SELECTION_FOCUS_BUG_FIX.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 48,
+      "nonEmptyLines": 36,
+      "sections": [
+        {
+          "heading": "SPEC: Selection & Focus Bug Fix",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ngoai pham vi",
+          "level": 2,
+          "line": 9
+        },
+        {
+          "heading": "Cac bug can fix",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Bug 1 - Click checkbox nhay ve o dau tien",
+          "level": 3,
+          "line": 15
+        },
+        {
+          "heading": "Bug 2 - O boi den cach xa nhau khi chon vung trong Report view",
+          "level": 3,
+          "line": 19
+        },
+        {
+          "heading": "Bug 3 - Vung boi den lech do rong cot trong Grid/Sheet view",
+          "level": 3,
+          "line": 23
+        },
+        {
+          "heading": "Nguyen nhan nghi ngo (de dev kiem tra)",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Tieu chi chap nhan",
+          "level": 2,
+          "line": 31
+        },
+        {
+          "heading": "Test case",
+          "level": 2,
+          "line": 37
+        },
+        {
+          "heading": "Baseline/output du kien",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Phu thuoc",
+          "level": 2,
+          "line": 46
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/sheet-column-insert-delete-actions/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 23,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "SPEC - Sheet column insert delete actions",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/sheet-report-compact-wrap-spacing/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 23,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "SPEC - Sheet Report compact wrap spacing",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 4
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/toolbar-grid-smartsheet-style/TOOLBAR_SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 57,
+      "nonEmptyLines": 45,
+      "sections": [
+        {
+          "heading": "SPEC: Toolbar Grid View - clone phong cach Smartsheet/Excel 365",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ngoai pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Bo cuc yeu cau",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Hang 1 - thanh menu tren cung",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Hang 2 - thanh cong cu chinh",
+          "level": 3,
+          "line": 22
+        },
+        {
+          "heading": "Quy tac thiet ke",
+          "level": 2,
+          "line": 27
+        },
+        {
+          "heading": "Fix bug bat buoc",
+          "level": 2,
+          "line": 36
+        },
+        {
+          "heading": "Tieu chi chap nhan",
+          "level": 2,
+          "line": 39
+        },
+        {
+          "heading": "Test case",
+          "level": 2,
+          "line": 47
+        },
+        {
+          "heading": "Baseline/output du kien",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Phu thuoc",
+          "level": 2,
+          "line": 55
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 12
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/two-projects-repost-dashboard/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 29,
+      "nonEmptyLines": 20,
+      "sections": [
+        {
+          "heading": "SPEC — Hai dự án mẫu có Repost và Dashboard",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Mục tiêu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Phạm vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Ngoài phạm vi",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Acceptance Criteria",
+          "level": 2,
+          "line": 23
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/workspace-context-menu/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 293,
+      "nonEmptyLines": 247,
+      "sections": [
+        {
+          "heading": "SPEC: Workspace Context Menu + Tao Sheet Moi",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "1. MUC TIEU",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "1.1 Van de hien tai",
+          "level": 3,
+          "line": 16
+        },
+        {
+          "heading": "1.2 Ket qua can dat",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "2. MO TA CHI TIET",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "2.1 Mo Sheet khi click",
+          "level": 3,
+          "line": 30
+        },
+        {
+          "heading": "2.2 Nut \"+ Tao\" trong workspace",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "2.3 Context Menu (chuot phai hoac click \"...\")",
+          "level": 3,
+          "line": 87
+        },
+        {
+          "heading": "3. API & BACKEND (google.script.run)",
+          "level": 2,
+          "line": 115
+        },
+        {
+          "heading": "4. GIAO DIEN",
+          "level": 2,
+          "line": 167
+        },
+        {
+          "heading": "4.1 Context menu CSS",
+          "level": 3,
+          "line": 169
+        },
+        {
+          "heading": "4.2 Item \"...\" button",
+          "level": 3,
+          "line": 213
+        },
+        {
+          "heading": "4.3 Doi ten inline",
+          "level": 3,
+          "line": 240
+        },
+        {
+          "heading": "5. TEST CASES",
+          "level": 2,
+          "line": 267
+        },
+        {
+          "heading": "6. BAN GIAO",
+          "level": 2,
+          "line": 284
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 15
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR (1).md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 91,
+      "nonEmptyLines": 70,
+      "sections": [
+        {
+          "heading": "SPEC: Workspace Navigator + Report Row Number",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Ngoai pham vi",
+          "level": 2,
+          "line": 13
+        },
+        {
+          "heading": "Phan A - Workspace Navigator",
+          "level": 2,
+          "line": 18
+        },
+        {
+          "heading": "Vi tri va cach kich hoat",
+          "level": 3,
+          "line": 20
+        },
+        {
+          "heading": "Bo cuc panel",
+          "level": 3,
+          "line": 24
+        },
+        {
+          "heading": "Hanh vi",
+          "level": 3,
+          "line": 29
+        },
+        {
+          "heading": "Phan B - Report view: them cot so thu tu dong",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Mo ta",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "Yeu cau",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "Phan C1 - Nut unhide cot da an",
+          "level": 2,
+          "line": 43
+        },
+        {
+          "heading": "Mo ta",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "Yeu cau",
+          "level": 3,
+          "line": 48
+        },
+        {
+          "heading": "Phan C2 - Chuot phai hien menu Actions",
+          "level": 2,
+          "line": 51
+        },
+        {
+          "heading": "Mo ta",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "Pham vi ap dung",
+          "level": 3,
+          "line": 57
+        },
+        {
+          "heading": "Hanh vi",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "Tieu chi chap nhan",
+          "level": 2,
+          "line": 67
+        },
+        {
+          "heading": "Test case",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "Baseline/output du kien",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "Phu thuoc",
+          "level": 2,
+          "line": 89
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 21
+      }
+    },
+    {
+      "path": "01_SPEC/DA_TRIEN_KHAI/workspace-navigator/WORKSPACE_NAVIGATOR.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 58,
+      "nonEmptyLines": 44,
+      "sections": [
+        {
+          "heading": "SPEC: Workspace Navigator + Report Row Number",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Muc tieu",
+          "level": 2,
+          "line": 6
+        },
+        {
+          "heading": "Ngoai pham vi",
+          "level": 2,
+          "line": 10
+        },
+        {
+          "heading": "Phan A - Workspace Navigator",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Vi tri va cach kich hoat",
+          "level": 3,
+          "line": 17
+        },
+        {
+          "heading": "Bo cuc panel",
+          "level": 3,
+          "line": 21
+        },
+        {
+          "heading": "Hanh vi",
+          "level": 3,
+          "line": 26
+        },
+        {
+          "heading": "Phan B - Report view: them cot so thu tu dong",
+          "level": 2,
+          "line": 30
+        },
+        {
+          "heading": "Mo ta",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "Yeu cau",
+          "level": 3,
+          "line": 36
+        },
+        {
+          "heading": "Tieu chi chap nhan",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Test case",
+          "level": 2,
+          "line": 46
+        },
+        {
+          "heading": "Baseline/output du kien",
+          "level": 2,
+          "line": 52
+        },
+        {
+          "heading": "Phu thuoc",
+          "level": 2,
+          "line": 56
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 14
+      }
+    },
+    {
+      "path": "01_SPEC/DANH_MUC_SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 59,
+      "nonEmptyLines": 52,
+      "sections": [
+        {
+          "heading": "NEW",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "ĐÃ TRIỂN KHAI",
+          "level": 2,
+          "line": 9
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "01_SPEC/NEW/screen-state-behavior/SPEC.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 136,
+      "nonEmptyLines": 107,
+      "sections": [
+        {
+          "heading": "SPEC: screen-state-behavior — Chuẩn hoá trạng thái màn hình (screen state) + hành vi chuột phải/menu theo ngữ cảnh",
+          "level": 1,
+          "line": 3
+        },
+        {
+          "heading": "0. Giải thích thuật ngữ (để dùng chung, tránh hiểu nhầm sau này)",
+          "level": 2,
+          "line": 12
+        },
+        {
+          "heading": "1. Kết quả khảo sát chi tiết (đã test tay từng trường hợp)",
+          "level": 2,
+          "line": 26
+        },
+        {
+          "heading": "1.1 Browse root (`/browse/workspaces` — danh sách Workspaces gốc)",
+          "level": 3,
+          "line": 28
+        },
+        {
+          "heading": "1.2 Khi mở 1 Workspace (bảng con bên trong, vd \"DAP608.CC2 - Client\")",
+          "level": 3,
+          "line": 35
+        },
+        {
+          "heading": "1.3 Khi mở 1 Sheet cụ thể",
+          "level": 3,
+          "line": 39
+        },
+        {
+          "heading": "1.4 Bảng menu theo loại item (đối chiếu Actions-button = Context-menu, đã xác minh giống nhau)",
+          "level": 3,
+          "line": 45
+        },
+        {
+          "heading": "1.5 Trang Home (`/home` — khác Browse)",
+          "level": 3,
+          "line": 68
+        },
+        {
+          "heading": "2. Nguyên tắc thiết kế rút ra (áp dụng khi chuẩn hoá app hiện tại)",
+          "level": 2,
+          "line": 75
+        },
+        {
+          "heading": "3. Đối chiếu với app hiện tại (v26) — ĐÃ TEST TRỰC TIẾP TRÊN APP THẬT (localhost, bản ghép v26)",
+          "level": 2,
+          "line": 84
+        },
+        {
+          "heading": "4. Mục tiêu",
+          "level": 2,
+          "line": 100
+        },
+        {
+          "heading": "5. Phạm vi — CHỈ làm",
+          "level": 2,
+          "line": 107
+        },
+        {
+          "heading": "6. KHÔNG làm (ngoài phạm vi)",
+          "level": 2,
+          "line": 114
+        },
+        {
+          "heading": "7. Luật thi công",
+          "level": 2,
+          "line": 121
+        },
+        {
+          "heading": "8. Acceptance Criteria",
+          "level": 2,
+          "line": 127
+        },
+        {
+          "heading": "9. Bàn giao",
+          "level": 2,
+          "line": 134
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 16
+      }
+    },
+    {
+      "path": "01_SPEC/README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 22,
+      "nonEmptyLines": 16,
+      "sections": [
+        {
+          "heading": "SPEC",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Quy tac",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Spec hop le",
+          "level": 2,
+          "line": 17
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    },
+    {
+      "path": "02_SOURCE/01_CODE_HIEN_TAI/CODE_CHINH.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 43,
+      "nonEmptyLines": 26,
+      "sections": [
+        {
+          "heading": "Baseline chính thức",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "Bản vá 15/07/2026 (spec `browse-status-display` + `screen-state-behavior`)",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Bản chạy và bàn giao",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Lịch sử (v25, đã thay thế bởi v26)",
+          "level": 2,
+          "line": 29
+        },
+        {
+          "heading": "Rollback",
+          "level": 2,
+          "line": 35
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "02_SOURCE/02_SAN_PHAM_DON_FILE/_LOCAL_ATTACHMENTS/HOPDON_2_da_bo_sung.docx",
+      "language": "docx",
+      "fileCategory": "code",
+      "totalLines": 210,
+      "nonEmptyLines": 210,
+      "metrics": {}
+    }
+  ]
+}

@@ -1,0 +1,231 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "04_REPORTS/2026-07-14_release_v26.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 38,
+      "nonEmptyLines": 30,
+      "sections": [
+        {
+          "heading": "Nguon",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "File tao/cap nhat",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "Ghi chu",
+          "level": 2,
+          "line": 16
+        },
+        {
+          "heading": "Bo sung menu Tao trong Browse",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Sua nut ‹ Du an trong Sheet/Repost",
+          "level": 2,
+          "line": 29
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 5
+      }
+    },
+    {
+      "path": "04_REPORTS/2026-07-14_workspace_browse_tree_fix.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 47,
+      "nonEmptyLines": 38,
+      "sections": [
+        {
+          "heading": "Noi dung da sua",
+          "level": 2,
+          "line": 5
+        },
+        {
+          "heading": "File da dong bo",
+          "level": 2,
+          "line": 14
+        },
+        {
+          "heading": "Kiem tra",
+          "level": 2,
+          "line": 20
+        },
+        {
+          "heading": "Bo sung focus file dang mo",
+          "level": 2,
+          "line": 25
+        },
+        {
+          "heading": "Bo sung don dep Browse",
+          "level": 2,
+          "line": 33
+        },
+        {
+          "heading": "Bo sung Browse 2 cot theo xac nhan",
+          "level": 2,
+          "line": 40
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 6
+      }
+    },
+    {
+      "path": "04_REPORTS/CODE_MAP_V25.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 157,
+      "nonEmptyLines": 126,
+      "sections": [
+        {
+          "heading": "CODE_MAP_V25",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "0. SHA-256 — ĐÃ XÁC MINH: KHỚP",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "1. Số liệu tổng quan (STAGING file)",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "2. Danh sách hàm JS theo nhóm module (SPEC modular-split-v26 mục 3)",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "state (2)",
+          "level": 3,
+          "line": 32
+        },
+        {
+          "heading": "storage (29)",
+          "level": 3,
+          "line": 38
+        },
+        {
+          "heading": "api (53)",
+          "level": 3,
+          "line": 41
+        },
+        {
+          "heading": "toolbar (30)",
+          "level": 3,
+          "line": 44
+        },
+        {
+          "heading": "grid (168)",
+          "level": 3,
+          "line": 47
+        },
+        {
+          "heading": "report (34)",
+          "level": 3,
+          "line": 50
+        },
+        {
+          "heading": "dashboard (18)",
+          "level": 3,
+          "line": 53
+        },
+        {
+          "heading": "repost (4)",
+          "level": 3,
+          "line": 56
+        },
+        {
+          "heading": "workspace-navigator (77)",
+          "level": 3,
+          "line": 59
+        },
+        {
+          "heading": "main — [?] chưa rõ nhóm (23)",
+          "level": 3,
+          "line": 62
+        },
+        {
+          "heading": "3. Biến state toàn cục (const/let/var top-level trong khối `<script>`)",
+          "level": 2,
+          "line": 69
+        },
+        {
+          "heading": "4. Key localStorage",
+          "level": 2,
+          "line": 128
+        },
+        {
+          "heading": "5. Endpoint Google API / Apps Script",
+          "level": 2,
+          "line": 140
+        },
+        {
+          "heading": "6. Việc còn thiếu / cần làm tiếp trước khi thi công SPEC modular-split-v26",
+          "level": 2,
+          "line": 154
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 18
+      }
+    },
+    {
+      "path": "04_REPORTS/KNOWN_ISSUES.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 11,
+      "nonEmptyLines": 8,
+      "sections": [
+        {
+          "heading": "KNOWN ISSUES",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Mẫu",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "ISSUE-XXX",
+          "level": 3,
+          "line": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 3
+      }
+    }
+  ]
+}

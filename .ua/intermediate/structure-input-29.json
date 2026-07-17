@@ -1,0 +1,52 @@
+{
+    "projectRoot":  "E:\\My Drive\\03_DU_AN_PHAN_MEM\\DU AN WED QUAN LY",
+    "batchFiles":  [
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU.md",
+                           "language":  "markdown",
+                           "sizeLines":  63,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v19.md",
+                           "language":  "markdown",
+                           "sizeLines":  42,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v20.md",
+                           "language":  "markdown",
+                           "sizeLines":  49,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v21.md",
+                           "language":  "markdown",
+                           "sizeLines":  43,
+                           "fileCategory":  "docs"
+                       },
+                       {
+                           "path":  "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/CONG_VIEC.md",
+                           "language":  "markdown",
+                           "sizeLines":  87,
+                           "fileCategory":  "docs"
+                       }
+                   ],
+    "batchImportData":  {
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU.md":  [
+
+                                                                                                                                                                       ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v19.md":  [
+
+                                                                                                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v20.md":  [
+
+                                                                                                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/BIEN_BAN_NGHIEM_THU_v21.md":  [
+
+                                                                                                                                                                           ],
+                            "02_SOURCE/99_LUU_TRU_CU/99_THU_VIEN/ARCHIVE/MD_BACKUP_BEFORE_STANDARDIZE_20260708_090906/04_GIAM_SAT_NGHIEM_THU/CONG_VIEC.md":  [
+
+                                                                                                                                                             ]
+                        }
+}

@@ -1,0 +1,1282 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 20,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/SKILL_REGISTRY.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 26,
+      "nonEmptyLines": 25,
+      "sections": [
+        {
+          "heading": "Skill Registry",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/architecture.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/architecture",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/build.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/build",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/capture-ui.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/capture-ui",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/clarify.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/clarify",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/commit.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/commit",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/compare-ui.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/compare-ui",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/component-map.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/component-map",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/context.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/context",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/document.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/document",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/dom-analysis.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/dom-analysis",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/extract-design-system.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/extract-design-system",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/fix.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/fix",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/plan.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/plan",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/regression.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/regression",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/release.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/release",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/review.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/review",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/spec",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/tasks.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/tasks",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    },
+    {
+      "path": ".agents/Hermes-Cloner/03_SKILLS/ui-spec.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 49,
+      "nonEmptyLines": 31,
+      "sections": [
+        {
+          "heading": "/ui-spec",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Purpose",
+          "level": 2,
+          "line": 3
+        },
+        {
+          "heading": "When to Use",
+          "level": 2,
+          "line": 7
+        },
+        {
+          "heading": "Inputs",
+          "level": 2,
+          "line": 11
+        },
+        {
+          "heading": "Outputs",
+          "level": 2,
+          "line": 15
+        },
+        {
+          "heading": "Required Plugins",
+          "level": 2,
+          "line": 19
+        },
+        {
+          "heading": "Workflow",
+          "level": 2,
+          "line": 23
+        },
+        {
+          "heading": "Checklist",
+          "level": 2,
+          "line": 32
+        },
+        {
+          "heading": "Common Mistakes",
+          "level": 2,
+          "line": 40
+        },
+        {
+          "heading": "Example",
+          "level": 2,
+          "line": 47
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 10
+      }
+    }
+  ]
+}

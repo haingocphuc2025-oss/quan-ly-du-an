@@ -1,0 +1,196 @@
+{
+  "scriptCompleted": true,
+  "filesAnalyzed": 4,
+  "filesSkipped": [],
+  "results": [
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/00_README.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 3,
+      "nonEmptyLines": 2,
+      "sections": [
+        {
+          "heading": "TRIEN KHAI",
+          "level": 1,
+          "line": 1
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 1
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/03_CURRENT_STATUS.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 8,
+      "nonEmptyLines": 5,
+      "sections": [
+        {
+          "heading": "CURRENT STATUS - TRIEN KHAI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "Trang thai",
+          "level": 2,
+          "line": 5
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 2
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/04_RELEASE_NOTE.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 95,
+      "nonEmptyLines": 64,
+      "sections": [
+        {
+          "heading": "📋 RELEASE NOTE — TRIỂN KHAI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "📦 PHIÊN BẢN ĐÃ RELEASE",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "🚀 QUY TRÌNH DEPLOY",
+          "level": 2,
+          "line": 17
+        },
+        {
+          "heading": "📝 TEMPLATE RELEASE NOTE MỖI VERSION",
+          "level": 2,
+          "line": 28
+        },
+        {
+          "heading": "RELEASE v[N] — DD/MM/YYYY",
+          "level": 3,
+          "line": 34
+        },
+        {
+          "heading": "TÍNH NĂNG MỚI",
+          "level": 4,
+          "line": 47
+        },
+        {
+          "heading": "THAY ĐỔI / FIX",
+          "level": 4,
+          "line": 55
+        },
+        {
+          "heading": "BREAKING CHANGES",
+          "level": 4,
+          "line": 63
+        },
+        {
+          "heading": "KIỂM TRA SAU DEPLOY",
+          "level": 4,
+          "line": 69
+        },
+        {
+          "heading": "ROLLBACK PLAN",
+          "level": 4,
+          "line": 82
+        },
+        {
+          "heading": "📌 LƯU Ý",
+          "level": 2,
+          "line": 91
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    },
+    {
+      "path": "02_SOURCE/99_LUU_TRU_CU/05_TRIEN_KHAI/05_DEPLOY_LOG.md",
+      "language": "markdown",
+      "fileCategory": "docs",
+      "totalLines": 98,
+      "nonEmptyLines": 67,
+      "sections": [
+        {
+          "heading": "📋 DEPLOY LOG — NHẬT KÝ TRIỂN KHAI",
+          "level": 1,
+          "line": 1
+        },
+        {
+          "heading": "📝 MẪU LOG MỖI LẦN DEPLOY/ROLLBACK",
+          "level": 2,
+          "line": 8
+        },
+        {
+          "heading": "DEPLOY v[N] — DD/MM/YYYY HH:MM",
+          "level": 3,
+          "line": 14
+        },
+        {
+          "heading": "CÁC BƯỚC THỰC HIỆN",
+          "level": 4,
+          "line": 26
+        },
+        {
+          "heading": "KẾT QUẢ",
+          "level": 4,
+          "line": 38
+        },
+        {
+          "heading": "GHI CHÚ / VẤN ĐỀ",
+          "level": 4,
+          "line": 49
+        },
+        {
+          "heading": "ROLLBACK v[N] → v[N-1] — DD/MM/YYYY HH:MM",
+          "level": 3,
+          "line": 55
+        },
+        {
+          "heading": "CÁC BƯỚC ROLLBACK",
+          "level": 4,
+          "line": 66
+        },
+        {
+          "heading": "KẾT QUẢ ROLLBACK",
+          "level": 4,
+          "line": 76
+        },
+        {
+          "heading": "📜 LỊCH SỬ DEPLOY/ROLLBACK",
+          "level": 2,
+          "line": 85
+        },
+        {
+          "heading": "📌 LƯU Ý",
+          "level": 2,
+          "line": 94
+        }
+      ],
+      "metrics": {
+        "importCount": 0,
+        "exportCount": 0,
+        "functionCount": 0,
+        "classCount": 0,
+        "sectionCount": 11
+      }
+    }
+  ]
+}
