@@ -1,14 +1,14 @@
 # TRANG THAI THI CONG
 
-Cap nhat: 13/07/2026
+Cap nhat: 17/07/2026
 
 | Muc | Gia tri |
 |---|---|
-| Baseline hien hanh | v25 |
-| Baseline file | `02_SAN_PHAM_DON_FILE/VERSIONS/v25_baseline.html` |
-| SHA-256 | `A1E44408CF8B6C77BEF9F8D9CBA610FA7CF361DD6C07D022BC6FBC80EFBB41E2` |
-| Spec NEW | 0 |
+| Baseline hien hanh | v30 |
+| Baseline file | `02_SOURCE/02_SAN_PHAM_DON_FILE/VERSIONS/v30_baseline.html` |
+| SHA-256 | `0121dfc7738728976593fa6a90b58ee57be7ed2c376f4f4fb2bb984e23ca4a7f` |
+| Spec NEW | 1 |
 | Trang thai | HOAN TAT |
-| Rollback | `VERSIONS/v24_baseline.html` |
+| Rollback | `VERSIONS/v28_baseline.html` |
 
-v25 bo sung Multi-select Column. Spec da chuyen sang `DA_TRIEN_KHAI`; goi giao viec Column Types cu da dua khoi BANDIAO.
+v30 duoc tao tu module VERSIONS/v30_baseline_modules/ (index.html + css/main.css + 11 js modules), dong bo file STAGING/BANDIAO. SHA giong nhau giua STAGING va BANDIAO.

@@ -1,15 +1,16 @@
 ﻿# DANH MỤC SPEC
 
-Cập nhật: 13/07/2026
+Cập nhật: 17/07/2026
 
 ## NEW
 
-Không còn spec chờ triển khai.
+(trống)
 
 ## ĐÃ TRIỂN KHAI
 
 | Spec | Baseline |
 |---|---|
+| workspace-menu-viewport-performance-v29 | v29 (16/07/2026 — menu viewport-safe, bỏ polling File menu, PASS browser/performance) |
 | publish-report | v25 |
 | file-attachment | v25 |
 | drive-api-backend | v25 |
