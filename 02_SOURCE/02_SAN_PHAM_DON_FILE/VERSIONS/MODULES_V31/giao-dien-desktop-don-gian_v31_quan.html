@@ -13991,15 +13991,26 @@ const ImportExcel = (function() {
         return normalized === '_rowindex' || normalized === '_attachments' || normalized === 'attachments';
     }
 
+    function isProtectedSheetColumn(sheet, columnIndex) {
+        const index = Number(columnIndex);
+        if (!Number.isInteger(index) || index <= 1) return true;
+        const label = sheet?.cells?.[0]?.[index];
+        return isSystemColumn(label) || isSystemColumnByLabel(label);
+    }
+
     function getImportableColumns(sheet) {
         if (!sheet || !sheet.cells || !sheet.cells[0]) return [];
         const header = sheet.cells[0];
-        return header.map((name, index) => ({
-            index: index,
-            id: name,
-            label: name,
-            importable: !isSystemColumn(name) && !isSystemColumnByLabel(name)
-        })).filter(col => col.importable);
+        return header.map((name, index) => {
+            const config = typeof getColumnConfig === 'function' ? getColumnConfig(index, sheet) : null;
+            return {
+                index,
+                id: name,
+                label: name,
+                type: config?.type || '',
+                importable: index > 1 && !isSystemColumn(name) && !isSystemColumnByLabel(name)
+            };
+        }).filter(col => col.importable);
     }
 
     // ============================================
@@ -14035,6 +14046,14 @@ const ImportExcel = (function() {
 
     function activeItem() {
         if (typeof getActiveItem === 'function') return getActiveItem();
+        if (typeof activeSheetContext !== 'undefined' && activeSheetContext
+            && typeof PROJECT_FOLDERS !== 'undefined') {
+            const projectIndex = Number(activeSheetContext.projectIndex);
+            const folderIndex = Number(activeSheetContext.folderIndex);
+            if (Number.isInteger(projectIndex) && Number.isInteger(folderIndex)) {
+                return PROJECT_FOLDERS[projectIndex]?.[folderIndex] || null;
+            }
+        }
         if (typeof window.activeItem === 'object') return window.activeItem;
         return null;
     }
@@ -14042,11 +14061,39 @@ const ImportExcel = (function() {
     function persistProject() {
         if (typeof saveAllProjects === 'function') saveAllProjects();
         else if (typeof persistCurrentProject === 'function') persistCurrentProject();
+        else if (typeof saveCurrentProjectStateSilently === 'function') saveCurrentProjectStateSilently();
+        else if (typeof persistToDrive === 'function') persistToDrive();
     }
 
     function refreshWorkspace() {
         if (typeof refreshWorkspaceTree === 'function') refreshWorkspaceTree();
         else if (typeof renderWorkspace === 'function') renderWorkspace();
+        else if (typeof renderFolderRows === 'function') renderFolderRows();
+    }
+
+    function worksheetToRows(worksheet) {
+        const rows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '', raw: false });
+        const merges = Array.isArray(worksheet?.['!merges']) ? worksheet['!merges'] : [];
+
+        merges.forEach(range => {
+            const startRow = Number(range?.s?.r);
+            const startCol = Number(range?.s?.c);
+            const endRow = Number(range?.e?.r);
+            const endCol = Number(range?.e?.c);
+            if (![startRow, startCol, endRow, endCol].every(Number.isInteger)) return;
+
+            const mergedValue = rows[startRow]?.[startCol] ?? '';
+            for (let rowIndex = startRow; rowIndex <= endRow; rowIndex += 1) {
+                if (!Array.isArray(rows[rowIndex])) rows[rowIndex] = [];
+                for (let colIndex = startCol; colIndex <= endCol; colIndex += 1) {
+                    if (rows[rowIndex][colIndex] == null || rows[rowIndex][colIndex] === '') {
+                        rows[rowIndex][colIndex] = mergedValue;
+                    }
+                }
+            }
+        });
+
+        return rows;
     }
 
     function logActivity(item, action, detail) {
@@ -14287,7 +14334,7 @@ const ImportExcel = (function() {
         const sheetIndex = selectedSheets[sheetArrayIndex];
         const sheetName = currentWorkbook.SheetNames[sheetIndex];
         const worksheet = currentWorkbook.Sheets[sheetName];
-        const sheetData = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '', raw: false });
+        const sheetData = worksheetToRows(worksheet);
 
         if (sheetData.length === 0) {
             showToast(`Sheet "${sheetName}" is empty`, 'error');
@@ -14463,11 +14510,17 @@ const ImportExcel = (function() {
 
         modal.querySelector('#mappingNext').addEventListener('click', () => {
             const mapping = {};
+            const allowedSheetColumns = new Set(getImportableColumns(sheet).map(col => col.index));
             modal.querySelectorAll('.import-col-select').forEach(select => {
                 const excelCol = parseInt(select.dataset.excelCol);
                 const sheetCol = parseInt(select.value);
-                if (!isNaN(sheetCol)) mapping[excelCol] = sheetCol;
+                if (!isNaN(sheetCol) && allowedSheetColumns.has(sheetCol)) mapping[excelCol] = sheetCol;
             });
+
+            if (Object.keys(mapping).length === 0) {
+                showToast('Vui lòng ánh xạ ít nhất một cột', 'error');
+                return;
+            }
 
             keyColumnIndex = modal.querySelector('#keyColumnSelect').value ?
                 parseInt(modal.querySelector('#keyColumnSelect').value) : null;
@@ -14521,9 +14574,10 @@ const ImportExcel = (function() {
             }
 
             // Required fields check (first importable column as required)
-            const firstImportable = importableColumns[0]?.index;
-            if (firstImportable !== undefined && (mappedRow[firstImportable] == null || mappedRow[firstImportable] === '')) {
-                rowErrors.push(`Cột bắt buộc (${importableColumns[0].label}) trống`);
+            const mappedColumnIndexes = new Set(Object.values(mapping).map(Number));
+            const firstMappedImportable = importableColumns.find(col => mappedColumnIndexes.has(col.index));
+            if (firstMappedImportable && (mappedRow[firstMappedImportable.index] == null || mappedRow[firstMappedImportable.index] === '')) {
+                rowErrors.push(`Cột bắt buộc (${firstMappedImportable.label}) trống`);
             }
 
             // Date format check (heuristic: columns with "ngày", "date", "thời gian")
@@ -14537,7 +14591,7 @@ const ImportExcel = (function() {
             // Type check: number columns
             Object.entries(mappedRow).forEach(([colIdx, val]) => {
                 const col = importableColumns.find(c => c.index === parseInt(colIdx));
-                if (col && looksLikeNumberColumn(col.label) && val !== '' && isNaN(Number(val))) {
+                if (col && isNumberColumn(col) && val !== '' && isNaN(Number(val))) {
                     rowErrors.push(`Cột ${escapeHtml(col.label)}: phải là số`);
                 }
             });
@@ -14598,12 +14652,17 @@ const ImportExcel = (function() {
         return m >= 1 && m <= 12 && d >= 1 && d <= 31;
     }
 
-    function looksLikeNumberColumn(label) {
-        if (!label) return false;
-        const l = label.toLowerCase();
-        return l.includes('số') || l.includes('amount') || l.includes('quantity') ||
-               l.includes('số lượng') || l.includes('đơn giá') || l.includes('thành tiền') ||
-               l.includes('giá') || l.includes('price') || l.includes('cost');
+    function isNumberColumn(column) {
+        const label = String(column?.label || '').trim().toLowerCase();
+        const textIdentifierLabels = [
+            'số văn bản', 'số hiệu', 'mã hồ sơ', 'mã văn bản',
+            'document number', 'reference number', 'document id'
+        ];
+        if (textIdentifierLabels.some(keyword => label.includes(keyword))) return false;
+        const type = String(column?.type || '').trim().toLowerCase();
+        if (['number', 'numeric', 'currency', 'percent', 'percentage', 'decimal'].includes(type)) return true;
+        return ['amount', 'quantity', 'price', 'cost', 'số lượng', 'đơn giá', 'thành tiền', 'giá trị']
+            .some(keyword => label.includes(keyword));
     }
 
     // ============================================
@@ -14710,7 +14769,7 @@ const ImportExcel = (function() {
                 progress.close();
                 pushUndoSnapshot(sheet, undoSnapshot, `Import Excel ${currentFileName}`);
                 persistProject();
-                if (typeof renderGridSheet === 'function') renderGridSheet();
+                if (typeof renderGridSheet === 'function') renderGridSheet(sheet);
                 refreshWorkspace();
                 showImportReport(results, allErrors);
                 return;
@@ -14738,7 +14797,7 @@ const ImportExcel = (function() {
                                 // Update existing row (only mapped columns, never _attachments)
                                 Object.entries(mappedRow).forEach(([col, val]) => {
                                     const colIdx = parseInt(col);
-                                    if (colIdx !== sheet.cells[0].indexOf('_attachments')) {
+                                    if (!isProtectedSheetColumn(sheet, colIdx)) {
                                         sheet.cells[existingRowIdx][colIdx] = val;
                                     }
                                 });
@@ -14760,7 +14819,7 @@ const ImportExcel = (function() {
                     const newRow = Array(sheet.cells[0].length).fill('');
                     Object.entries(mappedRow).forEach(([col, val]) => {
                         const colIdx = parseInt(col);
-                        if (colIdx !== sheet.cells[0].indexOf('_attachments')) {
+                        if (!isProtectedSheetColumn(sheet, colIdx)) {
                             newRow[colIdx] = val;
                         }
                     });

@@ -41,6 +41,7 @@ test('V31 bundle contains the complete multi-sheet import flow', () => {
     assert.ok(manifest.js.includes('js/import-excel.js'));
     for (const functionName of [
         'showSheetSelector',
+        'worksheetToRows',
         'showHeaderRowPicker',
         'showMappingDialog',
         'validateAndStore',
@@ -56,6 +57,21 @@ test('V31 bundle contains the complete multi-sheet import flow', () => {
     assert.match(importSource, /host\.appendChild\(modal\);/);
     assert.match(importSource, /if \(!overlay\) \{/);
     assert.doesNotMatch(importSource, /document\.body\.appendChild\(modal\);/);
+    assert.match(importSource, /activeSheetContext[\s\S]*?PROJECT_FOLDERS\[projectIndex\]\?\.\[folderIndex\]/);
+    assert.match(importSource, /worksheet\?\.\['!merges'\]/);
+    assert.match(importSource, /rows\[rowIndex\]\[colIndex\] = mergedValue;/);
+    assert.match(importSource, /renderGridSheet\(sheet\)/);
+    assert.match(importSource, /saveCurrentProjectStateSilently/);
+    assert.match(importSource, /importable: index > 1/);
+    assert.match(importSource, /function\s+isProtectedSheetColumn\s*\(sheet, columnIndex\)/);
+    assert.match(importSource, /if \(!Number\.isInteger\(index\) \|\| index <= 1\) return true;/);
+    assert.match(importSource, /allowedSheetColumns\.has\(sheetCol\)/);
+    assert.match(importSource, /!isProtectedSheetColumn\(sheet, colIdx\)/);
+    assert.match(importSource, /firstMappedImportable/);
+    assert.match(importSource, /function\s+isNumberColumn\s*\(column\)/);
+    assert.match(importSource, /'số văn bản'/);
+    assert.match(importSource, /textIdentifierLabels\.some/);
+    assert.doesNotMatch(importSource, /l\.includes\('số'\)/);
 });
 
 test('all official V31 release artifacts are byte-identical', () => {

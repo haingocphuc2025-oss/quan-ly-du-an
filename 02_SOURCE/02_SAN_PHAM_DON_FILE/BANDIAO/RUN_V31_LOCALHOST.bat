@@ -5,7 +5,7 @@ set "PORT=8766"
 set "HELPER_PORT=8780"
 set "HTML=giao-dien-desktop-don-gian_v31_quan.html"
 set "APPDIR=%~dp0"
-set "URL=http://127.0.0.1:%PORT%/%HTML%?build=20260717-v31"
+set "URL=http://127.0.0.1:%PORT%/%HTML%?build=20260717-v31.2"
 
 if not exist "%APPDIR%%HTML%" (
   echo Khong tim thay %HTML%.

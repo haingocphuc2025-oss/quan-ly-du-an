@@ -3,7 +3,7 @@ setlocal
 
 set "APP_DIR=%~dp0BANDIAO"
 set "APP_FILE=giao-dien-desktop-don-gian_v31_quan.html"
-set "APP_URL=http://127.0.0.1:8766/%APP_FILE%?build=20260717-v31"
+set "APP_URL=http://127.0.0.1:8766/%APP_FILE%?build=20260717-v31.2"
 
 if not exist "%APP_DIR%\%APP_FILE%" (
   echo Khong tim thay file V31:
