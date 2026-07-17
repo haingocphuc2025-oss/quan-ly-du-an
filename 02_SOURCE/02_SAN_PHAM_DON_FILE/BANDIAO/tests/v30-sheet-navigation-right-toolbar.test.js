@@ -5,7 +5,7 @@ const assert = require('node:assert/strict');
 
 const sourcePath = path.resolve(
   __dirname,
-  '../../STAGING/giao-dien-desktop-don-gian_v30_quan.html'
+  '../../STAGING/giao-dien-desktop-don-gian_v31_quan.html'
 );
 const source = fs.readFileSync(sourcePath, 'utf8');
 

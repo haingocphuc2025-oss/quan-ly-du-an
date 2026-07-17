@@ -1,0 +1,27 @@
+{
+  "name": "v31-baseline",
+  "version": "1.0.0",
+  "description": "Import Excel multi-sheet feature - v31",
+  "css": [
+    "css/main.css",
+    "css/file-menu.css",
+    "css/import-excel.css"
+  ],
+  "js": [
+    "js/state.js",
+    "js/menu-position.js",
+    "js/storage.js",
+    "js/api.js",
+    "js/toolbar.js",
+    "js/grid.js",
+    "js/report.js",
+    "js/dashboard.js",
+    "js/repost.js",
+    "js/workspace-navigator.js",
+    "js/file-menu.js",
+    "js/import-excel.js",
+    "js/main.js"
+  ],
+  "index": "index.html",
+  "output": "giao-dien-desktop-don-gian_v31_quan.html"
+}

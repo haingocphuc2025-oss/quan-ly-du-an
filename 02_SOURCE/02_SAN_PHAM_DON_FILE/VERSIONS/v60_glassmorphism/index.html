@@ -1,0 +1,1893 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DU AN WEB QUAN LY - Glassmorphism</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F06445'/%3E%3Cpath d='M18 17h28v6H18zm0 12h28v6H18zm0 12h18v6H18z' fill='white'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+<style>
+/* ============================================
+   GLASSMORPHISM VARIABLES
+   ============================================ */
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-bg-dark: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-border-dark: rgba(255, 255, 255, 0.15);
+  --glass-blur: 20px;
+  --glass-blur-dark: 16px;
+  
+  --accent-primary: #00f2fe;
+  --accent-secondary: #4facfe;
+  --accent-gradient: linear-gradient(135deg, #667eea, #764ba2);
+  --stamp: #F06445;
+  --stamp-soft: rgba(240, 100, 69, 0.15);
+  
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --text-muted: rgba(255, 255, 255, 0.5);
+}
+
+/* ============================================
+   RESET & BASE
+   ============================================ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', 'Outfit', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+  min-height: 100vh;
+  color: var(--text-primary);
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: -50%; left: -50%;
+  width: 200%; height: 200%;
+  background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 40%),
+              radial-gradient(circle at 40% 40%, rgba(255,255,255,0.05) 0%, transparent 30%);
+  animation: floatBg 25s infinite linear;
+  z-index: -1;
+}
+
+@keyframes floatBg {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ============================================
+   GLASSMORPHISM CLASSES
+   ============================================ */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+}
+
+.glass-dark {
+  background: var(--glass-bg-dark);
+  backdrop-filter: blur(var(--glass-blur-dark));
+  -webkit-backdrop-filter: blur(var(--glass-blur-dark));
+  border: 1px solid var(--glass-border-dark);
+  border-radius: 16px;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.glass-button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  color: white;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+}
+
+.glass-input::placeholder { color: rgba(255, 255, 255, 0.5); }
+.glass-input:focus { 
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(0, 242, 254, 0.2);
+}
+
+/* ============================================
+   APP LAYOUT
+   ============================================ */
+.app {
+  display: flex;
+  height: 100vh;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ============================================
+   SIDEBAR (RAIL) - GLASSMORPHISM
+   ============================================ */
+.rail {
+  width: 100px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 8px;
+  gap: 8px;
+}
+
+.window-dots { display: flex; gap: 6px; margin-bottom: 12px; }
+.window-dots span {
+  width: 10px; height: 10px; border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.window-dots span:nth-child(1) { background: #FF5F57; }
+.window-dots span:nth-child(2) { background: #FFBD2E; }
+.window-dots span:nth-child(3) { background: #28C840; }
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.brand-mark {
+  width: 40px; height: 40px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.3);
+}
+
+.brand-name {
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.brand-version {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent-primary);
+  background: rgba(0, 242, 254, 0.15);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: 'IBM Plex Mono', monospace;
+  margin-bottom: 12px;
+}
+
+.rail-nav-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.rail-toggle, .rail-nav-btn {
+  width: 32px; height: 32px;
+  border-radius: 10px;
+  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.rail-toggle:hover, .rail-nav-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.rail-nav-btn:disabled { opacity: 0.3; cursor: default; }
+
+.rail-item {
+  width: 80px;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 10px 4px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.rail-item .ic {
+  font-size: 20px;
+  width: auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.rail-label { font-size: 9px; line-height: 1.2; }
+
+.rail-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.rail-item.active {
+  background: rgba(0, 242, 254, 0.2);
+  border: 1px solid rgba(0, 242, 254, 0.3);
+  color: white;
+}
+
+.rail-item.active .ic { color: var(--accent-primary); }
+
+.rail-spacer { flex: 1; }
+
+.rail-create {
+  width: 60px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.3);
+  border: none;
+  transition: all 0.3s;
+}
+
+.rail-create::after {
+  content: 'Tạo mới';
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.rail-create:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 242, 254, 0.4);
+}
+
+/* ============================================
+   MAIN CONTENT AREA
+   ============================================ */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 16px;
+}
+
+#screen-list, #screen-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================
+   TOPBAR - GLASSMORPHISM
+   ============================================ */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  gap: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+}
+
+.topbar h1 {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0;
+}
+
+.title-mark {
+  width: 8px;
+  height: 40px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  display: inline-block;
+  box-shadow: 0 4px 16px rgba(0, 242, 254, 0.3);
+}
+
+.title-text { display: block; }
+
+.eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 4px;
+  text-transform: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  border-radius: 14px;
+  padding: 12px 16px;
+  width: 280px;
+}
+
+.search input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  flex: 1;
+}
+
+.search .ic { color: rgba(255, 255, 255, 0.5); font-size: 16px; }
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 14px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 242, 254, 0.4);
+}
+
+.btn-ghost {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-icon {
+  width: 44px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+/* ============================================
+   TOOLBAR - GLASSMORPHISM
+   ============================================ */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 18px;
+}
+
+.toolbar .count {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================
+   TABLE - GLASSMORPHISM
+   ============================================ */
+.table-wrap {
+  flex: 1;
+  overflow: auto;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+}
+
+.table-wrap::-webkit-scrollbar { width: 8px; height: 8px; }
+.table-wrap::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 4px; }
+.table-wrap::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 4px; }
+.table-wrap::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead th {
+  text-align: left;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  position: sticky;
+  top: 0;
+  background: rgba(102, 126, 234, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+
+tbody tr {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+tbody tr.active-project {
+  background: rgba(0, 242, 254, 0.15);
+}
+
+tbody tr.active-project:hover {
+  background: rgba(0, 242, 254, 0.2);
+}
+
+tbody td {
+  padding: 16px 20px;
+  vertical-align: middle;
+}
+
+.col-check { width: 50px; }
+.col-star { width: 50px; color: rgba(255, 255, 255, 0.6); cursor: pointer; font-size: 20px; }
+.col-star.fav { color: #FFD700; }
+
+.project-cell {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.project-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  font-size: 20px;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.project-icon.child-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+
+.project-copy { min-width: 0; }
+
+.proj-name {
+  font-weight: 600;
+  color: white;
+  font-size: 15px;
+}
+
+.project-child-row .proj-name {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.proj-sub {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 4px;
+}
+
+/* ============================================
+   BADGES - GLASSMORPHISM
+   ============================================ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.badge.shared {
+  background: rgba(0, 242, 254, 0.15);
+  color: var(--accent-primary);
+  border: 1px solid rgba(0, 242, 254, 0.2);
+}
+
+.badge.private {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.badge .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.owner, .updated {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent-primary);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* ============================================
+   CONTEXT MENU - GLASSMORPHISM
+   ============================================ */
+.ctx-menu {
+  position: fixed;
+  z-index: 100;
+  background: rgba(30, 30, 50, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  min-width: 280px;
+  display: none;
+}
+
+.ctx-menu.show { display: block; }
+
+.ctx-title {
+  max-width: 280px;
+  padding: 10px 12px 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 8px;
+}
+
+.ctx-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s;
+}
+
+.ctx-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.ctx-item .ic {
+  width: 22px;
+  text-align: center;
+  color: var(--accent-primary);
+  font-size: 18px;
+  flex: 0 0 auto;
+}
+
+.ctx-item.danger { color: #ff6b6b; }
+.ctx-item.danger .ic { color: #ff6b6b; }
+
+.ctx-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 8px 6px;
+}
+
+/* ============================================
+   DETAIL VIEW - GLASSMORPHISM
+   ============================================ */
+#screen-detail {
+  display: none;
+}
+
+#screen-detail .topbar {
+  padding: 20px 24px;
+}
+
+.back-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.back-link:hover { color: var(--accent-primary); }
+
+.detail-body {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+  gap: 20px;
+}
+
+.folder-table {
+  flex: 1;
+  overflow: auto;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  padding: 20px;
+}
+
+.folder-icon {
+  color: var(--stamp);
+  font-size: 20px;
+  margin-right: 12px;
+}
+
+.folder-name { font-weight: 500; }
+
+/* ============================================
+   SHEET / GRID VIEW - GLASSMORPHISM
+   ============================================ */
+.grid-sheet-view {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.grid-sheet-toolbar {
+  min-height: 48px;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(102, 126, 234, 0.15);
+}
+
+.smartsheet-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  min-height: 44px;
+  overflow-x: auto;
+}
+
+.ss-tool-btn {
+  height: 34px;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.ss-tool-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.toolbar-sep {
+  width: 1px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 0 6px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   RIGHT TOOLBAR - GLASSMORPHISM
+   ============================================ */
+.right-toolbar {
+  position: fixed;
+  right: 0;
+  top: 48px;
+  width: 48px;
+  height: calc(100vh - 48px);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 0;
+  gap: 6px;
+  z-index: 100;
+}
+
+.right-toolbar-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s;
+}
+
+.right-toolbar-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* ============================================
+   DASHBOARD - GLASSMORPHISM
+   ============================================ */
+.dashboard-view {
+  display: none;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+  padding: 20px;
+  gap: 20px;
+}
+
+.dashboard-view.active { display: flex; }
+
+.dashboard-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+}
+
+.dash-title-area { flex: 1; }
+.dash-title-area h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  flex: 1;
+}
+
+.dash-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.dash-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.2);
+}
+
+.dash-span-1 { grid-column: span 1; }
+.dash-span-2 { grid-column: span 2; }
+.dash-span-3 { grid-column: span 3; }
+.dash-span-4 { grid-column: span 4; }
+.dash-span-6 { grid-column: span 6; }
+.dash-span-12 { grid-column: span 12; }
+
+.dash-card-header {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+}
+
+.dash-metric {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dash-metric-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.1;
+}
+
+.dash-metric-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 6px;
+}
+
+/* ============================================
+   MODALS - GLASSMORPHISM
+   ============================================ */
+.sheet-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+}
+
+.sheet-modal.show { display: flex; }
+
+.sheet-dialog {
+  width: min(460px, calc(100vw - 32px));
+  background: rgba(30, 30, 50, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+  padding: 28px 24px 22px;
+}
+
+.sheet-dialog-head {
+  display: flex;
+  justify-content: flex-end;
+  margin: -8px -4px 8px 0;
+}
+
+.sheet-close {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+
+.sheet-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.sheet-label {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 16px;
+}
+
+.sheet-input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font: 15px 'Inter', sans-serif;
+  color: white;
+  outline: none;
+  margin-bottom: 24px;
+  transition: all 0.3s;
+}
+
+.sheet-input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(0, 242, 254, 0.2);
+}
+
+.sheet-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.sheet-btn {
+  min-width: 100px;
+  height: 44px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.sheet-btn.cancel {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sheet-btn.cancel:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.sheet-btn.ok {
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.3);
+}
+
+.sheet-btn.ok:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 242, 254, 0.4);
+}
+
+/* ============================================
+   ATTACHMENT PANEL - GLASSMORPHISM
+   ============================================ */
+.attachment-panel {
+  display: none;
+  flex: 0 0 360px;
+  width: 360px;
+  min-height: 0;
+  flex-direction: column;
+  border-left: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  box-shadow: -12px 0 32px rgba(0, 0, 0, 0.15);
+}
+
+.grid-sheet-view.attachments-open .attachment-panel { display: flex; }
+
+.attach-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 16px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.attach-title { flex: 1; min-width: 0; }
+.attach-title strong {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attach-close {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+
+.attach-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.attach-list {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.attach-file {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+}
+
+.attach-file-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(0, 242, 254, 0.15);
+  color: var(--accent-primary);
+  font-size: 18px;
+}
+
+.attach-file-name {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attach-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 16px;
+}
+
+.attach-upload {
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  color: #fff;
+  cursor: pointer;
+  padding: 14px 18px;
+  font: 700 14px 'Inter', sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 242, 254, 0.3);
+  transition: all 0.3s;
+}
+
+.attach-upload:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 242, 254, 0.4);
+}
+
+/* ============================================
+   FAVORITES POPOVER - GLASSMORPHISM
+   ============================================ */
+.favorites-popover {
+  position: fixed;
+  left: 112px;
+  top: 300px;
+  z-index: 80;
+  width: 380px;
+  background: rgba(30, 30, 50, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+  display: none;
+}
+
+.favorites-popover.show { display: block; }
+
+.favorites-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: white;
+}
+
+.favorite-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 280px;
+  overflow: auto;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: all 0.2s;
+}
+
+.favorite-item:hover { background: rgba(255, 255, 255, 0.1); }
+
+.favorite-doc {
+  width: 22px;
+  color: var(--accent-primary);
+  font-size: 18px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.favorite-text { display: flex; flex-direction: column; min-width: 0; }
+
+.favorite-name {
+  display: block;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.favorite-meta {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ============================================
+   WORKSPACE NAVIGATOR - GLASSMORPHISM
+   ============================================ */
+.workspace-nav-trigger {
+  position: fixed;
+  left: 116px;
+  top: 12px;
+  z-index: 2600;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--glass-border);
+  border-radius: 12px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  color: white;
+  padding: 0 14px;
+  font: 700 12px 'Inter', sans-serif;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.workspace-nav-trigger:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.workspace-navigator-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2800;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: stretch;
+}
+
+.workspace-navigator-backdrop[hidden] { display: none; }
+
+.workspace-navigator-panel {
+  width: min(960px, calc(100vw - 40px));
+  margin: 24px 0 24px 108px;
+  background: rgba(30, 30, 50, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.4);
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  overflow: hidden;
+}
+
+.workspace-navigator-side {
+  background: rgba(102, 126, 234, 0.15);
+  border-right: 1px solid var(--glass-border);
+  padding: 16px 12px;
+}
+
+.workspace-navigator-side h3 {
+  margin: 6px 12px 14px;
+  font: 800 14px 'Inter', sans-serif;
+  color: white;
+}
+
+.workspace-navigator-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.workspace-navigator-head {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.workspace-navigator-title {
+  font: 800 18px 'Inter', sans-serif;
+  color: white;
+}
+
+.workspace-navigator-close {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  font: 700 20px 'Inter', sans-serif;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s;
+}
+
+.workspace-navigator-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+  .app { padding: 12px; gap: 12px; }
+  .rail { width: 72px; padding: 12px 6px; }
+  .rail-item { width: 56px; padding: 8px 2px; }
+  .rail-label { display: none; }
+  .rail-create { width: 48px; height: 48px; }
+  .rail-create::after { display: none; }
+  .brand-version { display: none; }
+  .window-dots { display: none; }
+  .workspace-nav-trigger { left: 84px; }
+  .workspace-navigator-panel { margin: 16px; width: calc(100vw - 32px); grid-template-columns: 1fr; }
+  .workspace-navigator-side { display: none; }
+  
+  .topbar { flex-wrap: wrap; gap: 12px; }
+  .topbar h1 { font-size: 18px; }
+  .search { width: 100%; order: 3; }
+  
+  .dashboard-grid { grid-template-columns: repeat(6, 1fr); }
+}
+
+/* ============================================
+   ORIGINAL COMPONENT STYLES (PRESERVED)
+   ============================================ */
+.project-child-row { display: none; }
+#screen-list.show-folder-levels .project-child-row { display: table-row; }
+.project-child-row td { padding-top: 10px; padding-bottom: 10px; }
+.project-blank-target { min-height: 200px; cursor: context-menu; }
+.project-blank-target:hover { background: rgba(255,255,255,0.05); }
+.workspace-blank-target { min-height: 200px; cursor: context-menu; }
+
+/* Smartsheet-like icons preserved */
+.sm-type-icon {
+  --icon-color: var(--accent-primary);
+  --icon-fill: #fff;
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  vertical-align: -4px;
+  margin-right: 10px;
+}
+
+.sm-type-icon.sheet {
+  border: 2px solid var(--icon-color);
+  border-radius: 3px;
+  background: var(--icon-fill);
+}
+
+.sm-type-icon.report {
+  --icon-color: #f093fb;
+  border: 2px solid var(--icon-color);
+  border-radius: 3px;
+  background: rgba(240, 147, 251, 0.15);
+}
+
+.sm-type-icon.folder {
+  width: 20px;
+  height: 14px;
+  margin-right: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(2px);
+}
+
+/* Popover styles */
+.ss-popover {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 260;
+  background: rgba(30, 30, 50, 0.95);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 14px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+  min-width: 280px;
+  max-width: 340px;
+  padding: 12px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ss-popover[hidden] { display: none; }
+.ss-popover.show { display: flex; }
+
+/* Formula bar */
+.formula-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.active-cell-ref {
+  width: 56px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font: 600 12px 'IBM Plex Mono', monospace;
+}
+
+.formula-prefix {
+  font: 600 14px 'IBM Plex Mono', monospace;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.formula-input {
+  flex: 1;
+  min-width: 0;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0 14px;
+  outline: none;
+  font: 14px 'Inter', sans-serif;
+  color: white;
+  transition: all 0.3s;
+}
+
+.formula-input:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px rgba(0, 242, 254, 0.2);
+}
+
+/* Sheet work area */
+.sheet-work-area {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  position: relative;
+}
+
+.sheet-grid-wrap {
+  flex: 1;
+  min-width: 0;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.sheet-status {
+  padding: 10px 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.03);
+  font: 12px 'Inter', sans-serif;
+}
+
+/* Grid table */
+.grid-sheet-table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 13px;
+}
+
+.grid-sheet-table th,
+.grid-sheet-table td {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0;
+}
+
+.grid-sheet-table thead th {
+  height: 30px;
+  text-align: center;
+  background: rgba(102, 126, 234, 0.15);
+  color: rgba(255, 255, 255, 0.8);
+  font: 600 12px 'Inter', sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.sheet-corner {
+  width: 36px;
+  min-width: 36px;
+  left: 0;
+  z-index: 4 !important;
+  background: rgba(102, 126, 234, 0.2) !important;
+}
+
+.sheet-row-head {
+  width: 36px;
+  min-width: 36px;
+  height: 32px;
+  text-align: center;
+  background: rgba(102, 126, 234, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font: 600 11px 'IBM Plex Mono', monospace;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+
+.sheet-cell {
+  width: 120px;
+  min-width: 120px;
+  height: 32px;
+  padding: 4px 8px;
+  background: rgba(255, 255, 255, 0.02);
+  color: white;
+  outline: none;
+  white-space: pre;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font: 13px/18px 'Inter', sans-serif;
+  transition: all 0.15s;
+}
+
+.sheet-cell:focus,
+.sheet-cell.active-cell {
+  background: rgba(0, 242, 254, 0.1);
+  box-shadow: inset 0 0 0 2px var(--accent-primary);
+  z-index: 8;
+}
+
+.sheet-cell:hover:not(.active-cell) {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Color swatches */
+.ss-color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-right: 6px;
+  transition: transform 0.2s;
+}
+
+.ss-color-swatch:hover { transform: scale(1.15); }
+</style>
+<link rel="stylesheet" href="css/file-menu.css">
+</head>
+<body>
+
+<!-- RIGHT TOOLBAR -->
+<div class="right-toolbar" id="rightToolbar">
+  <button class="right-toolbar-btn" id="tbAttach" title="Đính kèm">📎</button>
+  <button class="right-toolbar-btn" id="tbComment" title="Bình luận">💬</button>
+  <button class="right-toolbar-btn" id="tbActivity" title="Lịch sử">📋</button>
+  <button class="right-toolbar-btn" id="tbInfo" title="Thông tin">ℹ️</button>
+</div>
+
+<!-- Actions dropdown -->
+<div class="attach-dropdown" id="attachDropdown">
+  <button class="attach-dropdown-item" onclick="viewAttachment(currentAttachFileUrl)">👁 Mở file</button>
+  <button class="attach-dropdown-item" onclick="downloadAttachment(currentAttachFileUrl)">⬇ Tải xuống</button>
+  <button class="attach-dropdown-item" onclick="copyAttachLink(currentAttachFileUrl)">🔗 Sao chép link</button>
+  <div class="attach-dropdown-divider"></div>
+  <button class="attach-dropdown-item danger" onclick="deleteAttachFile(currentAttachFileId)">🗑 Xóa</button>
+</div>
+
+<!-- Workspace Nav Trigger -->
+<button class="workspace-nav-trigger" id="workspaceNavTrigger">‹ Dự án</button>
+
+<!-- APP CONTAINER -->
+<div class="app" id="appContainer">
+
+  <!-- RAIL / SIDEBAR -->
+  <div class="rail">
+    <div class="rail-nav-controls">
+      <button class="rail-toggle" id="railToggleBtn" title="Thu gọn/mở rộng thanh bên">☰</button>
+      <button class="rail-nav-btn" id="navBackBtn" title="Quay lại" disabled>←</button>
+      <button class="rail-nav-btn" id="navForwardBtn" title="Tiến tới" disabled>→</button>
+    </div>
+    <div class="window-dots"><span></span><span></span><span></span></div>
+    
+    <div class="brand">
+      <div class="brand-mark">▦</div>
+      <div class="brand-name">Hồ sơ<br>dự án</div>
+    </div>
+    <div class="brand-version">v60 Glass</div>
+    
+    <button class="rail-nav-btn" id="appUserNameBtn" title="Đổi tên người thao tác">👤</button>
+    
+    <div class="rail-item active" data-rail="home"><span class="ic">⌂</span><span class="rail-label">Trang chủ</span></div>
+    <div class="rail-item" data-rail="search"><span class="ic">⌕</span><span class="rail-label">Tìm</span></div>
+    <div class="rail-item" data-rail="projects"><span class="ic">▤</span><span class="rail-label">Dự án</span></div>
+    <div class="rail-item" data-rail="recents"><span class="ic">◔</span><span class="rail-label">Gần đây</span></div>
+    <div class="rail-item" id="favoritesRail" data-rail="favorites"><span class="ic">★</span><span class="rail-label">Yêu thích</span></div>
+    
+    <div class="rail-spacer"></div>
+    
+    <button class="rail-create create-project-btn" id="railCreateProjectBtn" title="Tạo dự án mới">＋</button>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="main">
+    <div id="screen-list">
+      <div class="topbar">
+        <h1>
+          <span class="title-mark"></span>
+          <span class="title-text">
+            <span class="eyebrow">Theo dõi hồ sơ, thư mục và chia sẻ</span>
+            Dự án của tôi
+          </span>
+        </h1>
+        <button class="sheet-nav-close" id="closeSheetNav" title="Tắt panel làm việc">×</button>
+        <div class="search">
+          <span class="ic">⌕</span>
+          <input placeholder="Tìm dự án...">
+        </div>
+        <div class="topbar-right">
+          <button class="btn btn-ghost top-actions-btn" type="button">Actions ▾</button>
+          <button class="btn btn-ghost btn-icon top-delete-btn" title="Xóa dự án">🗑</button>
+          <button class="btn btn-primary create-project-btn" id="createProjectBtn">＋ Tạo dự án mới</button>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input type="checkbox">
+        <span class="count" id="rowCount">0 dự án</span>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th class="col-check"></th>
+              <th class="col-star"></th>
+              <th>Tên dự án</th>
+              <th>Trạng thái chia sẻ</th>
+              <th>Người tạo</th>
+              <th>Cập nhật lần cuối</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+        <div class="project-blank-target" id="projectBlankTarget" title="Chuột phải để tạo mới"></div>
+      </div>
+    </div>
+
+    <!-- DETAIL VIEW -->
+    <div id="screen-detail" style="display:none;">
+      <div class="topbar">
+        <div>
+          <div class="back-link" id="backToList">‹ Quay lại Dự án của tôi</div>
+          <h1 id="detailTitle">—</h1>
+        </div>
+        <div class="topbar-right">
+          <button class="btn btn-ghost top-actions-btn">Actions ▾</button>
+          <button class="btn btn-ghost btn-icon top-delete-btn" title="Xóa dự án">🗑</button>
+          <button class="btn btn-ghost">＋ Tạo</button>
+          <button class="btn btn-primary">Chia sẻ</button>
+        </div>
+      </div>
+
+      <div class="detail-body">
+        <div class="folder-table">
+          <table>
+            <thead>
+              <tr>
+                <th class="col-check"></th>
+                <th class="col-star"></th>
+                <th>Tên</th>
+              </tr>
+            </thead>
+            <tbody id="folderRows"></tbody>
+          </table>
+          <div class="workspace-blank-target" id="workspaceBlankTarget" title="Chuột phải để tạo Sheet/Report/Folder"></div>
+        </div>
+        <div class="share-panel">
+          <h3>Chia sẻ với</h3>
+          <div id="shareList"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID SHEET VIEW -->
+    <div class="grid-sheet-view" id="gridSheetView" style="display:none;">
+      <div class="grid-sheet-toolbar">
+        <div class="sheet-menu-strip">
+          <button class="sheet-back-btn browse-breadcrumb" id="backToWorkspace">‹ Browse</button>
+          <button class="sheet-menu-link" type="button">File</button>
+          <button class="sheet-menu-link" type="button">Automation</button>
+          <button class="sheet-menu-link" type="button">Forms</button>
+          <button class="sheet-menu-link" type="button">Connections</button>
+        </div>
+        <div class="sheet-top-title">
+          <span class="grid-sheet-icon"><span class="sm-type-icon sheet" aria-hidden="true"></span></span>
+          <span id="activeSheetName">New Sheet</span>
+        </div>
+        <div class="sheet-top-actions">
+          <button class="sheet-share-btn" id="ssShareBtn">Share</button>
+          <button class="sheet-tool-btn" id="ssTopMoreBtn">▾</button>
+          <button class="sheet-tool-btn" id="toggleSheetChrome" title="An/hien panel lam viec">☰</button>
+        </div>
+      </div>
+      
+      <div class="smartsheet-toolbar" id="smartsheetToolbar">
+        <button class="ss-tool-btn" id="ssGridViewBtn">Grid</button>
+        <span class="toolbar-sep"></span>
+        <button class="ss-tool-btn" id="ssFilterBtn">▽ Filter</button>
+        <span class="toolbar-sep"></span>
+        <button class="ss-tool-btn" id="ssColumnsBtn">▦ Table</button>
+        <button class="ss-tool-btn" id="ssFormatBtn">◇ Highlight</button>
+        <span class="toolbar-sep"></span>
+        <button class="ss-tool-btn" id="ssSortBtn">↕ Sort</button>
+        <button class="ss-tool-btn" id="ssAddRowBtn">＋ Add row</button>
+      </div>
+      
+      <div class="formula-bar">
+        <span class="active-cell-ref" id="activeCellRef">A1</span>
+        <span class="formula-prefix">fx</span>
+        <input class="formula-input" id="formulaInput" autocomplete="off" spellcheck="false">
+      </div>
+      
+      <div class="sheet-work-area">
+        <div class="sheet-grid-wrap" id="sheetGridWrap"></div>
+        <aside class="attachment-panel" id="attachmentPanel">
+          <div class="attach-head">
+            <div class="attach-top">
+              <h2>Attachments</h2>
+              <button class="attach-icon-btn">☜</button>
+              <button class="attach-icon-btn">?</button>
+              <button class="attach-close" id="attachClose">×</button>
+            </div>
+          </div>
+          <div class="attach-list" id="attachList"></div>
+          <div class="attach-footer">
+            <button class="attach-upload" id="attachUploadBtn">Attach Files</button>
+            <input type="file" id="attachInput" multiple style="display:none">
+          </div>
+        </aside>
+      </div>
+      <div class="sheet-status" id="sheetStatus">
+        Google Drive API làm lõi · Lưu dữ liệu trực tiếp lên Drive <span id="saveStatus" style="margin-left:12px;font-weight:500;"></span>
+      </div>
+    </div>
+
+    <!-- DASHBOARD VIEW -->
+    <div class="dashboard-view" id="dashboardView">
+      <div class="dashboard-toolbar">
+        <button class="sheet-back-btn browse-breadcrumb" id="dashBackBtn">‹ Browse</button>
+        <div class="dash-title-area"><h2 id="dashTitle">Dashboard</h2></div>
+        <button class="dash-tool-btn" id="dashRefreshBtn">⟳ Làm mới</button>
+        <button class="dash-tool-btn" id="dashAddWidgetBtn">＋ Thêm</button>
+      </div>
+      <div class="dashboard-grid" id="dashboardGrid"></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Workspace Navigator -->
+<div class="workspace-navigator-backdrop" id="workspaceNavigator" hidden>
+  <div class="workspace-navigator-panel">
+    <aside class="workspace-navigator-side">
+      <h3>Browse</h3>
+      <div class="workspace-nav-tree" id="workspaceNavTree">
+        <button type="button" class="active" data-nav-section="workspaces">▥ Workspaces</button>
+      </div>
+    </aside>
+    <section class="workspace-navigator-main">
+      <div class="workspace-navigator-head">
+        <div class="workspace-navigator-title" id="workspaceNavigatorTitle">Workspaces</div>
+        <button class="workspace-navigator-close" id="workspaceNavigatorClose">×</button>
+      </div>
+      <div class="workspace-navigator-table-wrap">
+        <table class="workspace-navigator-table">
+          <thead><tr><th>Name</th><th style="width:145px">Trạng thái chia sẻ</th><th style="width:140px">Người sở hữu</th><th style="width:150px">Last Update</th></tr></thead>
+          <tbody id="workspaceNavigatorRows"></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- Favorites Popover -->
+<div class="favorites-popover" id="favoritesPopover">
+  <p class="favorites-title" id="favoritesTitle">Yêu thích (0)</p>
+  <div class="favorite-list" id="favoriteList"></div>
+</div>
+
+<!-- Context Menu -->
+<div class="ctx-menu" id="ctxMenu">
+  <div class="ctx-title" id="ctxTitle">Workspace</div>
+  <div class="ctx-submenu-wrap">
+    <button class="ctx-item" type="button"><span class="ic">＋</span>Create<span class="ctx-caret">›</span></button>
+  </div>
+  <div class="ctx-divider"></div>
+  <button class="ctx-item" type="button"><span class="ic">↗</span>Open in New Tab</button>
+  <button class="ctx-item" type="button"><span class="ic">S</span>Share...</button>
+  <button class="ctx-item" type="button"><span class="ic">−</span>Remove Me from Sharing...</button>
+  <div class="ctx-divider"></div>
+  <button class="ctx-item danger" type="button"><span class="ic">🗑</span>Xóa</button>
+</div>
+
+<!-- Sheet Name Modal -->
+<div class="sheet-modal" id="sheetNameModal" aria-hidden="true">
+  <div class="sheet-dialog">
+    <div class="sheet-dialog-head">
+      <button class="sheet-close" type="button" id="sheetNameClose">×</button>
+    </div>
+    <label class="sheet-label" id="sheetModalTitle">Name Your Sheet:</label>
+    <input class="sheet-input" id="sheetNameInput" value="New Sheet">
+    <div class="sheet-actions">
+      <button class="sheet-btn cancel" type="button" id="sheetNameCancel">Cancel</button>
+      <button class="sheet-btn ok" type="button" id="sheetNameOk">OK</button>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+<script src="js/state.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/api.js"></script>
+<script src="js/toolbar.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/report.js"></script>
+<script src="js/dashboard.js"></script>
+<script src="js/repost.js"></script>
+<script src="js/workspace-navigator.js"></script>
+<script src="js/file-menu.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
