@@ -4,12 +4,13 @@ Cập nhật: 17/07/2026
 
 ## NEW
 
-(trống)
+(sau khi deploy v31)
 
 ## ĐÃ TRIỂN KHAI
 
 | Spec | Baseline |
 |---|---|
+| import-excel-multi-sheet | v31 (17/07/2026 — multi-sheet import, header picker, mapping, validate, progress, report, undo) |
 | workspace-menu-viewport-performance-v29 | v29 (16/07/2026 — menu viewport-safe, bỏ polling File menu, PASS browser/performance) |
 | publish-report | v25 |
 | file-attachment | v25 |
