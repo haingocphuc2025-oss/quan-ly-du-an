@@ -52,6 +52,10 @@ test('V31 bundle contains the complete multi-sheet import flow', () => {
         assert.match(importSource, new RegExp(`function\\s+${functionName}\\s*\\(`));
     }
     assert.match(importSource, /\['_rowIndex', '_attachments'\]/);
+    assert.match(importSource, /const host = overlay \|\| document\.body;/);
+    assert.match(importSource, /host\.appendChild\(modal\);/);
+    assert.match(importSource, /if \(!overlay\) \{/);
+    assert.doesNotMatch(importSource, /document\.body\.appendChild\(modal\);/);
 });
 
 test('all official V31 release artifacts are byte-identical', () => {

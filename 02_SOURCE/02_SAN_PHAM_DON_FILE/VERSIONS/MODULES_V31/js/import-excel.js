@@ -117,10 +117,14 @@ const ImportExcel = (function() {
         modal.className = 'import-modal';
         modal.id = id;
         modal.innerHTML = body;
-        document.body.appendChild(modal);
-        modal.style.top = '50%';
-        modal.style.left = '50%';
-        modal.style.transform = 'translate(-50%, -50%)';
+        const host = overlay || document.body;
+        host.appendChild(modal);
+        if (!overlay) {
+            modal.style.position = 'fixed';
+            modal.style.top = '50%';
+            modal.style.left = '50%';
+            modal.style.transform = 'translate(-50%, -50%)';
+        }
         modal.style.zIndex = '109001'; // above overlay
         return modal;
     }
