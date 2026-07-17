@@ -1,0 +1,562 @@
+/**
+ * Import Excel Multi-Sheet Module (v31)
+ * Hỗ trợ import nhiều sheet từ file .xlsx, .xls
+ * Tuân thủ spec: loại trừ _rowIndex và _attachments
+ */
+
+const ImportExcel = (function() {
+    'use strict';
+
+    // ============================================
+    // SYSTEM COLUMNS - KHÔNG BAO GIỜ IMPORT
+    // ============================================
+    const SYSTEM_COLUMNS = ['_rowIndex', '_attachments'];
+
+    /**
+     * Kiểm tra cột có phải hệ thống không
+     */
+    function isSystemColumn(columnId) {
+        return SYSTEM_COLUMNS.includes(columnId);
+    }
+
+    /**
+     * Lấy danh sách cột có thể import
+     */
+    function getImportableColumns(sheet) {
+        if (!sheet || !sheet.cells || !sheet.cells[0]) return [];
+        const header = sheet.cells[0];
+        return header.map((name, index) => ({
+            index: index,
+            id: name,
+            label: name,
+            importable: !isSystemColumn(name)
+        })).filter(col => col.importable || col.index > 1);
+    }
+
+    // ============================================
+    // FILE READING
+    // ============================================
+    let importInput = null;
+    let currentWorkbook = null;
+    let currentFileName = null;
+
+    function openImportPicker() {
+        if (!importInput) {
+            importInput = document.createElement('input');
+            importInput.type = 'file';
+            importInput.accept = '.xlsx,.xls';
+            importInput.style.display = 'none';
+            document.body.appendChild(importInput);
+            importInput.addEventListener('change', handleFileSelect);
+        }
+        importInput.click();
+    }
+
+    function handleFileSelect(event) {
+        const file = event.target.files && event.target.files[0];
+        if (file) {
+            readExcelFile(file);
+        }
+        importInput.value = '';
+    }
+
+    async function readExcelFile(file) {
+        if (!window.XLSX) {
+            showToast('Excel library unavailable. Please check your internet connection.', 'error');
+            return;
+        }
+
+        try {
+            const arrayBuffer = await file.arrayBuffer();
+            currentWorkbook = XLSX.read(arrayBuffer, { type: 'array' });
+            currentFileName = file.name;
+            showSheetSelector(currentWorkbook);
+        } catch (error) {
+            showToast('Error reading file: ' + error.message, 'error');
+        }
+    }
+
+    // ============================================
+    // SHEET SELECTOR DIALOG
+    // ============================================
+    function showSheetSelector(workbook) {
+        const sheetNames = workbook.SheetNames;
+        
+        if (sheetNames.length === 0) {
+            showToast('No sheets found in file', 'error');
+            return;
+        }
+
+        const sheetsList = sheetNames.map((name, i) => `
+            <label class="import-sheet-item">
+                <input type="checkbox" name="importSheet" value="${i}" checked>
+                <span class="sheet-name">${escapeHtml(name)}</span>
+            </label>
+        `).join('');
+
+        const body = `
+            <div class="import-dialog-header">
+                <h3>Import Excel: ${escapeHtml(currentFileName)}</h3>
+                <p class="import-dialog-info">${sheetNames.length} sheet(s) found</p>
+            </div>
+            
+            <div class="import-sheets-section">
+                <label class="import-section-title">
+                    <input type="checkbox" id="selectAllSheets" checked>
+                    <span>Select sheets to import</span>
+                </label>
+                <div class="import-sheets-list">
+                    ${sheetsList}
+                </div>
+            </div>
+
+            <div class="import-options-section">
+                <label class="import-section-title">Import mode</label>
+                <select class="import-mode-select" id="importMode">
+                    <option value="append">Append - Thêm dòng mới</option>
+                    <option value="replace">Replace - Thay thế dữ liệu</option>
+                    <option value="upsert">Upsert - Cập nhật hoặc thêm mới</option>
+                    <option value="skip">Skip - Bỏ qua trùng lặp</option>
+                </select>
+            </div>
+
+            <div class="import-dialog-actions">
+                <button type="button" class="import-btn secondary" id="importCancel">Hủy</button>
+                <button type="button" class="import-btn primary" id="importNext">Tiếp tục →</button>
+            </div>
+        `;
+
+        const overlay = createModalOverlay();
+        const modal = createModal('import-excel-dialog', body, overlay);
+
+        // Event listeners
+        modal.querySelector('#selectAllSheets').addEventListener('change', (e) => {
+            modal.querySelectorAll('input[name="importSheet"]').forEach(cb => cb.checked = e.target.checked);
+        });
+
+        modal.querySelector('#importCancel').addEventListener('click', () => closeModal(modal, overlay));
+        modal.querySelector('#importNext').addEventListener('click', () => {
+            const selectedSheets = Array.from(modal.querySelectorAll('input[name="importSheet"]:checked'))
+                .map(cb => parseInt(cb.value));
+            
+            if (selectedSheets.length === 0) {
+                showToast('Please select at least one sheet', 'error');
+                return;
+            }
+
+            const mode = modal.querySelector('#importMode').value;
+            closeModal(modal, overlay);
+            processSelectedSheets(selectedSheets, mode);
+        });
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeModal(modal, overlay);
+        });
+    }
+
+    // ============================================
+    // SHEET PREVIEW & COLUMN MAPPING
+    // ============================================
+    function processSelectedSheets(selectedSheetIndexes, mode) {
+        const item = activeItem();
+        if (!item || (item.type && item.type !== 'grid')) {
+            showToast('Import chỉ áp dụng cho Grid Sheet', 'error');
+            return;
+        }
+
+        const sheet = item;
+        const importableColumns = getImportableColumns(sheet);
+
+        // Process first sheet for mapping
+        const sheetIndex = selectedSheetIndexes[0];
+        const sheetName = currentWorkbook.SheetNames[sheetIndex];
+        const worksheet = currentWorkbook.Sheets[sheetName];
+        const sheetData = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '' });
+
+        if (sheetData.length === 0) {
+            showToast('Selected sheet is empty', 'error');
+            return;
+        }
+
+        showMappingDialog(sheet, sheetData, importableColumns, selectedSheetIndexes, mode);
+    }
+
+    function showMappingDialog(sheet, sheetData, importableColumns, allSheetIndexes, mode) {
+        const headerRow = sheetData[0] || [];
+        const previewRows = sheetData.slice(1, 6);
+
+        // Build column mapping UI
+        const mappingRows = headerRow.map((colName, excelColIndex) => {
+            const matched = importableColumns.find(c => 
+                c.label && colName && 
+                c.label.toLowerCase() === colName.toString().toLowerCase()
+            );
+
+            return `
+                <div class="import-mapping-row">
+                    <div class="import-excel-col">
+                        <span class="col-index">${excelColIndex + 1}</span>
+                        <span class="col-name">${escapeHtml(colName || '(Empty)')}</span>
+                    </div>
+                    <div class="import-mapping-arrow">→</div>
+                    <div class="import-sheet-col">
+                        <select class="import-col-select" data-excel-col="${excelColIndex}">
+                            <option value="">-- Skip --</option>
+                            ${importableColumns.map(c => 
+                                `<option value="${c.index}" ${matched && matched.index === c.index ? 'selected' : ''}>
+                                    ${escapeHtml(c.label || 'Column ' + c.index)}
+                                </option>`
+                            ).join('')}
+                        </select>
+                    </div>
+                </div>
+            `;
+        }).join('');
+
+        // Preview table
+        const previewTable = previewRows.map(row => `
+            <tr>${headerRow.map((_, i) => `<td>${escapeHtml(row[i] || '')}</td>`).join('')}</tr>
+        `).join('');
+
+        const body = `
+            <div class="import-dialog-header">
+                <h3>Column Mapping</h3>
+                <p class="import-dialog-info">Map Excel columns to Sheet columns</p>
+            </div>
+
+            <div class="import-preview-section">
+                <label class="import-section-title">Preview (first 5 rows)</label>
+                <div class="import-preview-table-wrap">
+                    <table class="import-preview-table">
+                        <thead><tr>${headerRow.map(h => `<th>${escapeHtml(h || '')}</th>`).join('')}</tr></thead>
+                        <tbody>${previewTable}</tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="import-mapping-section">
+                <label class="import-section-title">Map columns</label>
+                <div class="import-mapping-list">
+                    ${mappingRows}
+                </div>
+            </div>
+
+            <div class="import-dialog-actions">
+                <button type="button" class="import-btn secondary" id="mappingBack">← Quay lại</button>
+                <button type="button" class="import-btn secondary" id="mappingCancel">Hủy</button>
+                <button type="button" class="import-btn primary" id="mappingImport">Import</button>
+            </div>
+        `;
+
+        const overlay = createModalOverlay();
+        const modal = createModal('import-mapping-dialog', body, overlay);
+
+        modal.querySelector('#mappingBack').addEventListener('click', () => {
+            closeModal(modal, overlay);
+            showSheetSelector(currentWorkbook);
+        });
+
+        modal.querySelector('#mappingCancel').addEventListener('click', () => closeModal(modal, overlay));
+        modal.querySelector('#mappingImport').addEventListener('click', () => {
+            const mapping = {};
+            modal.querySelectorAll('.import-col-select').forEach(select => {
+                const excelCol = parseInt(select.dataset.excelCol);
+                const sheetCol = parseInt(select.value);
+                if (!isNaN(sheetCol)) {
+                    mapping[excelCol] = sheetCol;
+                }
+            });
+            closeModal(modal, overlay);
+            executeImport(sheet, sheetData, mapping, allSheetIndexes, mode);
+        });
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeModal(modal, overlay);
+        });
+    }
+
+    // ============================================
+    // IMPORT EXECUTION
+    // ============================================
+    function executeImport(sheet, firstSheetData, columnMapping, allSheetIndexes, mode) {
+        const importableColumns = getImportableColumns(sheet);
+        const totalResults = { total: 0, success: 0, updated: 0, skipped: 0, errors: 0 };
+        const errorRows = [];
+
+        // Process all selected sheets
+        allSheetIndexes.forEach((sheetIndex, sheetNum) => {
+            const sheetName = currentWorkbook.SheetNames[sheetIndex];
+            const worksheet = currentWorkbook.Sheets[sheetName];
+            const sheetRows = XLSX.utils.sheet_to_json(worksheet, { header: 1, defval: '' });
+
+            if (sheetRows.length === 0) return;
+
+            const headerRow = sheetRows[0];
+            const dataRows = sheetRows.slice(1).filter(row => row.some(cell => cell !== ''));
+
+            let sheetSuccess = 0;
+            let sheetUpdated = 0;
+            let sheetSkipped = 0;
+            let sheetErrors = 0;
+
+            dataRows.forEach((row, rowIndex) => {
+                try {
+                    const mappedRow = {};
+                    Object.entries(columnMapping).forEach(([excelCol, sheetCol]) => {
+                        const value = row[parseInt(excelCol)] || '';
+                        mappedRow[sheetCol] = value;
+                    });
+
+                    // Apply import mode logic here
+                    if (mode === 'replace') {
+                        // Replace mode - clear and insert
+                        sheet.cells.push(Object.values(mappedRow));
+                        sheetSuccess++;
+                    } else if (mode === 'append') {
+                        // Append mode - add new row
+                        const newRow = Array(sheet.cells[0].length).fill('');
+                        Object.entries(mappedRow).forEach(([col, val]) => {
+                            newRow[parseInt(col)] = val;
+                        });
+                        // Never set _attachments
+                        sheet.cells.push(newRow);
+                        sheetSuccess++;
+                    } else if (mode === 'upsert' || mode === 'skip') {
+                        // Upsert/Skip mode - check for duplicates
+                        const isDuplicate = checkDuplicate(sheet, mappedRow, importableColumns);
+                        if (isDuplicate && mode === 'skip') {
+                            sheetSkipped++;
+                        } else if (isDuplicate && mode === 'upsert') {
+                            updateExistingRow(sheet, mappedRow, importableColumns);
+                            sheetUpdated++;
+                        } else {
+                            const newRow = Array(sheet.cells[0].length).fill('');
+                            Object.entries(mappedRow).forEach(([col, val]) => {
+                                newRow[parseInt(col)] = val;
+                            });
+                            sheet.cells.push(newRow);
+                            sheetSuccess++;
+                        }
+                    }
+                } catch (error) {
+                    sheetErrors++;
+                    errorRows.push({ sheet: sheetName, row: rowIndex + 2, error: error.message });
+                }
+            });
+
+            totalResults.total += dataRows.length;
+            totalResults.success += sheetSuccess;
+            totalResults.updated += sheetUpdated;
+            totalResults.skipped += sheetSkipped;
+            totalResults.errors += sheetErrors;
+        });
+
+        // Save and refresh
+        try {
+            if (typeof scheduleSheetDataSave === 'function') scheduleSheetDataSave(sheet);
+        } catch (ignore) {}
+        persistProject();
+
+        try {
+            if (typeof renderGridSheet === 'function') renderGridSheet();
+        } catch (ignore) {}
+
+        refreshWorkspace();
+        showImportReport(totalResults, errorRows);
+    }
+
+    function checkDuplicate(sheet, mappedRow, importableColumns) {
+        // Find key column (usually first importable column)
+        const keyCol = importableColumns[0]?.index || 2;
+        const keyValue = mappedRow[keyCol];
+
+        if (!keyValue) return false;
+
+        for (let i = 1; i < sheet.cells.length; i++) {
+            if (sheet.cells[i][keyCol] === keyValue) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function updateExistingRow(sheet, mappedRow, importableColumns) {
+        const keyCol = importableColumns[0]?.index || 2;
+        const keyValue = mappedRow[keyCol];
+
+        for (let i = 1; i < sheet.cells.length; i++) {
+            if (sheet.cells[i][keyCol] === keyValue) {
+                // Update only mapped columns (NOT _attachments)
+                Object.entries(mappedRow).forEach(([col, val]) => {
+                    const colIndex = parseInt(col);
+                    // CRITICAL: Never update _attachments column
+                    if (colIndex !== sheet.cells[0].indexOf('_attachments')) {
+                        sheet.cells[i][colIndex] = val;
+                    }
+                });
+                return;
+            }
+        }
+    }
+
+    // ============================================
+    // IMPORT REPORT
+    // ============================================
+    function showImportReport(results, errors) {
+        const errorSection = errors.length > 0 ? `
+            <div class="import-error-section">
+                <h4>Errors (${errors.length})</h4>
+                <div class="import-error-list">
+                    ${errors.slice(0, 10).map(e => `
+                        <div class="import-error-item">
+                            <span class="error-sheet">${escapeHtml(e.sheet)}</span>
+                            <span class="error-row">Row ${e.row}</span>
+                            <span class="error-msg">${escapeHtml(e.error)}</span>
+                        </div>
+                    `).join('')}
+                    ${errors.length > 10 ? `<div class="import-error-more">... and ${errors.length - 10} more</div>` : ''}
+                </div>
+            </div>
+        ` : '';
+
+        const body = `
+            <div class="import-dialog-header">
+                <h3>Import Complete</h3>
+            </div>
+
+            <div class="import-results">
+                <div class="import-result-item">
+                    <span class="result-label">Total rows</span>
+                    <span class="result-value">${results.total}</span>
+                </div>
+                <div class="import-result-item success">
+                    <span class="result-label">Imported</span>
+                    <span class="result-value">${results.success}</span>
+                </div>
+                ${results.updated > 0 ? `
+                <div class="import-result-item updated">
+                    <span class="result-label">Updated</span>
+                    <span class="result-value">${results.updated}</span>
+                </div>` : ''}
+                ${results.skipped > 0 ? `
+                <div class="import-result-item skipped">
+                    <span class="result-label">Skipped</span>
+                    <span class="result-value">${results.skipped}</span>
+                </div>` : ''}
+                ${results.errors > 0 ? `
+                <div class="import-result-item error">
+                    <span class="result-label">Errors</span>
+                    <span class="result-value">${results.errors}</span>
+                </div>` : ''}
+            </div>
+
+            ${errorSection}
+
+            <div class="import-dialog-actions">
+                <button type="button" class="import-btn primary" id="importDone">Done</button>
+            </div>
+        `;
+
+        const overlay = createModalOverlay();
+        const modal = createModal('import-report-dialog', body, overlay);
+
+        modal.querySelector('#importDone').addEventListener('click', () => closeModal(modal, overlay));
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) closeModal(modal, overlay);
+        });
+
+        // Log activity
+        try {
+            const item = activeItem();
+            if (item) {
+                logActivity(item, 'Imported Excel', `${results.success} rows`);
+            }
+        } catch (ignore) {}
+    }
+
+    // ============================================
+    // UTILITIES
+    // ============================================
+    function createModalOverlay() {
+        const overlay = document.createElement('div');
+        overlay.className = 'import-overlay';
+        document.body.appendChild(overlay);
+        return overlay;
+    }
+
+    function createModal(id, body, overlay) {
+        const modal = document.createElement('div');
+        modal.className = 'import-modal';
+        modal.id = id;
+        modal.innerHTML = body;
+        document.body.appendChild(modal);
+
+        // Position modal
+        modal.style.top = '50%';
+        modal.style.left = '50%';
+        modal.style.transform = 'translate(-50%, -50%)';
+
+        return modal;
+    }
+
+    function closeModal(modal, overlay) {
+        if (modal && modal.parentNode) modal.parentNode.removeChild(modal);
+        if (overlay && overlay.parentNode) overlay.parentNode.removeChild(overlay);
+    }
+
+    function escapeHtml(str) {
+        if (str == null) return '';
+        const div = document.createElement('div');
+        div.textContent = String(str);
+        return div.innerHTML;
+    }
+
+    function showToast(message, type = 'info') {
+        if (typeof toast === 'function') {
+            toast(message, type);
+        } else {
+            alert(message);
+        }
+    }
+
+    function activeItem() {
+        if (typeof getActiveItem === 'function') return getActiveItem();
+        if (typeof window.activeItem === 'object') return window.activeItem;
+        return null;
+    }
+
+    function persistProject() {
+        if (typeof saveAllProjects === 'function') saveAllProjects();
+        else if (typeof persistCurrentProject === 'function') persistCurrentProject();
+    }
+
+    function refreshWorkspace() {
+        if (typeof refreshWorkspaceTree === 'function') refreshWorkspaceTree();
+        else if (typeof renderWorkspace === 'function') renderWorkspace();
+    }
+
+    function logActivity(item, action, detail) {
+        if (typeof addActivityLog === 'function') {
+            addActivityLog(item, action, detail);
+        }
+    }
+
+    // ============================================
+    // PUBLIC API
+    // ============================================
+    return {
+        open: openImportPicker,
+        isSystemColumn: isSystemColumn,
+        getImportableColumns: getImportableColumns,
+        readExcelFile: readExcelFile
+    };
+})();
+
+// Auto-register when DOM ready
+document.addEventListener('DOMContentLoaded', function() {
+    // Override original import-excel action
+    const originalOpenImportPicker = window.openImportPicker;
+    window.openImportPicker = function() {
+        ImportExcel.open();
+    };
+});

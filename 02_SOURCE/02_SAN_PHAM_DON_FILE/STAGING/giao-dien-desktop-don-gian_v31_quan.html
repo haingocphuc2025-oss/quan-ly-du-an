@@ -6105,9 +6105,7 @@ const Formatters = {
  },
  currency(value, config = {}){
  if(value === '' || value === null || value === undefined) return '';
- const symbols = {VND:'₫', USD:'
-</html>
-, EUR:'€', GBP:'£', JPY:'¥'};
+ const symbols = {VND:'₫', USD:'$', EUR:'€', GBP:'£', JPY:'¥'};
  const symbol = symbols[config.currency || 'VND'] || (config.currency || '');
  const formatted = Formatters.number(value, {thousandsSeparator:'.', decimalSeparator:',', decimals:config.decimals ?? 0});
  return config.symbolPosition === 'suffix' ? `${formatted} ${symbol}` : `${symbol}${formatted}`;

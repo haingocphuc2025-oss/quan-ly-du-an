@@ -1,14 +1,15 @@
-# TRANG THAI THI CONG
+# TRẠNG THÁI THI CÔNG
 
-Cap nhat: 13/07/2026
+Cập nhật: 17/07/2026
 
-| Muc | Gia tri |
+| Mục | Giá trị |
 |---|---|
-| Baseline hien hanh | v25 |
-| Baseline file | `02_SAN_PHAM_DON_FILE/VERSIONS/v25_baseline.html` |
-| SHA-256 | `A1E44408CF8B6C77BEF9F8D9CBA610FA7CF361DD6C07D022BC6FBC80EFBB41E2` |
-| Spec NEW | 0 |
-| Trang thai | HOAN TAT |
-| Rollback | `VERSIONS/v24_baseline.html` |
+| Baseline hiện hành | **v31** |
+| Baseline file | `02_SAN_PHAM_DON_FILE/VERSIONS/v31_baseline.html` |
+| SHA-256 | `E395AF236831E205114A1D4D1BC440863E282401E385AF11F0D2F6184073F504` |
+| Spec NEW | 2 (`sheet-active-right-toolbar-rail`, `v60-glassmorphism-dashboard`) |
+| Trạng thái V31 | PHÁT HÀNH |
+| Kiểm thử | 59/59 PASS + browser smoke PASS |
+| Rollback | `VERSIONS/v30_baseline.html` |
 
-v25 bo sung Multi-select Column. Spec da chuyen sang `DA_TRIEN_KHAI`; goi giao viec Column Types cu da dua khoi BANDIAO.
+V31 bổ sung Import Excel nhiều sheet và sửa bộ đóng gói single-file để giữ nguyên mọi ký tự `$` trong JavaScript.

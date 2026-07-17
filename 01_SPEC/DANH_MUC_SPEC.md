@@ -4,7 +4,8 @@ Cập nhật: 17/07/2026
 
 ## NEW
 
-(sau khi deploy v31)
+- `sheet-active-right-toolbar-rail`
+- `v60-glassmorphism-dashboard`
 
 ## ĐÃ TRIỂN KHAI
 
