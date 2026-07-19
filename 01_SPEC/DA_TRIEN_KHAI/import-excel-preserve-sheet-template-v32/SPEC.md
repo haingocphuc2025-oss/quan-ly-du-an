@@ -1,6 +1,6 @@
 # SPEC V32 — Import Excel giữ cấu trúc Sheet
 
-Trạng thái: NEW  
+Trạng thái: DA_TRIEN_KHAI
 Ngày xác nhận dự thảo: 19/07/2026
 
 ## 1. Mục tiêu
