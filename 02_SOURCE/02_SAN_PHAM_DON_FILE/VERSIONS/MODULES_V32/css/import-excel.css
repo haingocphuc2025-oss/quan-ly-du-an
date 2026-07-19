@@ -1,0 +1,470 @@
+/* ========== IMPORT EXCEL DIALOG CSS (v32) ========== */
+
+/* Overlay */
+.import-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 109000;
+    background: rgba(15, 23, 42, .4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal */
+.import-modal {
+    position: relative;
+    width: min(720px, calc(100vw - 40px));
+    max-height: min(820px, calc(100vh - 40px));
+    overflow: auto;
+    padding: 24px;
+    border-radius: 10px;
+    background: #fff;
+    color: #1f2937;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, .3);
+    font: 14px/1.4 "Segoe UI", system-ui, sans-serif;
+}
+
+/* Header */
+.import-dialog-header {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.import-dialog-header h3 {
+    margin: 0 0 6px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.import-dialog-info {
+    margin: 0;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* Sections */
+.import-sheets-section,
+.import-options-section,
+.import-preview-section,
+.import-mapping-section,
+.import-error-section {
+    margin-bottom: 20px;
+}
+
+.import-section-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.import-section-title input[type="checkbox"] {
+    accent-color: #2563eb;
+}
+
+.import-preserve-option {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    background: #eff6ff;
+    cursor: pointer;
+}
+
+.import-preserve-option input {
+    width: 18px;
+    height: 18px;
+    margin: 1px 0 0;
+    accent-color: #2563eb;
+}
+
+.import-preserve-option span,
+.import-preserve-option strong,
+.import-preserve-option small {
+    display: block;
+}
+
+.import-preserve-option strong {
+    margin-bottom: 3px;
+    color: #1e3a8a;
+}
+
+.import-preserve-option small {
+    color: #475569;
+    line-height: 1.45;
+}
+
+.import-preserve-option:focus-within {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .14);
+}
+
+/* Sheets List */
+.import-sheets-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 12px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.import-sheet-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.import-sheet-item:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.import-sheet-item input[type="checkbox"] {
+    accent-color: #2563eb;
+}
+
+.import-sheet-item .sheet-name {
+    font-weight: 500;
+    color: #374151;
+}
+
+/* Mode Select */
+.import-mode-select {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font: 14px "Segoe UI", system-ui, sans-serif;
+    color: #374151;
+    background: #fff;
+    cursor: pointer;
+}
+
+.import-mode-select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Preview Table */
+.import-preview-table-wrap {
+    overflow-x: auto;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+.import-preview-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+}
+
+.import-preview-table th,
+.import-preview-table td {
+    padding: 8px 10px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.import-preview-table th {
+    background: #f9fafb;
+    font-weight: 600;
+    color: #374151;
+    position: sticky;
+    top: 0;
+}
+
+.import-preview-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+/* Mapping */
+.import-mapping-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 12px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.import-mapping-row {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+}
+
+.import-excel-col {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.import-excel-col .col-index {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.import-excel-col .col-name {
+    font-weight: 500;
+    color: #374151;
+}
+
+.import-mapping-arrow {
+    text-align: center;
+    color: #9ca3af;
+    font-size: 18px;
+}
+
+.import-sheet-col select {
+    width: 100%;
+    height: 34px;
+    padding: 0 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font: 13px "Segoe UI", system-ui, sans-serif;
+    color: #374151;
+    background: #fff;
+    cursor: pointer;
+}
+
+.import-sheet-col select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.import-mapping-validation {
+    min-height: 18px;
+    margin: 8px 2px 0;
+    color: #047857;
+    font-size: 12px;
+}
+
+.import-mapping-validation.is-error {
+    color: #b91c1c;
+}
+
+/* Actions */
+.import-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.import-btn {
+    height: 40px;
+    padding: 0 20px;
+    border: 0;
+    border-radius: 6px;
+    font: 600 14px "Segoe UI", system-ui, sans-serif;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.import-btn.secondary {
+    background: #f3f4f6;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.import-btn.secondary:hover {
+    background: #e5e7eb;
+}
+
+.import-btn.primary {
+    background: #2563eb;
+    color: #fff;
+}
+
+.import-btn.primary:hover {
+    background: #1d4ed8;
+}
+
+.import-btn:disabled {
+    cursor: not-allowed;
+    opacity: .55;
+}
+
+/* Results */
+.import-results {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.import-result-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    background: #f9fafb;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+}
+
+.import-result-item .result-label {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.import-result-item .result-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.import-result-item.success .result-value {
+    color: #059669;
+}
+
+.import-result-item.updated .result-value {
+    color: #d97706;
+}
+
+.import-result-item.skipped .result-value {
+    color: #6b7280;
+}
+
+.import-result-item.error .result-value {
+    color: #dc2626;
+}
+
+/* Errors */
+.import-error-list {
+    max-height: 180px;
+    overflow-y: auto;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+}
+
+.import-error-item {
+    display: grid;
+    grid-template-columns: 100px 60px 1fr;
+    gap: 10px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #fecaca;
+    font-size: 12px;
+}
+
+.import-error-item:last-child {
+    border-bottom: none;
+}
+
+.import-error-item .error-sheet {
+    font-weight: 600;
+    color: #991b1b;
+}
+
+.import-error-item .error-row {
+    color: #6b7280;
+}
+
+.import-error-item .error-msg {
+    color: #374151;
+}
+
+.import-error-more {
+    padding: 10px 12px;
+    font-size: 12px;
+    color: #6b7280;
+    text-align: center;
+}
+
+.import-skipped-columns {
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    background: #fffbeb;
+}
+
+.import-skipped-columns h4 {
+    margin: 0 0 8px;
+    color: #92400e;
+}
+
+.import-skipped-column-row {
+    display: grid;
+    grid-template-columns: minmax(100px, 160px) 1fr;
+    gap: 10px;
+    padding: 6px 0;
+    color: #78350f;
+    font-size: 12px;
+}
+
+.import-btn:focus-visible,
+.import-sheet-col select:focus-visible,
+.import-mode-select:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, .32);
+    outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .import-modal {
+        padding: 18px;
+    }
+
+    .import-mapping-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .import-mapping-arrow {
+        display: none;
+    }
+
+    .import-dialog-actions {
+        flex-wrap: wrap;
+    }
+
+    .import-btn {
+        flex: 1;
+        min-width: 100px;
+    }
+}

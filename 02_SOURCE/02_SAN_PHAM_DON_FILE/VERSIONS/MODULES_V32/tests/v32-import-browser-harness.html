@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>V32 Import Preserve Template Browser Harness</title>
+    <link rel="stylesheet" href="../css/import-excel.css">
+    <style>
+        body { margin: 0; min-height: 100vh; background: #e2e8f0; font-family: "Segoe UI", sans-serif; }
+        #testResult { position: fixed; left: 8px; bottom: 8px; z-index: 120000; padding: 6px 9px; border-radius: 6px; background: #0f172a; color: white; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div id="testResult" data-test-status="running">V32 browser test: running</div>
+    <script>
+        const clone = value => JSON.parse(JSON.stringify(value));
+        const testSheet = {
+            type: 'grid',
+            name: 'Mẫu công văn',
+            cells: [
+                ['_rowIndex', '_attachments', 'so_van_ban', 'trich_yeu', 'ngay_van_ban'],
+                [1, [], 'VB-CŨ', 'Nội dung cũ', '01/01/2026']
+            ],
+            _columnConfigs: {
+                2: { label: 'Số văn bản', type: 'text', width: 180, align: 'left' },
+                3: { label: 'Trích yếu', type: 'text', width: 320, align: 'left' },
+                4: { label: 'Ngày văn bản', type: 'date', width: 140, align: 'center' }
+            },
+            _columnTypes: { 2: 'text', 3: 'text', 4: 'date' },
+            _columnFormats: { 4: { pattern: 'DD/MM/YYYY' } },
+            _cellStyles: { '1_2': { bold: true } },
+            settings: { frozenRows: 1 },
+            _config: { conditionalRules: [{ column: 4, rule: 'required' }] },
+            _filters: [],
+            _sorts: []
+        };
+        const excelRows = [
+            ['Số VB', 'Trích yếu', 'Cột ngoài mẫu'],
+            ['VB-01', 'Nội dung mới', 'Giá trị phải bỏ qua']
+        ];
+
+        function getActiveItem() { return testSheet; }
+        function ensureSheetCells(sheet) { return sheet.cells; }
+        function getColumnConfig(index, sheet = testSheet) {
+            const runtime = sheet._columnConfigs?.[index] || {};
+            return { id: sheet.cells[0][index], label: runtime.label || sheet.cells[0][index], type: runtime.type || 'text', ...runtime };
+        }
+        function createSheetUndoSnapshot(sheet) {
+            return {
+                cells: clone(sheet.cells),
+                cellStyles: clone(sheet._cellStyles || {}),
+                settings: clone(sheet.settings || {}),
+                config: clone(sheet._config || {}),
+                columnConfigs: clone(sheet._columnConfigs || {}),
+                columnTypes: clone(sheet._columnTypes || {}),
+                columnFormats: clone(sheet._columnFormats || {}),
+                filters: clone(sheet._filters || []),
+                sorts: clone(sheet._sorts || [])
+            };
+        }
+        function restoreSheetUndoSnapshot(sheet, snapshot) {
+            sheet.cells = clone(snapshot.cells);
+            sheet._cellStyles = clone(snapshot.cellStyles);
+            sheet.settings = clone(snapshot.settings);
+            sheet._config = clone(snapshot.config);
+            sheet._columnConfigs = clone(snapshot.columnConfigs);
+            sheet._columnTypes = clone(snapshot.columnTypes);
+            sheet._columnFormats = clone(snapshot.columnFormats);
+            sheet._filters = clone(snapshot.filters);
+            sheet._sorts = clone(snapshot.sorts);
+        }
+        function pushSheetSnapshotUndo(sheet, before, after, label) {
+            window.__undoRecord = { sheet, before: clone(before), after: clone(after), label };
+        }
+        function renderGridSheet() {}
+        function saveAllProjects() {}
+        function refreshWorkspaceTree() {}
+        function addActivityLog() {}
+        function toast(message, type) { window.__toasts = [...(window.__toasts || []), { message, type }]; }
+
+        window.XLSX = {
+            read() { return { SheetNames: ['Công văn'], Sheets: { 'Công văn': {} } }; },
+            utils: { sheet_to_json() { return clone(excelRows); } }
+        };
+
+        const nativeInputClick = HTMLInputElement.prototype.click;
+        HTMLInputElement.prototype.click = function() {
+            if (this.type !== 'file') return nativeInputClick.call(this);
+            const file = new File([new Uint8Array([1, 2, 3])], 'du-lieu-v32.xlsx', {
+                type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+            });
+            Object.defineProperty(this, 'files', { configurable: true, value: [file] });
+            this.dispatchEvent(new Event('change'));
+        };
+    </script>
+    <script src="../js/import-excel.js"></script>
+    <script>
+        const waitFor = (selector, timeout = 3000) => new Promise((resolve, reject) => {
+            const started = performance.now();
+            const poll = () => {
+                const element = document.querySelector(selector);
+                if (element) return resolve(element);
+                if (performance.now() - started > timeout) return reject(new Error(`Timeout: ${selector}`));
+                setTimeout(poll, 20);
+            };
+            poll();
+        });
+
+        function complete(status, checks) {
+            const result = document.getElementById('testResult');
+            result.dataset.testStatus = status;
+            result.dataset.testChecks = JSON.stringify(checks);
+            result.textContent = status === 'pass' ? 'V32 browser test: PASS' : `V32 browser test: FAIL — ${checks.error}`;
+            document.documentElement.dataset.testStatus = status;
+            document.documentElement.dataset.testChecks = JSON.stringify(checks);
+        }
+
+        async function runHarness() {
+            const checks = {};
+            const original = createSheetUndoSnapshot(testSheet);
+            ImportExcel.open();
+
+            const sheetDialog = await waitFor('#import-excel-dialog');
+            checks.sheetDialogAccessible = sheetDialog.getAttribute('role') === 'dialog'
+                && sheetDialog.getAttribute('aria-modal') === 'true';
+            sheetDialog.querySelector('#importNext').click();
+
+            const headerDialog = await waitFor('#import-header-row-dialog');
+            headerDialog.querySelector('#headerNext').click();
+
+            const mappingDialog = await waitFor('#import-mapping-dialog');
+            const mappingSelects = [...mappingDialog.querySelectorAll('.import-col-select')];
+            const copyHeaders = mappingDialog.querySelector('#copyExcelHeaders');
+            const focusables = [...mappingDialog.querySelectorAll('button:not([disabled]), input:not([disabled]), select:not([disabled])')];
+            checks.checkboxDefaultOff = copyHeaders.checked === false;
+            checks.aliasMappedByName = mappingSelects[0].value === '2' && mappingSelects[1].value === '3';
+            checks.unmatchedDefaultsToSkip = mappingSelects[2].value === '';
+            const mappingNext = mappingDialog.querySelector('#mappingNext');
+            mappingSelects[1].value = '2';
+            mappingSelects[1].dispatchEvent(new Event('change'));
+            checks.duplicateMappingDisablesConfirm = mappingNext.disabled === true;
+            mappingSelects[1].value = '3';
+            mappingSelects[1].dispatchEvent(new Event('change'));
+            checks.validMappingEnablesConfirm = mappingNext.disabled === false;
+            checks.keyboardOrderIncludesControls = focusables.includes(copyHeaders)
+                && focusables.includes(mappingSelects[0])
+                && focusables.includes(mappingDialog.querySelector('#mappingNext'));
+            checks.mappingDialogFitsViewport = mappingDialog.getBoundingClientRect().width <= window.innerWidth
+                && mappingDialog.getBoundingClientRect().height <= window.innerHeight;
+            checks.mobileMappingStacks = window.innerWidth > 640
+                || getComputedStyle(mappingDialog.querySelector('.import-mapping-row')).gridTemplateColumns.split(' ').length === 1;
+
+            if (new URLSearchParams(location.search).get('stage') === 'mapping') {
+                checks.mappingVisible = true;
+                complete(Object.values(checks).every(Boolean) ? 'pass' : 'fail', checks);
+                return;
+            }
+
+            mappingDialog.querySelector('#mappingNext').click();
+            const summaryDialog = await waitFor('#import-summary-dialog');
+            summaryDialog.querySelector('#summaryExecute').click();
+            const reportDialog = await waitFor('#import-report-dialog');
+
+            checks.headerIdsPreserved = JSON.stringify(testSheet.cells[0]) === JSON.stringify(original.cells[0]);
+            checks.columnConfigPreserved = JSON.stringify(testSheet._columnConfigs) === JSON.stringify(original.columnConfigs);
+            checks.typeAndFormatPreserved = JSON.stringify(testSheet._columnTypes) === JSON.stringify(original.columnTypes)
+                && JSON.stringify(testSheet._columnFormats) === JSON.stringify(original.columnFormats);
+            checks.rowShapePreserved = testSheet.cells[2].length === original.cells[0].length;
+            checks.dataStartsAfterHeader = testSheet.cells[2][2] === 'VB-01' && testSheet.cells[2][3] === 'Nội dung mới';
+            checks.unmappedValueSkipped = !testSheet.cells[2].includes('Giá trị phải bỏ qua');
+            checks.unmappedReported = reportDialog.textContent.includes('Cột Excel được bỏ qua')
+                && reportDialog.textContent.includes('Cột ngoài mẫu');
+            checks.undoSnapshotComplete = window.__undoRecord?.label?.includes('Import Excel')
+                && window.__undoRecord?.before?.columnConfigs?.['2']?.width === 180
+                && window.__undoRecord?.after?.cells?.[2]?.[2] === 'VB-01';
+
+            reportDialog.querySelector('#importUndo').click();
+            checks.reportUndoRestoresEverything = JSON.stringify(createSheetUndoSnapshot(testSheet)) === JSON.stringify(original);
+            complete(Object.values(checks).every(Boolean) ? 'pass' : 'fail', checks);
+        }
+
+        runHarness().catch(error => complete('fail', { error: error.stack || error.message }));
+    </script>
+</body>
+</html>
