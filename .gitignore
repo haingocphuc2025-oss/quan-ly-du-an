@@ -49,3 +49,7 @@ outputs/
 # Large binary artifacts that should not be in git
 *.zst
 *.png
+
+# v60 experimental (removed from tracking)
+v60_glassmorphism/
+glassmorphism-dashboard-v60.html
