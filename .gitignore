@@ -38,3 +38,14 @@ desktop.ini
 *.gslides
 *.gdraw
 
+
+# Hermes browser automation temp files
+.playwright-mcp/
+
+# Build/scratch temp directories
+tmp/
+outputs/
+
+# Large binary artifacts that should not be in git
+*.zst
+*.png
