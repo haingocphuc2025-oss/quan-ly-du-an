@@ -3711,6 +3711,14 @@ body{
     }
 }
 
+/* ===== Kéo thả đổi thứ tự sheet (v48) ===== */
+#folderRows tr[draggable="true"]{cursor:grab;}
+#folderRows tr.row-dragging{opacity:.45; cursor:grabbing;}
+#folderRows tr.row-drop-target td{
+ border-top:2px solid #9C3516;
+ background:var(--stamp-soft);
+}
+
 /* ===== Kéo giãn panel trái khi đang mở sheet (v48) =====
    Cơ chế kéo đã có sẵn (#columnResizer + --project-column-size + lưu localStorage)
    nhưng chỉ chạy ở trạng thái duyệt: sheet-open khoá cứng 220px và ẩn thanh kéo
@@ -15949,7 +15957,7 @@ function renderFolderRows(){
  if(activeProjectIndex === null) return;
  const folders = PROJECT_FOLDERS[activeProjectIndex];
  document.getElementById('folderRows').innerHTML = folders.map((f, i) => `
- <tr class="${activeSheetContext && activeSheetContext.projectIndex === activeProjectIndex && activeSheetContext.folderIndex === i ? 'active-child' : ''}" data-folder-i="${i}">
+ <tr draggable="true" class="${activeSheetContext && activeSheetContext.projectIndex === activeProjectIndex && activeSheetContext.folderIndex === i ? 'active-child' : ''}" data-folder-i="${i}">
  <td class="col-check"><input type="checkbox" onclick="event.stopPropagation()"></td>
  <td class="col-star ${f.fav?'fav':''}" onclick="toggleFolderFav(event, ${i})">${f.fav ? '★' : '☆'}</td>
  <td><span class="folder-icon workspace-type-wrap">${workspaceItemIconHtml(f)}</span><span class="folder-name">${f.label || f.name}</span><div class="proj-sub" style="margin-left:34px">${f.name} · 1 sheet</div></td>
@@ -15984,6 +15992,67 @@ document.getElementById('folderRows').addEventListener('click', (e)=>{
  const folderIndex = Number(row.dataset.folderI);
  const item = PROJECT_FOLDERS[activeProjectIndex]?.[folderIndex];
  if(isWorkFile(item)) openSheet(activeProjectIndex, folderIndex);
+});
+
+/* ===== Kéo thả đổi thứ tự sheet trong dự án (v48) =====
+   Theo cùng mẫu kéo thả của widget Dashboard. */
+let draggedFolderIndex = null;
+const folderRowsEl = document.getElementById('folderRows');
+
+function clearFolderDragMarks(){
+ folderRowsEl.querySelectorAll('.row-dragging, .row-drop-target')
+  .forEach(r => r.classList.remove('row-dragging', 'row-drop-target'));
+}
+
+folderRowsEl.addEventListener('dragstart', (e) => {
+ const row = e.target.closest('tr[data-folder-i]');
+ if(!row || activeProjectIndex === null) return;
+ draggedFolderIndex = Number(row.dataset.folderI);
+ row.classList.add('row-dragging');
+ e.dataTransfer.effectAllowed = 'move';
+ // Firefox chỉ khởi động thao tác kéo khi có setData.
+ try{ e.dataTransfer.setData('text/plain', String(draggedFolderIndex)); }catch(err){}
+});
+
+folderRowsEl.addEventListener('dragover', (e) => {
+ if(draggedFolderIndex === null) return;
+ e.preventDefault();
+ e.dataTransfer.dropEffect = 'move';
+ const row = e.target.closest('tr[data-folder-i]');
+ folderRowsEl.querySelectorAll('.row-drop-target').forEach(r => r.classList.remove('row-drop-target'));
+ if(row && Number(row.dataset.folderI) !== draggedFolderIndex) row.classList.add('row-drop-target');
+});
+
+folderRowsEl.addEventListener('drop', (e) => {
+ e.preventDefault();
+ const row = e.target.closest('tr[data-folder-i]');
+ const from = draggedFolderIndex;
+ draggedFolderIndex = null;
+ clearFolderDragMarks();
+ if(from === null || !row || activeProjectIndex === null) return;
+ const to = Number(row.dataset.folderI);
+ if(from === to) return;
+ const folders = PROJECT_FOLDERS[activeProjectIndex];
+ if(!folders) return;
+ const [moved] = folders.splice(from, 1);
+ folders.splice(to, 0, moved);
+ // Sheet đang mở phải bám theo vị trí mới, nếu không activeSheetContext sẽ trỏ nhầm item.
+ if(activeSheetContext && activeSheetContext.projectIndex === activeProjectIndex){
+  const cur = activeSheetContext.folderIndex;
+  if(cur === from) activeSheetContext.folderIndex = to;
+  else if(cur > from && cur <= to) activeSheetContext.folderIndex = cur - 1;
+  else if(cur < from && cur >= to) activeSheetContext.folderIndex = cur + 1;
+ }
+ render();
+ renderFolderRows();
+ saveCurrentProjectStateSilently();
+ persistToDrive();
+ showToast(`Đã chuyển "${getWorkspaceItemLabel(moved)}" tới vị trí ${to + 1}.`, 'success');
+});
+
+folderRowsEl.addEventListener('dragend', () => {
+ draggedFolderIndex = null;
+ clearFolderDragMarks();
 });
 
 const workspaceFolderTable = document.querySelector('#screen-detail .folder-table');
