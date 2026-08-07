@@ -3711,6 +3711,18 @@ body{
     }
 }
 
+/* ===== Thanh thao tác hàng loạt (v49) ===== */
+.bulk-bar{
+ display:flex; align-items:center; gap:8px;
+ padding:8px 12px; margin:0 0 10px;
+ background:var(--stamp-soft); border:1px solid #F5B9A3; border-radius:8px;
+}
+.bulk-bar[hidden]{display:none;}
+.bulk-count{font:700 13px 'Segoe UI',system-ui,sans-serif; color:#9C3516; margin-right:4px;}
+.bulk-bar .btn{padding:5px 12px; font-size:13px;}
+.bulk-bar .bulk-danger{color:#B3261E;}
+.bulk-bar .bulk-danger:hover{background:#FCE8E6; border-color:#F2B8B5;}
+
 /* ===== Kéo thả đổi thứ tự sheet (v48) ===== */
 #folderRows tr[draggable="true"]{cursor:grab;}
 #folderRows tr.row-dragging{opacity:.45; cursor:grabbing;}
@@ -3863,11 +3875,17 @@ body{
  </div>
 
  <div class="detail-body">
+ <div class="bulk-bar" id="folderBulkBar" hidden>
+  <span class="bulk-count" id="folderBulkCount">0 mục</span>
+  <button type="button" class="btn btn-ghost" data-bulk="duplicate">Nhân bản</button>
+  <button type="button" class="btn btn-ghost" data-bulk="clear">Bỏ chọn</button>
+  <button type="button" class="btn btn-ghost bulk-danger" data-bulk="delete">Xóa</button>
+ </div>
  <div class="folder-table">
  <table>
  <thead>
  <tr>
- <th class="col-check"></th>
+ <th class="col-check"><input type="checkbox" id="folderSelectAll" aria-label="Chọn tất cả"></th>
  <th class="col-star"></th>
  <th>Tên</th>
  </tr>
@@ -16027,6 +16045,8 @@ function renderFolderRows(){
  <td><span class="folder-icon workspace-type-wrap">${workspaceItemIconHtml(f)}</span><span class="folder-name">${f.label || f.name}</span><div class="proj-sub" style="margin-left:34px">${f.name} · 1 sheet</div></td>
  </tr>`).join('');
  renderFavorites();
+ // Vẽ lại là mất checkbox đang tick -> đồng bộ lại thanh thao tác.
+ if(typeof refreshFolderBulkBar === 'function') refreshFolderBulkBar();
 }
 
 document.getElementById('folderRows').addEventListener('contextmenu', (e)=>{
@@ -16117,6 +16137,94 @@ folderRowsEl.addEventListener('drop', (e) => {
 folderRowsEl.addEventListener('dragend', () => {
  draggedFolderIndex = null;
  clearFolderDragMarks();
+});
+
+/* ===== Chọn nhiều dòng + thao tác hàng loạt (v49) =====
+   Ô checkbox đã có sẵn trong markup từ trước nhưng chưa nối logic. */
+const folderBulkBar = document.getElementById('folderBulkBar');
+const folderSelectAll = document.getElementById('folderSelectAll');
+
+// Đọc lựa chọn từ DOM mỗi lần thay vì giữ state riêng — tránh lệch sau khi render lại.
+function getSelectedFolderIndexes(){
+ const rows = document.getElementById('folderRows');
+ if(!rows) return [];
+ return [...rows.querySelectorAll('tr[data-folder-i] .col-check input:checked')]
+  .map(cb => Number(cb.closest('tr').dataset.folderI))
+  .filter(n => Number.isInteger(n));
+}
+
+// Tra cứu phần tử trong hàm, không dùng const ngoài: renderFolderRows() có thể chạy
+// lúc khởi động trước khi các const này khởi tạo, sẽ vướng lỗi TDZ.
+function refreshFolderBulkBar(){
+ const bar = document.getElementById('folderBulkBar');
+ const dem = document.getElementById('folderBulkCount');
+ const all = document.getElementById('folderSelectAll');
+ const rows = document.getElementById('folderRows');
+ if(!bar || !rows) return;
+ const chon = getSelectedFolderIndexes();
+ bar.hidden = chon.length === 0;
+ if(dem) dem.textContent = `${chon.length} mục`;
+ const tong = rows.querySelectorAll('tr[data-folder-i]').length;
+ if(all){
+  all.checked = tong > 0 && chon.length === tong;
+  all.indeterminate = chon.length > 0 && chon.length < tong;
+ }
+}
+
+folderRowsEl.addEventListener('change', (e) => {
+ if(e.target.matches('.col-check input')) refreshFolderBulkBar();
+});
+
+folderSelectAll?.addEventListener('change', () => {
+ folderRowsEl.querySelectorAll('.col-check input').forEach(cb => { cb.checked = folderSelectAll.checked; });
+ refreshFolderBulkBar();
+});
+
+folderBulkBar?.addEventListener('click', (e) => {
+ const nut = e.target.closest('[data-bulk]');
+ if(!nut || activeProjectIndex === null) return;
+ const hanhDong = nut.dataset.bulk;
+ const chon = getSelectedFolderIndexes();
+ if(!chon.length) return;
+ const folders = PROJECT_FOLDERS[activeProjectIndex];
+ if(!folders) return;
+
+ if(hanhDong === 'clear'){
+  folderRowsEl.querySelectorAll('.col-check input').forEach(cb => { cb.checked = false; });
+  refreshFolderBulkBar();
+  return;
+ }
+
+ if(hanhDong === 'duplicate'){
+  // Nhân bản từ cuối lên đầu để chỉ số của các mục chưa xử lý không bị dịch.
+  [...chon].sort((a, b) => b - a).forEach(i => {
+   const ban = cloneWorkspaceItem(folders[i]);
+   ban.name = folders[i].name + ' (bản sao)';
+   if(ban.label) ban.label = ban.label + ' (bản sao)';
+   folders.splice(i + 1, 0, ban);
+  });
+  activeSheetContext = {projectIndex:null, folderIndex:null};
+  render(); renderFolderRows(); refreshFolderBulkBar();
+  saveCurrentProjectStateSilently(); persistToDrive();
+  showToast(`Đã nhân bản ${chon.length} mục.`, 'success');
+  return;
+ }
+
+ if(hanhDong === 'delete'){
+  const ten = chon.map(i => getWorkspaceItemLabel(folders[i])).slice(0, 5);
+  const them = chon.length > 5 ? ` và ${chon.length - 5} mục khác` : '';
+  showV19Confirm('Xác nhận xóa',
+   `<p>Xóa <strong>${chon.length}</strong> mục?</p><p style="color:#4B5563">${escapeHtml(ten.join(', '))}${escapeHtml(them)}</p>`,
+   'Xóa').then(ok => {
+   if(!ok) return;
+   // Xóa từ chỉ số lớn xuống nhỏ, nếu không các chỉ số còn lại sẽ lệch.
+   [...chon].sort((a, b) => b - a).forEach(i => folders.splice(i, 1));
+   activeSheetContext = {projectIndex:null, folderIndex:null};
+   render(); renderFolderRows(); refreshFolderBulkBar();
+   saveCurrentProjectStateSilently(); persistToDrive();
+   showToast(`Đã xóa ${chon.length} mục.`, 'success');
+  });
+ }
 });
 
 const workspaceFolderTable = document.querySelector('#screen-detail .folder-table');
