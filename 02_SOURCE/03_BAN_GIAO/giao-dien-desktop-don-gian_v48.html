@@ -3711,6 +3711,26 @@ body{
     }
 }
 
+/* ===== Kéo giãn panel trái khi đang mở sheet (v48) =====
+   Cơ chế kéo đã có sẵn (#columnResizer + --project-column-size + lưu localStorage)
+   nhưng chỉ chạy ở trạng thái duyệt: sheet-open khoá cứng 220px và ẩn thanh kéo
+   bằng !important. Đặt cuối file + !important để thắng cả thứ tự lẫn độ ưu tiên.
+   Khoảng kéo do clampProjectColumnWidth() quyết định (300–460px). */
+.main.sheet-open .column-resizer{display:flex !important;}
+.main.sheet-open #screen-list{
+ flex:0 0 var(--project-column-size) !important;
+ width:var(--project-column-size) !important;
+ max-width:none !important;
+}
+/* Màn hẹp vẫn giữ nguyên hành vi cũ: không kéo, panel co theo viewport. */
+@media (max-width: 960px){
+ .main.sheet-open .column-resizer{display:none !important;}
+ .main.sheet-open #screen-list{
+  flex:0 0 min(220px, 22vw) !important;
+  width:min(220px, 22vw) !important;
+ }
+}
+
 </style>
 </head>
 <body>
