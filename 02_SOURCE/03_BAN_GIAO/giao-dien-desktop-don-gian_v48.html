@@ -13999,11 +13999,24 @@ ssRowHeightSelect.addEventListener('change', () => setSheetRowHeight(ssRowHeight
 
 ssClearDataBtn.addEventListener('click', clearActiveSheetData);
 
+// Sheet theo template V46 chỉ khai 'width', không khai 'type', nên phân loại theo kiểu
+// luôn rơi về 'keep' và người dùng phải chỉnh tay từng cột mỗi lần. Dò thêm theo NHÃN
+// để mặc định mở ra đã đúng — vẫn đổi tay được trong dialog.
+const CARRY_LABEL_TODAY = ['ngày', 'ngày tháng', 'ngày, tháng, năm', 'ngày văn bản'];
+const CARRY_LABEL_CLEAR = ['trạng thái', 'ghi chú / trạng thái', 'giá trị', 'khối lượng', 'số lượng'];
+
 function classifyCarryForwardColumn(sheet, colIndex){
  const type = String(getColumnConfig(colIndex, sheet).type || 'text').toLowerCase();
  if(['date','created_date','modified_date'].includes(type)) return 'today';
  if(['number','currency','percent','checkbox','symbols','duration','auto_number'].includes(type)) return 'clear';
  if(['created_by','modified_by'].includes(type)) return 'system';
+ // Chỉ dùng nhãn khi cột không khai kiểu — cột đã khai kiểu thì kiểu là chuẩn.
+ const cells = ensureSheetCells(sheet);
+ const nhan = String((cells[0] || [])[colIndex] || '').trim().toLowerCase();
+ if(nhan){
+  if(CARRY_LABEL_TODAY.includes(nhan)) return 'today';
+  if(CARRY_LABEL_CLEAR.includes(nhan)) return 'clear';
+ }
  return 'keep';
 }
 
