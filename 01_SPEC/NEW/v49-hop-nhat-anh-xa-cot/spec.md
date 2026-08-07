@@ -10,16 +10,16 @@ status: 🟡 Chờ duyệt
 
 ## 0. Tóm tắt thay đổi
 
-| Mã | Tính năng | Mức | Loại |
-|----|-----------|-----|------|
-| FR-01 | Gộp 3 bản ánh xạ cột-theo-nhãn thành 1 nguồn duy nhất | 🔴 P0 | Refactor |
-| FR-02 | Khai `type` cho cột trong V46_TEMPLATES | 🔴 P0 | Dữ liệu |
-| FR-03 | Xử lý dứt điểm `loadSheetDataFromWebApp` (stub trả null) | 🔴 P0 | Nợ kỹ thuật |
-| FR-04 | Kiểm & nối 7 nút chưa có handler | 🟠 P1 | Sửa lỗi |
-| FR-05 | Xoá 25 hàm chết hoặc đánh dấu deprecated | 🟠 P1 | Dọn dẹp |
-| FR-06 | Chọn nhiều dòng + thao tác hàng loạt ở bảng duyệt | 🟠 P1 | Tính năng |
-| FR-07 | Đưa v43–v46 + RUN_*.html vào git | 🟡 P2 | Quy trình |
-| FR-08 | Truy lỗi `bad config line 1 in blob` của git | 🟡 P2 | Môi trường |
+| Mã | Tính năng | Mức | Loại | Trạng thái |
+|----|-----------|-----|------|-----------|
+| FR-01 | Gộp 3 bản ánh xạ cột-theo-nhãn thành 1 nguồn duy nhất | 🔴 P0 | Refactor | ✅ Xong (`6873df0`) |
+| FR-02 | Khai `type` cho cột trong V46_TEMPLATES | 🔴 P0 | Dữ liệu | ✅ Xong (`6873df0`) |
+| FR-03 | Xử lý dứt điểm `loadSheetDataFromWebApp` (stub trả null) | 🔴 P0 | Nợ kỹ thuật | ✅ Xong (`6873df0`) |
+| FR-04 | Kiểm & nối 7 nút chưa có handler | 🟠 P1 | Sửa lỗi | ❌ **Huỷ — phát hiện sai** |
+| FR-05 | Xoá 25 hàm chết hoặc đánh dấu deprecated | 🟠 P1 | Dọn dẹp | 🟡 Xong một phần (`cc9cf97`) |
+| FR-06 | Chọn nhiều dòng + thao tác hàng loạt | 🟠 P1 | Tính năng | ✅ Xong (`164ab30`) |
+| FR-07 | Đưa v43–v46 + RUN_*.html vào git | 🟡 P2 | Quy trình | ✅ Xong (`69f996d`) |
+| FR-08 | Truy lỗi `bad config line 1 in blob` của git | 🟡 P2 | Môi trường | ✅ Xong (`6fcc122`) |
 
 ## 1. Bối cảnh & Vấn đề
 
@@ -109,9 +109,22 @@ function loadSheetDataFromWebApp(project, sheetName){
 
 **Chấp nhận:** không còn hàm nào trả `Promise.resolve(null)` vô điều kiện; widget cấu hình `source` hiển thị được số liệu hoặc báo lỗi rõ ràng, **không im lặng hiện `--`**.
 
-### FR-04 — 🟠 P1: Kiểm & nối 7 nút chưa có handler
+### FR-04 — ❌ HUỶ: phát hiện sai, cả 7 nút đều hoạt động
 
-Quét tĩnh không tìm thấy `addEventListener`, `onclick`, hay uỷ quyền sự kiện cho:
+**Kết luận sau khi kiểm chứng runtime: không có nút nào hỏng.** Quét tĩnh ban đầu sai vì bỏ sót **hai kiểu nối** mà app đang dùng:
+
+| Kiểu nối | Ví dụ | Nút bị hiểu nhầm |
+|---|---|---|
+| Theo **class**, không theo id | `document.querySelectorAll('.create-project-btn').forEach(...)` | `createProjectBtn`, `railCreateProjectBtn` |
+| Qua hàm phụ trợ `bind()` | `bind('ssAiBtn', openSheetAiModal)` | `ssAiBtn`, `ssGridViewBtn` |
+
+Kiểm chứng thực tế: `ssShareBtn` và `ssTopMoreBtn` mở popup; `ssAiBtn` mở modal "AI nhanh"; `ssGridViewBtn` chỉ gắn lại class `active` (đang active sẵn) nên **không đổi gì là đúng**; `createProjectBtn`/`railCreateProjectBtn` gọi `createProjectFromButton()` — test báo "không phản hồi" chỉ vì hàm dùng `prompt()`, bị chặn trong môi trường tự động.
+
+**Bài học cho lần khảo sát sau:** đừng kết luận nút chết chỉ bằng grep `addEventListener`/`onclick`. Phải quét thêm nối-theo-class, hàm bind tập trung, và uỷ quyền sự kiện — rồi kiểm chứng runtime ở **đúng màn hình** mà nút hiển thị.
+
+---
+
+*Nội dung khảo sát ban đầu (giữ lại để đối chiếu):* quét tĩnh không tìm thấy `addEventListener`, `onclick`, hay uỷ quyền sự kiện cho:
 
 | Nút | Nhãn | Ghi chú |
 |---|---|---|
