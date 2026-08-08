@@ -101,6 +101,8 @@ function doPost(e) {
       result = xoaFileDinhKem(payload);
     } else if (action === 'savesheet') {
       result = luuDuLieuSheet(payload);
+    } else if (action === 'aichat') {
+      result = aiChatForWebApp(payload);
     } else {
       result = { ok: false, error: 'Hanh dong khong ho tro: ' + action };
     }
