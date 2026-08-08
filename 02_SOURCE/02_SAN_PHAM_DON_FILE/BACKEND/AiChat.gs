@@ -56,6 +56,73 @@ function aiChat(prompt, context) {
   return docKetQuaAi_(body);
 }
 
+/* ===== Xác thực người gọi (v53) =====
+   Web App phải deploy ở mức "Anyone" thì trình duyệt mới gọi được: gửi header
+   Authorization sẽ kích hoạt CORS preflight mà Apps Script không trả lời được.
+   Bù lại, token OAuth đi trong BODY và được xác thực ở đây — không ai dùng chùa
+   được khoá Gemini dù biết URL.
+
+   Hai Script Property tuỳ chọn:
+     AI_EXPECTED_CLIENT_ID  — OAuth client ID của app; chặn token mượn từ app khác
+     AI_ALLOWED_EMAILS      — danh sách email được phép, phân tách bằng dấu phẩy
+   Bỏ trống cả hai = không kiểm (chỉ nên dùng khi thử nghiệm). */
+const AI_PROP_CLIENT_ID = 'AI_EXPECTED_CLIENT_ID';
+const AI_PROP_ALLOWED_EMAILS = 'AI_ALLOWED_EMAILS';
+
+function xacThucNguoiGoiAi_(accessToken) {
+  const props = PropertiesService.getScriptProperties();
+  const clientIdMongDoi = String(props.getProperty(AI_PROP_CLIENT_ID) || '').trim();
+  const dsEmail = String(props.getProperty(AI_PROP_ALLOWED_EMAILS) || '').trim();
+
+  // Không bật kiểm tra nào thì bỏ qua — nhưng vẫn cảnh báo trong log.
+  if (!clientIdMongDoi && !dsEmail) {
+    console.warn('AI: chưa bật kiểm tra người gọi. Nên đặt ' + AI_PROP_CLIENT_ID + ' hoặc ' + AI_PROP_ALLOWED_EMAILS + '.');
+    return '';
+  }
+
+  if (!accessToken) {
+    throw new Error('Chưa đăng nhập Google. Bấm kết nối Drive trong app rồi thử lại.');
+  }
+
+  const res = UrlFetchApp.fetch(
+    'https://oauth2.googleapis.com/tokeninfo?access_token=' + encodeURIComponent(accessToken),
+    { muteHttpExceptions: true }
+  );
+  if (res.getResponseCode() !== 200) {
+    throw new Error('Phiên đăng nhập không hợp lệ hoặc đã hết hạn. Kết nối lại Drive rồi thử lại.');
+  }
+
+  let info;
+  try { info = JSON.parse(res.getContentText()); }
+  catch (e) { throw new Error('Không đọc được thông tin đăng nhập.'); }
+
+  // Token phải do đúng app này phát hành.
+  if (clientIdMongDoi && String(info.aud || '') !== clientIdMongDoi) {
+    throw new Error('Token không thuộc ứng dụng này.');
+  }
+
+  const email = String(info.email || '').toLowerCase();
+
+  if (dsEmail) {
+    // Scope 'drive' đơn thuần không kèm email. Thiếu email mà đang bật allowlist
+    // thì phải TỪ CHỐI, không được cho qua — và nói rõ cách khắc phục.
+    if (!email) {
+      throw new Error(
+        'Không lấy được email từ phiên đăng nhập. Thêm scope userinfo.email vào ' +
+        'DRIVE_DIRECT_SCOPE trong app rồi kết nối lại Drive.'
+      );
+    }
+    const duocPhep = dsEmail.toLowerCase().split(',')
+      .map(function (s) { return s.trim(); })
+      .filter(function (s) { return s; });
+    if (duocPhep.indexOf(email) < 0) {
+      throw new Error('Tài khoản ' + email + ' không có quyền dùng trợ lý AI.');
+    }
+  }
+
+  return email;
+}
+
 /**
  * Bọc aiChat cho đường Web App (doPost action 'aichat').
  * Client chạy cục bộ nên gọi bằng fetch, không dùng google.script.run.
@@ -63,6 +130,7 @@ function aiChat(prompt, context) {
  */
 function aiChatForWebApp(payload) {
   try {
+    xacThucNguoiGoiAi_(payload && payload.accessToken);
     const data = aiChat(payload && payload.prompt, payload && payload.context);
     return { ok: true, data: data };
   } catch (err) {
