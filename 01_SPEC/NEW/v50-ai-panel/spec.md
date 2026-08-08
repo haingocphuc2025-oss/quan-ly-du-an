@@ -2,8 +2,8 @@
 version: 50.0
 date: 2026-08-08
 author: Quan (spec gốc ai-panel-v27) · Claude (điều chỉnh cho v49 + thi công)
-baseline: v49 (SHA dae8b75, nhánh feat/v47-v48-ui-dashboard)
-status: 🟢 Đã thi công — chờ kiểm chứng vòng gọi Gemini thật
+baseline: v49 (SHA dae8b75) — thi công qua v50 → v53
+status: 🟢 Đã thi công (v53) — chờ cài khoá + deploy Web App để kiểm chứng vòng gọi Gemini thật
 ---
 
 # v50: Panel trợ lý AI (Gemini) bên phải
@@ -109,9 +109,11 @@ Một action `snapshot` cho cả lô → **một lần Undo hoàn tác toàn b�
 
 File: `02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/AiChat.gs` (tách riêng, giống `baoCaoCaNhan.gs`).
 
+> ⚠️ **Mục này đã đổi ở v52 và v53** — xem §5.1 và §5.2 bên dưới trước khi làm theo bảng.
+
 | Hạng mục | Quy định |
 |---|---|
-| Điểm vào | `aiChat(prompt, context)` qua `google.script.run` |
+| Điểm vào | `aiChat(prompt, context)` qua `google.script.run` *(v50 — đã thay, xem §5.1)* |
 | Model | hằng `AI_MODEL`, mặc định `gemini-2.0-flash` |
 | Gọi API | `UrlFetchApp.fetch()` — client **không** gọi thẳng Google |
 | Khoá | Script Properties `GEMINI_API_KEY`, không nhúng vào code |
@@ -120,10 +122,42 @@ File: `02_SOURCE/02_SAN_PHAM_DON_FILE/BACKEND/AiChat.gs` (tách riêng, giống 
 
 Scope `script.external_request` đã có sẵn trong `appsscript.json`, không cần đổi manifest.
 
+### 5.1 v52 — đổi đường truyền: Web App + fetch
+
+Bản v50 gọi `google.script.run`. **Hàm đó chỉ tồn tại khi Apps Script phục vụ trang web.** App này chạy cục bộ (`RUN_V45.bat` mở file trực tiếp, hoặc server local cổng 8155) và từ V45 đã dùng Drive API thẳng từ trình duyệt — nên panel AI của v50 **không bao giờ gọi được backend trong thực tế**.
+
+v52 chuyển sang đúng cơ chế app đã có sẵn cho Drive:
+
+```
+client  fetch → SHEET_FACTORY_WEB_APP_URL  (đọc từ config.local.js)
+        POST body: {action:'aichat', prompt, context}
+server  doPost → aiChatForWebApp(payload) → {ok, data}
+```
+
+`google.script.run` vẫn giữ làm nhánh dự phòng cho ai host UI trong Apps Script.
+
+### 5.2 v53 — xác thực người gọi
+
+Web App **bắt buộc deploy mức "Anyone"**: gửi header `Authorization` sẽ kích hoạt CORS preflight mà Apps Script Web App không trả lời được. Để endpoint không mở toang, token OAuth đi trong **body** và được xác thực phía server.
+
+| Script Property | Tác dụng | Bỏ trống |
+|---|---|---|
+| `GEMINI_API_KEY` | Khoá Gemini | ❌ bắt buộc |
+| `AI_EXPECTED_CLIENT_ID` | Chặn token phát hành cho app khác | ⚠️ không kiểm |
+| `AI_ALLOWED_EMAILS` | Danh sách email được phép (phân tách dấu phẩy) | ⚠️ không kiểm |
+
+Client lấy token từ `ensureDriveDirectToken()` — hàm đã tự làm mới khi hết hạn, nên **không thêm bước đăng nhập nào** cho người dùng.
+
+**Quyết định có chủ đích:** scope hiện tại chỉ có `drive`, nên `tokeninfo` có thể **không trả về email**. Nếu đã bật allowlist mà thiếu email thì **từ chối**, không cho qua — cho qua sẽ biến allowlist thành đồ trang trí. Thông báo lỗi chỉ rõ cách khắc phục: thêm scope `userinfo.email` vào `DRIVE_DIRECT_SCOPE` rồi kết nối lại Drive.
+
 ### Cài đặt (việc của người vận hành)
 
-1. Apps Script → **Project Settings** → **Script Properties** → thêm `GEMINI_API_KEY`
-2. Chạy `kiemTraCauHinhAi()` trong trình soạn thảo — gọi thử một câu, ghi kết quả ra Log, **không in khoá**
+1. Dán `AiChat.gs` vào project Apps Script đang chạy backend
+2. Thêm nhánh `aichat` vào `doPost` của `Code.gs`
+3. **Project Settings → Script Properties**: thêm `GEMINI_API_KEY`, `AI_EXPECTED_CLIENT_ID`, `AI_ALLOWED_EMAILS`
+4. **Deploy → New deployment → Web app** · Execute as **Me** · Access **Anyone** → copy URL `/exec`
+5. Dán URL vào `sheetFactoryWebAppUrl` trong `config.local.js`
+6. Chạy `kiemTraCauHinhAi()` để kiểm — gọi thử một câu, ghi ra Log, **không in khoá**
 
 ## 6. Lịch sử hội thoại
 
