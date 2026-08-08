@@ -56,6 +56,20 @@ function aiChat(prompt, context) {
   return docKetQuaAi_(body);
 }
 
+/**
+ * Bọc aiChat cho đường Web App (doPost action 'aichat').
+ * Client chạy cục bộ nên gọi bằng fetch, không dùng google.script.run.
+ * Trả về đúng shape {ok, ...} mà callSheetFactoryPost_() đang chờ.
+ */
+function aiChatForWebApp(payload) {
+  try {
+    const data = aiChat(payload && payload.prompt, payload && payload.context);
+    return { ok: true, data: data };
+  } catch (err) {
+    return { ok: false, error: err && err.message ? err.message : String(err) };
+  }
+}
+
 /** Lấy khoá từ Script Properties; báo rõ nếu chưa cài. */
 function layKhoaAi_() {
   const key = PropertiesService.getScriptProperties().getProperty(AI_PROPERTY_KEY);
