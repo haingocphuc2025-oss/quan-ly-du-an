@@ -6,6 +6,7 @@ Cập nhật: 17/07/2026
 
 - `sheet-active-right-toolbar-rail`
 - `v60-glassmorphism-dashboard`
+- `v61-toan-ven-du-lieu` — 13 hạng mục vá mất dữ liệu âm thầm (5 P0), rà soát trên v60
 
 ## ĐÃ TRIỂN KHAI
 
